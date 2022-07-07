@@ -1,0 +1,38 @@
+.searcher {
+    height: 50px;
+    border: 2px solid red;
+    margin-bottom: 7px;
+    padding: 14px 24px 0px 24px;
+}
+
+.mainSection {
+    display: flex;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9em;
+    
+}
+
+
+.mainSection__card {
+    display: block;
+    margin-top: 50px;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 450px;
+    
+}
+
+.card__image {
+    height: 45vh;
+    width: 85vw;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.card__price {
+    margin-top: 6px;
+}
