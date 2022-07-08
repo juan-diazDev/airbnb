@@ -10,6 +10,7 @@
 
 
 .searcher__input {
+    position: relative;
     box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
     color: #717171;
     align-items: center;
@@ -24,4 +25,15 @@
     width: 330px;
     height: 52px;
     background-color: white;
+}
+
+.container-image {
+    position: absolute;
+    display: flex;
+}
+
+.container-image__image {
+    margin-left: 20px;
+    width: 25px;
+    height: 30px;
 }

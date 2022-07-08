@@ -8,6 +8,15 @@
     align-items: center;
 }
 
+.horiLine {
+    position: absolute;
+    margin-bottom: 25px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    border: 0.5px solid rgba(0,0,0,0.08)
+}
+
 /* .filter {
     height: 50px;
     border: 2px solid red;
@@ -25,26 +34,25 @@
     flex-wrap: wrap;
     font-family: 'Manrope', sans-serif;
     font-size: 0.85em;
-    margin: 0px;
     /* border: 1px solid red; */
-    margin-top: 7px;
+    margin-top: 20px;
 }
 
 
 .mainSection__card {
     margin-bottom: 15px;
     justify-content: center;
-    width: 330px;
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 70vh;
     /* border: 2px solid red; */
     letter-spacing: 0.8px;
 }
 
 .card__image {
     height: 50vh;
-    width: 330px;
+    width: 90vw;
     object-position: center;
     object-fit: cover;
     border-radius: 15px;
