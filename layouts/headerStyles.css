@@ -1,0 +1,27 @@
+.searcher {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    height: 65px;
+    /* border: 2px solid red; */
+    margin-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.searcher__input {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    color: #717171;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4em;
+    padding-right: 30px;
+    padding-bottom: 4px;
+    position: relative;
+    text-align: right;
+    border: 0.5px solid rgba(0,0,0,0.08) ;
+    border-radius: 30px;
+    width: 330px;
+    height: 52px;
+    background-color: white;
+}
