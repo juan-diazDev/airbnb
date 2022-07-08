@@ -1,35 +1,53 @@
 .searcher {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    height: 65px;
+    border: 2px solid red;
+    margin-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .filter {
     height: 50px;
     border: 2px solid red;
     margin-bottom: 7px;
     padding: 14px 24px 0px 24px;
-}
+} */
 
 .mainSection {
+    color: #222222;
+    position: absolute;
+    left: 0px;
+    right: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.9em;
-    
+    font-size: 0.85em;
+    margin: 0px;
+    /* border: 1px solid red; */
+    margin-top: 7px;
 }
 
 
 .mainSection__card {
-    display: block;
-    margin-top: 50px;
-    position: absolute;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
     height: 450px;
-    
+    /* border: 2px solid red; */
+    letter-spacing: 0.8px;
 }
 
 .card__image {
-    height: 45vh;
-    width: 85vw;
+    height: 50vh;
+    width: 330px;
     object-position: center;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 12px;
 }
 
