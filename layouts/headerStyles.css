@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.horiLine {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 10%);
+    border: 0.5px solid rgba(0,0,0,0.08)
+}
+
 
 .searcher__input {
     position: relative;
