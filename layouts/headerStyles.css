@@ -50,6 +50,7 @@
 
 
 .menu-container--queri-bgscreen { display: none; }
+.menu__input--queri-bgscreen { display: none; }
 .container-logo { display: none; }
 
 @media (min-width: 1128px) {
@@ -93,6 +94,7 @@
     }
 
     .menu__input--queri-bgscreen {
+        display: flex;
         width: 100px;
         height: 52px;
         border: 0.5px solid rgba(0,0,0,0.08) ;
