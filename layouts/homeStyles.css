@@ -59,6 +59,8 @@
 @media (min-width: 1128px) {
     .mainSection--queri-bgscreen {
         justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-left: 50px;
         padding-right: 50px;
     }
