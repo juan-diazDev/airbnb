@@ -13,42 +13,29 @@
 <body>
     <section>
         <div class="registro__container">
-            <div class="registro";>
-                <div class="registro_headerbox">
-                <header class="registro__header"> 
-                    <div class="registro__text">
-                        <h1>
-                            <div class="registro_text2">Registrarme</div>
-                        </h1>
-                    </div>                  
-                </header>
-                
-                </div>
-                <div class="registro__form">            
-                    <div class="registro__namebox">                                  
-                    <input class="registro__textbox" type="text" name="nombres" placeholder="Nombre"/>
-                    </div>
-                    <div class="registro__lastnamebox"> 
-                    <input class="registro__textbox" type="text" name="apellido" placeholder="Apellidos"/>                   
-                    </div>
-                    <div class="registro__helptext">
-                    <p>Asegúrate de que coicide con el nombre que aparece en tu idenficación oficial.</p>
-                    </div>
-                    <div class="registro__inputbox">
-                    <input class="registro__textbox" type="text" name="fechanacim" placeholder="Fecha de nacimiento"/>
-                    </div>
-                    
+            <div class="registro";>                
+                <header class="registro_headerbox"> 
+                        <h1>Registrarme</h1>                                   
+                </header>                
+                <form action="" class="registro__form">                                                   
+                    <input class="registro__namebox" type="text" name="nombres" placeholder="Nombre"/>
+                    <input class="registro__lastnamebox" type="text" name="apellido" placeholder="Apellidos"/>                   
+                    <p class="registro__helptext">Asegúrate de que coicide con el nombre que aparece en tu idenficación oficial.</p>
+                    <input class="registro__textbox" type="date" name="fechanacim" placeholder="Fecha de nacimiento"/>
                     <p class="registro__helptext">Para poder registrarte debes tener al menos 18 años. No compartiremos la fecha de tu nacimiento con otros usuarios de Airbnb</p>
-                    <div class="registro__inputbox">
-                    <input class="registro__textbox" type="text" name="correoelectronico" placeholder="Correo electrónico">
-                    </div>
+                    <input class="registro__textbox" type="email" name="email" placeholder="Correo electrónico"/>
                     <p class="registro__helptext">Te enviaremos las confirmaciones de viaje y los recibos por correo electrónico</p>
-                    <div class="registro__inputbox">
-                    <input class="registro__textbox" type="text" name="password" placeholder="Contraseña">
-                    </div>
+                    <input class="registro__textbox" type="password" name="password" placeholder="Contraseña">
                     <button class ="registro__btn"><b>Aceptar y continuar</b></button>
-                
-                </div>
+                    <p class="registro_final">Airbnb te enviará ofertas exclusivas para miembros, contenido inspirador, correos electrónicos comerciales y notificaciones push. 
+                        Puedes optar por dejar de recibirlos en cualquier momento a través del apartado de configuración de tu cuenta o directamente desde alguna de las notificaciones que te llegue.
+                    </p>
+                    <p>
+                    <input class="registro__checkbox" type="checkbox" id="radio1" checked>
+                    <label for="radio1">No quiero recibir mensajes promocionales de Airbnb</label>
+                    </p>
+                    
+                </form>
             </div>
         </div>
     </section>
