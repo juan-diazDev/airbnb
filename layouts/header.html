@@ -11,19 +11,31 @@
     <title>Header</title>
 </head>
 <body>
-    <header class="searcher">
-        <form >
-          <button class="searcher__input"
-          type="submit">
-          <div class="container-image">
-            <img class="container-image__image"
-            src="/Airbnbn-Clone/fotos/image.png"
-            alt="search-icon">
-          </div>
-            <b>¿A dónde quieres ir?</b>
-          </button>
-        </form>
-      </header>
-    <hr class="horiLine">
+  <header class=" header header--bgscreen">
+    <div class="container-logo"><img src="/Airbnbn-Clone/fotos/pinkLogo.png" alt="airbnb-logo" class="container-logo__logo"> <span class="container-logo__text"><strong>airbnb</strong></span></div>
+    <div class="searcher searcher--queri-bgscreen">
+      <form >
+        <button class="searcher__input searcher__input--queri-bgscreen"
+        type="submit">
+        <div class="container-image container-image--queri-bgscreen">
+          <img class="container-image__image container-image__image--queri-bgscreen"
+          src="/Airbnbn-Clone/fotos/image.png"
+          alt="search-icon">
+        </div>
+          <b>¿A dónde quieres ir?</b>
+        </button>
+      </form>
+    </div>
+    <div class="menu--queri-bgscreen">
+      <label for="menu">
+          <select name="menu" id="menu" class="menu__input--queri-bgscreen">
+            <option value="" disabled selected> Menú </option>
+            <option value="Register" class="menu__input__value__text">Regístrate</option>
+            <option value="Log-in" class="menu__input__value__text">Inicia Sesión</option>
+          </select>
+      </label>
+    </div>
+  </header>
+  <hr class="horiLine">
 </body>
 </html>
