@@ -1,23 +1,36 @@
-# Airbnbn-Clone
+# Airbnb-Clone
 
-### Nombres de ramas:
+### General 
+
+- All pushed code to the repo must be on english, including the final product. 
+- Daily meeting at: 8.15am
+
+### Branchs:
 
 - Main
 - Develop
-- feature/(projectName)-(developerName)
+- feat/(FeatureDeveloped) 
 
-### Formato commits
+### Branch naming rules: 
 
-- Comentarios van en inglés
-- Se antepone la palabra "feat:"
+- Use {PascalCase}
+- Template: feat/(FeatureDeveloped) 
+- Example: $git checkout -b feat/HostingPlaceRegister 
+
+### Commits template: 
+
+- Please write commits message in english.
+- Commits messages must be the shortest and clearest possible.
+- Put before "feat:", example: $git commit -m "feat: deleted commented lines on app.js" 
 
 ### Pull-request
 
-- Debe tener mínimo un aprobado
-- El encargado de agregar los cambio es el que pide el pull-request
-- Usamos como predeterminado _"Squash and merge"_
-- Una vez se haga el "Squash" se debe eliminar de GitHub la rama
+- Must be approved by at least one team member
+- If you make a push with a commit, you have the responsibility to make a pull request.
+- We use as default _"Squash and merge"_
+- Once the squash and merge have been done successfully, the branch which the pull request was made must be deleted.
 
 ### Git Clone
 
-- Cuando se descargan los diferentes cambios al repo local, debe hacerse _Rebase_ de los commits remotos a la rama de desarrollo personal.
+- When a "git pull origin develop" is made to update changes on the local repo, a _rebase_  must be done on the personal developing branch.
+
