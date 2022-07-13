@@ -32,5 +32,5 @@
 
 ### Git Clone
 
-- When a "git pull origin develop" is made to update changes on the local repo, a _rebase_  must be done on the personal developing branch.
+- When a "git pull origin develop" is made to update changes on the local repo, a _rebase_ must be done on the personal developing branch.
 
