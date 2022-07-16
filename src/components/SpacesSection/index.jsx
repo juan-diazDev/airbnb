@@ -94,14 +94,14 @@ function MainSection() {
   return(
     <div>
         {
-          spaces.map(space => (
+          spaces.map((space, index) => (
             <main className="mainSection mainSection--queri-bgscreen">
             <div className="mainSection__card  mainSection__card--queri-bgscreen">
-              <div key={space}  className="card__image-container">{spaces[0].img}</div>
-              <div key={space}  className="card__location"><b>{spaces[0].location}</b></div>
-              <div key={space}  className="card__distance">{spaces[0].distance}</div>
-              <div key={space}  className="card__dates">{spaces[0].dates}</div>
-              <div key={space}  className="card__price"><b>{spaces[0].price}</b> / night</div>
+              <div key={space}  className="card__image-container">{spaces[index].img}</div>
+              <div key={space}  className="card__location"><b>{spaces[index].location}</b></div>
+              <div key={space}  className="card__distance">{spaces[index].distance}</div>
+              <div key={space}  className="card__dates">{spaces[index].dates}</div>
+              <div key={space}  className="card__price"><b>{spaces[index0].price}</b> / night</div>
             </div>
             </main>
           ))

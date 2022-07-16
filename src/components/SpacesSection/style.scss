@@ -1,25 +1,15 @@
 .mainSection {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   color: #222222;
   font-family: 'Manrope', sans-serif;
   font-size: 0.85em;
-  /* border: 1px solid red; */
-  margin-top: 30px;
-}
-
-
-.mainSection__card {
-  margin-bottom: 15px;
-  width: 90vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 460px;
-  /* border: 2px solid rgb(98, 0, 255); */
   letter-spacing: 0.8px;
+  width: 90vw;
+  height: 460px;
 }
 
 .card__image-container {
@@ -42,11 +32,15 @@
 
 @media (min-width: 1128px) {
   .mainSection--queri-bgscreen {
-      justify-content: space-around;
-      margin-left: 20px;
-      margin-right: 20px;
-      padding-left: 50px;
-      padding-right: 50px;
+    margin-bottom: 15px;
+    width: 20vw;
+    height: 460px;
+    letter-spacing: 0.8px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 60px;
   }
 
   .mainSection__card--queri-bgscreen {
