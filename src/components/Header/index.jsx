@@ -5,16 +5,16 @@ import './style.scss'
 function Header() {
   return (
     <div>
-      <header class=" header header--bgscreen">
+      <header className=" header header--bgscreen">
 
-          <div class="container-logo">
-            <img src="img/Logo/Pink.png" alt="airbnb-logo" class="container-logo__logo" />
+          <div className="container-logo">
+            <img src="img/Logo/Pink.png" alt="airbnb-logo" className="container-logo__logo" />
           </div>
 
           <Searcher />
           <Menu />
 
-        </header><hr class="horiLine"></hr>
+        </header><hr className="horiLine"></hr>
       </div>
   )
 }
