@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+.horiLine {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 10%);
+  border: 0.5px solid rgba(0,0,0,0.08)
+}
+
+.container-image {
+  position: absolute;
+}
+
+.container-image__image {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.container-logo { display: none; }
+
+@media (min-width: 1200px) {
+  .header--bgscreen {
+      justify-content: space-around;
+      position: relative;
+  }
+
+  .container-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 100px;
+
+  }
+
+  .container-logo__logo {
+      width: 120px;
+      height: 40px;
+      color: #ff5a5f;
+  }
+
+  .container-logo__text {
+      font-size: 25px;
+      padding-left: 8px;
+      color: #ff5a5f;
+  }
+}
