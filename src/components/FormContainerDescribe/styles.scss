@@ -1,0 +1,106 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #008489;
+    padding-bottom: 30px;
+    margin-top: -20px;
+  }
+  
+  .container__question {
+    background-color: #008489;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .container__question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 50px;
+    border-radius: -10px;
+  }
+  
+  .question__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+  }
+
+  .container__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    margin: -10px 0 10px 0;
+  }
+
+  .option__card1 {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: -webkit-fill-available;
+    min-height: 68px;
+    cursor: pointer;
+    padding: 2px 20px;
+    outline: none;
+  }
+  
+  .option__card-title1 {
+    font-family: 'Manrope', sans-serif;
+    color: black;
+    margin: 10px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .option__card-description1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: gray;
+    font-weight: 100;
+  }
+
+
+  @media(min-width:1200px){ 
+  .form__container {
+      background-color: #008489;
+      display: flex;
+      flex-direction: row;
+      width: -webkit-fill-available;
+      border-radius: 10px;
+      align-items: center;
+      margin: 10px 0px;
+      padding: 20px 0px;
+  }
+  .container__question {
+      width: -webkit-fill-available;
+      justify-content: flex-start;
+  }
+  .question__title {
+      line-height: 56px !important;
+      margin-bottom: 12px !important;
+      font-size: 48px;
+  }
+  .container__options {
+      margin: 0px;
+      width: -webkit-fill-available;
+      margin-right: 10px;
+  }
+
+  .option__card-title1 {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+}

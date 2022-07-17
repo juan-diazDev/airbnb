@@ -1,0 +1,194 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #008489;
+    padding-bottom: 30px;
+    margin-top: -20px;
+}
+
+.container__question {
+    background-color: #008489;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container__question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 50px;
+    border-radius: -10px;
+}
+
+.question__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+.container__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    margin: -10px 0 10px 0;
+}
+
+.container__aditions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    margin: -10px 0 10px 0;
+    width: -webkit-fill-available;
+}
+
+.question__addtitle{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px ;
+    line-height: 20px ;
+    font-weight: 600 ;
+    padding-left: 6px ;
+    animation-duration: 600ms ;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: both ;
+    animation-name: keyframe_14ic1xm ;
+}
+
+
+.add_included-options{
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    display: flex ;
+    flex-wrap: wrap;   
+    margin-top: 24px ;
+
+}
+
+.option__card3{
+    -webkit-box-align: center ;
+    -webkit-box-pack: center ;
+    -webkit-box-direction: normal ;
+    -webkit-box-orient: vertical ;
+    background-color: rgb(255, 255, 255) ;
+    border: 1px solid rgb(221, 221, 221) ;
+    box-sizing: border-box ;
+    border-radius: 8px ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    width: 30% ;
+    min-height: 68px ;
+    cursor: pointer ;
+    margin: 0px 6px 12px ;
+    flex: 0 1 calc(50% - 12px) ;
+    padding-top: 12px ;
+    padding-bottom: 24px ;
+    outline: none ;
+    animation-duration: 600ms ;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: both ;
+    animation-name: keyframe_14ic1xm ;
+}
+
+
+.option__card3:focus{
+    -webkit-box-align: center ;
+    -webkit-box-pack: center ;
+    -webkit-box-direction: normal ;
+    -webkit-box-orient: vertical ;
+    border: 1px solid transparent ;
+    box-sizing: border-box ;
+    border-radius: 8px ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    width: 30% ;
+    min-height: 68px ;
+    cursor: pointer ;
+    margin: 0px 6px 12px ;
+    flex: 0 1 calc(50% - 12px) ;
+    padding-top: 12px ;
+    padding-bottom: 24px ;
+    outline: none ;
+    box-shadow: rgb(0 0 0) 0px 0px 0px 2px ;
+    background-color: rgb(247, 247, 247) ;
+    animation-duration: 600ms ;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: both ;
+    animation-name: keyframe_14ic1xm ;
+}    
+
+
+
+.adition-icon{
+    display: block;
+    height: 40px;
+    width: 40px;
+    fill: currentcolor;
+}  
+
+.option__card-title3{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px ;
+    line-height: 18px ;
+    font-weight: 600 ;
+    color: rgb(34, 34, 34) ;
+    text-align: center ;
+    margin: 0px 20px ;
+}
+
+
+@media(min-width:1200px) {
+
+.form__container {
+    background-color: #008489;
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+.container__question {
+    width: -webkit-fill-available;
+    justify-content: flex-start;
+}
+.question__title {
+    line-height: 56px ;
+    margin-bottom: 12px ;
+    font-size: 48px;
+}
+    
+.option__card3{
+    padding-top: 24px ;
+    padding-bottom: 40px ;
+}
+.option__card3:focus{
+    padding-top: 24px ;
+    padding-bottom: 40px ;
+}
+
+.add_included-options{
+-webkit-box-direction: normal ;
+-webkit-box-orient: horizontal ;
+display: flex ;
+flex-flow: row wrap ;
+margin-top: 24px ;
+}
+
+}
