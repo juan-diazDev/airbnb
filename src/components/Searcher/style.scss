@@ -1,0 +1,41 @@
+.searcher {
+  display: flex;
+  height: 65px;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.searcher__input {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+  color: #717171;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2em;
+  padding-right: 30px;
+  padding-bottom: 4px;
+  text-align: right;
+  border: 0.5px solid rgba(0,0,0,0.08);
+  border-radius: 30px;
+  width: 330px;
+  height: 52px;
+  background-color: white;
+}
+
+.container-image {
+  position: relative;
+  bottom: 5px;
+  margin-bottom: 6.5px;
+}
+
+@media (min-width: 1200px) {
+  .searcher--queri-bgscreen {
+    width: 670px;
+    margin-left: 100px;
+    margin-right: 250px;
+  }
+
+  .searcher__input--queri-bgscreen {
+    width: 670px;
+  }
+}
