@@ -12,10 +12,10 @@ function Menu() {
                     <div className="menu__icon"></div>
                   </a>
                   <ul className="menu__item1">
-                    <li><a href="#0">Regístrate</a></li>
-                    <li><a href="#0">Inicia Sesión</a></li>
+                    <li><a href="#0">Sing up</a></li>
+                    <li><a href="#0">Log in</a></li>
                     <hr class="menu__horiLine" />
-                      <li><a href="#0">Contacto</a></li>
+                      <li><a href="#0">Contact</a></li>
                   </ul>
                 </li>
               </ul>
