@@ -28,10 +28,14 @@
     border: #484848;
   }
 
-  ul li {
+  ul.nav-menu li {
     list-style-type: none;
     margin: 10px;
     transition: all .3s ease 0s;
+    a:hover {
+      color: #ff5a5f;
+      font-weight: bolder;
+    }
   }
 
   .menu__line {

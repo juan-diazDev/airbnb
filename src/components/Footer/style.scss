@@ -9,10 +9,12 @@ $light-gray: #858282;
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 100vw;
+  bottom: 0px;
+  width: 100%;
   height: 80px;
   font-family: 'Manrope', sans-serif;
   border-top: .05px solid rgba(0,0,0,0.08);
+
 }
 
 
@@ -50,7 +52,7 @@ a {
     position: relative;
     bottom: 0px;
     background-color: #f8f2f2;
-    width: 100vw;
+    max-width: 100%;
   }
 
   .footer__bg-screen-container {
@@ -81,13 +83,24 @@ a {
     width: 250px;
   }
 
-  div div a{
+  div.footer__right-container div a{
     text-decoration: none;
     color: $light-gray;
     transition: all 0.3s ease 0s;
   }
 
-  div div a:hover {
+  div.footer__right-container div a:hover {
+    color: $pink-color;
+    font-weight: bolder;
+  }
+
+  div.footer__left-container div a{
+    text-decoration: none;
+    color: $light-gray;
+    transition: all 0.3s ease 0s;
+  }
+
+  div.footer__left-container div a:hover {
     color: $pink-color;
     font-weight: bolder;
   }
