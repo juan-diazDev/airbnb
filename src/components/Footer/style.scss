@@ -69,24 +69,25 @@ a {
     display: flex;
     justify-content: space-around ;
     align-items: center;
-    margin: 0px 40px;
-    width: 360px;
+    margin: 0px 50px;
+    width: 400px;
   }
 
   .footer__right-container {
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
-    margin: 0px 40px;
-    width: 360px;
+    margin: 0px 50px;
+    width: 250px;
   }
 
-  a {
+  div div a{
     text-decoration: none;
-    color: $light-gray
+    color: $light-gray;
+    transition: all 0.3s ease 0s;
   }
 
-  a:hover {
+  div div a:hover {
     color: $pink-color;
     font-weight: bolder;
   }
