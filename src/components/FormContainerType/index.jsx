@@ -46,7 +46,12 @@ const FormContainerType = () =>{
                     </h2>
                     <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
                 </button>
+                <div className="container__button-step">
+                    <button className="button__backstep">Back</button>
+                    <button className="button__nextstep">Next</button>
+                </div>
             </div>
+            
         </div>
     </div>
     )

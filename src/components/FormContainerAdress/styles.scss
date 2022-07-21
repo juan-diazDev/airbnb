@@ -74,6 +74,38 @@ font-size: 14px;
 font-weight: lighter;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
+
+.container__button-step{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding: 16px;
+  
+  }
+
+  .button__backstep{
+  
+    font-size: 16px;
+    color: white;
+    font-style: 'Manrope, sans-serif';
+    padding: 14px 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+
+  }
+
+  .button__nextstep{
+    font-size: 16px;
+    color: white;
+    font-style: 'Manrope, sans-serif';
+    padding: 14px 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+  }
 }
 
 
@@ -103,7 +135,7 @@ border-bottom-right-radius: 10px;
 .container__formtable {
     margin: 0px;
     width: -webkit-fill-available;
-    margin-right: 10px;
+    
 }
 .form__countries {
     font-size: 16px;

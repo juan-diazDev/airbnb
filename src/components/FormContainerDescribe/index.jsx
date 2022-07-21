@@ -82,6 +82,10 @@ const FormContainerDescribe = () =>{
                             A home made of wood or mud that may have a tatched straw roof.
                         </p>
                     </button>
+                    <div className="container__button-step">
+                        <button className="button__backstep">Back</button>
+                        <button className="button__nextstep">Next</button>
+                    </div>
                 </div>
             </div>
         </div>

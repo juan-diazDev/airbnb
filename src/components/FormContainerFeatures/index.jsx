@@ -51,7 +51,10 @@ const FormContainerFeatures = () => {
                             <button className="card_button-decrease">+</button>
                         </div>
                     </div>
-
+                    <div className="container__button-step">
+                        <button className="button__backstep">Back</button>
+                        <button className="button__nextstep">Next</button>
+                    </div>
                 </div>
             </div>
         </div>

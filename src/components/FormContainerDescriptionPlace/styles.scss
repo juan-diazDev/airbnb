@@ -1,0 +1,106 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #008489;
+    padding-bottom: 30px;
+    margin-top: -20px;
+  }
+  
+.container__question {
+    background-color: #008489;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 50px;
+    border-radius: -10px;
+}
+
+.question__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+.container__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    margin: -10px 0 10px 0;
+}
+
+.option__offerdescription {
+    background-color: #FFFFFF ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: flex-start ;
+    justify-content: center ;
+    width: 90% ;
+    max-width: 720px ;
+    min-width: 100px ;
+    margin: 20px 20px;
+    
+}
+
+.option__offerdescription{
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    padding: 20px 10px;
+}
+
+.offerdescription__text{
+    color: #222222 ;
+    display: block ;
+    min-width: 100% ;
+    max-width: 100% ;
+    outline: none ;
+    border: 1px solid #B0B0B0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    background-color: transparent ;
+    padding-bottom: 10px ;
+    font-family: 'Manrope', sans-serif;
+    resize: vertical ;
+    max-height: 25vh ;
+    min-height: 144px ;
+    padding: 16px ;
+    border-radius: 8px ;
+    text-overflow: ellipsis ;
+    font-weight: 600 ;
+    font-size: 32px ;
+    line-height: 38px ;
+    overflow-y: hidden ;
+    
+}
+
+
+@media(min-width:1200px) {
+
+    .form__container {
+        background-color: #008489;
+        display: flex;
+        flex-direction: row;
+        width: -webkit-fill-available;
+        border-radius: 10px;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 20px 0px;
+    }
+    .container__question {
+        width: -webkit-fill-available;
+        justify-content: flex-start;
+    }
+    .question__title {
+        line-height: 56px ;
+        margin-bottom: 12px ;
+        font-size: 48px;
+    }
+}    
