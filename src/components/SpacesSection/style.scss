@@ -6,16 +6,21 @@
   align-items: center;
   color: #222222;
   font-family: 'Manrope', sans-serif;
-  font-size: 0.85em;
+  font-size: 0.95em;
   margin-left: 20px;
   letter-spacing: 0.8px;
   width: 90vw;
   height: 460px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .card__image-container {
   height: 350px;
   margin-bottom: 12px;
+
 }
 
 .card__image {

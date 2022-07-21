@@ -1,26 +1,23 @@
-import './style.scss'
+import './styles.scss'
+import { Link } from "react-router-dom"
 
 function Menu() {
   return (
     <div className="menu--queri-bgscreen">
-            <nav>
-              <ul>
-                <li>
-                  <a href="#0">
-                    <div className="menu__icon"></div>
-                    <div className="menu__icon"></div>
-                    <div className="menu__icon"></div>
-                  </a>
-                  <ul className="menu__item1">
-                    <li><a href="#0">Sing up</a></li>
-                    <li><a href="#0">Log in</a></li>
-                    <hr class="menu__horiLine" />
-                      <li><a href="#0">Contact</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <ul className='nav-menu'>
+        <li>
+          <div className="menu__icon"></div>
+          <div className="menu__icon"></div>
+          <div className="menu__icon"></div>
+          <ul className="menu__item1">
+            <li><Link to="/Signinform" >Sing up</Link></li>
+            <li><Link to="/Loginform" >Log in</Link></li>
+            <hr className="menu__horiLine" />
+            <li><Link to="/" >Contact</Link></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   )
 }
 

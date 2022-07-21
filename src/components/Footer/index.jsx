@@ -1,36 +1,37 @@
 import './style.scss'
+import { Link } from "react-router-dom"
 
 function Footer() {
   return(
-    <div>
-      <footer className='footer'>
-        <div className='footer__call-to-action-conatiner'>
-          <form>
-            <button className='footer__call-to-action'>
-              <strong>Sing-up</strong>
-            </button>
-          </form>
-        </div>
-        <div className='footer__buttons--bg-screen'>
-          <div><p>© 2022, Equipo Maravilla</p></div>
+    <footer className='footer'>
+
+      <div className='footer__call-to-action-conatiner'>
+        <Link to="/Signinform" ><button className='footer__call-to-action'>
+          <strong>Sing-up</strong>
+        </button></Link>
+      </div>
+
+      <div className='footer__bg-screen-container'>
+        <div className='footer__left-container'>
+          <div>© 2022, Equipo Maravilla</div>
           <div>
-          <a href='#0' className='privacity-button--bg-screen'>
+          <Link to='/Privacity'>
             Privacity
-          </a>
-          </div>
-          <div>
-          <a href='#0' className='log-in-button--bg-screen'>
-            <strong>Log-in</strong>
-          </a>
-          </div>
-          <div>
-            <a href='#0' className='sing-up-button--bg-screen'>
-              <strong>Sing-up</strong>
-            </a>
+          </Link>
           </div>
         </div>
-      </footer>
-    </div>
+
+        <div className='footer__right-container'>
+          <div>
+            <Link to='/Loginform'>Log-in</Link>
+          </div>
+          <div>
+            <Link to='/Signinform'>Sing-up</Link>
+          </div>
+        </div>
+      </div>
+
+    </footer>
   )
 }
 
