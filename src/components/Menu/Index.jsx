@@ -6,13 +6,15 @@ function Menu() {
     <div className="menu--queri-bgscreen">
       <ul className='nav-menu'>
         <li>
-          <div className="menu__icon"></div>
-          <div className="menu__icon"></div>
-          <div className="menu__icon"></div>
-          <ul className="menu__item1">
+          <div className='menu__icon-container'>
+            <div className="menu__icon"></div>
+            <div className="menu__icon"></div>
+            <div className="menu__icon"></div>
+          </div>
+          <ul className="menu__item">
             <li><Link to="/Signinform" >Sing up</Link></li>
             <li><Link to="/Loginform" >Log in</Link></li>
-            <hr className="menu__horiLine" />
+            <hr className="menu__line" />
             <li><Link to="/" >Contact</Link></li>
           </ul>
         </li>
