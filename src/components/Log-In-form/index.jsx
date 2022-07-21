@@ -4,7 +4,7 @@ function Loginform() {
 
 
 return (
-<body>
+
     <section>
         <div className="Login__container">
             <div className="Login">
@@ -27,7 +27,7 @@ return (
             </div>
         </div>
     </section>
-</body>
+
 
 )
 }

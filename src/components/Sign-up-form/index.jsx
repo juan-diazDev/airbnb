@@ -4,7 +4,7 @@ function Signupform () {
 
 
     return (
-    <body>
+    
         <section>
             <div className="signup__container">
                 <div className="signup">
@@ -23,20 +23,20 @@ function Signupform () {
                     <input className="signup__textbox" type="email" name="email" placeholder="Email" />
                     <p className="signup__helptext">We'll email you trip confirmations and receipts.</p>
                     <input className="signup__textbox" type="password" name="password" placeholder="Password"/>
-                    <p className="signup__policies1">By selecting Agree and continue, I agree to Airbnb's <a className="signup__policies2" target="blank">Terms of Service</a>, 
-                     <a className="signup__policies2" target="blank"> Payments Terms of Service</a>, <a className="signup__policies2" target="blank"> Nondiscrimination Policy</a> and <a className="signup__policies2" target="blank">Colombia Privacy Supplement</a>, and acknowledge the <a className="signup__policies2" target="blank">Privacy Policy.</a></p>
+                    <p className="signup__policies1">By selecting Agree and continue, I agree to Airbnb's <span className="signup__policies2" target="blank">Terms of Service</span>, 
+                     <span className="signup__policies2" target="blank"> Payments Terms of Service</span>, <span className="signup__policies2" target="blank"> Nondiscrimination Policy</span> and <span className="signup__policies2" target="blank">Colombia Privacy Supplement</span>, and acknowledge the <span className="signup__policies2" target="blank">Privacy Policy.</span></p>
                     <button className="signup__btn"><b>Agree and continue</b></button>
                     <p className="signup__final">Airbnb will send you members-only deals, inspiration, marketing emails, and push notifications. You can opt out of receiving these at any time in your account settings or directly from the marketing notification.
                     </p>
                     <div className="signup__checkbox">
-                        <input  type="checkbox" id="radio1"/>
-                        <label for="radio1">I don't want to receive marketing messages from Airbnb.</label>
+                        <input className="signup__checkbox__input"  type="checkbox" id="radio1"/>
+                        <label className="signup__checkbox__label" HtmlFor="radio1">I don't want to receive marketing messages from Airbnb.</label>
                     </div>
                 </div>
                 </div>
             </div>
         </section >
-    </body>
+    
 
     )
 }
