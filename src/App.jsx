@@ -5,8 +5,6 @@ import {
   Route
 } from "react-router-dom"
 import Home from './pages/Home';
-import Signinform from './components/Sign-In-form';
-import Loginform from "./components/Log-In-form"
 
 function App() {
   return (
