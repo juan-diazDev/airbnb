@@ -4,11 +4,14 @@ function Loginform() {
 
 
 return (
-<body>
+
     <section>
         <div className="Login__container">
             <div className="Login">
             <header className="Login_headerbox">
+                <button className="Login__backbutton">
+                    <span>˂</span>  
+                </button>
                 <h1>Log In or sign up</h1>
             </header>
             <form action="" className="Login__form">
@@ -19,12 +22,12 @@ return (
                 <div className="Login__divisor">
                     <p>or</p>
                 </div>
-                <button className="Login__btn__Signin"><b>Sign In</b></button>
+                <button className="Login__btn__Signin"><b>Sign up</b></button>
             </form>
             </div>
         </div>
     </section>
-</body>
+
 
 )
 }

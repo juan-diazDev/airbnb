@@ -1,3 +1,8 @@
+$pink-color: #ff5a5f;
+$white-color: #ffffff;
+$light-gray: #858282;
+
+
 .footer {
   background-color: #ffffff;
   display: flex;
@@ -8,7 +13,8 @@
   width: 100%;
   height: 80px;
   font-family: 'Manrope', sans-serif;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: .05px solid rgba(0,0,0,0.08);
+
 }
 
 
@@ -28,44 +34,74 @@
 .footer__call-to-action:hover {
   box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
 }
+a {
+  text-decoration: none;
+}
 
-.footer__buttons--bg-screen {
+.footer__left-container, .footer__right-container{
   display: none;
 }
 
 @media (min-width: 1200px) {
   .footer__call-to-action-conatiner {
     display: none;
-
   }
 
   .footer {
+    height: 45px;
     position: relative;
-    height: 50px;
-    background-color: #fff9f9c3;
-    width: 100%;
-    border-top: 1px solid rgba(0,0,0,0.08);
+    bottom: 0px;
+    background-color: #f8f2f2;
+    max-width: 100%;
   }
 
-  .footer__buttons--bg-screen {
+  .footer__bg-screen-container {
+    position: relative;
+    bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center;
-    width: 90%;
-    color: #858282;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    letter-spacing: 1.2px;
   }
 
-  a {
+  .footer__left-container {
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    margin: 0px 50px;
+    width: 400px;
+  }
+
+  .footer__right-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 50px;
+    width: 250px;
+  }
+
+  div.footer__right-container div a{
     text-decoration: none;
-    color: #858282;
+    color: $light-gray;
+    transition: all 0.3s ease 0s;
   }
 
-  a:hover {
-    color: #ff5a5f;
+  div.footer__right-container div a:hover {
+    color: $pink-color;
+    font-weight: bolder;
   }
 
-  .log-in-button--bg-screen {
-    margin-left: 960px;
+  div.footer__left-container div a{
+    text-decoration: none;
+    color: $light-gray;
+    transition: all 0.3s ease 0s;
+  }
+
+  div.footer__left-container div a:hover {
+    color: $pink-color;
+    font-weight: bolder;
   }
 }

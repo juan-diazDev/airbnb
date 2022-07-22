@@ -57,6 +57,71 @@
     width: 64px;
 }
 
+.upload__title{
+    font-family:'Manrope', sans-serif;
+    font-size: 22px;
+}
+
+.upload__description{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+
+}
+
+.upload_button{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    cursor: pointer ;
+    text-align: center ;
+    border: none rgb(221, 221, 221) ;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    outline: none ;
+    padding: 0px 16px ;
+    margin: 0px ;
+    color: rgb(255, 255, 255) ;
+    position: relative ;
+    transition-duration: 0.15s ;
+    transition-timing-function: ease-in-out ;
+    border-radius: 32px ;
+    height: 32px ;
+    display: inline-flex ;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: row-reverse ;
+   
+    .container__button-step{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: -webkit-fill-available;
+        padding: 16px;
+      
+      }
+    
+      .button__backstep{
+      
+        font-size: 16px;
+        color: white;
+        font-style: 'Manrope, sans-serif';
+        padding: 14px 24px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222222;
+    
+      }
+    
+      .button__nextstep{
+        font-size: 16px;
+        color: white;
+        font-style: 'Manrope, sans-serif';
+        padding: 14px 24px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222222;
+      }
+}
+
 
 
 @media(min-width:1200px) {

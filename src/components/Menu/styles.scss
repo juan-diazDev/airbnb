@@ -4,93 +4,65 @@
 @media (min-width: 1200px) {
   .menu--queri-bgscreen {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-  }
-
-  nav {
-    transform: translateX(-50%);
+    position: relative;
     border: 0.5px solid rgba(0,0,0,0.08);
     border-radius: 30px;
-    animation: slide-in 1s ease-out;
-    margin-right: 60px;
+    width: 60px;
+    height: 40px;
+  }
+
+  .menu__icon-container {
+    position: absolute;
+    bottom: 10.5px;
+    right: 18px;
   }
 
   .menu__icon {
-  margin-top: 2px;
-  width: 40px;
-  height: 5px;
-  background-color: #ff5a5f;
-  border-radius: 20px;
+    margin-top: 4px;
+    width: 25px;
+    height: 4px;
+    background-color: #ff5a5f;
+    border-radius: 20px;
+    border: #484848;
   }
 
-  .menu__horiLine {
-  border: 0.5px solid rgba(0,0,0,0.08);
+  ul.nav-menu li {
+    list-style-type: none;
+    margin: 10px;
+    transition: all .3s ease 0s;
+    a:hover {
+      color: #ff5a5f;
+      font-weight: bolder;
+    }
   }
 
-  ul {
-  position: relative;
-  display: flex;
-  flex: 1 1 auto;
-  margin: 0;
-  padding: 0 20px;
-  list-style-type: none;
+  .menu__line {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    border: 0.5px solid rgba(0,0,0,0.08);
+    margin: 0px 5px
   }
 
-  ul li:not(:last-child) {
-  margin-right: 40px;
+  .menu--queri-bgscreen{
+    &:hover {
+      .menu__item {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        display: initial;
+        background-color: white;
+        border: 0.5px solid rgba(0,0,0,0.08);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        width: 100px;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 10px;
+      }
+    }
   }
 
-  ul li {
-  border-radius: 10px;
-  padding: 10px;
-
-  }
-
-  ul li a {
-  color: black;
-  text-decoration: none;
-  transition: color 0.2s;
-  }
-
-  ul li ul {
-  visibility: hidden;
-  opacity: 0.5;
-  position: absolute;
-  display: block;
-  padding: 0;
-  border-radius: 5px;
-  }
-
-  ul li ul li {
-  margin: 2px 0 0 2px;
-  width: calc(100% - 20px);
-  line-height: 1.0;
-  }
-
-  ul li ul li a {
-  color:#484848;
-  }
-
-  ul .menu__item1 li:hover a {
-  color: #ff5a5f;
-  width: 100px;
-  border-radius: 10px;
-  font-weight: bolder;
-  }
-
-  ul li:hover ul {
-  visibility: visible;
-  opacity: 1;
-  }
-
-  ul li:hover ul {
-  background: #ffffff;
-
-  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-  }
-
-  nav:hover {
-  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+  .menu__item {
+    display: none;
   }
 }
