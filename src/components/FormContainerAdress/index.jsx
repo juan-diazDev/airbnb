@@ -20,6 +20,10 @@ const FormContainerAdress = () => {
                     <option className="country">Ecuador</option>
                     <option className="country">Chile</option>
                 </select>
+                <div className="container__button-step">
+                    <button className="button__backstep">Back</button>
+                    <button className="button__nextstep">Next</button>
+                </div>
             </form>
         </div>
     </div>

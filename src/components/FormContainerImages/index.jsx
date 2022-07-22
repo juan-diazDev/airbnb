@@ -24,6 +24,10 @@ const FormContainerImages = () =>{
                         Upload from your device
                     </button>
                 </div>  
+                <div className="container__button-step">
+                    <button className="button__backstep">Back</button>
+                    <button className="button__nextstep">Next</button>
+                </div>
             </div>
         </div>
     </div>

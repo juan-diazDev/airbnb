@@ -1,0 +1,170 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #008489;
+    padding-bottom: 30px;
+    margin-top: -20px;
+  }
+  
+.container__question {
+    background-color: #008489;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 50px;
+    border-radius: -10px;
+}
+
+.question__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+}
+
+.container__options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    margin: -10px 0 10px 0;
+
+}
+
+.option__offerprice{
+    display: inline-flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    width: unset ;
+    height: unset ;
+    color: rgb(34, 34, 34) ;
+    font-weight: 400 ;
+    font-size: 16px ;
+    line-height: 20px ;
+    font-family: 'Manrope', sans-serif;
+    min-height: unset ;
+}
+
+.offerprice__input{
+    display: flex ;
+    margin-top: 0px ;
+    height:  -webkit-fill-available;
+    border-radius: 8px ;
+    box-shadow: rgb(176 176 176) 0px 0px 0px 1px inset ;
+    color: rgb(34, 34, 34) ;
+    background-color: rgb(255, 255, 255) ;
+    margin-left: 8px ;
+    margin-right: 8px ;
+    opacity: 1 ;
+}
+
+.offerprice__low{
+    width: 40px ;
+    height: 40px ;
+    flex-grow: 0 ;
+    flex-shrink: 0 ;
+    cursor: pointer ;
+    display: inline-flex ;
+    margin: 0px ;
+    padding: 0px ;
+    text-align: center ;
+    text-decoration: none ;
+    border-width: 1px ;
+    border-style: solid ;
+    border-color: rgb(176, 176, 176) ;
+    color: rgb(113, 113, 113) ;
+    font-family: inherit ;
+    outline: none ;
+    touch-action: manipulation ;
+    align-items: center ;
+    justify-content: center ;
+    background: rgb(255, 255, 255) ;
+    border-radius: 50% ;
+}
+
+.offerprice{
+    text-align: center;
+    width: 100% ;
+    border: none ;
+    outline: none ;
+    padding: 0px ;
+    margin: 12px ;
+    min-height: 1px ;
+    color: inherit ;
+    background-color: transparent ;
+    font-family: 'Manrope', 'sans-serif';
+    font-size: 32px ;
+    font-weight: 600 ;
+    line-height: 38px ;
+    appearance: none ;
+}
+
+
+.offerprice__rise{
+    width: 40px ;
+    height: 40px ;
+    flex-grow: 0 ;
+    flex-shrink: 0 ;
+    cursor: pointer ;
+    display: inline-flex ;
+    margin: 0px ;
+    padding: 0px ;
+    text-align: center ;
+    text-decoration: none ;
+    border-width: 1px ;
+    border-style: solid ;
+    border-color: rgb(176, 176, 176) ;
+    color: rgb(113, 113, 113) ;
+    font-family: inherit ;
+    outline: none ;
+    touch-action: manipulation ;
+    align-items: center ;
+    justify-content: center ;
+    background: rgb(255, 255, 255) ;
+    border-radius: 50% ;
+}
+
+
+
+
+.pernight__description{
+    font-family: 'Manrope', sans-serif;
+}
+
+.advice__description{
+    font-family: 'Manrope', sans-serif;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+@media(min-width:1200px) {
+
+    .form__container {
+        background-color: #008489;
+        display: flex;
+        flex-direction: row;
+        width: -webkit-fill-available;
+        border-radius: 10px;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 20px 0px;
+    }
+    .container__question {
+        width: -webkit-fill-available;
+        justify-content: flex-start;
+    }
+    .question__title {
+        line-height: 56px ;
+        margin-bottom: 12px ;
+        font-size: 48px;
+    }
+}    
