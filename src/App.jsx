@@ -13,8 +13,6 @@ function App() {
    <BrowserRouter>
     <Routes>
       <Route path="/" element={ <Home /> }/>
-      <Route path="/Signinform" element={ <Signinform />}/>
-      <Route path="/Loginform" element={ <Loginform /> }/>
     </Routes>
    </BrowserRouter>
   );
