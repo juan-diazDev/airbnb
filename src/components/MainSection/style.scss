@@ -1,16 +1,30 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #222222;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95em;
+  letter-spacing: 0.8px;
+}
+
 .mainSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
-  color: #222222;
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.85em;
-  margin-left: 20px;
-  letter-spacing: 0.8px;
   width: 90vw;
   height: 460px;
+  margin-bottom: 20px;
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+a.space-link {
+  text-decoration: none;
 }
 
 .card__image-container {
@@ -32,16 +46,21 @@
 .card__price { margin-top: 5px; }
 
 @media (min-width: 1128px) {
+  .main-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   .mainSection--queri-bgscreen {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 20vw;
     height: 460px;
     letter-spacing: 0.8px;
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 60px;
   }
 
   .mainSection__card--queri-bgscreen {

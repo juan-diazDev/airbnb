@@ -1,36 +1,46 @@
 .searcher {
   display: flex;
-  height: 65px;
-  margin-top: 5px;
   justify-content: center;
   align-items: center;
+  font-family: 'Manrope', sans-serif;
+  height: 65px;
 }
-
 
 .searcher__input {
-  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+  display: flex;
+  align-items: center;
+  position: relative;
   color: #717171;
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.2em;
-  padding-right: 30px;
-  padding-bottom: 4px;
-  text-align: right;
-  border: 0.5px solid rgba(0,0,0,0.08);
-  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-align: left;
   width: 330px;
   height: 52px;
+  border: 0.5px solid rgba(0,0,0,0.08);
+  box-shadow: 0 3px 7px rgb(0 0 0 / 10%);
+  border-radius: 30px;
   background-color: white;
+  div.text-conatiner {
+    opacity: .5;
+    margin: 0px 20px;
+    div.text1 {
+      color: black;
+      opacity: 1;
+    }
+  }
 }
 
-.container-image {
-  position: relative;
-  bottom: 5px;
-  margin-bottom: 6.5px;
+.searcher__icon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 10px;
+  margin: 0px 20px;
 }
 
 @media (min-width: 1200px) {
   .searcher--queri-bgscreen {
-    width: 670px;
+    width: 500px;
     margin-left: 100px;
     margin-right: 250px;
   }

@@ -1,4 +1,5 @@
 import './style.scss'
+import { Link } from "react-router-dom";
 
 function MainSection() {
   const spaces = [
@@ -100,20 +101,22 @@ function MainSection() {
     }
   ]
   return(
-    <div>
-        {
-          spaces.map((space, index) => (
-            <main className="mainSection mainSection--queri-bgscreen">
-            <div className="mainSection__card  mainSection__card--queri-bgscreen">
-              <div key={space}  className="card__image-container">{spaces[index].img}</div>
-              <div key={space}  className="card__location"><b>{spaces[index].location}</b></div>
-              <div key={space}  className="card__distance">{spaces[index].distance}</div>
-              <div key={space}  className="card__dates">{spaces[index].dates}</div>
-              <div key={space}  className="card__price"><b>{spaces[index].price}</b> / night</div>
-            </div>
-            </main>
-          ))
-        }
+    <div className='main-container'>
+      {
+        spaces.map((space, index) => (
+          <Link className='space-link' to="/SpaceDetail" >
+          <main className="mainSection mainSection--queri-bgscreen">
+          <div className="mainSection__card  mainSection__card--queri-bgscreen">
+            <div key={space.img}  className="card__image-container">{spaces[index].img}</div>
+            <div key={space.location}  className="card__location"><b>{spaces[index].location}</b></div>
+            <div key={space.distance}  className="card__distance">{spaces[index].distance}</div>
+            <div key={space.dates}  className="card__dates">{spaces[index].dates}</div>
+            <div key={space.price}  className="card__price"><b>{spaces[index].price}</b> / night</div>
+          </div>
+          </main>
+          </Link >
+        ))
+      }
     </div>
   )
 }
