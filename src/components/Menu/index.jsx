@@ -12,7 +12,7 @@ function Menu() {
             <div className="menu__icon"></div>
           </div>
           <ul className="menu__item">
-            <li><Link to="/Signinform" >Sing up</Link></li>
+            <li><Link to="/Signupform" >Sing up</Link></li>
             <li><Link to="/Loginform" >Log in</Link></li>
             <hr className="menu__line" />
             <li><Link to="/" >Contact</Link></li>
