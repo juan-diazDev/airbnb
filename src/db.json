@@ -1,0 +1,100 @@
+{
+  "spaces": [
+    {
+      "id": 1,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Benalmadena, Spain",
+      "distance": "7,906 kilometers away",
+      "dates": "Oct 1 - ",
+      "price": "$70 usd"
+    },
+    {
+      "id": 2,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Bolton, New York, US",
+      "distance": "4,153 kilometers away",
+      "dates": "Jul 16 - 23",
+      "price": "$9,482 usd"
+    },
+    {
+      "id": 3,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Kilcolgan, Ireland",
+      "distance": "7,915 kilometers away",
+      "dates": "Sep 1 - 6",
+      "price": "$597 usd"
+    },
+    {
+      "id": 4,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Watermouth, near Ilfracombe, UK",
+      "distance": "8,184 kilometers away",
+      "dates": "Jul 29 - Aug 5",
+      "price": "$412 usd"
+    },
+    {
+      "id": 5,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Boyds, Maryland, US",
+      "distance": "3,6645 kilometers away",
+      "dates": "Jul 17 - 22",
+      "price": "$573usd"
+    },
+    {
+      "id": 6,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Dromcolliher, Ireland",
+      "distance": "7,883 kilometers away",
+      "dates": "Jul 17 - 22",
+      "price": "$2,525 usd"
+    },
+    {
+      "id": 7,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Ovens, Ireland",
+      "distance": "7,886 kilometers away",
+      "dates": "Jul 30 - Aug 4",
+      "price": "$1,262 usd"
+    },
+    {
+      "id": 8,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Kilkenny city, Ireland",
+      "distance": "7,990 kilometers away",
+      "dates": "Sep 3 - 8",
+      "price": "$778 usd"
+    },
+    {
+      "id": 9,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Irasburg, Vermont, US",
+      "distance": "4,297 kilometers away",
+      "dates": "Sep 3 - 8",
+      "price": "$915 usd"
+    },
+    {
+      "id": 10,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Vale of Avoca, Irelan",
+      "distance": "8,076 kilometers away",
+      "dates": "Oct 26 - Nov 1",
+      "price": "$184 usd"
+    },
+    {
+      "id": 11,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Bolton, New York, US",
+      "distance": "4,153 kilometers away",
+      "dates": "Jul 16 - 22",
+      "price": "$1,621 usd"
+    },
+    {
+      "id": 12,
+      "img": "https://www.airbnb.com/rooms/47953138?adults=1&category_tag=Tag%3A675&children=0&infants=0&search_mode=flex_destinations_search&check_in=2022-08-01&check_out=2022-08-06&federated_search_id=536b18d2-404b-4dda-9bec-33d07a9573a3&source_impression_id=p3_1658681825_aAq9%2FluIzuYmRyBq&enable_auto_translate=false&locale=en&_set_bev_on_new_domain=1656794161_Mjc5ZTZkN2I1YjAx&modal=PHOTO_TOUR_SCROLLABLE&modalItem=1126957913",
+      "location": "Ortonvile, Minnesota, US",
+      "distance": "4,788 kilometers away",
+      "dates": "Jul 27 - Aug 1",
+      "price": "$132 usd"
+    }
+  ]
+}
