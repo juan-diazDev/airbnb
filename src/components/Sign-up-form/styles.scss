@@ -1,11 +1,12 @@
 .signup__container{
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
     padding: 0px;
     align-items: flex-end;
+
 }
 
 .signup{
@@ -22,7 +23,7 @@
     align-items: center;
     justify-content: center;
     padding: 24px;
-   
+
 }
 
 .signup_headerbox{
@@ -43,7 +44,7 @@
     font-size: 10px;
     font-weight: bold;
     font-family: 'Manrope', sans-serif;
-    
+
 }
 
 .signup__backbutton{
@@ -55,16 +56,16 @@
    margin: 0px;
    border:0px;
    font-size: 20px;
-   
+
 }
 
 .signup__form{
-    
+
     position: relative;
     padding: 24px;
-    flex: 1 1 auto;    
+    flex: 1 1 auto;
     outline: none;
-     
+
 }
 
 .signup__lastnamebox{
@@ -79,10 +80,11 @@
     font-size: 1em;
     font-family: 'Manrope', sans-serif;
     padding-left: 10px;
+
 }
 
 .signup__namebox{
-  
+
   width: 100%;
   min-height: 46px;
   border:solid;
@@ -95,16 +97,15 @@
   font-family: 'Manrope', sans-serif;
   margin-top: 20px;
   padding-left: 10px;
+
 }
-
-
 
 .signup__textbox{
     width: 100%;
     min-height: 46px;
     border:solid;
     border-color: #B0B0B0;
-    border-radius: 8px;    
+    border-radius: 8px;
     border-width: 1px;
     position: relative;
     align-items: center;
@@ -112,7 +113,7 @@
     font-family: 'Manrope', sans-serif;
     padding-left: 10px;
     margin-top: 10px;
-  
+
 }
 
 .signup__helptext{
@@ -127,11 +128,10 @@
     justify-content: flex-start;
     text-align: left;
 
-
 }
 
 .signup__policies1{
-   
+
     position: relative;
     align-items: flex-start;
     text-align: left;
@@ -141,13 +141,14 @@
     line-height: 20px;
     font-weight: 400;
     margin-top: 10px;
-    padding-top: 15px;      
+    padding-top: 15px;
 }
 
 .signup__policies2{
-   color:rgb(0, 56, 171); 
+   color:rgb(0, 56, 171);
    text-decoration: underline;
    font-weight: 600;
+
 }
 
 .signup__btn{
@@ -160,12 +161,11 @@
     background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
     color: rgb(255, 255, 255);
     border: 0px;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin-top: 30px;
-    font-size: 16px;    
+    font-size: 16px;   
+
 }
-
-
 
 .signup__final{
     display: flex;
@@ -181,59 +181,62 @@
     line-height: 20px;
 
 }
+
 .signup__checkbox{
    display: flex;
    align-items: left;
    justify-content: left;
 
 }
- .signup__checkbox__label{
+
+.signup__checkbox__label{
     font-size: 12px;
     font-family: 'Manrope', sans-serif;
     color: #484848;
     vertical-align: center;
     margin-left: 10px;
-    margin-top: 5px;
-       
- }
+    margin-top: 5px;       
+}
 
- .signup__checkbox__input{
+
+.signup__checkbox__input{
     cursor: pointer;
     width: 24px;
     height: 24px;
     border-radius: 4px;
     display: inline-block;
     vertical-align: top;
+} 
 
- }
- 
 
 @media (min-width:744px) and (min-height: 475px){
 
  .signup__container{
     padding: 60px;
     align-items: center;
-    
- }  
 
  }
+ 
  .signup {   
+
     position: relative;
-    margin-top: 32px; 
+    margin-top: 32px;
     margin-bottom: 32px;
     width: 100%;
     max-width: 465px;
     border-radius: 12px;
     border: 1px solid #B0B0B0;
-    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;;
+    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+
  }
 
- .signup__header{   
+ .signup__header{
     min-height: 64px;
 
  }
+
  .signup_headerbox{
     font-size: 10px;
 
-}
+ }
 }

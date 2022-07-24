@@ -6,7 +6,7 @@ function Footer() {
     <footer className='footer'>
 
       <div className='footer__call-to-action-conatiner'>
-        <Link to="/Signinform" ><button className='footer__call-to-action'>
+        <Link to="/Signupform" ><button className='footer__call-to-action'>
           <strong>Sing-up</strong>
         </button></Link>
       </div>
@@ -26,7 +26,7 @@ function Footer() {
             <Link to='/Loginform'>Log-in</Link>
           </div>
           <div>
-            <Link to='/Signinform'>Sing-up</Link>
+            <Link to='/Signupform'>Sing-up</Link>
           </div>
         </div>
       </div>
