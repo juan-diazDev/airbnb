@@ -17,6 +17,8 @@ import FormContainerImages from './components/FormContainerImages/index.jsx';
 import FormContainerTitle from './components/FormContainerTitle/index.jsx';
 import FormContainerDescriptionPlace from './components/FormContainerDescriptionPlace/index.jsx';
 import FormContainerPrice from './components/FormContainerPrice/index.jsx';
+import FormContainerType from './components/FormContainerType'
+
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
       <Route path="/FormContainerTitle" element={<FormContainerTitle/>}/>
       <Route path="/FormContainerDescriptionPlace" element={<FormContainerDescriptionPlace/>}/>
       <Route path="/FormContainerPrice" element={<FormContainerPrice/>}/> 
+      <Route path='/FormContainerType' element={<FormContainerType />} />
+
     </Routes>
    </BrowserRouter>
   );

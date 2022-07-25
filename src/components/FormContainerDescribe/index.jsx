@@ -11,6 +11,7 @@ const FormContainerDescribe = () =>{
           <Link to="/">
             <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
           </Link>
+
         </div>
 
         <div className="header__buttons">

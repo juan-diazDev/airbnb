@@ -30,7 +30,7 @@
 
   ul.nav-menu li {
     list-style-type: none;
-    margin: 10px;
+    margin: 15px;
     transition: all .3s ease 0s;
     a:hover {
       color: #ff5a5f;
@@ -54,11 +54,22 @@
         background-color: white;
         border: 0.5px solid rgba(0,0,0,0.08);
         box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-        width: 100px;
+        width: 160px;
         margin: 0px;
         padding: 0px;
         border-radius: 10px;
       }
+    }
+  }
+
+  .menu__hosting-link {
+    position: absolute;
+    right: 160px;
+    width: 115px;
+    padding: 10px;
+    border-radius: 20px;
+    &:hover{
+      background-color: #f1ebeb;
     }
   }
 
