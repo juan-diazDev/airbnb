@@ -9,15 +9,18 @@ const FormContainerFeatures = () => {
         <div className="form__header">
 
           <div className="header__logo">
-            <img className="logo__img" src="images/airbnblogo.png"/>
+            <Link to="/">
+              <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
+            </Link>
+
           </div>
 
           <div className="header__buttons">
             <button className="button">
-              Ask a Superhost            
+              Ask a Superhost
             </button>
             <button className="button">
-              Help            
+              Help
             </button>
           </div>
 

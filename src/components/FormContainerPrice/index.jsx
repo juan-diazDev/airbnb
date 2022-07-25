@@ -4,20 +4,23 @@ import './styles.scss'
 const FormContainerPrice = () =>{
 
   return (
-      
+
     <div>
       <div className="form__header">
 
         <div className="header__logo">
-            <img className="logo__img" src="images/airbnblogo.png"/>
+          <Link to="/">
+            <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
+          </Link>
+
         </div>
 
         <div className="header__buttons">
             <button className="button">
-                Ask a Superhost            
+                Ask a Superhost
             </button>
             <button className="button">
-                Help            
+                Help
             </button>
         </div>
 
@@ -40,7 +43,7 @@ const FormContainerPrice = () =>{
               </div>
             <button className="offerprice__rise">+</button>
           </div>
-          
+
           <div className="option__pernight">
             <h2 className="pernight__description">
               Per night
@@ -52,7 +55,7 @@ const FormContainerPrice = () =>{
               Places like yours usually range from $125,878 to $209,796.
             </h2>
           </div>
-          
+
           <div className="container__button-step">
               <Link to="/FormContainerDescriptionPlace">
                   <button className="button__backstep">Back</button>
@@ -61,7 +64,7 @@ const FormContainerPrice = () =>{
           </div>
 
         </div>
-          
+
       </div>
     </div>
   )

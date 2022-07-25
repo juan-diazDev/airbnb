@@ -9,15 +9,18 @@ const FormContainerTitle = () =>{
       <div className="form__header">
 
         <div className="header__logo">
-          <img className="logo__img" src="images/airbnblogo.png"/>
+          <Link to="/">
+            <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
+          </Link>
+
         </div>
 
         <div className="header__buttons">
           <button className="button">
-            Ask a Superhost            
+            Ask a Superhost
           </button>
           <button className="button">
-            Help            
+            Help
           </button>
         </div>
 
@@ -32,12 +35,12 @@ const FormContainerTitle = () =>{
         </div>
 
         <div className="container__options">
-          
+
           <div className="option__offertitle">
             <h2 className="offertitle">Create your title</h2>
             <textarea className="offertitle__text"placeholder="cheerful 3 bedrooms house with pool" rows="3"></textarea>
           </div>
-            
+
           <div className="container__button-step">
             <Link to="/FormContainerImages">
               <button className="button__backstep">Back</button>
@@ -48,7 +51,7 @@ const FormContainerTitle = () =>{
           </div>
 
         </div>
-          
+
       </div>
   </div>
   )

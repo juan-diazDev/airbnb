@@ -9,15 +9,18 @@ const FormContainerDescriptionPlace = () =>{
       <div className="form__header">
 
         <div className="header__logo">
-          <img className="logo__img" src="images/airbnblogo.png"/>
+          <Link to="/">
+            <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
+          </Link>
+
         </div>
 
         <div className="header__buttons">
           <button className="button">
-            Ask a Superhost            
+            Ask a Superhost
           </button>
           <button className="button">
-            Help            
+            Help
           </button>
         </div>
 
@@ -37,7 +40,7 @@ const FormContainerDescriptionPlace = () =>{
             <h2 className="offerdescription">Create your description</h2>
             <textarea className="offerdescription__text"placeholder="This place is the best in the world." rows="3"></textarea>
           </div>
-          
+
           <div className="container__button-step">
             <Link to="/FormContainerTitle">
               <button className="button__backstep">Back</button>
@@ -48,11 +51,11 @@ const FormContainerDescriptionPlace = () =>{
           </div>
 
         </div>
-          
+
       </div>
 
     </div>
-    
+
   )
 }
 
