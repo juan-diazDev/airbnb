@@ -10,7 +10,9 @@ const FormContainerType = () =>{
       <div className="form__header">
 
         <div className="header__logo">
-          <img className="logo__img" src="images/airbnblogo.png"/>
+          <Link to="/">
+          <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
+          </Link>
         </div>
 
         <div className="header__buttons">
@@ -38,40 +40,40 @@ const FormContainerType = () =>{
             <h2 className="option__card-title0">
               Apartament
             </h2>
-            <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
+            <img className="option__card-image0" src="img/Spaces/1.jpg"  alt="spaceThumbnail"/>
           </button>
           <button className="option__card0">
             <h2 className="option__card-title0">
               House
             </h2>
-            <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
+            <img className="option__card-image0" src="img/Spaces/1.jpg"  alt="spaceThumbnail"/>
           </button>
           <button className="option__card0">
             <h2 className="option__card-title0">
               Secondary unit
             </h2>
-            <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
+            <img className="option__card-image0" src="img/Spaces/1.jpg"  alt="spaceThumbnail"/>
           </button>
           <button className="option__card0">
             <h2 className="option__card-title0">
               Unique space
             </h2>
-            <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
+            <img className="option__card-image0" src="img/Spaces/1.jpg"  alt="spaceThumbnail"/>
           </button>
           <button className="option__card0">
             <h2 className="option__card-title0">
               Bed and breakfasts
             </h2>
-            <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
+            <img className="option__card-image0" src="img/Spaces/1.jpg"  alt="spaceThumbnail"/>
           </button>
           <button className="option__card0">
             <h2 className="option__card-title0">
               Boutique hotel
             </h2>
-            <img className="option__card-image0" src="images/el-hostal-bed-and-breakfast.jpg"/>
+            <img className="option__card-image0" src="img/Spaces/1.jpg"  alt="spaceThumbnail"/>
           </button>
 
-          <div className="container__button-step">
+          <div className="container__button-step1">
             <Link to="/FormContainerDescribe">
               <button className="button__nextstep">Next</button>
             </Link>
