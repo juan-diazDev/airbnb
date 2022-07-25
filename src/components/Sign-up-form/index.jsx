@@ -3,7 +3,9 @@ import {Link} from "react-router-dom"
 
 function Signupform () {
 
-	
+	const handlerSubmit = (e) => {
+		e.preventDefault()
+	}
 
 
 	return (
@@ -19,7 +21,7 @@ function Signupform () {
 							</Link>
 						<h2>Sign up</h2>
 				</header>
-				<form action="" className="signup__form">
+				<form action="" className="signup__form" onSubmit={handlerSubmit}>
 						<input className="signup__namebox" type="text" name="names" placeholder="First name" />
 						<input className="signup__lastnamebox" type="text" name="lastname" placeholder="Last name" />
 						<p className="signup__helptext">Make sure it matches the name on your government ID.</p>
