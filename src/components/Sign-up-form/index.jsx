@@ -3,6 +3,10 @@ import {Link} from "react-router-dom"
 
 function Signupform () {
 
+	const handlerSubmit = (e) => {
+		e.preventDefault()
+	}
+
 
 	return (
 	
@@ -11,13 +15,13 @@ function Signupform () {
 				<div className="signup">
 				<header className="signup_headerbox">
 						<Link to = "/">
-						<button className="signup__backbutton">
-						<span>˂</span>  
-						</button>
+							<button className="signup__backbutton">
+								<span>˂</span>  
+							</button>
 						</Link>
 						<h2>Sign up</h2>
 				</header>
-				<div action="" className="signup__form">
+				<form action="" className="signup__form" onSubmit={handlerSubmit}>
 						<input className="signup__namebox" type="text" name="names" placeholder="First name" />
 						<input className="signup__lastnamebox" type="text" name="lastname" placeholder="Last name" />
 						<p className="signup__helptext">Make sure it matches the name on your government ID.</p>
@@ -32,17 +36,14 @@ function Signupform () {
 						<p className="signup__final">Airbnb will send you members-only deals, inspiration, marketing emails, and push notifications. You can opt out of receiving these at any time in your account settings or directly from the marketing notification.
 						</p>
 						<div className="signup__checkbox">
-								<input className="signup__checkbox__input"  type="checkbox" id="radio1"/>
-								<label className="signup__checkbox__label" HtmlFor="radio1">I don't want to receive marketing messages from Airbnb.</label>
+							<input className="signup__checkbox__input"  type="checkbox" id="radio1"/>
+							<label className="signup__checkbox__label">I don't want to receive marketing messages from Airbnb.</label>
 						</div>
-				</div>
+				</form>
 				</div>
 			</div>
 		</section >
-	
-
 	)
 }
-
 export default Signupform
 
