@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import './styles.scss'
 
 const FormContainerAdress = () => {
-    
+
   return(
     <div>
 
@@ -17,10 +17,10 @@ const FormContainerAdress = () => {
 
         <div className="header__buttons">
           <button className="button">
-            Ask a Superhost            
+            Ask a Superhost
           </button>
           <button className="button">
-            Help            
+            Help
           </button>
         </div>
 
@@ -31,7 +31,7 @@ const FormContainerAdress = () => {
           <div className="container__question">
             <h2 className="question__title">Confirm your adress</h2>
           </div>
-          
+
           <form className="container__formtable">
             <input className="form__text1" placeholder="Street" type="text "></input>
             <input className="form__text" placeholder="Apt, suite,etc.(Optional)" type="text "></input>

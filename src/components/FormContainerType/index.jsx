@@ -18,10 +18,10 @@ const FormContainerType = () =>{
 
         <div className="header__buttons">
           <button className="button">
-            Ask a Superhost            
+            Ask a Superhost
           </button>
           <button className="button">
-            Help            
+            Help
           </button>
         </div>
 
@@ -87,9 +87,9 @@ const FormContainerType = () =>{
           </div>
 
         </div>
-          
+
       </div>
-      
+
     </div>
 
   )

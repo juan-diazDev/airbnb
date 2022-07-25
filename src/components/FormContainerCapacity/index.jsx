@@ -18,10 +18,10 @@ const FormContainerCapacity = () =>{
 
         <div className="header__buttons">
           <button className="button">
-            Ask a Superhost            
+            Ask a Superhost
           </button>
           <button className="button">
-            Help            
+            Help
           </button>
         </div>
 
@@ -49,14 +49,14 @@ const FormContainerCapacity = () =>{
               <button className="button__nextstep">Next</button>
             </Link>
           </div>
-          
+
         </div>
       </div>
-        
+
     </div>
 
   )
-  
+
 }
 
 export default FormContainerCapacity;

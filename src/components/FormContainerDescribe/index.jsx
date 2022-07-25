@@ -4,9 +4,9 @@ import './styles.scss'
 const FormContainerDescribe = () =>{
   return (
     <div>
-        
+
       <div className="form__header">
-          
+
         <div className="header__logo">
           <Link to="/">
             <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
@@ -16,10 +16,10 @@ const FormContainerDescribe = () =>{
 
         <div className="header__buttons">
           <button className="button">
-            Ask a Superhost            
+            Ask a Superhost
           </button>
           <button className="button">
-            Help            
+            Help
           </button>
         </div>
 
@@ -40,7 +40,7 @@ const FormContainerDescribe = () =>{
                   Home
               </h2>
               <p class="option__card-description1">
-                  A home that may stand-alone or have shared walls. 
+                  A home that may stand-alone or have shared walls.
               </p>
           </button>
           <button class="option__card1">
@@ -64,7 +64,7 @@ const FormContainerDescribe = () =>{
                   Townhouse
               </h2>
               <p class="option__card-description1">
-                  A multi-level row or terrace house that shares walls and possibly outdoor spaces. 
+                  A multi-level row or terrace house that shares walls and possibly outdoor spaces.
               </p>
           </button>
           <button class="option__card1 ">
@@ -96,7 +96,7 @@ const FormContainerDescribe = () =>{
                   House boat
               </h2>
               <p class="option__card-description1 ">
-                  A floating home constructed from similar materials as a land-based home. 
+                  A floating home constructed from similar materials as a land-based home.
               </p>
           </button>
           <button class="option__card1 ">
@@ -108,19 +108,19 @@ const FormContainerDescribe = () =>{
               </p>
           </button>
 
-          <div className="container__button-step">  
+          <div className="container__button-step">
             <Link to="/">
               <button className="button__backstep">Back</button>
             </Link>
-            <Link to="/FormContainerCapacity">                    
+            <Link to="/FormContainerCapacity">
               <button className="button__nextstep">Next</button>
-            </Link> 
+            </Link>
           </div>
 
         </div>
 
       </div>
-      
+
     </div>
 
   )

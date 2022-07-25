@@ -17,10 +17,10 @@ const FormContainerFeatures = () => {
 
           <div className="header__buttons">
             <button className="button">
-              Ask a Superhost            
+              Ask a Superhost
             </button>
             <button className="button">
-              Help            
+              Help
             </button>
           </div>
 

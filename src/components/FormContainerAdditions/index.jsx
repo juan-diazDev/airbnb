@@ -5,7 +5,7 @@ const FormContainerAdditions= () => {
 
   return (
     <div>
-        
+
       <div className="form__header">
 
         <div className="header__logo">
@@ -17,13 +17,13 @@ const FormContainerAdditions= () => {
 
         <div className="header__buttons">
           <button className="button">
-              Ask a Superhost            
+              Ask a Superhost
           </button>
           <button className="button">
-              Help            
+              Help
           </button>
         </div>
-        
+
       </div>
 
       <div className="form__container">
@@ -35,13 +35,13 @@ const FormContainerAdditions= () => {
         </div>
 
         <div className="container__aditions">
-          
+
             <div className='addition__question'>
                 <h2 className='question__addtitle'>
                     How about these guest favorites?
                 </h2>
             </div>
-            
+
             <div className="add_included-options">
               <button className="option__card3">
                 <div className='option__card-adition'>
@@ -89,7 +89,7 @@ const FormContainerAdditions= () => {
               <button className="button__nextstep">Next</button>
             </Link>
           </div>
-            
+
         </div>
 
       </div>
