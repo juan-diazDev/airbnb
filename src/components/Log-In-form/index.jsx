@@ -11,9 +11,9 @@ return (
       <div className="Login">
       <header className="Login_headerbox">
           <Link to = "/">
-          <button className="Login__backbutton">
+            <button className="Login__backbutton">
               <span>˂</span>  
-          </button>
+            </button>
           </Link>
           <h1>Log In or sign up</h1>
       </header>
@@ -23,7 +23,7 @@ return (
           <input className="Login__textbox" type="password" name="password" placeholder="Password" />
           <button className="Login__btn__continue"><b>Continue</b></button>
           <div className="Login__divisor">
-              <p>or</p>
+            <p>or</p>
           </div>
           <button className="Login__btn__Signin"><b>Sign up</b></button>
       </form>
