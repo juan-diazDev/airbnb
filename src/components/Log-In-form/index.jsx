@@ -30,7 +30,7 @@ return (
             <p>or</p>
           </div>
           <Link to = "/Signupform">
-          <button className="Login__btn__Signin"><b>Sign up</b></button>
+            <button className="Login__btn__Signin"><b>Sign up</b></button>
           </Link>
       </form>
       </div>

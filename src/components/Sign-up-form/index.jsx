@@ -18,7 +18,7 @@ function Signupform () {
 							<button className="signup__backbutton">
 								<span>˂</span>  
 							</button>
-							</Link>
+						</Link>
 						<h2>Sign up</h2>
 				</header>
 				<form action="" className="signup__form" onSubmit={handlerSubmit}>
