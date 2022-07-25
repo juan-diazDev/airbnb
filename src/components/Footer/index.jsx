@@ -7,7 +7,7 @@ function Footer() {
 
       <div className='footer__call-to-action-conatiner'>
         <Link to="/Loginform" ><button className='footer__call-to-action'>
-          <strong>Sing-up</strong>
+          <strong>Log-in</strong>
         </button></Link>
       </div>
 
