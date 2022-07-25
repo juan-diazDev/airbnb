@@ -9,7 +9,10 @@ const FormContainerAdditions= () => {
       <div className="form__header">
 
         <div className="header__logo">
-          <img className="logo__img" src="images/airbnblogo.png"/>
+          <Link to="/">
+            <img className="logo__img" src="img/LogoIcon/White.png" alt="airbnbLogo"/>
+          </Link>
+
         </div>
 
         <div className="header__buttons">
@@ -42,7 +45,8 @@ const FormContainerAdditions= () => {
             <div className="add_included-options">
               <button className="option__card3">
                 <div className='option__card-adition'>
-                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"/>
+                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000" alt="wifiAdittionIcon"/>
+
                 </div>
                 <h2 className="option__card-title3">
                   Wi-fi
@@ -50,7 +54,8 @@ const FormContainerAdditions= () => {
               </button>
               <button className="option__card3">
                 <div className='option__card-adition'>
-                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"/>
+                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000" alt="wifiAdittionIcon"/>
+
                 </div>
                 <h2 className="option__card-title3">
                   Air conditioner
@@ -58,7 +63,8 @@ const FormContainerAdditions= () => {
               </button>
               <button className="option__card3">
                 <div className='option__card-adition'>
-                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"/>
+                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000" alt="wifiAdittionIcon"/>
+
                 </div>
                 <h2 className="option__card-title3">
                   Bedrooms
@@ -66,7 +72,8 @@ const FormContainerAdditions= () => {
               </button>
               <button className="option__card3">
                 <div className='option__card-adition'>
-                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"/>
+                  <img className="adition-icon" src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000" alt="wifiAdittionIcon"/>
+
                 </div>
                 <h2 className="option__card-title3">
                   Free Parking of premisses
