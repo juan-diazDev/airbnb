@@ -1,6 +1,6 @@
 .menu--queri-bgscreen { display: none;}
 .menu__input--queri-bgscreen { display: none; }
-.menu__hosting-link { display: none; }
+.menu__hosting-link { display: none;}
 
 @media (min-width: 1200px) {
   .menu--queri-bgscreen {
@@ -64,6 +64,7 @@
   }
 
   .menu__hosting-link {
+    display: initial;
     position: absolute;
     right: 160px;
     width: 115px;
