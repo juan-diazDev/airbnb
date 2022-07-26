@@ -1,4 +1,4 @@
-const BASE_URL = "../db.json"
+const BASE_URL = "http://localhost:8080"
 
 export async function getSpace() {
   const response = await fetch(`${BASE_URL}/spaces`)
