@@ -1,9 +1,5 @@
 import './App.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Loginform from './components/Log-In-form/';
 import Signupform from './components/Sign-up-form/';
@@ -20,14 +16,13 @@ import FormContainerPrice from './components/FormContainerPrice/index.jsx';
 import FormContainerType from './components/FormContainerType'
 
 
-function App() {
-  return (
-   <BrowserRouter>
+const App = () => (
+  <BrowserRouter>
     <Routes>
-      <Route path="/" element={ <Home /> }/>
-      <Route path="/Loginform" element={ <Loginform /> }/>
-      <Route path="/Signupform" element={ <Signupform/> }/>
-      <Route path='/SpaceDetail' element={<SpaceDetail /> }/>
+      <Route path="/" element={<Home />}/>
+      <Route path="/Loginform" element={<Loginform />}/>
+      <Route path="/Signupform" element={<Signupform/>}/>
+      <Route path="/SpaceDetail" element={<SpaceDetail />}/>
       <Route path="/FormContainerDescribe" element= {<FormContainerDescribe/>}/>
       <Route path="/FormContainerCapacity" element={<FormContainerCapacity/>}/>
       <Route path="/FormContainerAdress" element={<FormContainerAdress/>}/>
@@ -36,12 +31,10 @@ function App() {
       <Route path="/FormContainerImages" element={<FormContainerImages/>}/>
       <Route path="/FormContainerTitle" element={<FormContainerTitle/>}/>
       <Route path="/FormContainerDescriptionPlace" element={<FormContainerDescriptionPlace/>}/>
-      <Route path="/FormContainerPrice" element={<FormContainerPrice/>}/> 
-      <Route path='/FormContainerType' element={<FormContainerType />} />
-
+      <Route path="/FormContainerPrice" element={<FormContainerPrice/>}/>
+      <Route path="/FormContainerType" element={<FormContainerType />} />
     </Routes>
-   </BrowserRouter>
-  );
-}
+  </BrowserRouter>
+);
 
 export default App;
