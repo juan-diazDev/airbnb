@@ -1,11 +1,10 @@
-
 .form__header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #008489;
   padding: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   width: -webkit-fill-available;
 }
 
@@ -43,14 +42,14 @@
   border: none;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.2);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .button:focus {
   border: solid;
   border-color: white;
   transition-duration: 0.25s;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .form__container {
@@ -64,7 +63,7 @@
 .container__question {
   background-color: #008489;
   color: white;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .container__question {
@@ -78,7 +77,7 @@
 }
 
 .question__title {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
 }
 
@@ -95,7 +94,7 @@
   margin: -10px 0 10px 0;
 }
 
-.container__aditions{
+.container__aditions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,153 +108,148 @@
   width: -webkit-fill-available;
 }
 
-.question__addtitle{
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px ;
-  line-height: 20px ;
-  font-weight: 600 ;
-  padding-left: 6px ;
-  animation-duration: 600ms ;
-  animation-iteration-count: 1 ;
-  animation-fill-mode: both ;
-  animation-name: keyframe_14ic1xm ;
+.question__addtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  padding-left: 6px;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-name: keyframe_14ic1xm;
 }
 
-
-.add_included-options{
-  display: flex ;
-  flex-wrap: wrap;   
-  margin-top: 24px ;
-
+.add_included-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
 }
 
-.option__card3{
-  background-color: rgb(255, 255, 255) ;
-  border: 1px solid rgb(221, 221, 221) ;
-  box-sizing: border-box ;
-  border-radius: 8px ;
-  display: flex ;
-  flex-direction: column ;
-  justify-content: center ;
-  align-items: center ;
-  width: 30% ;
-  min-height: 68px ;
-  cursor: pointer ;
-  margin: 0px 6px 12px ;
-  flex: 0 1 calc(50% - 12px) ;
-  padding-top: 12px ;
-  padding-bottom: 24px ;
-  outline: none ;
-  animation-duration: 600ms ;
-  animation-iteration-count: 1 ;
-  animation-fill-mode: both ;
-  animation-name: keyframe_14ic1xm ;
+.option__card3 {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-height: 68px;
+  cursor: pointer;
+  margin: 0px 6px 12px;
+  flex: 0 1 calc(50% - 12px);
+  padding-top: 12px;
+  padding-bottom: 24px;
+  outline: none;
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-name: keyframe_14ic1xm;
 }
 
+.option__card3:focus {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-height: 68px;
+  cursor: pointer;
+  margin: 0px 6px 12px;
+  flex: 0 1 calc(50% - 12px);
+  padding-top: 12px;
+  padding-bottom: 24px;
+  outline: none;
+  box-shadow: rgb(0 0 0) 0px 0px 0px 2px;
+  background-color: rgb(247, 247, 247);
+  animation-duration: 600ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-name: keyframe_14ic1xm;
+}
 
-.option__card3:focus{
-  border: 1px solid transparent ;
-  box-sizing: border-box ;
-  border-radius: 8px ;
-  display: flex ;
-  flex-direction: column ;
-  justify-content: center ;
-  align-items: center ;
-  width: 30% ;
-  min-height: 68px ;
-  cursor: pointer ;
-  margin: 0px 6px 12px ;
-  flex: 0 1 calc(50% - 12px) ;
-  padding-top: 12px ;
-  padding-bottom: 24px ;
-  outline: none ;
-  box-shadow: rgb(0 0 0) 0px 0px 0px 2px ;
-  background-color: rgb(247, 247, 247) ;
-  animation-duration: 600ms ;
-  animation-iteration-count: 1 ;
-  animation-fill-mode: both ;
-  animation-name: keyframe_14ic1xm ;
-}    
-
-.adition-icon{
+.adition-icon {
   display: block;
   height: 40px;
   width: 40px;
   fill: currentcolor;
-}  
-
-.option__card-title3{
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px ;
-  line-height: 18px ;
-  font-weight: 600 ;
-  color: rgb(34, 34, 34) ;
-  text-align: center ;
-  margin: 0px 20px ;
 }
 
-.container__button-step{
+.option__card-title3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.container__button-step {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: -webkit-fill-available;
   padding: 16px;
-
 }
 
-.button__backstep{
-
+.button__backstep {
   font-size: 16px;
   color: white;
-  font-style: 'Manrope, sans-serif';
-  padding: 14px 24px;
-  border-radius: 10px;
-  border: none;
-  background-color: #222222;
-
-}
-
-.button__nextstep{
-  font-size: 16px;
-  color: white;
-  font-style: 'Manrope, sans-serif';
+  font-style: "Manrope, sans-serif";
   padding: 14px 24px;
   border-radius: 10px;
   border: none;
   background-color: #222222;
 }
 
-@media(min-width:1200px) {
+.button__nextstep {
+  font-size: 16px;
+  color: white;
+  font-style: "Manrope, sans-serif";
+  padding: 14px 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #222222;
+}
 
+@media (min-width: 1200px) {
   .form__header {
     width: -webkit-fill-available;
     justify-content: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+
   .header__logo {
     justify-content: flex-start;
     width: -webkit-fill-available;
-    ;
     justify-content: flex-start;
     padding: 0px 40px 0px 0px;
   }
+
   .logo__img {
     height: 100px;
-    width: 100px
+    width: 100px;
   }
+
   .header__buttons {
     width: -webkit-fill-available;
     padding: 0px 20px 0px 0px;
     border-radius: 5px;
     justify-content: flex-end;
   }
+
   .button {
     font-size: 16px;
     font-weight: bold;
   }
-
 
   .form__container {
     background-color: #008489;
@@ -267,29 +261,31 @@
     margin: 10px 0px;
     padding: 20px 0px;
   }
+
   .container__question {
     width: -webkit-fill-available;
     justify-content: flex-start;
   }
+
   .question__title {
-    line-height: 56px ;
-    margin-bottom: 12px ;
+    line-height: 56px;
+    margin-bottom: 12px;
     font-size: 48px;
   }
-    
-  .option__card3{
-    padding-top: 24px ;
-    padding-bottom: 40px ;
-  }
-  .option__card3:focus{
-    padding-top: 24px ;
-    padding-bottom: 40px ;
+
+  .option__card3 {
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 
-  .add_included-options{
-    display: flex ;
-    flex-flow: row wrap ;
-    margin-top: 24px ;
+  .option__card3:focus {
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 
+  .add_included-options {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 24px;
+  }
 }
