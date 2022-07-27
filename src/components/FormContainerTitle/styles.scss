@@ -4,10 +4,10 @@
   justify-content: center;
   background: #008489;
   padding: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   width: -webkit-fill-available;
 }
-  
+
 .header__logo {
   margin: 20px;
   display: flex;
@@ -15,12 +15,12 @@
   justify-content: center;
   align-items: flex-start;
 }
-  
+
 .logo__img {
   width: 40px;
   height: 40px;
 }
-  
+
 .header__buttons {
   margin: 10px;
   display: flex;
@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: flex-end;
 }
-  
+
 .button {
   color: white;
   padding-top: 8px;
@@ -42,16 +42,16 @@
   border: none;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.2);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-  
+
 .button:focus {
   border: solid;
   border-color: white;
   transition-duration: 0.25s;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-  
+
 .form__container {
   display: flex;
   flex-direction: column;
@@ -59,11 +59,11 @@
   padding-bottom: 30px;
   margin-top: -20px;
 }
-  
+
 .container__question {
   background-color: #008489;
   color: white;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@
 }
 
 .question__title {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
 }
 
@@ -92,51 +92,50 @@
 }
 
 .option__offertitle {
-  background-color: #FFFFFF ;
-  display: flex ;
-  flex-direction: column ;
-  align-items: flex-start ;
-  justify-content: center ;
-  width: 90% ;
-  max-width: 720px ;
-  min-width: 100px ;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  max-width: 720px;
+  min-width: 100px;
   margin: 20px 20px;
 }
 
-.offertitle{
-  font-family: 'Manrope', sans-serif;
+.offertitle {
+  font-family: "Manrope", sans-serif;
   font-size: 22px;
   padding: 20px 10px;
 }
 
-.offertitle__text{
-  color: #222222 ;
-  display: block ;
-  min-width: 100% ;
-  max-width: 100% ;
-  outline: none ;
-  border: 1px solid #B0B0B0 ;
-  margin: 0 ;
-  box-sizing: border-box ;
-  background-color: transparent ;
-  padding-bottom: 10px ;
-  font-family: 'Manrope', sans-serif;
-  resize: vertical ;
-  max-height: 25vh ;
-  min-height: 144px ;
-  padding: 16px ;
-  border-radius: 8px ;
-  text-overflow: ellipsis ;
-  font-weight: 600 ;
-  font-size: 32px ;
-  line-height: 38px ;
-  overflow-y: hidden ;
+.offertitle__text {
+  color: #222222;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  outline: none;
+  border: 1px solid #b0b0b0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  resize: vertical;
+  max-height: 25vh;
+  min-height: 144px;
+  padding: 16px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  overflow-y: hidden;
 }
 
-@media(min-width:1200px) {
-
+@media (min-width: 1200px) {
   html {
-    background: #FFFFFF;
+    background: #ffffff;
   }
   .form__header {
     width: -webkit-fill-available;
@@ -186,5 +185,4 @@
     margin-bottom: 12px;
     font-size: 48px;
   }
-  
-}    
+}
