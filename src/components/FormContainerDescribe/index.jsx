@@ -12,7 +12,7 @@ const FormContainerDescribe = () => (
             alt="airbnbLogo" />
         </Link>
       </div>
-
+      
       <div className="header__buttons">
         <button className="button">Ask a Superhost</button>
         <button className="button">Help</button>
@@ -25,7 +25,7 @@ const FormContainerDescribe = () => (
           Wich of these best describes your place?
         </h1>
       </div>
-
+     
       <div className="container__options">
         <button className="option__card1">
           <h2 className="option__card-title1">Home</h2>
