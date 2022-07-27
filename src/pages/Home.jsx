@@ -4,25 +4,25 @@ import MainSection from '../components/MainSection';
 import Footer from '../components/Footer';
 import { getSpace } from '../services/spaces';
 
-export const Home = () => {
+const Home = () => {
   const [spaces, setSpaces] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await getSpace()
+      const result = await getSpace();
       setSpaces(result);
-    }
+    };
 
     fetchData();
   }, []);
 
   return (
-  <>
-    <Header />
-    <MainSection List={spaces}/>
-    <Footer />
-  </>
-);
-}
+    <>
+      <Header />
+      <MainSection List={spaces} />
+      <Footer />
+    </>
+  );
+};
 
 export default Home;

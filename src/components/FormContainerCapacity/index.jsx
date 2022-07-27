@@ -9,13 +9,14 @@ const FormContainerCapacity = () => (
           <img
             className="logo__img"
             src="img/LogoIcon/White.png"
-            alt="airbnbLogo" />
+            alt="airbnbLogo"
+          />
         </Link>
       </div>
 
       <div className="header__buttons">
-        <button className="button">Ask a Superhost</button>
-        <button className="button">Help</button>
+        <button className="button" type="button">Ask a Superhost</button>
+        <button className="button" type="button">Help</button>
       </div>
     </div>
 
@@ -27,16 +28,16 @@ const FormContainerCapacity = () => (
       </div>
 
       <div className="container__options">
-        <button className="option">An entire place.</button>
-        <button className="option">A private room.</button>
-        <button className="option">A shared room.</button>
+        <button className="option" type="button">An entire place.</button>
+        <button className="option" type="button">A private room.</button>
+        <button className="option" type="button">A shared room.</button>
 
         <div className="container__button-step">
           <Link to="/FormContainerDescribe">
-            <button className="button__backstep">Back</button>
+            <button className="button__backstep" type="button">Back</button>
           </Link>
           <Link to="/FormContainerAdress">
-            <button className="button__nextstep">Next</button>
+            <button className="button__nextstep" type="button">Next</button>
           </Link>
         </div>
       </div>

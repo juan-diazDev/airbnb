@@ -9,13 +9,14 @@ const FormContainerAdress = () => (
           <img
             className="logo__img"
             src="img/LogoIcon/White.png"
-            alt="airbnbLogo" />
+            alt="airbnbLogo"
+          />
         </Link>
       </div>
 
       <div className="header__buttons">
-        <button className="button">Ask a Superhost</button>
-        <button className="button">Help</button>
+        <button className="button" type="button">Ask a Superhost</button>
+        <button className="button" type="button">Help</button>
       </div>
     </div>
 
@@ -25,27 +26,23 @@ const FormContainerAdress = () => (
       </div>
 
       <form className="container__formtable">
-        <input
-          className="form__text1"
-          placeholder="Street"
-          type="text">
-        </input>
+        <input className="form__text1" placeholder="Street" type="text" />
         <input
           className="form__text"
           placeholder="Apt, suite,etc.(Optional)"
-          type="text">
-        </input>
-        <input className="form__text" placeholder="City" type="text"></input>
+          type="text"
+        />
+        <input className="form__text" placeholder="City" type="text" />
         <input
           className="form__text"
           placeholder="State(Optional)"
-          type="text">
-        </input>
+          type="text"
+        />
         <input
           className="form__text"
           placeholder="Zip code(optional)"
-          type="text">
-        </input>
+          type="text"
+        />
         <select className="form__countries">
           <option className="country">Country</option>
           <option className="country">Colombia</option>
@@ -55,10 +52,10 @@ const FormContainerAdress = () => (
 
         <div className="container__button-step">
           <Link to="/FormContainerCapacity">
-            <button className="button__backstep">Back</button>
+            <button className="button__backstep" type="button">Back</button>
           </Link>
           <Link to="/FormContainerFeatures">
-            <button className="button__nextstep">Next</button>
+            <button className="button__nextstep" type="button">Next</button>
           </Link>
         </div>
       </form>
