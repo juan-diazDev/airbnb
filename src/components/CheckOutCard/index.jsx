@@ -1,11 +1,7 @@
-import React from 'react'
+const CheckOutCard = () => (
+  <div>
+    Jelou
+  </div>
+);
 
-const CheckOutCard = () => {
-  return (
-    <div>
-      Jelou
-    </div>
-  )
-}
-
-export default CheckOutCard
+export default CheckOutCard;
