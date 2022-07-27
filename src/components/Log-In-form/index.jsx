@@ -1,27 +1,26 @@
-import './styles.scss'
-import {Link} from "react-router-dom"
+import './styles.scss';
+import {Link} from 'react-router-dom';
 
-function Loginform() {
+const Loginform = () => {
 
   const handlerSubmit = (e) => {
-		e.preventDefault()
+		e.preventDefault();
 	}
 
+  return (
 
-return (
-
-  <section>
-    <div className="Login__container">
-      <div className="Login">
-      <header className="Login_headerbox">
+    <section>
+      <div className="Login__container">
+        <div className="Login">
+        <header className="Login_headerbox">
           <Link to = "/">
             <button className="Login__backbutton">
-              <span>˂</span>  
+              <span>˂</span>
             </button>
           </Link>
           <h1>Log In or sign up</h1>
-      </header>
-      <form action="" className="Login__form" onSubmit={handlerSubmit}>
+        </header>
+        <form action="" className="Login__form" onSubmit={handlerSubmit}>
           <p className="Login__welcome">Welcome to Airbnb</p>
           <input className="Login__textbox" type="email" name="email" placeholder="Email" />
           <input className="Login__textbox" type="password" name="password" placeholder="Password" />
@@ -32,10 +31,11 @@ return (
           <Link to = "/Signupform">
             <button className="Login__btn__Signin"><b>Sign up</b></button>
           </Link>
-      </form>
+        </form>
+        </div>
       </div>
-    </div>
-  </section>
-)
-}
+    </section>
+  );
+};
+
 export default Loginform;
