@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-const FormContainerAdditions = () =>  (
+const FormContainerAdditions = () => (
   <div>
     <div className="form__header">
       <div className="header__logo">
@@ -9,13 +9,14 @@ const FormContainerAdditions = () =>  (
           <img
             className="logo__img"
             src="img/LogoIcon/White.png"
-            alt="airbnbLogo"/>
+            alt="airbnbLogo"
+          />
         </Link>
       </div>
 
       <div className="header__buttons">
-        <button className="button">Ask a Superhost</button>
-        <button className="button">Help</button>
+        <button className="button" type="button">Ask a Superhost</button>
+        <button className="button" type="button">Help</button>
       </div>
     </div>
 
@@ -34,39 +35,43 @@ const FormContainerAdditions = () =>  (
         </div>
 
         <div className="add_included-options">
-          <button className="option__card3">
+          <button className="option__card3" type="button">
             <div className="option__card-adition">
               <img
                 className="adition-icon"
                 src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"
-                alt="wifiAdittionIcon" />
+                alt="wifiAdittionIcon"
+              />
             </div>
             <h2 className="option__card-title3">Wi-fi</h2>
           </button>
-          <button className="option__card3">
+          <button className="option__card3" type="button">
             <div className="option__card-adition">
               <img
                 className="adition-icon"
                 src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"
-                alt="wifiAdittionIcon" />
+                alt="wifiAdittionIcon"
+              />
             </div>
             <h2 className="option__card-title3">Air conditioner</h2>
           </button>
-          <button className="option__card3">
+          <button className="option__card3" type="button">
             <div className="option__card-adition">
               <img
                 className="adition-icon"
                 src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"
-                alt="wifiAdittionIcon" />
+                alt="wifiAdittionIcon"
+              />
             </div>
             <h2 className="option__card-title3">Bedrooms</h2>
           </button>
-          <button className="option__card3">
+          <button className="option__card3" type="button">
             <div className="option__card-adition">
               <img
                 className="adition-icon"
                 src=" https://img.freepik.com/premium-vector/wifi-symbol-exclamation-mark-icon-jamming-wireless-internet-signal-wifi-error-failure-wifi-icon-disconnected-wireless-internet-signal-vector-illustration-isolated-white-background_192280-935.jpg?w=2000"
-                alt="wifiAdittionIcon" />
+                alt="wifiAdittionIcon"
+              />
             </div>
             <h2 className="option__card-title3">Free Parking of premisses</h2>
           </button>
@@ -74,10 +79,10 @@ const FormContainerAdditions = () =>  (
 
         <div className="container__button-step">
           <Link to="/FormContainerFeatures">
-            <button className="button__backstep">Back</button>
+            <button className="button__backstep" type="button">Back</button>
           </Link>
           <Link to="/FormContainerImages">
-            <button className="button__nextstep">Next</button>
+            <button className="button__nextstep" type="button">Next</button>
           </Link>
         </div>
       </div>
