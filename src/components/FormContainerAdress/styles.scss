@@ -1,11 +1,10 @@
-
 .form__header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #008489;
   padding: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   width: -webkit-fill-available;
 }
 
@@ -43,16 +42,15 @@
   border: none;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.2);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .button:focus {
   border: solid;
   border-color: white;
   transition-duration: 0.25s;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-
 
 .form__container {
   display: flex;
@@ -65,7 +63,7 @@
 .container__question {
   background-color: #008489;
   color: white;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .container__question {
@@ -79,7 +77,7 @@
 }
 
 .question__title {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
 }
 
@@ -93,8 +91,8 @@
 }
 
 .form__text1 {
-  font-family: 'Manrope', sans-serif;
-  border: 1px solid #DDDDDD;
+  font-family: "Manrope", sans-serif;
+  border: 1px solid #dddddd;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px 10px;
@@ -103,17 +101,17 @@
 }
 
 .form__text {
-  font-family: 'Manrope', sans-serif;
-  border: 1px solid #DDDDDD;
+  font-family: "Manrope", sans-serif;
+  border: 1px solid #dddddd;
   padding: 20px 10px;
   font-size: 14px;
   font-weight: lighter;
 }
 
 .form__countries {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: gray;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   padding: 20px 10px;
   font-size: 14px;
   font-weight: lighter;
@@ -122,9 +120,9 @@
 }
 
 .country {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: gray;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   padding: 20px 10px;
   font-size: 14px;
   font-weight: lighter;
@@ -132,43 +130,36 @@
   border-bottom-right-radius: 10px;
 }
 
-.container__button-step{
+.container__button-step {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: -webkit-fill-available;
   padding: 16px;
-  }
-
-.button__backstep{
-
-  font-size: 16px;
-  color: white;
-  font-style: 'Manrope, sans-serif';
-  padding: 14px 24px;
-  border-radius: 10px;
-  border: none;
-  background-color: #222222;
-
 }
 
-.button__nextstep{
+.button__backstep {
   font-size: 16px;
   color: white;
-  font-style: 'Manrope, sans-serif';
+  font-style: "Manrope, sans-serif";
   padding: 14px 24px;
   border-radius: 10px;
   border: none;
   background-color: #222222;
 }
 
+.button__nextstep {
+  font-size: 16px;
+  color: white;
+  font-style: "Manrope, sans-serif";
+  padding: 14px 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #222222;
+}
 
-
-
-
-@media(min-width:1200px) {
-
+@media (min-width: 1200px) {
   .form__header {
     width: -webkit-fill-available;
     justify-content: center;
@@ -185,7 +176,7 @@
 
   .logo__img {
     height: 100px;
-    width: 100px
+    width: 100px;
   }
 
   .header__buttons {
@@ -240,10 +231,9 @@
   }
 
   .country {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-weight: bold;
     width: -webkit-fill-available;
   }
-
 }
