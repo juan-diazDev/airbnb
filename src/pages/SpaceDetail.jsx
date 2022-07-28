@@ -1,5 +1,5 @@
 import CheckOutCard from '../components/CheckOutCard';
-import Header from "../components/Header";
+import Header from '../components/Header';
 
 const SpaceDetail = () => (
   <div>
