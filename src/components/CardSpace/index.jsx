@@ -21,11 +21,7 @@ const CardSpace = ({ space }) => (
 );
 
 CardSpace.propTypes = {
-  space: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-    }),
-  ).isRequired,
+  space: PropTypes.shape().isRequired,
 };
 
 export default CardSpace;
