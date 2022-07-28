@@ -9,37 +9,34 @@ const FormContainerTitle = () => (
           <img
             className="logo__img"
             src="img/LogoIcon/White.png"
-            alt="airbnbLogo" />
+            alt="airbnbLogo"
+          />
         </Link>
       </div>
 
       <div className="header__buttons">
-        <button className="button">Ask a Superhost</button>
-        <button className="button">Help</button>
+        <button className="button" type="button">Ask a Superhost</button>
+        <button className="button" type="button">Help</button>
       </div>
     </div>
 
     <div className="form__container">
       <div className="container__question">
-        <h1 className="question__title">Let's give your place a name</h1>
+        <h1 className="question__title">Let’s give your place a name</h1>
       </div>
 
       <div className="container__options">
         <div className="option__offertitle">
           <h2 className="offertitle">Create your title</h2>
-          <textarea
-            className="offertitle__text"
-            placeholder="cheerful 3 bedrooms house with pool"
-            rows="3">
-          </textarea>
+          <textarea className="offertitle__text" placeholder="cheerful 3 bedrooms house with pool" rows="3" />
         </div>
 
         <div className="container__button-step">
           <Link to="/FormContainerImages">
-            <button className="button__backstep">Back</button>
+            <button className="button__backstep" type="button">Back</button>
           </Link>
           <Link to="/FormContainerDescriptionPlace">
-            <button className="button__nextstep">Next</button>
+            <button className="button__nextstep" type="button">Next</button>
           </Link>
         </div>
       </div>

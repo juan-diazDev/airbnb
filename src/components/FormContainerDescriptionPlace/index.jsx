@@ -22,7 +22,7 @@ const FormContainerDescriptionPlace = () => (
 
     <div className="form__container">
       <div className="container__question">
-        <h1 className="question__title">Now, lets describe your place</h1>
+        <h1 className="question__title">Now, let’s describe your place</h1>
       </div>
 
       <div className="container__options">

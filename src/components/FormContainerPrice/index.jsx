@@ -9,28 +9,29 @@ const FormContainerPrice = () => (
           <img
             className="logo__img"
             src="img/LogoIcon/White.png"
-            alt="airbnbLogo" />
+            alt="airbnbLogo"
+          />
         </Link>
       </div>
 
       <div className="header__buttons">
-        <button className="button">Ask a Superhost</button>
-        <button className="button">Help</button>
+        <button className="button" type="button">Ask a Superhost</button>
+        <button className="button" type="button">Help</button>
       </div>
     </div>
 
     <div className="form__container">
       <div className="container__question">
-        <h1 className="question__title">Let's give your place a name</h1>
+        <h1 className="question__title">Let’s give your place a name</h1>
       </div>
 
       <div className="container__options">
         <div className="option__offerprice">
-          <button className="offerprice__low">-</button>
+          <button className="offerprice__low" type="button">-</button>
           <div className="offerprice__input">
             <input className="offerprice" placeholder="$179043" type="text" />
           </div>
-          <button className="offerprice__rise">+</button>
+          <button className="offerprice__rise" type="button">+</button>
         </div>
 
         <div className="option__pernight">
@@ -45,9 +46,9 @@ const FormContainerPrice = () => (
 
         <div className="container__button-step">
           <Link to="/FormContainerDescriptionPlace">
-            <button className="button__backstep">Back</button>
+            <button className="button__backstep" type="button">Back</button>
           </Link>
-          <button className="button__nextstep">Review your listing</button>
+          <button className="button__nextstep" type="button">Review your listing</button>
         </div>
       </div>
     </div>
