@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <MainSection List={spaces} />
+      <MainSection list={spaces} />
       <Footer />
     </>
   );

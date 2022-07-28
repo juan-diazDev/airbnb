@@ -8,9 +8,9 @@ const Menu = () => (
       <ul className="nav-menu">
         <li>
           <div className="menu__icon-container">
-            <div className="menu__icon"></div>
-            <div className="menu__icon"></div>
-            <div className="menu__icon"></div>
+            <div className="menu__icon" />
+            <div className="menu__icon" />
+            <div className="menu__icon" />
           </div>
           <ul className="menu__item">
             <li><Link to="/Signupform" className="menu__item__link">Sing up</Link></li>
