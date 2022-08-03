@@ -1,10 +1,12 @@
-import CheckOutCard from '../components/CheckOutCard';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Details from '../components/SpaceDetail/Details';
 
 const SpaceDetail = () => (
   <div>
     <Header />
-    <CheckOutCard />
+    <Details />
+    <Footer />
   </div>
 );
 

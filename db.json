@@ -2,99 +2,488 @@
   "spaces": [
     {
       "id": "1",
+      "Title": "The Best Place in Narnia",
       "img": "img/Spaces/1.jpg",
-      "location": "Benalmadena, Spain",
-      "distance": "7,906 kilometers away",
       "dates": "Oct 1 - ",
-      "price": "$70 usd"
+      "price": "$70 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "2",
       "img": "img/Spaces/2.jpg",
-      "location": "Bolton, New York, US",
-      "distance": "4,153 kilometers away",
       "dates": "Jul 16 - 23",
-      "price": "$9,482 usd"
-    },
-    {
-      "id": "3",
-      "img": "img/Spaces/3.jpg",
-      "location": "Kilcolgan, Ireland",
-      "distance": "7,915 kilometers away",
-      "dates": "Sep 1 - 6",
-      "price": "$597 usd"
+      "price": "$9,482 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "4",
       "img": "img/Spaces/4.jpg",
-      "location": "Watermouth, near Ilfracombe, UK",
-      "distance": "8,184 kilometers away",
       "dates": "Jul 29 - Aug 5",
-      "price": "$412 usd"
+      "price": "$412 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "5",
       "img": "img/Spaces/5.jpg",
-      "location": "Boyds, Maryland, US",
-      "distance": "3,6645 kilometers away",
       "dates": "Jul 17 - 22",
-      "price": "$573usd"
+      "price": "$573usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "6",
       "img": "img/Spaces/6.jpg",
-      "location": "Dromcolliher, Ireland",
-      "distance": "7,883 kilometers away",
       "dates": "Jul 17 - 22",
-      "price": "$2,525 usd"
+      "price": "$2,525 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
-      "id": "",
+      "id": "7",
       "img": "img/Spaces/7.jpg",
-      "location": "Ovens, Ireland",
-      "distance": "7,886 kilometers away",
-      "dates": "Jul 30 - Aug 4",
-      "price": "$1,262 usd"
+      "dates": "Jul 17 - 22",
+      "price": "$2,525 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "8",
       "img": "img/Spaces/8.jpg",
-      "location": "Kilkenny city, Ireland",
-      "distance": "7,990 kilometers away",
       "dates": "Sep 3 - 8",
-      "price": "$778 usd"
+      "price": "$778 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "9",
       "img": "img/Spaces/9.jpg",
-      "location": "Irasburg, Vermont, US",
-      "distance": "4,297 kilometers away",
       "dates": "Sep 3 - 8",
-      "price": "$915 usd"
+      "price": "$915 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "10",
       "img": "img/Spaces/10.jpg",
-      "location": "Vale of Avoca, Irelan",
-      "distance": "8,076 kilometers away",
       "dates": "Oct 26 - Nov 1",
-      "price": "$184 usd"
+      "price": "$184 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "11",
       "img": "img/Spaces/11.jpg",
-      "location": "Bolton, New York, US",
-      "distance": "4,153 kilometers away",
       "dates": "Jul 16 - 22",
-      "price": "$1,621 usd"
+      "price": "$1,621 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "12",
       "img": "img/Spaces/12.jpg",
-      "location": "Ortonvile, Minnesota, US",
-      "distance": "4,788 kilometers away",
       "dates": "Jul 27 - Aug 1",
-      "price": "$132 usd"
+      "price": "$132 usd",
+      "How many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "Privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "Adress": {
+        "street": "cra 28 # 29 - 145, apto 510",
+        "City": "Cartagena",
+        "State": "Atlantico",
+        "Zip code": "00000",
+        "Country": "Colombia"
+      },
+      "Amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "Bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "Bedroom and Laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "Facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "Entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     }
   ]
 }
