@@ -7,7 +7,7 @@ const Header = () => (
   <header className=" header header--bgscreen">
     <div className="container-logo">
       <Link to="/">
-        <img src="https://res.cloudinary.com/juanito-om/image/upload/v1659639597/img/Logo/Pink_sc84gi.png" alt="airbnb-logo" className="container-logo__logo" />
+        <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662807/images/Logo/Pink_lmr4oj.png" alt="airbnb-logo" className="container-logo__logo" />
       </Link>
     </div>
     <Searcher />

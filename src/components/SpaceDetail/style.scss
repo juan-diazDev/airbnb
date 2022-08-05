@@ -1,0 +1,35 @@
+@import '../../sass_styles/_fonts.scss';
+
+.unstyle-container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: nunito-bold;
+}
+
+.carousel__section-container {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  flex-direction: row;
+  padding: 0px 10px;
+  overflow-x: auto;
+  ::-webkit-scrollbar {
+    display: none;
+ }
+}
+.carousel__mobiles-version-container {
+  height: 250px;
+  margin: 0px 10px;
+}
+
+.carousel__mobiles-version-image {
+  width: 90vw;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}

@@ -3,10 +3,11 @@
     {
       "id": "1",
       "title": "Benalmádena, Spain",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/1_byllif.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/1_qo7afi.webp",
       "dates": "Oct 1 - 6",
       "price": "$70 usd",
       "how many": "5",
+      "owner": {"id": "1"},
       "type": [
         "House",
         "Apartment",
@@ -48,9 +49,10 @@
     {
       "id": "2",
       "title": "Bolton, New York, US",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/2_a9e85z.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/2_holle3.webp",
       "dates": "Jul 16 - 23",
       "price": "$9,482 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -93,9 +95,10 @@
     {
       "id": "3",
       "title": "Kilscolgan, Ireland",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/3_qaximo.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/3_fsp90x.webp",
       "dates": "Sep 1 - 6",
       "price": "$621 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -138,9 +141,10 @@
     {
       "id": "4",
       "title": "Watermouth, near Ilfrancombe, UK",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/4_cojvxp.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/4_wxfznz.webp",
       "dates": "Jul 29 - Aug 5",
       "price": "$412 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -183,9 +187,10 @@
     {
       "id": "5",
       "title": "Boyds, Maryland, US",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/5_e52mlx.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/5_lpxctv.webp",
       "dates": "Jul 17 - 22",
       "price": "$573usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -228,9 +233,10 @@
     {
       "id": "6",
       "title": "Dromcolliher, Ireland",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/6_damlj3.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/6_vaxv23.webp",
       "dates": "Jul 17 - 22",
       "price": "$2,525 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -273,9 +279,10 @@
     {
       "id": "7",
       "title": "Kilkenny city, Ireland",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/7_sbzx2x.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/7_gdw4hq.webp",
       "dates": "Jul 17 - 22",
       "price": "$2,525 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -318,9 +325,10 @@
     {
       "id": "8",
       "title": "Laguna Hills, California, US",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/8_shmtsw.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/8_qdt56d.webp",
       "dates": "Sep 3 - 8",
       "price": "$778 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -363,9 +371,10 @@
     {
       "id": "9",
       "title": "Vale of Avoca, Ireland",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/9_se2lqu.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/9_mke4qj.webp",
       "dates": "Sep 3 - 8",
       "price": "$915 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -408,9 +417,10 @@
     {
       "id": "10",
       "title": "Bolton, New York, US",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/10_jigsye.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/10_goxrgv.webp",
       "dates": "Oct 26 - Nov 1",
       "price": "$184 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -453,9 +463,10 @@
     {
       "id": "11",
       "title": "Ortonville, Minnesota, US",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/11_cm3xgb.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/11_beloia.webp",
       "dates": "Jul 16 - 22",
       "price": "$1,621 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -498,9 +509,10 @@
     {
       "id": "12",
       "title": "Moncton, Cananda",
-      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/12_ukathb.webp",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/12_almlbd.webp",
       "dates": "Jul 27 - Aug 1",
       "price": "$132 usd",
+      "owner": {"id": "1"},
       "how many": "5",
       "type": [
         "House",
@@ -539,6 +551,53 @@
         ]
       },
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+    }
+  ],
+  "Users": [
+    {
+      "id": "1",
+      "name": "Josecito",
+      "last_name": "Alzate",
+      "phone": "5516524235",
+      "email": "q@jsx.net",
+      "gender": "Libre",
+      "about": "Que somos una bacanería de grupo",
+      "photo": "link",
+      "privete": {
+        "password": "xxxxxxxxxx",
+        "bank_acount": "333.3332.331.12",
+        "date": "dd/mm/year"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Josecito",
+      "last_name": "Alzate",
+      "phone": "5516524235",
+      "email": "q@jsx.net",
+      "gender": "Libre",
+      "about": "Que somos una bacanería de grupo",
+      "photo": "link",
+      "privete": {
+        "password": "xxxxxxxxxx",
+        "bank_acount": "333.3332.331.12",
+        "date": "dd/mm/year"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Josecito",
+      "last_name": "Alzate",
+      "phone": "5516524235",
+      "email": "q@jsx.net",
+      "gender": "Libre",
+      "about": "Que somos una bacanería de grupo",
+      "photo": "link",
+      "privete": {
+        "password": "xxxxxxxxxx",
+        "bank_acount": "333.3332.331.12",
+        "date": "dd/mm/year"
+      }
     }
   ]
 }
