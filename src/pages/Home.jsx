@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import MainSection from '../components/MainSection';
 import Footer from '../components/Footer';
-import { getSpace } from '../services/spaces';
+import { getSpaces } from '../services/spaces';
 
 const Home = () => {
   const [spaces, setSpaces] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await getSpace();
+      const result = await getSpaces();
       setSpaces(result);
     };
 

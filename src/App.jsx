@@ -21,7 +21,7 @@ const App = () => (
       <Route path="/" element={<Home />} />
       <Route path="/Loginform" element={<Loginform />} />
       <Route path="/Signupform" element={<Signupform />} />
-      <Route path="/SpaceDetail" element={<SpaceDetail />} />
+      <Route path="/SpaceDetail/:id" element={<SpaceDetail />} />
       <Route path="/FormContainerDescribe" element={<FormContainerDescribe />} />
       <Route path="/FormContainerCapacity" element={<FormContainerCapacity />} />
       <Route path="/FormContainerAdress" element={<FormContainerAdress />} />

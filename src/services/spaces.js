@@ -1,11 +1,19 @@
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'http://localhost:8080/api';
 
-export async function getSpace() {
-  const response = await fetch(`${BASE_URL}/spaces`);
-  return response.json();
+export async function getSpaces() {
+  try {
+    const response = await fetch(`${BASE_URL}/spaces`);
+    return response.json();
+  } catch (error) {
+    return new Error(error);
+  }
 }
 
-export async function getSpaces(id) {
-  const response = await fetch(`${BASE_URL}/spaces/${id}`);
-  return response.json();
+export async function getSpace(id) {
+  try {
+    const response = await fetch(`${BASE_URL}/spaces/${id}`);
+    return response.json();
+  } catch (error) {
+    return new Error(error);
+  }
 }

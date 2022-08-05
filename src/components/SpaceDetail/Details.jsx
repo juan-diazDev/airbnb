@@ -1,23 +1,26 @@
-import { useEffect, useState } from 'react';
-import { getSpace } from '../../services/spaces';
+import PropTypes from 'prop-types';
 import CheckOutCard from './CheckOutCard';
+import ImageCarousel from './ImageCarousel';
 
-const Details = () => {
-  const [spaces, setSpaces] = useState([]);
+const Details = ({ details }) => (
+  <div>
+    {
+      details ? (
+        <div>
+          <ImageCarousel image={details.img} />
+          <CheckOutCard />
+        </div>
+      ) : 'Loading...'
+    }
+  </div>
+);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await getSpace();
-      setSpaces(result);
-    };
+Details.defaultProps = {
+  details: null,
+};
 
-    fetchData();
-  }, []);
-  return (
-    <div>
-      <CheckOutCard details={spaces} />
-    </div>
-  );
+Details.propTypes = {
+  details: PropTypes.shape(),
 };
 
 export default Details;

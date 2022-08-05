@@ -2,533 +2,543 @@
   "spaces": [
     {
       "id": "1",
-      "Title": "Bolton, New York, US",
-      "img": ["img/Spaces/1.jpg", "img/Spaces/1.jpg", "img/Spaces/1.jpg", "img/Spaces/1.jpg", "img/Spaces/1.jpg"],
+      "title": "Benalmádena, Spain",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/1_byllif.webp",
       "dates": "Oct 1 - 6",
       "price": "$70 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "2",
-      "img": [ "img/Spaces/2.jpg", "img/Spaces/2.jpg", "img/Spaces/2.jpg", "img/Spaces/2.jpg", "img/Spaces/2.jpg"],
+      "title": "Bolton, New York, US",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/2_a9e85z.webp",
       "dates": "Jul 16 - 23",
       "price": "$9,482 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "3",
-      "Title": "Kilscolgan, Ireland",
-      "img": ["img/Spaces/3.jpg", "img/Spaces/3.jpg", "img/Spaces/3.jpg", "img/Spaces/3.jpg", "img/Spaces/3.jpg"],
+      "title": "Kilscolgan, Ireland",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/3_qaximo.webp",
       "dates": "Sep 1 - 6",
       "price": "$621 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "4",
-      "img": ["img/Spaces/4.jpg", "img/Spaces/4.jpg", "img/Spaces/4.jpg", "img/Spaces/4.jpg", "img/Spaces/4.jpg"],
+      "title": "Watermouth, near Ilfrancombe, UK",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/4_cojvxp.webp",
       "dates": "Jul 29 - Aug 5",
       "price": "$412 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "5",
-      "img": ["img/Spaces/5.jpg", "img/Spaces/5.jpg", "img/Spaces/5.jpg", "img/Spaces/5.jpg", "img/Spaces/5.jpg"],
+      "title": "Boyds, Maryland, US",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/5_e52mlx.webp",
       "dates": "Jul 17 - 22",
       "price": "$573usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "6",
-      "img": ["img/Spaces/6.jpg", "img/Spaces/6.jpg", "img/Spaces/6.jpg", "img/Spaces/6.jpg", "img/Spaces/6.jpg"],
+      "title": "Dromcolliher, Ireland",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640073/img/Space/6_damlj3.webp",
       "dates": "Jul 17 - 22",
       "price": "$2,525 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "7",
-      "img": ["img/Spaces/7.jpg", "img/Spaces/7.jpg", "img/Spaces/7.jpg", "img/Spaces/7.jpg", "img/Spaces/7.jpg"],
+      "title": "Kilkenny city, Ireland",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/7_sbzx2x.webp",
       "dates": "Jul 17 - 22",
       "price": "$2,525 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "8",
-      "img": ["img/Spaces/8.jpg", "img/Spaces/8.jpg", "img/Spaces/8.jpg", "img/Spaces/8.jpg", "img/Spaces/8.jpg"],
+      "title": "Laguna Hills, California, US",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/8_shmtsw.webp",
       "dates": "Sep 3 - 8",
       "price": "$778 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "9",
-      "img": ["img/Spaces/9.jpg", "img/Spaces/9.jpg", "img/Spaces/9.jpg", "img/Spaces/9.jpg", "img/Spaces/9.jpg"],
+      "title": "Vale of Avoca, Ireland",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/9_se2lqu.webp",
       "dates": "Sep 3 - 8",
       "price": "$915 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "10",
-      "img": ["img/Spaces/10.jpg", "img/Spaces/10.jpg", "img/Spaces/10.jpg", "img/Spaces/10.jpg", "img/Spaces/10.jpg"],
+      "title": "Bolton, New York, US",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/10_jigsye.webp",
       "dates": "Oct 26 - Nov 1",
       "price": "$184 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "11",
-      "img": ["img/Spaces/11.jpg", "img/Spaces/11.jpg", "img/Spaces/11.jpg", "img/Spaces/11.jpg", "img/Spaces/11.jpg"],
+      "title": "Ortonville, Minnesota, US",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/11_cm3xgb.webp",
       "dates": "Jul 16 - 22",
       "price": "$1,621 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "12",
-      "img": ["img/Spaces/12.jpg", "img/Spaces/12.jpg", "img/Spaces/12.jpg", "img/Spaces/12.jpg", "img/Spaces/12.jpg"],
+      "title": "Moncton, Cananda",
+      "img": "https://res.cloudinary.com/juanito-om/image/upload/v1659640074/img/Space/12_ukathb.webp",
       "dates": "Jul 27 - Aug 1",
       "price": "$132 usd",
-      "How many": "5",
+      "how many": "5",
       "type": [
         "House",
         "Apartment",
         "Ranch",
         "Bed & Breakfast"
       ],
-      "Privacy-type": [
+      "privacy-type": [
         "Entire place",
         "Private room",
         "Shared room"
       ],
-      "Adress": {
-        "street": "cra 28 # 29 - 145, apto 510",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
         "City": "Cartagena",
         "State": "Atlantico",
         "Zip code": "00000",
         "Country": "Colombia"
       },
-      "Amenities": {
+      "amenities": {
         "beds": "5",
         "kitchen": [
           "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
         ],
-        "Bathroom": [
+        "bathroom": [
           "3", "Body soap", "Shampoo", "Toilet paper"
         ],
-        "Bedroom and Laudry": [
+        "bedroom and laudry": [
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
-        "Facilities": [
+        "facilities": [
           "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "Entertaiment": [
+        "entertaiment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
-      "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     }
   ]
 }

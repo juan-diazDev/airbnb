@@ -9,7 +9,7 @@ const Searcher = () => (
       </div>
       <img
         className="searcher__icon searcher__icon--queri-bgscreen"
-        src="img/SearchIcons/Pink.png"
+        src="https://res.cloudinary.com/juanito-om/image/upload/v1659640047/img/SearchIcon/Pink_iwfuki.png"
         alt="search-icon"
       />
     </button>
