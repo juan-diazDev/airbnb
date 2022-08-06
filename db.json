@@ -7,6 +7,13 @@
       "dates": "Oct 1 - 6",
       "price": "$70 usd",
       "how many": "5",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "owner": {"id": "1"},
       "type": [
         "House",
@@ -19,13 +26,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -53,6 +53,13 @@
       "dates": "Jul 16 - 23",
       "price": "$9,482 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -65,13 +72,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -99,6 +99,13 @@
       "dates": "Sep 1 - 6",
       "price": "$621 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -111,13 +118,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -145,6 +145,13 @@
       "dates": "Jul 29 - Aug 5",
       "price": "$412 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -157,13 +164,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -191,6 +191,13 @@
       "dates": "Jul 17 - 22",
       "price": "$573usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -203,13 +210,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -237,6 +237,13 @@
       "dates": "Jul 17 - 22",
       "price": "$2,525 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -249,13 +256,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -283,6 +283,13 @@
       "dates": "Jul 17 - 22",
       "price": "$2,525 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -295,13 +302,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -329,6 +329,13 @@
       "dates": "Sep 3 - 8",
       "price": "$778 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -341,13 +348,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -375,6 +375,13 @@
       "dates": "Sep 3 - 8",
       "price": "$915 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -387,13 +394,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -421,6 +421,13 @@
       "dates": "Oct 26 - Nov 1",
       "price": "$184 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -433,13 +440,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -467,6 +467,13 @@
       "dates": "Jul 16 - 22",
       "price": "$1,621 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -479,13 +486,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -513,6 +513,13 @@
       "dates": "Jul 27 - Aug 1",
       "price": "$132 usd",
       "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
       "how many": "5",
       "type": [
         "House",
@@ -525,13 +532,6 @@
         "Private room",
         "Shared room"
       ],
-      "adress": {
-        "street": "En medio de las nubes y el sol",
-        "city": "Cartagena",
-        "state": "Atlantico",
-        "zip code": "00000",
-        "country": "Colombia"
-      },
       "amenities": {
         "beds": "5",
         "kitchen": [
