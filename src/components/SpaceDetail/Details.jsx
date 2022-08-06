@@ -9,7 +9,8 @@ const Details = ({ details }) => (
       details ? (
         <div>
           <ImageCarousel image={details.img} title={details.title} />
-          <h1>{details.title}</h1>
+          <h1 className="detail__title">{details.title}</h1>
+          <p className="detail__location">{details.adress.city}, {details.adress.state}</p>
           <CheckOutCard />
         </div>
       ) : 'Loading...'

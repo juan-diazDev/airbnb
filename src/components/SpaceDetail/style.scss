@@ -1,35 +1,116 @@
 @import '../../sass_styles/_fonts.scss';
+@import '../../sass_styles/colors';
 
-.unstyle-container {
+.detail-header__main-container {
+  display: none;
+  @media (min-width: 1200px) {
+    display: initial;
+  }
+}
+
+.unstyle-detail {
   display: flex;
   margin: 0px;
   padding: 0px;
+  position: relative;
+  height: 300px;
+  letter-spacing: 2px;
+  @media (min-width: 1200px) {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+  }
 }
 
-h1 {
+.detail__title {
   font-family: nunito-bold;
+  margin: 20px 20px 0px;
+}
+
+p.detail__location {
+  font-family: nunito-extra-light;
+  margin: 0px 20px;
 }
 
 .carousel__section-container {
-  height: 300px;
+  height: 100%;
   display: flex;
   align-items: center;
   width: max-content;
   flex-direction: row;
-  padding: 0px 10px;
   overflow-x: auto;
-  ::-webkit-scrollbar {
-    display: none;
- }
+  @media (min-width: 1200px) {
+    overflow: unset;
+    flex-direction: column;
+  }
 }
+
 .carousel__mobiles-version-container {
-  height: 250px;
-  margin: 0px 10px;
+  height: 100%;
+  margin: 0px 20px 0px 0px;
 }
 
 .carousel__mobiles-version-image {
-  width: 90vw;
+  width: 100vw;
   height: 100%;
-  border-radius: 10px;
   object-fit: cover;
+}
+.carousel__right-down-image-container {
+  margin-right: 0px;
+}
+
+.carousel_back-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  align-content: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  box-shadow: 0px 3px 5px #787777;;
+  .carousel_back-arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.carousel_next-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  .carousel_next-arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.carousel__final-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+
+}
+
+.carousel__center-full-container{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
