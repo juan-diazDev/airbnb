@@ -2,99 +2,602 @@
   "spaces": [
     {
       "id": "1",
-      "img": "img/Spaces/1.jpg",
-      "location": "Benalmadena, Spain",
-      "distance": "7,906 kilometers away",
-      "dates": "Oct 1 - ",
-      "price": "$70 usd"
+      "title": "Benalmádena, Spain",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/1_qo7afi.webp",
+      "dates": "Oct 1 - 6",
+      "price": "$70 usd",
+      "how many": "5",
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "owner": {"id": "1"},
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "2",
-      "img": "img/Spaces/2.jpg",
-      "location": "Bolton, New York, US",
-      "distance": "4,153 kilometers away",
+      "title": "Bolton, New York, US",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/2_holle3.webp",
       "dates": "Jul 16 - 23",
-      "price": "$9,482 usd"
+      "price": "$9,482 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "3",
-      "img": "img/Spaces/3.jpg",
-      "location": "Kilcolgan, Ireland",
-      "distance": "7,915 kilometers away",
+      "title": "Kilscolgan, Ireland",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/3_fsp90x.webp",
       "dates": "Sep 1 - 6",
-      "price": "$597 usd"
+      "price": "$621 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "4",
-      "img": "img/Spaces/4.jpg",
-      "location": "Watermouth, near Ilfracombe, UK",
-      "distance": "8,184 kilometers away",
+      "title": "Watermouth, near Ilfrancombe, UK",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/4_wxfznz.webp",
       "dates": "Jul 29 - Aug 5",
-      "price": "$412 usd"
+      "price": "$412 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "5",
-      "img": "img/Spaces/5.jpg",
-      "location": "Boyds, Maryland, US",
-      "distance": "3,6645 kilometers away",
+      "title": "Boyds, Maryland, US",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/5_lpxctv.webp",
       "dates": "Jul 17 - 22",
-      "price": "$573usd"
+      "price": "$573usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "6",
-      "img": "img/Spaces/6.jpg",
-      "location": "Dromcolliher, Ireland",
-      "distance": "7,883 kilometers away",
+      "title": "Dromcolliher, Ireland",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/6_vaxv23.webp",
       "dates": "Jul 17 - 22",
-      "price": "$2,525 usd"
+      "price": "$2,525 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
-      "id": "",
-      "img": "img/Spaces/7.jpg",
-      "location": "Ovens, Ireland",
-      "distance": "7,886 kilometers away",
-      "dates": "Jul 30 - Aug 4",
-      "price": "$1,262 usd"
+      "id": "7",
+      "title": "Kilkenny city, Ireland",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/7_gdw4hq.webp",
+      "dates": "Jul 17 - 22",
+      "price": "$2,525 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "8",
-      "img": "img/Spaces/8.jpg",
-      "location": "Kilkenny city, Ireland",
-      "distance": "7,990 kilometers away",
+      "title": "Laguna Hills, California, US",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/8_qdt56d.webp",
       "dates": "Sep 3 - 8",
-      "price": "$778 usd"
+      "price": "$778 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "9",
-      "img": "img/Spaces/9.jpg",
-      "location": "Irasburg, Vermont, US",
-      "distance": "4,297 kilometers away",
+      "title": "Vale of Avoca, Ireland",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/9_mke4qj.webp",
       "dates": "Sep 3 - 8",
-      "price": "$915 usd"
+      "price": "$915 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "10",
-      "img": "img/Spaces/10.jpg",
-      "location": "Vale of Avoca, Irelan",
-      "distance": "8,076 kilometers away",
+      "title": "Bolton, New York, US",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/10_goxrgv.webp",
       "dates": "Oct 26 - Nov 1",
-      "price": "$184 usd"
+      "price": "$184 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "11",
-      "img": "img/Spaces/11.jpg",
-      "location": "Bolton, New York, US",
-      "distance": "4,153 kilometers away",
+      "title": "Ortonville, Minnesota, US",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/11_beloia.webp",
       "dates": "Jul 16 - 22",
-      "price": "$1,621 usd"
+      "price": "$1,621 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
       "id": "12",
-      "img": "img/Spaces/12.jpg",
-      "location": "Ortonvile, Minnesota, US",
-      "distance": "4,788 kilometers away",
+      "title": "Moncton, Cananda",
+      "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662893/images/Spaces/12_almlbd.webp",
       "dates": "Jul 27 - Aug 1",
-      "price": "$132 usd"
+      "price": "$132 usd",
+      "owner": {"id": "1"},
+      "adress": {
+        "street": "En medio de las nubes y el sol",
+        "city": "Cartagena",
+        "state": "Atlantico",
+        "zip code": "00000",
+        "country": "Colombia"
+      },
+      "how many": "5",
+      "type": [
+        "House",
+        "Apartment",
+        "Ranch",
+        "Bed & Breakfast"
+      ],
+      "privacy-type": [
+        "Entire place",
+        "Private room",
+        "Shared room"
+      ],
+      "amenities": {
+        "beds": "5",
+        "kitchen": [
+          "Kitchen","Hoven", "refrigerator", "Cooking basics", "Dishes and silverware", "Stove", "Rice maker", "Dining table", "Outdoor dining area"
+        ],
+        "bathroom": [
+          "3", "Body soap", "Shampoo", "Toilet paper"
+        ],
+        "bedroom and laudry": [
+          "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
+        ],
+        "facilities": [
+          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+        ],
+        "entertaiment": [
+          "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
+        ]
+      },
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
+    }
+  ],
+  "Users": [
+    {
+      "id": "1",
+      "name": "Josecito",
+      "last_name": "Alzate",
+      "phone": "5516524235",
+      "email": "q@jsx.net",
+      "gender": "Libre",
+      "about": "Que somos una bacanería de grupo",
+      "photo": "link",
+      "privete": {
+        "password": "xxxxxxxxxx",
+        "bank_acount": "333.3332.331.12",
+        "date": "dd/mm/year"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Josecito",
+      "last_name": "Alzate",
+      "phone": "5516524235",
+      "email": "q@jsx.net",
+      "gender": "Libre",
+      "about": "Que somos una bacanería de grupo",
+      "photo": "link",
+      "privete": {
+        "password": "xxxxxxxxxx",
+        "bank_acount": "333.3332.331.12",
+        "date": "dd/mm/year"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Josecito",
+      "last_name": "Alzate",
+      "phone": "5516524235",
+      "email": "q@jsx.net",
+      "gender": "Libre",
+      "about": "Que somos una bacanería de grupo",
+      "photo": "link",
+      "privete": {
+        "password": "xxxxxxxxxx",
+        "bank_acount": "333.3332.331.12",
+        "date": "dd/mm/year"
+      }
     }
   ]
 }

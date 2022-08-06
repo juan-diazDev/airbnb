@@ -4,14 +4,14 @@ import './style.scss';
 
 const CardSpace = ({ space }) => (
   <div className="main-container">
-    <Link className="space-link" to="/SpaceDetail" key={space.id}>
+    <Link className="space-link" to={`/SpaceDetail/${space.id}`} key={space.id}>
       <main className="mainSection mainSection--queri-bgscreen">
         <div className="mainSection__card  mainSection__card--queri-bgscreen">
           <div className="card__image-container">
-            <img className="card__image__image" src={space.img} alt="space" />
+            <img className="card__image__image" src={space.img} alt={space.title} />
           </div>
-          <div className="card__location"><b>{space.location}</b></div>
-          <div className="card__distance">{space.distance}</div>
+          <div className="card__location"><b>{space.title}</b></div>
+          <div className="card__distance">{space.adress.street}</div>
           <div className="card__dates">{space.dates}</div>
           <div className="card__price"><b>{space.price}</b> / night</div>
         </div>
