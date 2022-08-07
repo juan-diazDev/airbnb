@@ -11,7 +11,7 @@ const Details = ({ details }) => (
           <ImageCarousel image={details.img} title={details.title} />
           <h1 className="detail__title">{details.title}</h1>
           <p className="detail__location">{details.adress.city}, {details.adress.state}</p>
-          <CheckOutCard />
+          <CheckOutCard price={details.price} dates={details.dates} />
         </div>
       ) : 'Loading...'
     }
