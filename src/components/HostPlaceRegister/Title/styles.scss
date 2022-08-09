@@ -1,0 +1,61 @@
+@import '../../../sass_styles/_fonts.scss';
+
+
+.option__offertitle {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  max-width: 720px;
+  min-width: 100px;
+  margin: 0px 20px;
+}
+
+.offertitle {
+  font-family: nunito-bold;
+  font-size: 22px;
+  padding: 20px 10px;
+}
+
+.offertitle__text {
+  color: #222222;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  outline: none;
+  border: 1px solid #b0b0b0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding-bottom: 10px;
+  font-family: nunito-extra-bold;
+  resize: vertical;
+  max-height: 25vh;
+  min-height: 144px;
+  padding: 16px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  overflow-y: hidden;
+}
+
+
+.progress6{
+    border-top: 2px solid black;
+    position: absolute;
+    left: 0%;
+    right: 30%;
+    top: 0%;
+}
+
+@media (min-width: 1200px) {
+
+  .option__offertitle {
+    margin-top: -80px;
+  }
+
+}
