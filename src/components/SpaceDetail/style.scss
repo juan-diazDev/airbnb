@@ -197,7 +197,7 @@
   bottom: 0px;
   display: flex;
   width: 100vw;
-  height: 77px;
+  height: max-content;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -243,6 +243,10 @@
   @media (min-width: 1200px) {
     display: none;
   }
+}
+
+.spaceDetail__checkout-card-container {
+  display: none;
 }
 
 @media (min-width: 1200px) {
@@ -366,6 +370,46 @@
           opacity: .8;
           cursor: pointer;
         }
+      }
+    }
+    hr {
+      margin-top: 20px;
+      border: none;
+      border-bottom: .05px solid lightgrey;
+      width: 100%;
+    }
+    .checkout-card__payment__details-container {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+      .checkout-card__payment__details {
+        margin-left: 10px;
+        font-family: nunito-light;
+      }
+      .checkout-card__payment__details-sum{
+        margin-right: 10px;
+        font-family: nunito-semi-bold;
+      }
+    }
+    .checkout-card__payment__total-container {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 17px;
+      .checkout-card__payment__total-text {
+        margin-left: 10px;
+        font-family: nunito-bold-italic;
+      }
+      .checkout-card__payment__total {
+        margin-right: 10px;
+        font-family: nunito-extra-bold;
       }
     }
   }

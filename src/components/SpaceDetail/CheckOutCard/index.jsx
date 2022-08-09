@@ -51,6 +51,28 @@ const CheckOutCard = ({ price, dates }) => (
           </button>
         </div>
       </form>
+
+      <hr />
+
+      <div className="checkout-card__payment__details-container">
+        <div className="checkout-card__payment__details">
+          <p>{price} x 6 nights</p>
+        </div>
+        <div className="checkout-card__payment__details-sum">
+          $42 usd
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="checkout-card__payment__total-container">
+        <div className="checkout-card__payment__total-text">
+          Total:
+        </div>
+        <div className="checkout-card__payment__total">
+          $42 usd
+        </div>
+      </div>
     </section>
   </>
 );
