@@ -12,9 +12,8 @@ import Amenities from './components/HostPlaceRegister/Amenities';
 import Images from './components/HostPlaceRegister/Images';
 import Title from './components/HostPlaceRegister/Title';
 import Description from './components/HostPlaceRegister/Description';
-/* import FormContainerDescriptionPlace from './components/FormContainerDescriptionPlace';
-import FormContainerPrice from './components/FormContainerPrice';
-import FormContainerType from './components/FormContainerType'; */
+import Price from './components/HostPlaceRegister/Price';
+import Preview from './components/HostPlaceRegister/Preview';
 
 const App = () => (
   <BrowserRouter>
@@ -31,9 +30,8 @@ const App = () => (
       <Route path="/Images" element={<Images />} />
       <Route path="/Title" element={<Title />} />
       <Route path="/Description" element={<Description />} />
-      {/*
-      <Route path="/FormContainerPrice" element={<FormContainerPrice />} />
-      <Route path="/FormContainerType" element={<FormContainerType />} />} */}
+      <Route path="/Price" element={<Price />} />
+      <Route path="/Preview" element={<Preview />} />
     </Routes>
   </BrowserRouter>
 );

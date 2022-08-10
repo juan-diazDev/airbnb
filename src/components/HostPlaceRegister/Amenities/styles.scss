@@ -144,11 +144,11 @@
 
 
 
-.progress4{
+.progress4 {
   border-top: 2px solid black;
   position: absolute;
   left: 0%;
-  right: 50%;
+  right: 0%;
   top: 0%;
 }
 
@@ -223,10 +223,7 @@
     flex-direction: row;
     flex-basis: 33.333333;
     padding-bottom: 30px;
-
-
   }
-
 
   .option__card3 {
     padding-top: 24px;
