@@ -6,13 +6,13 @@ import './style.scss';
 import Titles from './Titles';
 
 const Details = ({ details }) => (
-  <div>
+  <div className="body">
     {
       details ? (
         <div className="complete__spaceDetial-container">
           <ImageCarousel image={details.img} title={details.title} />
           <Titles title={details.title} city={details.adress.city} state={details.adress.state} />
-          <Description details={details} />
+          <Description />
           <CheckOutCard price={details.price} dates={details.dates} />
         </div>
       ) : 'Loading...'

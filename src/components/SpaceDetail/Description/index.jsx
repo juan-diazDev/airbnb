@@ -1,25 +1,23 @@
-import PropTypes from 'prop-types';
+const Description = () => (
+  <>
+    <section className="description__host__info-container">
+      <div className="description__host__info__text-container">
+        <p className="host__info__text__name">Place Hosted by Jess</p>
+        <p className="host__info__text__amenities">5 guests · 3 bedrooms · 5 beds · 3 bathroom</p>
+      </div>
+      <div className="description__host__info__imgae-container">
+        <img className="description__host__info__imgae-container" src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716573/images/Account/profilepic_bo57dk.jpg" alt="hosts-profile" />
+      </div>
+    </section>
 
-const Description = ({ details }) => (
-  <section className="descriptions__main-container">
-    <div>
-      <p>Place Hosted by {details.owner}</p>
-      <p>{details.howMany} Guests · {details.amenities.bedroomAndLaudry[0]} bedrooms ·
-        {details.amenities.beds} beds · {details.amenities.bathroom[0]} bathroom
-      </p>
-    </div>
+    <hr className="description__line_separation" />
 
-    <hr />
-
-  </section>
+    <section className="description__space_description-container">
+      pisci, possimus harum voluptatem laudantium
+      doloremque dignissimos iste quod veniam exercitationem?
+      Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!
+    </section>
+  </>
 );
-
-Description.defaultProps = {
-  details: null,
-};
-
-Description.propTypes = {
-  details: PropTypes.shape(),
-};
 
 export default Description;

@@ -17,3 +17,12 @@ export async function getSpace(id) {
     return new Error(error);
   }
 }
+
+export async function deleteSpace(id) {
+  try {
+    const response = await fetch(`${BASE_URL}/spaces/${id}`);
+    return response.json();
+  } catch (error) {
+    return new Error(error);
+  }
+}

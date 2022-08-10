@@ -1,9 +1,10 @@
 @import '../../sass_styles/_fonts.scss';
 @import '../../sass_styles/colors';
 
-.complete__spaceDetial-container {
+body {
   width: 100%;
   height: 100%;
+  border: 2px solid red;
 }
 
 .big-detail {
@@ -37,7 +38,7 @@
   }
   p.detail__location {
     font-family: nunito-extra-light;
-    margin: 0px 20px;
+    margin: 0px 20px 20px;
   }
   @media (min-width: 1200px) {
     position: absolute;
@@ -52,9 +53,10 @@
   align-items: center;
   width: max-content;
   flex-direction: row;
-  overflow-x: auto;
+  // overflow-x: scroll;
   @media (min-width: 1200px) {
-    overflow: unset;
+    // overflow-x: unset;
+    width: 80%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -192,7 +194,7 @@
 }
 
 .spaceDetail__sub-menu-container {
-  position: fixed;
+  position: relative;
   bottom: 0px;
   display: flex;
   width: 100vw;
@@ -413,13 +415,59 @@
   }
 }
 
-.descriptions__main-container {
+.description__host__info-container {
   margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 
+  .description__host__info__text-container {
+    margin: 20px 0px;
+    .host__info__text__name {
+      width: max-content;
+      font-size: 21px;
+      font-family: nunito-extra-bold;
+      margin: 0px;
+      padding: 0px;
+    }
+    .host__info__text__amenities {
+      font-size: 14px;
+      font-family: nunito-extra-light;
+      width: max-content;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+  .description__host__info__imgae-container {
+    width: 50px;
+    height: 50px;
+    .description__host__info__imgae-container {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
   @media (min-width: 1200px) {
     height: 100%;
     width: 45%;
     border: 2px solid red;
     margin: 0px 200px
   }
+}
+
+.description__line_separation {
+  margin-top: 20px 0px 0px;
+  border: none;
+  border-bottom: .05px solid rgba(0,0,0,0.08);
+  width: 90vw;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.description__space_description-container {
+  margin: 0px 20px;
+  font-family: nunito-light;
 }
