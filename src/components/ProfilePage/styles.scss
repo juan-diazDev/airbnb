@@ -124,6 +124,8 @@ margin-bottom: 16px;;
   text-decoration: underline;
   font-weight: 600px;
   text-align: left;
+  border-bottom: 1px solid rgb(235, 235, 235);;
+  font-weight: 600;
 }
 
 @media (min-width: 744px){
@@ -149,7 +151,6 @@ margin-bottom: 16px;;
   .profile__leftContainer-bigSc{
     border: solid 1px #DDDDDD;
     border-radius: 12px;
-    max-width: 308px;
     padding: 40px;
   }
   .profile__profilePic-container-bigSc{
@@ -181,20 +182,14 @@ margin-bottom: 16px;;
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    width: 66%;
   }
   .profile__userinfo-bigSc{
     display: flex;
     flex-direction: column;
   }
-  .profile__reviews-bigSc{
-    padding-top: 30px;
-  }
   .profile__Section-container2-bigSc{
     padding: 40px 0px;
     border-bottom: 1px solid rgb(235, 235, 235);
   }
-
-
-
-
 }
