@@ -1,0 +1,239 @@
+.account__container{
+  position: relative;
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #484848;
+}
+
+@media only screen and (max-width: 743px){
+  .account-top-container--bigsc{
+    display:none;
+  }
+  .account__mainText2{
+    display:none;
+  }
+
+  .account__top-container{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .account__profilePic-container{
+    margin-bottom: 16px;
+  }
+  .account__profilePic{
+    background-color: rgb(221, 221, 221);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: block;
+  }
+  .account__name{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    margin-bottom: 8px;
+  }
+  .account__showprofilecontainer{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+  }
+  .account__showprofile{
+    text-decoration: underline;
+    color:black;
+}
+.navbar__container{
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgb(235, 235, 235);
+  transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+		-webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+		transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, visibility 0.2s ease 0s
+}
+.navbar__icons{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar__buttons{
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+.navbar__icon{
+  height: 24px;
+  width: 24px;
+}
+.navbar__profileIcon{
+  height: 29px;
+  width: 29px;
+}
+
+}
+.account__main-container{
+  position: relative;
+  margin: 16px 24px 64px
+}
+.account__mainDivision-container{
+  display: flex;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  color: rgb(34, 34, 34);
+  padding-bottom: 16px;
+  padding-top:  16px;
+}
+.account__mainLogo-container{
+  padding-right: 24px;
+}
+.account__mainLogo{
+  width: 24px;
+  height: 24px;
+}
+.account__mainText-container{
+    display: inline-flex;
+    width: 100%;
+    align-items: flex-start;
+    min-height: 20px;
+    text-align: left;
+    justify-content: space-between;
+    cursor:pointer;
+}
+.account__mainText{
+  background-color: transparent;
+  border: 0px;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+}
+.account__nextbar{
+  display: block;
+  fill: none;
+  height: 16px;
+  width: 16px;
+}
+.account__mainSupport{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 24px 0;
+  padding-top: 8px
+}
+.account__mainDouble-container{
+  display: flex;
+  flex-direction: column;
+  color: rgb(34, 34, 34);
+  padding-bottom: 16px;
+  padding-top:  16px;
+}
+.account__logout{
+  display:flex;
+  width:100%;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border: 1px solid;
+  border-color: rgb(34, 34, 34);
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 13px 23px 13px 23px;
+}
+
+
+
+
+@media (min-width: 744px){
+  .account__top-container{
+    display:none;
+  }
+  .account__nextbar{
+    display:none;
+  }
+  .navbar__container{
+    display:none;
+  }
+  .account__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+    width: auto;
+    max-width: 696px;
+    margin: 0px auto;
+    color:black;
+  }
+  .account-top-container--bigsc{
+    padding-left: 50px;
+    margin-top: 64px;
+    margin-bottom: 56px;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .account-acctext--bigsc{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #222222;
+  }
+  .account-top-name--bigsc{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+  }
+  .account__showprofile{
+  text-decoration: underline;
+  color:black;
+  font-weight: 600
+  }
+  .account__main-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .account__mainDivision-container{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 156px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+    margin: 8px;
+    padding: 20px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .account__mainText{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  .account__mainText2{
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(113, 113, 113);
+  font-weight: 400;
+  }
+  .account__mainSupport{
+    display:none;
+  }
+  .account__logout{
+    display:none;
+  }
+}

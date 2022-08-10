@@ -14,6 +14,8 @@ import FormContainerTitle from './components/FormContainerTitle';
 import FormContainerDescriptionPlace from './components/FormContainerDescriptionPlace';
 import FormContainerPrice from './components/FormContainerPrice';
 import FormContainerType from './components/FormContainerType';
+import Account from './pages/Account';
+import ProfilePage from './components/ProfilePage';
 
 const App = () => (
   <BrowserRouter>
@@ -32,6 +34,8 @@ const App = () => (
       <Route path="/FormContainerDescriptionPlace" element={<FormContainerDescriptionPlace />} />
       <Route path="/FormContainerPrice" element={<FormContainerPrice />} />
       <Route path="/FormContainerType" element={<FormContainerType />} />
+      <Route path="/Account" element={<Account />} />
+      <Route path="/Profile" element={<ProfilePage />} />
     </Routes>
   </BrowserRouter>
 );

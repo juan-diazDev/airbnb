@@ -38,9 +38,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -84,9 +84,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -130,9 +130,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -176,9 +176,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -222,9 +222,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -268,9 +268,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -314,9 +314,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -360,9 +360,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -406,9 +406,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -452,9 +452,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -498,9 +498,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -544,9 +544,9 @@
           "3", "Towels", "Bed Sheets", "Pilows", "Blankets"
         ],
         "facilities": [
-          "Privete pool", "Private hot tub", "Building staff", "BBQ grill"
+          "private pool", "Private hot tub", "Building staff", "BBQ grill"
         ],
-        "entertaiment": [
+        "entertainment": [
           "Wifi", "TV 75 inches", "Netflix", "Play Station 5"
         ]
       },
@@ -562,40 +562,10 @@
       "email": "aleejess@gmail.com",
       "gender": "Libre",
       "about": "Que somos una bacanería de grupo",
-      "photo": "link",
-      "privete": {
+      "photo": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716573/images/Account/profilepic_bo57dk.jpg",
+      "private": {
         "password": "xxxxxxxxxx",
-        "bank_acount": "333.3332.331.12",
-        "date": "dd/mm/year"
-      }
-    },
-    {
-      "id": "2",
-      "name": "Adrian",
-      "last_name": "Villa",
-      "phone": "5516524235",
-      "email": "adriancvilla@gmail.com",
-      "gender": "Libre",
-      "about": "Que somos una bacanería de grupo",
-      "photo": "link",
-      "privete": {
-        "password": "xxxxxxxxxx",
-        "bank_acount": "333.3332.331.12",
-        "date": "dd/mm/year"
-      }
-    },
-    {
-      "id": "3",
-      "name": "Juan",
-      "last_name": "Diaz",
-      "phone": "5516524235",
-      "email": "dhruva0108@gmail.com",
-      "gender": "Libre",
-      "about": "Que somos una bacanería de grupo",
-      "photo": "link",
-      "privete": {
-        "password": "xxxxxxxxxx",
-        "bank_acount": "333.3332.331.12",
+        "bank_account": "333.3332.331.12",
         "date": "dd/mm/year"
       }
     }
