@@ -20,7 +20,13 @@ export async function getSpace(id) {
 
 export async function deleteSpace(id) {
   try {
-    const response = await fetch(`${BASE_URL}/spaces/${id}`);
+    const options = {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    };
+    const response = await fetch(`${BASE_URL}/spaces/${id}`, options);
     return response.json();
   } catch (error) {
     return new Error(error);

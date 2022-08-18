@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getSpace } from '../services/spaces';
-import GridLayOut from '../components/SpaceDetail/GridLayOut';
+import Details from '../components/SpaceDetail/Details';
 
 const SpaceDetail = () => {
   const [space, setSpace] = useState(null);
@@ -16,7 +16,7 @@ const SpaceDetail = () => {
     fetchData();
   }, []);
   return (
-    <GridLayOut details={space} />
+    <Details details={space} />
   );
 };
 

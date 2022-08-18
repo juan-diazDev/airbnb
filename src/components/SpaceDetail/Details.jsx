@@ -2,19 +2,23 @@ import PropTypes from 'prop-types';
 import CheckOutCard from './CheckOutCard';
 import Description from './Description';
 import ImageCarousel from './ImageCarousel';
-import './style.scss';
 import Titles from './Titles';
+import './style.scss';
 
 const Details = ({ details }) => (
-  <div className="body">
+  <div className="spaceDetail__container">
     {
       details ? (
-        <div className="complete__spaceDetial-container">
+        <>
           <ImageCarousel image={details.img} title={details.title} />
-          <Titles title={details.title} city={details.adress.city} state={details.adress.state} />
+          <Titles
+            title={details.title}
+            city={details.adress.city}
+            state={details.adress.state}
+          />
           <Description />
           <CheckOutCard price={details.price} dates={details.dates} />
-        </div>
+        </>
       ) : 'Loading...'
     }
   </div>
