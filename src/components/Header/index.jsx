@@ -7,7 +7,6 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-
     <header className={`${pathname.slice(1)} header header--bgscreen`}>
       <div className="container-logo">
         <Link to="/">

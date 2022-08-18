@@ -16,9 +16,7 @@ const SpaceDetail = () => {
     fetchData();
   }, []);
   return (
-    <div>
-      <Details details={space} />
-    </div>
+    <Details details={space} />
   );
 };
 
