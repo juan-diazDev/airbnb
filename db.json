@@ -556,46 +556,16 @@
   "Users": [
     {
       "id": "1",
-      "name": "Josecito",
-      "last_name": "Alzate",
+      "name": "Jessica",
+      "last_name": "Martinez",
       "phone": "5516524235",
-      "email": "q@jsx.net",
+      "email": "aleejess@gmail.com",
       "gender": "Libre",
       "about": "Que somos una bacanería de grupo",
-      "photo": "link",
-      "privete": {
+      "photo": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716573/images/Account/profilepic_bo57dk.jpg",
+      "private": {
         "password": "xxxxxxxxxx",
-        "bank_acount": "333.3332.331.12",
-        "date": "dd/mm/year"
-      }
-    },
-    {
-      "id": "2",
-      "name": "Josecito",
-      "last_name": "Alzate",
-      "phone": "5516524235",
-      "email": "q@jsx.net",
-      "gender": "Libre",
-      "about": "Que somos una bacanería de grupo",
-      "photo": "link",
-      "privete": {
-        "password": "xxxxxxxxxx",
-        "bank_acount": "333.3332.331.12",
-        "date": "dd/mm/year"
-      }
-    },
-    {
-      "id": "3",
-      "name": "Josecito",
-      "last_name": "Alzate",
-      "phone": "5516524235",
-      "email": "q@jsx.net",
-      "gender": "Libre",
-      "about": "Que somos una bacanería de grupo",
-      "photo": "link",
-      "privete": {
-        "password": "xxxxxxxxxx",
-        "bank_acount": "333.3332.331.12",
+        "bank_account": "333.3332.331.12",
         "date": "dd/mm/year"
       }
     }
