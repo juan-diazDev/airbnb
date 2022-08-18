@@ -1,0 +1,70 @@
+@import '../../../sass_styles/_fonts.scss';
+
+
+.images__space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  height: 100%;
+  border: 1px dashed rgb(176, 176, 176);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.img_icon {
+  height: 64px;
+  width: 64px;
+}
+
+.upload__title {
+  font-family: nunito-bold;
+  font-size: 22px;
+}
+
+.upload__description {
+  font-family: nunito-light;
+  font-size: 16px;
+  text-align: center;
+}
+
+.upload_button {
+  font-family: nunito-regular;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  border: none rgb(221, 221, 221);
+  background-color: black;
+  outline: none;
+  padding: 0px 16px;
+  margin: 0px;
+  color: white;
+  border-radius: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload_button:hover{
+  transition: 0.15s;
+  background-color: beige;
+  color: black;
+}
+
+.upload_button:active{
+  transition: 0.1s;
+  background-color: gray;
+  color: white;
+}
+
+.progress5{
+    border-top: 2px solid black;
+    position: absolute;
+    left: 0%;
+    right: 40%;
+    top: 0%;
+}

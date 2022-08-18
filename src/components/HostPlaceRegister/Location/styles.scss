@@ -1,0 +1,133 @@
+.container__question2 {
+  background-image: linear-gradient(to right,#3B07BB 0%, #92174D 60%,#E31C5F 100%);
+  color: white;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  padding: 30px 24px 20px 24px;
+  height: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: -webkit-fill-avaliable;
+  right: 0;
+  left: 0;
+}
+
+.container__options-fixed2{
+  position: fixed;
+  z-index: 2;
+  bottom: 90px;
+  width: 100%;
+  height: 59%;
+  overflow-y: scroll;
+  border-radius: 10px;
+
+}
+
+.container__options-scroll2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 32px 24px 0px 24px;
+  border: 1px solid white;
+  background-color: white;
+  margin: 0px 0px 0px 0px;
+}
+
+.container__formtable {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: white;
+  width: -webkit-fill-available;
+}
+
+
+.form__text1 {
+  font-family: nunito-light;
+  border: 1px solid #dddddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.form__text {
+  font-family: nunito-light;
+  border: 1px solid #dddddd;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.form__countries {
+  font-family: nunito-light;
+  color: gray;
+  border: 1px solid #dddddd;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.country {
+  font-family: nunito-light;
+  color: gray;
+  border: 1px solid #dddddd;
+  padding: 20px 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.progress2{
+  border-top: 2px solid black;
+  position: absolute;
+  left: 0%;
+  right: 70%;
+  top: 0%;
+}
+
+
+@media (min-width: 1200px) {
+
+  .container__question2 {
+    background-image: linear-gradient(to top,#3B07BB 0%, #92174D 60%,#E31C5F 100%);
+    width: 50%;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container__options-fixed2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 10px;
+    bottom: 0px;
+  }
+
+  .container__options-scroll2{
+    padding: 0px 48px 0px 48px;
+  }
+
+
+}
