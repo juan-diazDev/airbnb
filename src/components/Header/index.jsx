@@ -3,7 +3,6 @@ import Menu from '../Menu';
 import Searcher from '../Searcher';
 import './style.scss';
 
-
 const Header = () => {
   const { pathname } = useLocation();
 
