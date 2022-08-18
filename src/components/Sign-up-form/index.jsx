@@ -14,7 +14,7 @@ const Signupform = () => {
           <header className="signup_headerbox">
             <Link to="/">
               <button className="signup__backbutton" type="button">
-                <span>˂</span>
+                <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659723860/images/BackArrow/Dark_Gray_obpkut.png" className="signup__backArrow" alt="backArrow" />
               </button>
             </Link>
             <h2>Sign up</h2>
@@ -28,6 +28,24 @@ const Signupform = () => {
             <input className="signup__textbox" type="email" name="email" placeholder="Email" />
             <p className="signup__helptext">We’ll email you trip confirmations and receipts.</p>
             <input className="signup__textbox" type="password" name="password" placeholder="Password" />
+            <p className="signup__helptext">Your password must contain at least 8 digits.</p>
+            <input className="signup__textbox" type="location" name="location" placeholder="Location" />
+            <p className="signup__helptext">Use a permanent address where you can receive mail.</p>
+            <input className="signup__textbox" type="tel" name="phone" placeholder="Phone Number" />
+            <p className="signup__helptext">Contact number (for confirmed guests and Airbnb to get in touch).</p>
+            <select className="signup__textboxSelect" placeholder="Role" name="role" defaultValue="" required>
+              <option value="" disabled>Role</option>
+              <option value="user">Guest</option>
+              <option value="host">Host</option>
+            </select>
+            <p className="signup__helptext">Choose your role (Guest/Host).</p>
+            <select className="signup__textboxSelect" placeholder="Gender" defaultValue="">
+              <option value="" disabled>Gender</option>
+              <option value="other">Other</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <p className="signup__helptext">Add your Gender</p>
             <p className="signup__policies1">By selecting Agree and continue, I agree to Airbnb’s <span className="signup__policies2" target="blank">Terms of Service</span>,
               <span className="signup__policies2" target="blank"> Payments Terms of Service</span>, <span className="signup__policies2" target="blank"> Nondiscrimination Policy</span> and <span className="signup__policies2" target="blank">Colombia Privacy Supplement</span>, and acknowledge the <span className="signup__policies2" target="blank">Privacy Policy.</span>
             </p>

@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Loginform from './components/Log-In-form';
 import Signupform from './components/Sign-up-form';
 import SpaceDetail from './pages/SpaceDetail';
+import Account from './pages/Account';
+import ProfilePage from './components/ProfilePage';
 import PropertyTypeGroup from './components/HostPlaceRegister/PropertyTypeGroup';
 import PrivacyType from './components/HostPlaceRegister/PrivacyType';
 import Location from './components/HostPlaceRegister/Location';
@@ -22,6 +24,8 @@ const App = () => (
       <Route path="/Loginform" element={<Loginform />} />
       <Route path="/Signupform" element={<Signupform />} />
       <Route path="/SpaceDetail/:id" element={<SpaceDetail />} />
+      <Route path="/Account" element={<Account />} />
+      <Route path="/Profile" element={<ProfilePage />} />
       <Route path="/PropertyTypeGroup" element={<PropertyTypeGroup />} />
       <Route path="/PrivacyType" element={<PrivacyType />} />
       <Route path="/Location" element={<Location />} />

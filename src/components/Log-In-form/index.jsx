@@ -14,7 +14,7 @@ const Loginform = () => {
           <header className="Login_headerbox">
             <Link to="/">
               <button className="Login__backbutton" type="button">
-                <span>˂</span>
+                <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659723860/images/BackArrow/Dark_Gray_obpkut.png" className="Login__backArrow" alt="backArrow" />
               </button>
             </Link>
             <h1>Log In or sign up</h1>
