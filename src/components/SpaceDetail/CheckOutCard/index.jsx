@@ -5,7 +5,7 @@ const CheckOutCard = ({ price, dates }) => (
   <>
     <section className="spaceDetail__sub-menu-container">
       <div className="spaceDetail__sub-menu__text-container">
-        <p className="spaceDetail__sub-menu__price">{price}<span> / night</span></p>
+        <p className="spaceDetail__sub-menu__price">{price}<span> night</span></p>
         <p className="spaceDetail__sub-menu__dates">{dates} </p>
       </div>
       <div className="spaceDetail__sub-menu__button-container">
@@ -20,7 +20,7 @@ const CheckOutCard = ({ price, dates }) => (
     <section className="spaceDetail__checkout-card-container">
       <form>
         <div className="spaceDetail__checkout-card__price">
-          {price} <span>/ night</span>
+          {price} <span> night</span>
         </div>
         <div className="spaceDetail__checkout-card__options-container">
           <div className="spaceDetail__checkout-card__options__check-in">
