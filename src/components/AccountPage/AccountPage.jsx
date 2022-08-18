@@ -17,7 +17,9 @@ const AccountPage = ({ user }) => (
 );
 
 AccountPage.propTypes = {
-  user: PropTypes.shape(),
+  user: PropTypes.arrayOf(
+    PropTypes.shape(),
+  ),
 };
 AccountPage.defaultProps = {
   user: {},

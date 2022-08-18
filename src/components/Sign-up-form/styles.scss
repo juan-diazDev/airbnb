@@ -1,95 +1,93 @@
 .signup__container{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    padding: 0px;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 0px;
+  align-items: flex-end;
 }
 
 .signup{
-    position: relative;
-    background: white;
-    width: 100vw;
-    max-width: 100vw;
-    max-height: 100%;
-    display: flex;
-    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-
+  position: relative;
+  background: white;
+  width: 100vw;
+  max-width: 100vw;
+  max-height: 100%;
+  display: flex;
+  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
 .signup_headerbox{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    padding: 0px 24px;
-    flex-direction:column;
-    align-items: center;
-    min-height: 48px;
-    line-height: 20px;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: -20px;
-    border-bottom: 1px solid rgb(235, 235, 235);
-    color: rgb(34, 34, 34);
-    font-size: 10px;
-    font-weight: bold;
-    font-family: 'Manrope', sans-serif;
-
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 0px 24px;
+  flex-direction:column;
+  align-items: center;
+  min-height: 48px;
+  line-height: 20px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -20px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  color: rgb(34, 34, 34);
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
 }
 
 .signup__backbutton{
-   position: absolute;
-   display: flex;
-   top: 12px;
-   left: 24px;
-   background: transparent;
-   margin: 0px;
-   border:0px;
-   font-size: 20px;
-   cursor: pointer;
-
+  position: absolute;
+  display: flex;
+  top: 17px;
+  left: 24px;
+  background: transparent;
+  margin: 0px;
+  border:0px;
+  font-size: 20px;
+  cursor: pointer;
 }
+
+.signup__backArrow{
+  fill: none;
+  height: 16px;
+  width: 16px;
+}
+
 .signup__backbutton:hover{
-   background-color: #f4f3f3;
-   border-radius: 20px;
+  background-color: #f4f3f3;
+  border-radius: 20px;
 }
-   
-
 
 .signup__form{
-
-    position: relative;
-    padding: 24px;
-    flex: 1 1 auto;
-    outline: none;
-
+  position: relative;
+  padding: 24px;
+  flex: 1 1 auto;
+  outline: none;
 }
 
 .signup__lastnamebox{
-    width: 100%;
-    min-height: 46px;
-    border:solid;
-    border-color: #B0B0B0;
-    border-radius: 0px 0px 8px 8px;
-    border-width: 1px;
-    position: relative;
-    align-items: center;
-    font-size: 1em;
-    font-family: 'Manrope', sans-serif;
-    padding-left: 10px;
+  width: 100%;
+  min-height: 46px;
+  border:solid;
+  border-color: #B0B0B0;
+  border-radius: 0px 0px 8px 8px;
+  border-width: 1px;
+  position: relative;
+  align-items: center;
+  font-size: 1em;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 10px;
 }
 
 .signup__namebox{
-
   width: 100%;
   min-height: 46px;
   border:solid;
@@ -104,119 +102,122 @@
   padding-left: 10px;
 }
 
-
-
 .signup__textbox{
-    width: 100%;
-    min-height: 46px;
-    border:solid;
-    border-color: #B0B0B0;
-    border-radius: 8px;
-    border-width: 1px;
-    position: relative;
-    align-items: center;
-    font-size: 1em;
-    font-family: 'Manrope', sans-serif;
-    padding-left: 10px;
-    margin-top: 10px;
-
+  width: 100%;
+  min-height: 46px;
+  border:solid;
+  border-color: #B0B0B0;
+  border-radius: 8px;
+  border-width: 1px;
+  position: relative;
+  align-items: center;
+  font-size: 1em;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 10px;
+  margin-top: 10px;
 }
 
 .signup__helptext{
-    display: flex;
-    align-items: flex-start;
-    color: rgb(113, 113, 113);
-    font-size: 12px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    margin-top: 0px;
-    padding: 5px;
-    justify-content: flex-start;
-    text-align: left;
+  display: flex;
+  align-items: flex-start;
+  color: rgb(113, 113, 113);
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  margin-top: 0px;
+  padding: 5px;
+  justify-content: flex-start;
+  text-align: left;
+}
 
-
+.signup__textboxSelect{
+  width: 103%;
+  min-height: 46px;
+  border:solid;
+  border-color: #B0B0B0;
+  color: rgb(113, 113, 113);
+  border-radius: 8px;
+  border-width: 1px;
+  position: relative;
+  align-items: center;
+  font-size: 1em;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 10px;
+  margin-top: 15px;
 }
 
 .signup__policies1{
-
-    position: relative;
-    align-items: flex-start;
-    text-align: left;
-    color: #484848;
-    font-size: 12px;
-    font-family: 'Manrope', sans-serif;
-    line-height: 20px;
-    font-weight: 400;
-    margin-top: 10px;
-    padding-top: 15px;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  color: #484848;
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  padding-top: 15px;
 }
 
 .signup__policies2{
-   color:rgb(0, 56, 171);
-   text-decoration: underline;
-   font-weight: 600;
+  color:rgb(0, 56, 171);
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .signup__btn{
-    width: 103%;
-    min-height: 40px;
-    align-items: center;
-    flex-direction:row;
-    display: block;
-    position: relative;
-    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
-    color: rgb(255, 255, 255);
-    border: 0px;
-    border-radius: 5px;
-    margin-top: 30px;
-    font-size: 16px;   
-    cursor: pointer; 
+  width: 103%;
+  min-height: 40px;
+  align-items: center;
+  flex-direction:row;
+  display: block;
+  position: relative;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
 }
-
-
 
 .signup__final{
-    display: flex;
-    align-items: flex-start;
-    color: #484848;
-    font-size: 12px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    border-top: 1px solid rgb(235, 235, 235);
-    margin-top: 20px;
-    padding-top: 25px;
-    text-align: left;
-    line-height: 20px;
-
+  display: flex;
+  align-items: flex-start;
+  color: #484848;
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  border-top: 1px solid rgb(235, 235, 235);
+  margin-top: 20px;
+  padding-top: 25px;
+  text-align: left;
+  line-height: 20px;
 }
+
 .signup__checkbox{
-   display: flex;
-   align-items: left;
-   justify-content: left;
-
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
- .signup__checkbox__label{
-    font-size: 12px;
-    font-family: 'Manrope', sans-serif;
-    color: #484848;
-    vertical-align: center;
-    margin-left: 10px;
-    margin-top: 5px;
-       
- }
 
- .signup__checkbox__input{
+.signup__checkbox__label{
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+  color: #484848;
+  vertical-align: center;
+  margin-left: 10px;
+  margin-top: 5px;
+}
 
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    display: inline-block;
-    vertical-align: top;
-
- }
- 
-
+.signup__checkbox__input{
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: top;
+}
 
 
 @media (min-width:744px) and (min-height: 475px){
@@ -224,13 +225,9 @@
  .signup__container{
     padding: 60px;
     align-items: center;
-    
-
-
  }
 
- .signup {   
-
+ .signup {
     position: relative;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -238,15 +235,14 @@
     max-width: 465px;
     border-radius: 12px;
     border: 1px solid #B0B0B0;
-    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;;
+    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
  }
 
  .signup__header{
     min-height: 64px;
-
  }
+
  .signup_headerbox{
     font-size: 10px;
-
-}
+  }
 }

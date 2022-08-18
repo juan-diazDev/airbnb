@@ -1,5 +1,5 @@
-// import { useReducer } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const AccountMain = ({ user1 }) => (
 
@@ -8,7 +8,7 @@ const AccountMain = ({ user1 }) => (
       <h1 className="account-acctext--bigsc"> Account </h1>
       <span className="account-top-name--bigsc">{user1.name} {user1.last_name},</span>
       <span className="account-top-email--bigsc"> {user1.email}. </span>
-      <a href="https://www.airbnb.com/users/show/48369716" className="account__showprofile"> Go to profile </a>
+      <Link to="/Profile" className="account__showprofile"> Go to profile </Link>
     </div>
     <div className="account__top-container">
       <div className="account__profilePic-container">
@@ -18,7 +18,7 @@ const AccountMain = ({ user1 }) => (
         <h1 className="account__name"> {user1.name} </h1>
       </div>
       <div className="account__showprofilecontainer">
-        <a href="https://www.airbnb.com/users/show/48369716" className="account__showprofile"> Show Profile </a>
+        <Link to="/Profile" className="account__showprofile"> Show Profile </Link>
       </div>
     </div>
     <div className="account__main-container">
@@ -56,7 +56,7 @@ const AccountMain = ({ user1 }) => (
         </div>
         <div className="account__mainText-container">
           <div className="account__mainText">
-            Login and Security
+            Change your password
           </div>
           <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="account__nextbar" alt="nextBar" />
         </div>
@@ -84,6 +84,10 @@ const AccountMain = ({ user1 }) => (
         </div>
       </div>
       <button className="account__logout" type="button">Log out</button>
+      <div className="account__deactivate">
+        <p className="account__deactivate1">Need to deactivate your account?</p>
+        <p className="account__deactivate2">Take care of that now</p>
+      </div>
     </div>
   </div>
 );
