@@ -1,0 +1,220 @@
+@import '../../../sass_styles/_fonts.scss';
+
+.container__question3 {
+  background-image: linear-gradient(to right,#3B07BB 0%, #92174D 60%,#E31C5F 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  padding: 30px 24px 20px 24px;
+  height: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: -webkit-fill-avaliable;
+  right: 0;
+  left: 0;
+}
+
+.container__options-fixed3{
+  position: fixed;
+  z-index: 2;
+  bottom: 90px;
+  width: 100%;
+  height: 55%;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.container__options-scroll3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 32px 24px 0px 24px;
+  border: 1px solid white;
+  background-color: white;
+  margin: 0px 0px 0px 0px;
+}
+
+.option__card2 {
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  min-height: 68px;
+  cursor: pointer;
+  padding: 0px 20px;
+  outline: none;
+}
+
+.option__card-title2 {
+  left: 10px;
+  font-family: nunito-bold;
+  font-size: 16px;
+}
+
+.option__card-features {
+  display: flex;
+  flex-direction: row;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 104px;
+  height: 32px;
+  color: rgb(34, 34, 34);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: nunito-bold;
+}
+
+.card_button-increase {
+  width: 32px;
+  height: 32px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(176, 176, 176);
+  color: rgb(113, 113, 113);
+  font-family: inherit;
+  outline: none;
+  touch-action: manipulation;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.card_button-increase:hover{
+  transition: 0.15s;
+  background-color: rgb(216, 216, 216);
+  border: solid 1px black;
+}
+
+.card_button-increase:active{
+  transition: 0.1s;
+  background-color: gray;
+
+}
+
+.card_number-guest{
+  font-family: nunito-light;
+}
+
+.card_number-beds{
+  font-family: nunito-light;
+}
+
+.card_number-bedrooms{
+  font-family: nunito-light;
+}
+
+.card_number-bathrooms{
+  font-family: nunito-light;
+}
+
+
+
+.card_button-decrease {
+  width: 32px;
+  height: 32px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(176, 176, 176);
+  color: rgb(113, 113, 113);
+  font-family: inherit;
+  outline: none;
+  touch-action: manipulation;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.card_button-decrease:hover{
+  transition: 0.15s;
+  background-color: rgb(216, 216, 216);
+  border: solid 1px black;
+}
+
+.card_button-decrease:active{
+  transition: 0.1s;
+  background-color: gray;
+}
+
+
+.progress3{
+  border-top: 2px solid black;
+  position: absolute;
+  left: 0%;
+  right: 60%;
+  top: 0%;
+}
+
+.button__backstep {
+  font-size: 16px;
+  color: white;
+  font-style: nunito-regular;
+  padding: 14px 24px;
+  margin-left: 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #222222;
+}
+
+@media (min-width: 1200px) {
+
+  .container__question3 {
+    background-image: linear-gradient(to top,#3B07BB 0%, #92174D 60%,#E31C5F 100%);
+    width: 50%;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container__options-fixed3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 10px;
+    bottom: 0px;
+  }
+
+  .container__options-scroll3{
+    padding: 0px 48px 0px 48px;
+  }
+
+  .option__card2{
+    font-size: 18px;
+  }
+
+}

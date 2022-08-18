@@ -4,16 +4,16 @@ import Home from './pages/Home';
 import Loginform from './components/Log-In-form';
 import Signupform from './components/Sign-up-form';
 import SpaceDetail from './pages/SpaceDetail';
-import FormContainerDescribe from './components/FormContainerDescribe';
-import FormContainerCapacity from './components/FormContainerCapacity';
-import FormContainerAdress from './components/FormContainerAdress';
-import FormContainerFeatures from './components/FormContainerFeatures';
-import FormContainerAdditions from './components/FormContainerAdditions';
-import FormContainerImages from './components/FormContainerImages';
-import FormContainerTitle from './components/FormContainerTitle';
-import FormContainerDescriptionPlace from './components/FormContainerDescriptionPlace';
-import FormContainerPrice from './components/FormContainerPrice';
-import FormContainerType from './components/FormContainerType';
+import PropertyTypeGroup from './components/HostPlaceRegister/PropertyTypeGroup';
+import PrivacyType from './components/HostPlaceRegister/PrivacyType';
+import Location from './components/HostPlaceRegister/Location';
+import FloorPlan from './components/HostPlaceRegister/FloorPlan';
+import Amenities from './components/HostPlaceRegister/Amenities';
+import Images from './components/HostPlaceRegister/Images';
+import Title from './components/HostPlaceRegister/Title';
+import Description from './components/HostPlaceRegister/Description';
+import Price from './components/HostPlaceRegister/Price';
+import Preview from './components/HostPlaceRegister/Preview';
 
 const App = () => (
   <BrowserRouter>
@@ -22,16 +22,16 @@ const App = () => (
       <Route path="/Loginform" element={<Loginform />} />
       <Route path="/Signupform" element={<Signupform />} />
       <Route path="/SpaceDetail/:id" element={<SpaceDetail />} />
-      <Route path="/FormContainerDescribe" element={<FormContainerDescribe />} />
-      <Route path="/FormContainerCapacity" element={<FormContainerCapacity />} />
-      <Route path="/FormContainerAdress" element={<FormContainerAdress />} />
-      <Route path="/FormContainerFeatures" element={<FormContainerFeatures />} />
-      <Route path="/FormContainerAdditions" element={<FormContainerAdditions />} />
-      <Route path="/FormContainerImages" element={<FormContainerImages />} />
-      <Route path="/FormContainerTitle" element={<FormContainerTitle />} />
-      <Route path="/FormContainerDescriptionPlace" element={<FormContainerDescriptionPlace />} />
-      <Route path="/FormContainerPrice" element={<FormContainerPrice />} />
-      <Route path="/FormContainerType" element={<FormContainerType />} />
+      <Route path="/PropertyTypeGroup" element={<PropertyTypeGroup />} />
+      <Route path="/PrivacyType" element={<PrivacyType />} />
+      <Route path="/Location" element={<Location />} />
+      <Route path="/FloorPLan" element={<FloorPlan />} />
+      <Route path="/Amenities" element={<Amenities />} />
+      <Route path="/Images" element={<Images />} />
+      <Route path="/Title" element={<Title />} />
+      <Route path="/Description" element={<Description />} />
+      <Route path="/Price" element={<Price />} />
+      <Route path="/Preview" element={<Preview />} />
     </Routes>
   </BrowserRouter>
 );
