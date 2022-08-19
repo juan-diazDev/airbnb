@@ -15,6 +15,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 100%;
+  border: 3px solid blue;
 }
 
 .carousel__main-container {
@@ -60,7 +61,7 @@
   }
   .carousel_all-pictures__button-container {
     position: absolute;
-    top: 27%;
+    top: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,4 +233,86 @@
 
 .spaceDetail__amenities-container {
   margin-bottom: 75px;
+}
+
+@media (min-width: 1200px) {
+  .carousel__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    margin-top: 190px;
+    .carousel_back-arrow-container {
+      display: none;
+    }
+    .carousel_all-pictures__button-container {
+      display: none;
+    }
+    .carousel__main-image-container {
+      width: 560px;
+      height: 370px;
+      .carousel__main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+    }
+    .carousel__section-container {
+      display: initial;
+      display: flex;
+      height: 100%;
+      margin: 0px 0px 0px 10px;
+      .carousel__center-full-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 0px 0px;
+        .margin {
+          margin: 0px 0px 10px 0px;
+        }
+        .carousel__center-image-container {
+          width: 280px;
+          height: 180px;
+          .carousel__center-image-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .carousel__final-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .carousel__right-up-image-container {
+          width: 280px;
+          height: 180px;
+          margin-bottom: 10px;
+          .carousel__right-up-image-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+          }
+        }
+        .carousel__right-down-image-container {
+          width: 280px;
+          height: 180px;
+          .carousel__right-down-image-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-right-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .detial__title-container {
+    position: absolute;
+    top: 100px;
+    margin-left: 13vw;
+  }
 }
