@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'https://airbnbback23.herokuapp.com/api';
 
 export async function getSpaces() {
   try {
@@ -9,9 +9,9 @@ export async function getSpaces() {
   }
 }
 
-export async function getSpace(id) {
+export async function getSpace(_id) {
   try {
-    const response = await fetch(`${BASE_URL}/spaces/${id}`);
+    const response = await fetch(`${BASE_URL}/spaces/${_id}`);
     return response.json();
   } catch (error) {
     return new Error(error);
@@ -27,7 +27,7 @@ export async function deleteSpace(id) {
       },
     };
     const response = await fetch(`${BASE_URL}/spaces/${id}`, options);
-    return response.json();
+    return response.json({ response, message: 'space deleted' });
   } catch (error) {
     return new Error(error);
   }
