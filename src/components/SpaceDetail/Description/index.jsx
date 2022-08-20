@@ -1,5 +1,5 @@
 const Description = () => (
-  <div className="omm">
+  <div className="spaceDetail__bg-screen-container">
     <section>
       <div className="description__host__type-container">
         <div className="description__host__type__icon-container">
