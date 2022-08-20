@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import swal from 'sweetalert';
@@ -18,6 +19,7 @@ const Loginform = () => {
       const { token, profile } = await login(form);
       localStorage.setItem('token', token);
       localStorage.setItem('profile', JSON.stringify(profile));
+      console.log(form);
       if (token) {
         navigate('/');
       } else {
