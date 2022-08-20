@@ -260,7 +260,7 @@
   .spaceDetail__container {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -395,7 +395,6 @@
     border-radius: 25px;
     border:0.5px solid rgba(0,0,0,0.08);
     box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
-    margin: 7px;
     width: 25%;
 
   // price
@@ -423,10 +422,13 @@
         width: 45%;
         margin: 0px;
         border:0.5px solid rgba(0,0,0,0.08);
+        border-right: none;
         border-top-left-radius: 15px;
+        padding: 7px 0px 0px 0px;
         input {
           height: 40px;
-          width: 93%;
+          width: 88%;
+          padding: 0px 10px;
           font-family: nunito-light;
           border: none;
         }
@@ -437,12 +439,14 @@
       }
       .spaceDetail__checkout-card__options__check-out {
         width: 45%;
-        margin: 0px;
-        border:0.5px solid rgba(0,0,0,0.08);
+        padding: 0px;
+        border: 0.5px solid rgba(0,0,0,0.08);
         border-top-right-radius: 15px;
+        padding: 7px 0px 0px 0px;
         input {
           height: 40px;
-          width: 93%;
+          width: 88%;
+          padding: 0px 10px;
           font-family: nunito-light;
           border: none;
         }
@@ -452,22 +456,96 @@
         }
       }
       .spaceDetail__checkout-card__options__guests {
-        width: 90.5%;
+        width: 90.9%;
         margin: 0px;
-        border:0.5px solid rgba(0,0,0,0.08);
-        border-top: none;
+        padding: 0px;
+      }
+
+      span {
+        color : $dark-gray;
+        font-size : 1rem;
+        font-family: nunito-regular;
+        height: 60px;
+        cursor : pointer;
+        border: 0.5px solid rgba(0,0,0,0.08);
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        .p1 {
-          font-family: nunito-semi-bold;
-          font-size: 13px;
-          margin: 13px 0px 0px 15px;
+        border-top: none;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:checked {
+          border: 1px solid $light-gray;
         }
-        .p2 {
-          font-family: nunito-light;
-          font-size: 13px;
-          margin: 0px 0px 13px 15px;
+      }
+
+      span::after {
+        float: right;
+        content: "+";
+      }
+
+      li {
+        margin: 10px 0px;
+        list-style-type: none;
+        .dropDown__option-conatainer {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+          p {
+            color: $dark-gray;
+            margin: 20px 20px;
+          }
+          .dropDown__option-buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            button {
+              margin: 0px 20px;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              background-color: $white;
+              border: 0.5px solid rgba(0,0,0,0.08);
+              cursor: pointer;
+              &:hover {
+                box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
+              }
+            }
+            p {
+              margin: 0px;
+            }
+          }
         }
+
+      }
+
+      .spaceDetail__dropDown {
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        clear:both;
+        height:0px;
+        overflow-y: hidden;
+        transition: height .4s ease;
+        background-color: $white;
+        z-index: 10;
+        width: 22.5%;
+      }
+
+      #touch {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+      }
+      #touch:checked + .spaceDetail__dropDown {
+        height: min-content;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+        border: 0.5px solid rgba(0,0,0,0.08);
+        border-radius: 15px;
       }
     }
     .spaceDetail__checkout-card__button-container {

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -38,15 +39,43 @@ const CheckOutCard = ({ price, dates }) => (
           </div>
 
           <nav className="spaceDetail__checkout-card__options__guests">
-            <label htmlFor="touch">
-              <span>Guest</span>
-              <input type="checkbox" />
-            </label>
+            <label htmlFor="touch"><span>Guest</span></label>
+            <input type="checkbox" id="touch" />
 
-            <ul className="slide">
-              <li><a href="#">Adults</a></li>
-              <li><a href="#">Children</a></li>
-              <li><a href="#">pets</a></li>
+            <ul className="spaceDetail__dropDown">
+              <li>
+                <div className="dropDown__option-conatainer">
+                  <p>Adults</p>
+                  <div className="dropDown__option-buttons">
+                    <button type="button">-</button>
+                    <p>1</p>
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropDown__option-conatainer">
+                  <p>Children</p>
+                  <div className="dropDown__option-buttons">
+                    <button type="button">-</button>
+                    <p>1</p>
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropDown__option-conatainer">
+                  <p>Pets</p>
+                  <div className="dropDown__option-buttons">
+                    <button type="button">-</button>
+                    <p>1</p>
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </li>
+
             </ul>
           </nav>
 
