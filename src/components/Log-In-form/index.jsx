@@ -30,6 +30,9 @@ const Loginform = () => {
             <Link to="/Signupform">
               <button className="Login__btn__Signin" type="button"><b>Sign up</b></button>
             </Link>
+            <div className="Login__password">
+              <a href>Forgot your password?</a>
+            </div>
           </form>
         </div>
       </div>
