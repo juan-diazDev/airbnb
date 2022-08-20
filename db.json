@@ -1,11 +1,10 @@
 {
   "spaces": [
     {
-      "id": "1",
       "title": "Benalmádena, Spain",
       "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/1_qo7afi.webp",
       "dates": "Oct 1 - 6",
-      "price": "$70 usd",
+      "price": 70,
       "how many": "5",
       "adress": {
         "street": "En medio de las nubes y el sol",
@@ -14,18 +13,8 @@
         "zip code": "00000",
         "country": "Colombia"
       },
-      "owner": {"id": "1"},
-      "type": [
-        "House",
-        "Apartment",
-        "Ranch",
-        "Bed & Breakfast"
-      ],
-      "privacy-type": [
-        "Entire place",
-        "Private room",
-        "Shared room"
-      ],
+      "type":"House",
+      "privacy-type": "Entire place",
       "amenities": {
         "beds": "5",
         "kitchen": [
@@ -47,7 +36,6 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente adipisci, possimus harum voluptatem laudantium doloremque dignissimos iste quod veniam exercitationem? Recusandae, quasi excepturi. Sunt architecto fugit dignissimos doloremque corrupti!"
     },
     {
-      "id": "2",
       "title": "Bolton, New York, US",
       "img": "https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662892/images/Spaces/2_holle3.webp",
       "dates": "Jul 16 - 23",

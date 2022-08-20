@@ -1,13 +1,18 @@
 @import '../../sass_styles/colors';
 @import '../../sass_styles/fonts';
 
+// default separation-line
 .spaceDetail__line-separation {
   margin: 15px 0px 15px 20px;
   width: 90vw;
   border: 0.5px solid rgba(0,0,0,0.08);
   height: 0px;
+  @media (min-width: 1200px) {
+    width: 90%;
+  }
 }
 
+// main
 .spaceDetail__container {
   display: flex;
   justify-content: center;
@@ -17,6 +22,7 @@
   min-height: 100%;
 }
 
+//carousel
 .carousel__main-container {
   .carousel_back-arrow-container {
     position: absolute;
@@ -60,7 +66,7 @@
   }
   .carousel_all-pictures__button-container {
     position: absolute;
-    top: 27%;
+    top: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +92,7 @@
   }
 }
 
+// title
 .detial__title-container {
   margin: 15px 0px 0px 20px;
   .detail__title {
@@ -100,6 +107,7 @@
   }
 }
 
+// description
 .description__host__info-container {
   display: flex;
   margin: 0px 0px 0px 20px;
@@ -126,6 +134,7 @@
   }
 }
 
+// host-type
 .description__host__type-container {
   display: flex;
   margin: 0px 0px 0px 20px;
@@ -144,6 +153,7 @@
   }
 }
 
+// host-privacity-type
 .description__host__privacity-type-container {
   display: flex;
   justify-content: space-between;
@@ -163,6 +173,7 @@
   }
 }
 
+// host-descrption
 .description__space__description-container {
   margin: 0px 0px 0px 20px;
   .description__space__description-text {
@@ -170,18 +181,286 @@
   }
 }
 
+// check-out__sub-menu
+.spaceDetail__sub-menu-container {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  border-top:0.5px solid rgba(0,0,0,0.08);
+  box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
+  width: 100%;
+  height: 70px;
+  justify-content: space-around;
+  background-color: $white;
+  .spaceDetail__sub-menu__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49%;
+    .spaceDetail__sub-menu__price {
+      margin: 0px;
+      margin-left: 30px;
+      font-family: nunito-bold;
+      font-size: 1.2rem;
+      span {
+        font-family: nunito-extra-light;
+        font-size: .9rem;
+      }
+      .span {
+        font-family: nunito-bold;
+        font-size: 1.2rem;
+      }
+    }
+    .spaceDetail__sub-menu__dates {
+      margin: 0px;
+      margin-left: 30px;
+      font-family: nunito-semi-bold;
+      font-size: 0.8rem;
+    }
+  }
+  .spaceDetail__sub-menu__button-container {
+    display: flex;
+    width: 49%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    .spaceDetail__sub-menu-button {
+      height: 50px;
+      width: 100px;
+      background-color: $pink;
+      border: none;
+      border-radius: 30px;
+      font-family: nunito-semi-bold;
+      color: $white;
+      letter-spacing: 1px;
+      font-size: 0.95rem;
+      &:hover {
+        opacity: .95;
+        box-shadow: 0px 2px 7px 0px $light-gray;
+      }
+    }
+  }
+}
+//amenities
+.spaceDetail__amenities-container {
+  margin-bottom: 75px;
+}
+
 .spaceDetail__checkout-card-container {
   display: none;
 }
 
-.spaceDetail__sub-menu-container {
-  display: flex;
-  border-top:0.5px solid rgba(0,0,0,0.08);
-  width: 100%;
-  justify-content: space-around;
-  border: 1px solid red;
-  .spaceDetail__sub-menu__text-container {
+
+@media (min-width: 1200px) {
+  .spaceDetail__sub-menu-container {
+    display: none;
+  }
+// main
+  .spaceDetail__container {
     display: flex;
-    border: 1px solid green;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+  }
+
+// carousel
+  .carousel__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    margin-top: 190px;
+    .carousel_back-arrow-container {
+      display: none;
+    }
+    .carousel_all-pictures__button-container {
+      position: absolute;
+      right: 14%;
+      top: 73%;
+    }
+    .carousel__main-image-container {
+      width: 560px;
+      height: 370px;
+      .carousel__main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+    }
+    .carousel__section-container {
+      display: initial;
+      display: flex;
+      height: 100%;
+      margin: 0px 0px 0px 10px;
+      .carousel__center-full-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 0px 0px;
+        .margin {
+          margin: 0px 0px 10px 0px;
+        }
+        .carousel__center-image-container {
+          width: 280px;
+          height: 180px;
+          .carousel__center-image-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .carousel__final-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .carousel__right-up-image-container {
+          width: 280px;
+          height: 180px;
+          margin-bottom: 10px;
+          .carousel__right-up-image-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+          }
+        }
+        .carousel__right-down-image-container {
+          width: 280px;
+          height: 180px;
+          .carousel__right-down-image-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom-right-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+// title
+  .detial__title-container {
+    position: absolute;
+    top: 100px;
+    margin-left: 13vw;
+  }
+
+// deatil
+  .spaceDetail__bg-screen-container {
+    border: 3px solid green;
+    width: 55%;
+    margin-left: 11vw;
+
+  }
+
+// check-out-card
+  .spaceDetail__checkout-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 25px;
+    border:0.5px solid rgba(0,0,0,0.08);
+    box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
+    margin: 7px;
+    width: 25%;
+
+  // price
+    .spaceDetail__checkout-card__price {
+      margin: 30px 0px 30px 30px;
+      font-family: nunito-bold;
+      font-size: 2rem;
+      span {
+        font-family: nunito-extra-light;
+        font-size: 1.2rem;
+      }
+      .span {
+        font-family: nunito-bold;
+        font-size: 1.8rem;
+      }
+    }
+
+  // check-in / check-out / howMany
+    .spaceDetail__checkout-card__options-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      .spaceDetail__checkout-card__options__check-in {
+        width: 45%;
+        margin: 0px;
+        border:0.5px solid rgba(0,0,0,0.08);
+        border-top-left-radius: 15px;
+        input {
+          height: 40px;
+          width: 93%;
+          font-family: nunito-light;
+          border: none;
+        }
+        label {
+          margin: 0px 0px 0px 10px;
+          font-family: nunito-semi-bold;
+        }
+      }
+      .spaceDetail__checkout-card__options__check-out {
+        width: 45%;
+        margin: 0px;
+        border:0.5px solid rgba(0,0,0,0.08);
+        border-top-right-radius: 15px;
+        input {
+          height: 40px;
+          width: 93%;
+          font-family: nunito-light;
+          border: none;
+        }
+        label {
+          margin: 0px 0px 0px 10px;
+          font-family: nunito-semi-bold;
+        }
+      }
+      .spaceDetail__checkout-card__options__guests {
+        width: 90.5%;
+        margin: 0px;
+        border:0.5px solid rgba(0,0,0,0.08);
+        border-top: none;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        .p1 {
+          font-family: nunito-semi-bold;
+          font-size: 13px;
+          margin: 13px 0px 0px 15px;
+        }
+        .p2 {
+          font-family: nunito-light;
+          font-size: 13px;
+          margin: 0px 0px 13px 15px;
+        }
+      }
+    }
+    .spaceDetail__checkout-card__button-container {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0px 20px 0px;
+      .spaceDetail__checkout-card__button{
+        width: 90%;
+        height: 99%;
+        background-color: $pink;
+        letter-spacing: 1px;
+        font-family: nunito-regular;
+        font-size: 1rem;
+        color: $white;
+        border: none;
+        border-radius: 10px;
+      }
+    }
   }
 }

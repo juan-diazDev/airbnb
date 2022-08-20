@@ -18,7 +18,7 @@ const ImageCarousel = ({ image, title }) => (
     </div>
     <div className="carousel__section-container">
       <div className="carousel__center-full-container">
-        <div className="carousel__center-image-container">
+        <div className="carousel__center-image-container margin">
           <img className="carousel__center-image-image" src={image} alt={title} />
         </div>
         <div className="carousel__center-image-container">

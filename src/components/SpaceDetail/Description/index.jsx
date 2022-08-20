@@ -1,5 +1,5 @@
 const Description = () => (
-  <>
+  <div className="spaceDetail__bg-screen-container">
     <section>
       <div className="description__host__type-container">
         <div className="description__host__type__icon-container">
@@ -59,7 +59,7 @@ const Description = () => (
         </div>
       </div>
     </section>
-  </>
+  </div>
 );
 
 export default Description;
