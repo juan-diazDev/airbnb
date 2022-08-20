@@ -364,20 +364,22 @@
       align-items: center;
       height: min-content;
       width: 350px;
-      margin-left: 27px;
+      margin-left: 10px;
       .description__host__type-container {
         margin-right: 60px
       }
     }
     .description__host__info-container {
-      margin-left: 50px;
+      margin-left: 30px;
       .description__host__info__imgae-container {
-        margin-right: 90px;
+        margin-right: 65px;
+        width: 60px;
+        height: 60px;
       }
     }
     .description__space__description-container {
       font-size: 1.1rem;
-      margin-left: 40px;
+      margin-left: 30px;
       .description__space__description-text {
         margin-right: 70px
       }
@@ -474,7 +476,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 10px 0px 20px 0px;
+      margin: 20px 0px 20px 0px;
       .spaceDetail__checkout-card__button {
         width: 90%;
         height: 99%;

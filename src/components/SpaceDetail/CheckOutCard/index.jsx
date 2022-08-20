@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -35,12 +36,20 @@ const CheckOutCard = ({ price, dates }) => (
               <input type="date" required />
             </label>
           </div>
-          <div className="spaceDetail__checkout-card__options__guests">
-            <div>
-              <p className="p1">Guests</p>
-              <p className="p2">This is a dropdown menu</p>
-            </div>
-          </div>
+
+          <nav className="spaceDetail__checkout-card__options__guests">
+            <label htmlFor="touch">
+              <span>Guest</span>
+              <input type="checkbox" />
+            </label>
+
+            <ul className="slide">
+              <li><a href="#">Adults</a></li>
+              <li><a href="#">Children</a></li>
+              <li><a href="#">pets</a></li>
+            </ul>
+          </nav>
+
         </div>
         <div className="spaceDetail__checkout-card__button-container">
           <button type="button" className="spaceDetail__checkout-card__button">
