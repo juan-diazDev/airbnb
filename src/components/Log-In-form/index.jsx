@@ -78,6 +78,9 @@ const Loginform = () => {
                 <b>Sign up</b>
               </button>
             </Link>
+            <div className="Login__password">
+              <a href>Forgot your password?</a>
+            </div>
           </form>
         </div>
       </div>

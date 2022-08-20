@@ -152,6 +152,15 @@
   margin-left: 16px
 }
 
+.Login__password{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 @media (min-width:744px) and (min-height:475px){
 
   .Login__container{
