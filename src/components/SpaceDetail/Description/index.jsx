@@ -1,6 +1,6 @@
 const Description = () => (
   <div className="spaceDetail__bg-screen-container">
-    <section>
+    <section className="description__type__main__container">
       <div className="description__host__type-container">
         <div className="description__host__type__icon-container">
           <img className="description__host__type__icon" src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660015542/images/Amenities/PropertyTypeGroup/Ranch_cqiayn.png" alt="Ranch" />

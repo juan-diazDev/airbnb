@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -35,12 +37,48 @@ const CheckOutCard = ({ price, dates }) => (
               <input type="date" required />
             </label>
           </div>
-          <div className="spaceDetail__checkout-card__options__guests">
-            <div>
-              <p className="p1">Guests</p>
-              <p className="p2">This is a dropdown menu</p>
-            </div>
-          </div>
+
+          <nav className="spaceDetail__checkout-card__options__guests">
+            <label htmlFor="touch"><span>Guest</span></label>
+            <input type="checkbox" id="touch" />
+
+            <ul className="spaceDetail__dropDown">
+              <li>
+                <div className="dropDown__option-conatainer">
+                  <p>Adults</p>
+                  <div className="dropDown__option-buttons">
+                    <button type="button">-</button>
+                    <p>1</p>
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropDown__option-conatainer">
+                  <p>Children</p>
+                  <div className="dropDown__option-buttons">
+                    <button type="button">-</button>
+                    <p>1</p>
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="dropDown__option-conatainer">
+                  <p>Pets</p>
+                  <div className="dropDown__option-buttons">
+                    <button type="button">-</button>
+                    <p>1</p>
+                    <button type="button">+</button>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </nav>
+
         </div>
         <div className="spaceDetail__checkout-card__button-container">
           <button type="button" className="spaceDetail__checkout-card__button">

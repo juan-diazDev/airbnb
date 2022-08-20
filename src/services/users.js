@@ -1,8 +1,8 @@
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'https://airbnbback23.herokuapp.com';
 
 export async function getUsers() {
   try {
-    const response = await fetch(`${BASE_URL}/users`);
+    const response = await fetch(`${BASE_URL}/api/users`);
     return response.json();
   } catch (error) {
     return new Error(error);
@@ -11,7 +11,7 @@ export async function getUsers() {
 
 export async function getUser(id) {
   try {
-    const response = await fetch(`${BASE_URL}/users/${id}`);
+    const response = await fetch(`${BASE_URL}/api/users/${id}`);
     return response.json();
   } catch (error) {
     return new Error(error);
@@ -27,7 +27,7 @@ export async function createUser(user) {
       },
       body: JSON.stringify(user),
     };
-    const response = await fetch(`${BASE_URL}/users/`, options);
+    const response = await fetch(`${BASE_URL}/api/users/`, options);
     return response.json();
   } catch (error) {
     return new Error(error);
