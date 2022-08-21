@@ -16,6 +16,7 @@ import Title from './components/HostPlaceRegister/Title';
 import Description from './components/HostPlaceRegister/Description';
 import Price from './components/HostPlaceRegister/Price';
 import Preview from './components/HostPlaceRegister/Preview';
+import AccountVerfication from './pages/AccountVerfication';
 
 const App = () => (
   <BrowserRouter>
@@ -36,6 +37,7 @@ const App = () => (
       <Route path="/Description" element={<Description />} />
       <Route path="/Price" element={<Price />} />
       <Route path="/Preview" element={<Preview />} />
+      <Route path="/verifyAccount/:token" element={<AccountVerfication />} /> {/* cambiar pag que lo recibe */}
     </Routes>
   </BrowserRouter>
 );
