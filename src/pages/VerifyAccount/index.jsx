@@ -14,7 +14,10 @@ const AccountVerfication = () => {
         const { token: jwtoken, profile } = await verify(token);
         localStorage.setItem('token', jwtoken);
         localStorage.setItem('profile', JSON.stringify(profile));
-        navigate('/');
+
+        setTimeout(() => {
+          navigate('/');
+        }, 800);
       };
 
       verifyAccount();
