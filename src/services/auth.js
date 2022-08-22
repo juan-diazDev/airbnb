@@ -1,4 +1,4 @@
-const BASE_URL = 'https://airbnbback23.herokuapp.com';
+const BASE_URL = `${process.env.REACT_APP_LOCAL_URL}`;
 
 export async function login(auth) {
   const options = {
@@ -25,6 +25,6 @@ export async function singup(auth) {
 }
 
 export async function verify(token) {
-  const response = await fetch(`${BASE_URL}/auth/local/verify-account/${token}`);
+  const response = await fetch(`${BASE_URL}/auth/local/verifyAccount/${token}`);
   return response.json();
 }
