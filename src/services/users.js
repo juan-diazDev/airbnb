@@ -2,7 +2,7 @@ const BASE_URL = 'https://airbnbback23.herokuapp.com/api';
 
 export async function getUsers() {
   try {
-    const response = await fetch(`${BASE_URL}/api/users`);
+    const response = await fetch(`${BASE_URL}/users`);
     return response.json();
   } catch (error) {
     return new Error(error);
@@ -11,7 +11,7 @@ export async function getUsers() {
 
 export async function getUser(id) {
   try {
-    const response = await fetch(`${BASE_URL}/api/users/${id}`);
+    const response = await fetch(`${BASE_URL}/users/${id}`);
     return response.json();
   } catch (error) {
     return new Error(error);
