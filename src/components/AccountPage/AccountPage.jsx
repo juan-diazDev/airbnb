@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import './AccountPage.scss';
 import PropTypes from 'prop-types';
 import AccountMain from './AccountMain';
@@ -9,7 +10,7 @@ const AccountPage = ({ user }) => (
     <Header />
     {
       user.map((user1) => (
-        <AccountMain key={user1.id} user1={user1} />
+        <AccountMain key={user1._id} user1={user1} />
       ))
     }
     <AccountNavbar />

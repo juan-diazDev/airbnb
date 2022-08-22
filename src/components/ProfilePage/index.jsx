@@ -22,7 +22,7 @@ const ProfilePage = () => (
             <span className="profile__joinedinfo">Joined in 2015</span>
             <div className="profile__edit">
               <button className="profile_editButton" type="button"> Edit profile </button>
-              <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic"> Update photo </a>
+              {/* <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic"> Update photo </a> */}
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ const ProfilePage = () => (
         <div className="profile__leftContainer-bigSc">
           <div className="profile__profilePic-container-bigSc">
             <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716573/images/Account/profilepic_bo57dk.jpg" className="profile__profilePic-biSc" alt="profilepic" />
-            <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic-bigSc"> Update photo </a>
+            {/* <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic-bigSc"> Update photo </a> */}
           </div>
           <section className="profile__Section-container-bigSC">
             <h2 className="profile__aboutText">Jessica confirmed</h2>

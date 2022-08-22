@@ -6,13 +6,13 @@ const AccountMain = ({ user1 }) => (
   <div className="account__container">
     <div className="account-top-container--bigsc">
       <h1 className="account-acctext--bigsc"> Account </h1>
-      <span className="account-top-name--bigsc">{user1.name} {user1.last_name},</span>
+      <span className="account-top-name--bigsc">{user1.name} {user1.lastName},</span>
       <span className="account-top-email--bigsc"> {user1.email}. </span>
       <Link to="/Profile" className="account__showprofile"> Go to profile </Link>
     </div>
     <div className="account__top-container">
       <div className="account__profilePic-container">
-        <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716573/images/Account/profilepic_bo57dk.jpg" className="account__profilePic" alt="profilepic" />
+        <img src={user1.avatar} className="account__profilePic" alt="profilepic" />
       </div>
       <div className="account__name-container">
         <h1 className="account__name"> {user1.name} </h1>
@@ -93,7 +93,13 @@ const AccountMain = ({ user1 }) => (
 );
 
 AccountMain.propTypes = {
-  user1: PropTypes.shape(),
+  user1: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+  }),
+
 };
 AccountMain.defaultProps = {
   user1: {},
