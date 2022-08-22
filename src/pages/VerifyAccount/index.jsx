@@ -10,14 +10,14 @@ const AccountVerfication = () => {
 
   useEffect(() => {
     const verifyAccount = async () => {
-      const data = await verify(token);
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('profile', JSON.stringify(data.profile));
+      const { token: jwtoken, profile } = await verify(token);
+      localStorage.setItem('token', jwtoken);
+      localStorage.setItem('profile', JSON.stringify(profile));
       navigate('/');
     };
 
     verifyAccount();
-  });
+  }, []);
 
   return (
     <div className="account-verification__main-container">
