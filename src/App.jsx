@@ -37,7 +37,8 @@ const App = () => (
       <Route path="/Description" element={<Description />} />
       <Route path="/Price" element={<Price />} />
       <Route path="/Preview" element={<Preview />} />
-      <Route path="/verifyAccount/:token" element={<AccountVerfication />} /> {/* cambiar pag que lo recibe */}
+      <Route path="/verifyAccount/:token" element={<AccountVerfication />} />
+      <Route path="/verifyAccount" element={<AccountVerfication />} />
     </Routes>
   </BrowserRouter>
 );
