@@ -1,19 +1,20 @@
 import './styles.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { signup } from '../../services/auth';
 
 const Signupform = () => {
+  const navigate = useNavigate();
   const [signupform, setSignupform] = useState({});
   const handleChange = (e) => {
     setSignupform({ ...signupform, [e.target.name]: e.target.value });
   };
+
   const handlerSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await signup(signupform);
-      const data = response.json();
-      console.log(data);
+      await signup(signupform);
+      navigate('/verifyAccount');
     } catch (error) {
       console.log(error);
     }
