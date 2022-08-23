@@ -4,13 +4,12 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 import mainReducer from './reducer/index';
 
 const initialState = {
-  Space: {},
-  auth: {},
+  space: {},
 };
 
 const store = createStore(
-  initialState,
   mainReducer,
+  initialState,
   composeWithDevTools(),
 );
 
