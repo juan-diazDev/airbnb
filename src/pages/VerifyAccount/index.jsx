@@ -6,12 +6,15 @@ import { verify } from '../../services/auth';
 
 const AccountVerfication = () => {
   const { token } = useParams();
+  // console.log(token);
+  console.log(useParams());
   const navigate = useNavigate();
 
   if (token) {
     useEffect(() => {
       const verifyAccount = async () => {
         const { token: jwtoken, profile } = await verify(token);
+        console.log(token);
         localStorage.setItem('token', jwtoken);
         localStorage.setItem('profile', JSON.stringify(profile));
 
