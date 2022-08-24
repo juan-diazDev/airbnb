@@ -11,7 +11,12 @@
     border: 0.5px solid rgba(0,0,0,0.08);
     border-radius: 30px;
     width: 60px;
+    margin-top: 10px;
     height: 40px;
+    background-color: white;
+    &:hover {
+      background-color: rgb(244, 238, 238);
+    }
   }
 
   .menu__icon-container {

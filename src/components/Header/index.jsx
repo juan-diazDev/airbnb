@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import { Link, useLocation } from 'react-router-dom';
 import Menu from '../Menu';
 import Searcher from '../Searcher';
@@ -15,6 +16,10 @@ const Header = () => {
       </div>
       <Searcher />
       <Menu />
+      <div className="header__hero__text">
+        <h1>Get Out and stretch your imagination</h1>
+        <p>Plan a different kind of getaway to uncover the hiddens gems near to you!</p>
+      </div>
     </header>
   );
 };
