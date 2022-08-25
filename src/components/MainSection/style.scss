@@ -1,8 +1,24 @@
+@import '../../sass_styles/_colors.scss';
+@import '../../sass_styles/_fonts.scss';
+
 .cards-conatiner {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  margin-bottom: 65px;
+  height: min-content;
+  margin: 0px;
+  padding: 0px;
+  p {
+    display: none;
+    @media (min-width: 760px) {
+      display: initial;
+      width: 100%;
+      font-size: 1.5rem;
+      color: $dark-gray;
+      margin: 0px;
+      margin-left: 25px;
+      font-family: nunito-semi-bold;
+    }
+  }
 }
