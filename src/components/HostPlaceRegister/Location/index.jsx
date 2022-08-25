@@ -5,7 +5,7 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+/* const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY; */
 
 const Location = () => {
   const Marker = ({ text }) => <div>{text}</div>;
@@ -47,18 +47,15 @@ const Location = () => {
         </button> */}
         <div className="container__map-fixed">
           <LoadScript
-            googleMapsApiKey={{ key: API_KEY }}
+            googleMapsApiKey="AIzaSyAS6FMWSxbS2AgtqmxikDQCBVpBhaJ1vuk"
           >
             <GoogleMap
-              onClick={(evt) => {
+              /* onClick={(evt) => {
                 console.log('latitude= ', evt.latLng.lat());
                 console.log('Longitude= ', evt.latLng.lng());
-              }}
-              style={{ margin: '50%' }}
-              bootstrapURLKeys={{ key: API_KEY }}
-              defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}
-              yesIWantToUseGoogleMapApiInternals
+              }} */
+              center={defaultProps.center}
+              zoom={defaultProps.zoom}
             >
               <Marker
                 lat={10.394297970724839}

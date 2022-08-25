@@ -18,11 +18,11 @@
 }
 
 .container__options-fixed2{
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
   bottom: 90px;
   width: 100%;
-  height: 30%;
+  height: 59%;
   overflow-y: scroll;
   border-radius: 10px;
 
