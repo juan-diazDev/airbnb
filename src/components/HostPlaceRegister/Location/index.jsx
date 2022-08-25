@@ -9,6 +9,10 @@ import './styles.scss';
 
 const Location = () => {
   const Marker = ({ text }) => <div>{text}</div>;
+  const containerStyle = {
+    width: '100%',
+    height: '100%',
+  };
   const defaultProps = {
     center: {
       lat: 10.394297970724839,
@@ -50,10 +54,12 @@ const Location = () => {
             googleMapsApiKey="AIzaSyAS6FMWSxbS2AgtqmxikDQCBVpBhaJ1vuk"
           >
             <GoogleMap
-              /* onClick={(evt) => {
+              onClick={(evt) => {
                 console.log('latitude= ', evt.latLng.lat());
                 console.log('Longitude= ', evt.latLng.lng());
-              }} */
+              }}
+              className="container__map-fixed"
+              mapContainerStyle={containerStyle}
               center={defaultProps.center}
               zoom={defaultProps.zoom}
             >

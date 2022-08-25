@@ -14,7 +14,7 @@ const PropertyTypeGroup = () => {
   // Cuando se coloque handleNext se va a almacenar en el localstorage
   // el valor del estado del componente
   // Tener cuidado de no sobreescribir localStorage
-    window.localStorage.setItem('Type', JSON.stringify({ propertyType }));
+    window.localStorage.setItem('privacyType', JSON.stringify({ propertyType }));
   };
 
   return (
