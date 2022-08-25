@@ -24,16 +24,25 @@
   border-radius: 30px;
   background-color: white;
   div.text-conatiner {
-    opacity: .5;
+    opacity: .7;
     margin: 0px 20px;
-    font-family: nunito-extra-light;
+    font-family: nunito-light;
+    @media (min-width: 1200px) {
+      margin-left: 35px;
+    }
     div.text1 {
       color: black;
       font-family: nunito-extra-bold;
       font-size: .9rem;
+      @media (min-width: 1200px) {
+        font-size: .95rem;
+      }
     }
     div.text2 {
       font-size: .8rem;
+      @media (min-width: 1200px) {
+        font-size: .85rem;
+      }
     }
   }
 }

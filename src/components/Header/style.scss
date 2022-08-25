@@ -38,6 +38,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     padding-top: 2.5%;
     margin-bottom: 50px;
@@ -46,6 +47,25 @@
     background-size: cover;
     background-position: 0% 35%;
     background-image: url(https://res.cloudinary.com/equipo-maravilla/image/upload/v1661303714/images/Hero/AirbnbHero_1_z2ijce.png);
+    .header__hero__text {
+      display: flex;
+      margin: 0px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: min-content;
+      text-align: flex-start;
+      padding: 0px;
+      padding-bottom: 20%;
+      h1 {
+        font-family: nunito-extra-bold;
+        font-size: 2.2rem;
+        letter-spacing: 1.2px;
+        margin: 0px;
+        padding: 0px;
+        background-color: transparent;
+      }
+    }
   }
 
   .container-logo {
@@ -57,32 +77,6 @@
         width: 120px;
         height: 40px;
         color: #ff5a5f;
-    }
-  }
-
-  .header__hero__text {
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: min-content;
-    text-align: center;
-    margin: 0px;
-    padding-bottom: 20%;
-    h1 {
-      font-family: nunito-extra-bold;
-      font-size: 2.2rem;
-      letter-spacing: 1.2px;
-      margin: 0px;
-      padding: 0px;
-      display: initial;
-    }
-    p {
-      font-family: nunito-light;
-      font-size: 1.2rem;
-      margin: 0px;
-      padding: 0px;
     }
   }
 }
