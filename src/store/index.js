@@ -5,6 +5,7 @@ import mainReducer from './reducer/index';
 
 const initialState = {
   space: {},
+  user: {},
 };
 
 const store = createStore(
@@ -14,3 +15,11 @@ const store = createStore(
 );
 
 export default store;
+
+// user{      // current user
+//  isAuthenticaded: false,
+// }
+// reservation{
+// isAuthenticaded: false,
+// guest:{}
+// }
