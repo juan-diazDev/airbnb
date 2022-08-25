@@ -8,19 +8,13 @@ import Header from '../Header';
 const AccountPage = ({ user }) => (
   <>
     <Header />
-    {
-      user.map((user1) => (
-        <AccountMain key={user1._id} user1={user1} />
-      ))
-    }
+    <AccountMain user={user} />
     <AccountNavbar />
   </>
 );
 
 AccountPage.propTypes = {
-  user: PropTypes.arrayOf(
-    PropTypes.shape(),
-  ),
+  user: PropTypes.shape(),
 };
 AccountPage.defaultProps = {
   user: {},

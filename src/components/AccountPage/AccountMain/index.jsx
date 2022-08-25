@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const AccountMain = ({ user1 }) => (
+const AccountMain = ({ user }) => (
 
   <div className="account__container">
     <div className="account-top-container--bigsc">
       <h1 className="account-acctext--bigsc"> Account </h1>
-      <span className="account-top-name--bigsc">{user1.name} {user1.lastName},</span>
-      <span className="account-top-email--bigsc"> {user1.email}. </span>
+      <span className="account-top-name--bigsc">{user.name} {user.lastName},</span>
+      <span className="account-top-email--bigsc"> {user.email}. </span>
       <Link to="/Profile" className="account__showprofile"> Go to profile </Link>
     </div>
     <div className="account__top-container">
       <div className="account__profilePic-container">
-        <img src={user1.avatar} className="account__profilePic" alt="profilepic" />
+        <img src={user.avatar} className="account__profilePic" alt="profilepic" />
       </div>
       <div className="account__name-container">
-        <h1 className="account__name"> {user1.name} </h1>
+        <h1 className="account__name"> {user.name} </h1>
       </div>
       <div className="account__showprofilecontainer">
         <Link to="/Profile" className="account__showprofile"> Show Profile </Link>
@@ -93,7 +93,7 @@ const AccountMain = ({ user1 }) => (
 );
 
 AccountMain.propTypes = {
-  user1: PropTypes.shape({
+  user: PropTypes.shape({
     name: PropTypes.string.isRequired,
     lastName: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
@@ -102,7 +102,7 @@ AccountMain.propTypes = {
 
 };
 AccountMain.defaultProps = {
-  user1: {},
+  user: {},
 };
 
 export default AccountMain;
