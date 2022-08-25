@@ -17,14 +17,14 @@ export async function verify(token) {
   return response.json();
 }
 
-export async function signup(users) {
+export async function signup(user) {
   try {
     const options = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(users),
+      body: JSON.stringify(user),
     };
     const response = await fetch(`${BASE_URL}/api/users`, options);
     return response.json();
