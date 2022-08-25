@@ -68,6 +68,7 @@
     right: 40%;
     top: 0%;
 }
+
 @import '../../../sass_styles/_fonts.scss';
 
 
@@ -125,14 +126,9 @@
   align-items: center;
 }
 
-.select__button-container:hover {
-  transition: 0.15s;
-  background-color: #ff5a5f;
-  color: black;
-}
 
 .select__button-container:active{
-  transition: 0.1s;
+  transition: 0.16s;
   background-color: gray;
   color: white;
 }

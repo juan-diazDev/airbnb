@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unstable-nested-components */
-import React from 'react';
+// eslint-disable-next-line import/no-duplicates
+import { useState, React } from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Link } from 'react-router-dom';
 import './styles.scss';
@@ -9,9 +10,28 @@ import './styles.scss';
 
 const Location = () => {
   const Marker = ({ text }) => <div>{text}</div>;
+  const [adress, setAdress] = useState({});
+  /*  const [coordinates, setCoordinates] = useState({}); */
+  const handleChange = (e) => {
+    setAdress({ ...adress, [e.target.name]: e.target.value });
+    console.log(adress);
+  };
+  /*   const handleSubmit = {}; */
+  const handleMapClick = (e) => {
+    window.localStorage.setItem('latitude= ', e.latLng.lat());
+    window.localStorage.setItem('Longitude= ', e.latLng.lng());
+  };
+  const handleNext = () => {
+    window.localStorage.setItem('adress', (adress));
+  };
+
+  const handlerSubmit = async (e) => {
+    e.preventDefault();
+  };
+
   const containerStyle = {
     width: '100%',
-    height: '100%',
+    height: '200px',
   };
   const defaultProps = {
     center: {
@@ -46,61 +66,61 @@ const Location = () => {
         <h1 className="question__title">Confirm your adress</h1>
       </div>
       <div className="container__options-fixed2">
-        {/* <button type="button">
-          Devuelta a formulario de adress
-        </button> */}
-        <div className="container__map-fixed">
-          <LoadScript
-            googleMapsApiKey="AIzaSyAS6FMWSxbS2AgtqmxikDQCBVpBhaJ1vuk"
-          >
-            <GoogleMap
-              onClick={(evt) => {
-                console.log('latitude= ', evt.latLng.lat());
-                console.log('Longitude= ', evt.latLng.lng());
-              }}
-              className="container__map-fixed"
-              mapContainerStyle={containerStyle}
-              center={defaultProps.center}
-              zoom={defaultProps.zoom}
-            >
-              <Marker
-                lat={10.394297970724839}
-                lng={-75.48149972391892}
-                text="QWERTYUIOPASDFGHJKLÑZXCVBNM,"
-              />
-            </GoogleMap>
-          </LoadScript>
+
+        <div className="container__options-scroll2">
+
+          <form onSubmit={handlerSubmit} className="container__formtable">
+            <input name="street" className="form__text1" placeholder="Street" type="text" onChange={handleChange} />
+            <input
+              name="city"
+              className="form__text"
+              placeholder="Apt, suite,etc.(Optional)"
+              type="text"
+              onChange={handleChange}
+            />
+            <input name="city" className="form__text" placeholder="City" type="text" onChange={handleChange} />
+            <input
+              name="state"
+              className="form__text"
+              placeholder="State(Optional)"
+              type="text"
+              onChange={handleChange}
+            />
+            <input
+              name="zipCode"
+              className="form__text"
+              placeholder="Zip code(optional)"
+              type="text"
+              onChange={handleChange}
+            />
+            <select name="country" className="form__countries" onChange={handleChange}>
+              <option className="country">Country</option>
+              <option value="Colombia" className="Country">Colombia</option>
+              <option value="Ecuador" className="country">Ecuador</option>
+              <option value="Chile" className="country">Chile</option>
+            </select>
+            <div className="container__map-fixed">
+              <LoadScript
+                googleMapsApiKey="AIzaSyAS6FMWSxbS2AgtqmxikDQCBVpBhaJ1vuk"
+              >
+                <GoogleMap
+                  onClick={handleMapClick}
+                  className="container__map-fixed"
+                  mapContainerStyle={containerStyle}
+                  center={defaultProps.center}
+                  zoom={defaultProps.zoom}
+                >
+                  <Marker
+                    lat={10.394297970724839}
+                    lng={-75.48149972391892}
+                    text="QWERTYUIOPASDFGHJKLÑZXCVBNM,"
+                  />
+                </GoogleMap>
+              </LoadScript>
+            </div>
+          </form>
         </div>
       </div>
-      {/* <div className="container__options-fixed2">
-          <div className="container__options-scroll2">
-            <form className="container__formtable">
-                <input className="form__text1" placeholder="Street" type="text" />
-                <input
-                  className="form__text"
-                  placeholder="Apt, suite,etc.(Optional)"
-                  type="text"
-                />
-                <input className="form__text" placeholder="City" type="text" />
-                <input
-                  className="form__text"
-                  placeholder="State(Optional)"
-                  type="text"
-                />
-                <input
-                  className="form__text"
-                  placeholder="Zip code(optional)"
-                  type="text"
-                />
-                <select className="form__countries">
-                  <option className="country">Country</option>
-                  <option className="country">Colombia</option>
-                  <option className="country">Ecuador</option>
-                  <option className="country">Chile</option>
-                </select>
-              </form>
-            </div>
-          </div> */}
       <div className="container__button-step">
         <div className="progress2" />
         <Link to="/PrivacyType">
@@ -109,7 +129,7 @@ const Location = () => {
           </button>
         </Link>
         <Link to="/FloorPlan">
-          <button className="button__nextstep" type="button">
+          <button onClick={handleNext} className="button__nextstep" type="submit">
             Next
           </button>
         </Link>
@@ -117,4 +137,5 @@ const Location = () => {
     </div>
   );
 };
+
 export default Location;

@@ -11,7 +11,7 @@ const PrivacyType = () => {
   };
 
   const handleNext = () => {
-    window.localStorage.setItem('Type', JSON.stringify({ Privacy }));
+    window.localStorage.setItem('privacyType', JSON.stringify(Privacy));
   };
 
   return (
