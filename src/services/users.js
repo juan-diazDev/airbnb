@@ -1,4 +1,4 @@
-const BASE_URL = 'https://airbnbback23.herokuapp.com';
+const BASE_URL = `${process.env.REACT_APP_LOCAL_URL}`;
 
 export async function getUsers() {
   try {
@@ -9,9 +9,16 @@ export async function getUsers() {
   }
 }
 
-export async function getUser(id) {
+export async function getUser() {
   try {
-    const response = await fetch(`${BASE_URL}/api/users/${id}`);
+    const token = localStorage.getItem('token');
+    const options = {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    const response = await fetch(`${BASE_URL}/api/users/me`, options);
     return response.json();
   } catch (error) {
     return new Error(error);

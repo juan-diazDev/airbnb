@@ -1,3 +1,4 @@
+/* eslint-disable */
 import './styles.scss';
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -8,21 +9,22 @@ const AccountVerfication = () => {
   const { token } = useParams();
   const navigate = useNavigate();
 
-  if (token) {
-    useEffect(() => {
-      const verifyAccount = async () => {
-        const { token: jwtoken, profile } = await verify(token);
+  useEffect (() =>{
+    const verifyAccount = async () => {
+      const { token: jwtoken, profile } = await verify(token);
+      console.log(jwtoken);
+      if (jwtoken) {
         localStorage.setItem('token', jwtoken);
         localStorage.setItem('profile', JSON.stringify(profile));
 
         setTimeout(() => {
           navigate('/');
         }, 800);
-      };
+      }
+    };
 
-      verifyAccount();
-    }, []);
-  }
+    verifyAccount();
+  }, [])
 
   return (
     <div className="account-verification__main-container">
