@@ -17,8 +17,7 @@ const Header = () => {
       <Searcher />
       <Menu />
       <div className="header__hero__text">
-        <h1>Get Out and stretch your imagination</h1>
-        <p>Plan a different kind of getaway to uncover the hiddens gems near to you!</p>
+        <h1>Get-out and stretch your imagination</h1>
       </div>
     </header>
   );

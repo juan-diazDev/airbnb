@@ -1,73 +1,96 @@
 @import '../../sass_styles/_fonts.scss';
-@import '../../sass_styles/colors';
+@import '../../sass_styles/_colors.scss';
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.95em;
-  letter-spacing: 0.8px;
+.space-link {
+  text-decoration: none;
+  color: $dark_gray;
 }
 
 .mainSection {
+  padding: 0px;
+  margin-right: 0px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 90vw;
-  height: 460px;
-  margin-bottom: 20px;
-  @media (min-width: 1200px) {
-    margin-bottom: 40px;
-  }
-}
-
-a.space-link {
-  text-decoration: none;
-  color: #222222;
-}
-
-.card__image-container {
-  height: 350px;
-  margin-bottom: 12px;
-}
-
-.card__image__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-
-}
-
-.card__location { margin-bottom: 4px; margin-top: 5px; }
-.card__distance { margin-bottom: 4px; }
-.card__dates { margin-bottom: 4px; }
-.card__price { margin-top: 5px; }
-
-@media (min-width: 1200px) {
-  .main-container {
-    margin-bottom: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: min-content;
+  color: $dark_gray;
+  margin: 0px 0px 25px 0px;
+  .card__image-container {
+    width: 100%;
+    height: 60vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 20vw;
-    height: 460px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      margin-top: 15px;
+      width: 90%;
+      height: 100%;
+      border: 0.5px solid rgba(0,0,0,0.08);
+      box-shadow: 0px -2px 7px 0px rgb(0 0 0 / 10%);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom: none;
+      .card__image__image {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+      }
+    }
   }
-
-  .mainSection--queri-bgscreen {
-    width: 20vw;
-    height: 460px;
-    letter-spacing: 0.8px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .info-container {
+    border: 0.5px solid rgba(0,0,0,0.08);
+    box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 90%;
+    .card__title {
+      font-family: nunito-bold;
+      font-size: 1rem;
+      margin: 21px 21px 0px 21px ;
+    }
+    .card__description {
+      padding: 5px 0px;
+      display: block;
+      width: 85%;
+      height: 50px;
+      display: flex;
+      font-family: nunito-light;
+      font-size: .8rem;
+      color: $light-gray;
+      margin: 0px 21px;
+      opacity: .6;
+      text-overflow: ellipsis;
+      overflow-y: hidden;
+    }
+    .card__price {
+      font-family: nunito-extra-bold;
+      margin: 10px 0px 21px 18px;
+      span {
+        font-family: nunito-extra-light;
+        font-size: .9rem;
+      }
+    }
   }
+}
 
-  .mainSection__card--queri-bgscreen {
-      width: 20vw;
+@media (min-width: 760px) {
+  .mainSection {
+    width: 24%;
+    margin: 20px 5px;
+    .card__image-container {
+      width: 100%;
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
+    }
+    .info-container {
+      width: 90%;
+    }
   }
 }
