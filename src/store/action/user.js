@@ -1,17 +1,18 @@
-import { LOAD_USER, SET_USER_DETAIL, SET_ERROR } from '../constants/user';
+import { LOAD_USER } from '../constants/user';
 
-import { getUsers } from '../../services/users';
+// import { getUser } from '../../services/users';
 
-const setError = (error) => ({ type: SET_ERROR, payload: error });
+// const setError = (error) => ({ type: SET_ERROR, payload: error });
 
-export const loadUserList = (userList) => ({ type: LOAD_USER, payload: userList });
-export const setUserDetail = (userDetail) => ({ type: SET_USER_DETAIL, payload: userDetail });
+const loadUserDetail = (userDetail) => ({ type: LOAD_USER, payload: userDetail });
 
-export const fetchuserList = () => async (dispatch) => {
-  try {
-    const userList = await getUsers();
-    dispatch(loadUserList(userList));
-  } catch (error) {
-    dispatch(setError(error));
-  }
-};
+// export const fetchuserList = () => async (dispatch) => {
+//   try {
+//     const userDetail = await getUser();
+//     dispatch(loadUserDetail(userDetail));
+//   } catch (error) {
+//     dispatch(setError(error));
+//   }
+// };
+
+export default loadUserDetail;
