@@ -16,10 +16,9 @@ const Location = () => {
     setAdress({ ...adress, [e.target.name]: e.target.value });
     console.log(adress);
   };
-  /*   const handleSubmit = {}; */
   const handleMapClick = (e) => {
-    window.localStorage.setItem('latitude= ', e.latLng.lat());
-    window.localStorage.setItem('Longitude= ', e.latLng.lng());
+    window.localStorage.setItem('latitude', e.latLng.lat());
+    window.localStorage.setItem('longitude', e.latLng.lng());
   };
   const handleNext = () => {
     window.localStorage.setItem('adress', (adress));

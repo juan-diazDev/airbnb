@@ -43,7 +43,7 @@ const PropertyTypeGroup = () => {
       </div>
       <div className="container__options-fixed">
         <div className="container__options-scroll">
-          <button className="option__card0" type="button" value="Apartament" onClick={handleClick}>
+          <button className="option__card0" type="button" value="Apartment" onClick={handleClick}>
             <h2 className="option__card-title0">Apartment</h2>
             <img
               className="option__card-image0"
