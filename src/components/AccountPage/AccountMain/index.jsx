@@ -6,7 +6,7 @@ import { getUser } from '../../../services/users';
 import loadUserDetail from '../../../store/action/user';
 
 const AccountMain = () => {
-  const user = useSelector((state) => state.userDetail.userDetail);
+  const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
 
   useEffect(() => {

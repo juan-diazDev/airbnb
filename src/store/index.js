@@ -5,7 +5,9 @@ import mainReducer from './reducer/index';
 
 const initialState = {
   space: {},
-  userDetail: {},
+  user: {
+    userDetail: {},
+  },
 };
 
 const store = createStore(
