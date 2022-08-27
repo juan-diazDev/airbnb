@@ -6,7 +6,7 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
-/* const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY; */
+const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const Location = () => {
   const Marker = ({ text }) => <div>{text}</div>;
@@ -17,11 +17,11 @@ const Location = () => {
     console.log(adress);
   };
   const handleMapClick = (e) => {
-    window.localStorage.setItem('latitude', e.latLng.lat());
-    window.localStorage.setItem('longitude', e.latLng.lng());
+    localStorage.setItem('latitude', e.latLng.lat());
+    localStorage.setItem('longitude', e.latLng.lng());
   };
   const handleNext = () => {
-    window.localStorage.setItem('adress', (adress));
+    localStorage.setItem('adress', JSON.stringify(adress));
   };
 
   const handlerSubmit = async (e) => {
@@ -100,7 +100,7 @@ const Location = () => {
             </select>
             <div className="container__map-fixed">
               <LoadScript
-                googleMapsApiKey="AIzaSyAS6FMWSxbS2AgtqmxikDQCBVpBhaJ1vuk"
+                googleMapsApiKey={API_KEY}
               >
                 <GoogleMap
                   onClick={handleMapClick}

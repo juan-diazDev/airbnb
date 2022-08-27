@@ -5,7 +5,6 @@ import './styles.scss';
 
 const FloorPlan = () => {
   const [FPlan, setFPlan] = useState({});
-  console.log(FPlan);
   const [guest, setGuest] = useState(1);
   const [beds, setBeds] = useState(1);
   const [bedrooms, setBedrooms] = useState(1);
@@ -54,7 +53,8 @@ const FloorPlan = () => {
   };
 
   const handleNext = () => {
-    window.localStorage.setItem('essentialsNumber', (FPlan));
+    // TODO: Enviar al redux.
+    localStorage.setItem('essentialsNumber', JSON.stringify(FPlan));
   };
   return (
     <div>
