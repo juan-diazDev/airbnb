@@ -7,7 +7,10 @@ import mainReducer from './reducer/index';
 const middlewares = [thunk];
 
 const initialState = {
-  space: {},
+  space: {
+    spaceList: [],
+    spaceDetail: {},
+  },
   user: {
     userDetail: {},
   },

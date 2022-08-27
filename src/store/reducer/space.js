@@ -1,4 +1,4 @@
-import { LOAD_SPACE_LIST } from '../constants/space';
+import { LOAD_SPACE_LIST, SET_SPACE_DETAIL } from '../constants/space';
 
 function spaceReducer(state = {}, action = {}) {
   switch (action.type) {
@@ -6,6 +6,11 @@ function spaceReducer(state = {}, action = {}) {
       return {
         ...state,
         spaceList: action.payload,
+      };
+    case SET_SPACE_DETAIL:
+      return {
+        ...state,
+        spaceDetail: action.payload,
       };
     default:
       return state;
