@@ -17,6 +17,7 @@ import Description from './components/HostPlaceRegister/Description';
 import Price from './components/HostPlaceRegister/Price';
 import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
+import CheckoutCard from './pages/CheckoutCard';
 
 const App = () => (
   <BrowserRouter>
@@ -39,6 +40,7 @@ const App = () => (
       <Route path="/Preview" element={<Preview />} />
       <Route path="/verifyAccount/:token" element={<AccountVerfication />} />
       <Route path="/verifyAccount" element={<AccountVerfication />} />
+      <Route path="/Payments" element={<CheckoutCard />} />
     </Routes>
   </BrowserRouter>
 );
