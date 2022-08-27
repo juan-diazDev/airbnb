@@ -1,4 +1,5 @@
-import { getSpaces } from '../../services/spaces';
+/* eslint-disable no-undef */
+import { getSpace, getSpaces } from '../../services/spaces';
 import { LOAD_SPACE_LIST, SET_SPACE_DETAIL } from '../constants/space';
 import setError from './ui';
 
@@ -7,8 +8,17 @@ export const loadSpaceDetail = (spaceDetail) => ({ type: SET_SPACE_DETAIL, paylo
 
 export const fetchSpaceList = () => async (dispatch) => {
   try {
-    const spaceDetail = await getSpaces();
-    dispatch(loadSpaceList(spaceDetail));
+    const spaceList = await getSpaces();
+    dispatch(loadSpaceList(spaceList));
+  } catch (error) {
+    dispatch(setError(error));
+  }
+};
+
+export const fetchSpaceDetail = () => async (dispatch) => {
+  try {
+    const spaceDetail = await getSpace(_id);
+    dispatch(loadSpaceDetail(spaceDetail));
   } catch (error) {
     dispatch(setError(error));
   }
