@@ -27,11 +27,11 @@ const Payments = () => {
       },
       body: JSON.stringify({
         paymentMethod,
-        amoutn: 10_000,
+        amount: 10_000,
       }),
     };
 
-    const response = await fetch(`${process.env.REACT_APP_LOCAL_URL}/api/checkout`, options);
+    const response = await fetch('http://localhost:3030/api/checkout', options);
     const body = await response.json();
     console.log('🚀 ~ file: index.jsx ~ line 33 ~ handleSubmit ~ body', body);
   };
