@@ -4,7 +4,7 @@ import setError from './ui';
 
 export const loadUserDetail = (userDetail) => ({ type: LOAD_USER, payload: userDetail });
 
-export const fetchdata = async (dispatch) => {
+export const fetchUserDetail = () => async (dispatch) => {
   try {
     const userDetail = await getUser();
     dispatch(loadUserDetail(userDetail));
@@ -12,5 +12,3 @@ export const fetchdata = async (dispatch) => {
     dispatch(setError(error));
   }
 };
-
-export default loadUserDetail;
