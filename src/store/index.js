@@ -11,6 +11,9 @@ const initialState = {
   user: {
     userDetail: {},
   },
+  ui: {
+    error: null,
+  },
 };
 
 const store = createStore(

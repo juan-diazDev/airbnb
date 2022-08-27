@@ -2,19 +2,14 @@
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getUser } from '../../../services/users';
-import { loadUserDetail } from '../../../store/action/user';
+import { fetchUserDetail } from '../../../store/action/user';
 
 const AccountMain = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const result = await getUser();
-      dispatch(loadUserDetail(result));
-    };
-    fetchData();
+    dispatch(fetchUserDetail());
   }, []);
 
   return (
