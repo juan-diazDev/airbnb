@@ -19,11 +19,12 @@ const Payments = () => {
     }
 
     console.log({ '[Paymethod]': paymentMethod });
-
+    const token = localStorage.getItem('token');
     const options = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
         paymentMethod,
@@ -32,8 +33,8 @@ const Payments = () => {
     };
 
     const response = await fetch('http://localhost:3030/api/payment', options);
-    const body = await response.json();
-    console.log('🚀 ~ file: index.jsx ~ line 33 ~ handleSubmit ~ body', body);
+    console.log('🚀 ~ file: index.jsx ~ line 37 ~ handleSubmit ~ response', response);
+    // const body = await response.json();
   };
 
   return (

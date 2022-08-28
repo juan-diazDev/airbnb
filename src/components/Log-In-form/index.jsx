@@ -19,7 +19,6 @@ const Loginform = () => {
       const { token, profile } = await login(form);
       localStorage.setItem('token', token);
       localStorage.setItem('profile', JSON.stringify(profile));
-      console.log(form);
       if (token) {
         navigate('/');
       } else {
@@ -79,7 +78,7 @@ const Loginform = () => {
               </button>
             </Link>
             <div className="Login__password">
-              <a href>Forgot your password?</a>
+              <Link to="/forgottenPassword">Forgot your password?</Link>
             </div>
           </form>
         </div>
