@@ -31,7 +31,7 @@ const Payments = () => {
       }),
     };
 
-    const response = await fetch('http://localhost:3030/api/checkout', options);
+    const response = await fetch('http://localhost:3030/api/payment', options);
     const body = await response.json();
     console.log('🚀 ~ file: index.jsx ~ line 33 ~ handleSubmit ~ body', body);
   };
