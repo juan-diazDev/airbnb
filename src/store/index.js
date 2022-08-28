@@ -9,7 +9,7 @@ const middlewares = [thunk];
 const initialState = {
   space: {
     spaceList: [],
-    spaceDetail: {},
+    spaceDetail: null,
   },
   user: {
     userDetail: {},

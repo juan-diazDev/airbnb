@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { getSpace, getSpaces } from '../../services/spaces';
+import { getSpaces } from '../../services/spaces';
 import { LOAD_SPACE_LIST, SET_SPACE_DETAIL } from '../constants/space';
 import setError from './ui';
 
@@ -15,11 +15,11 @@ export const fetchSpaceList = () => async (dispatch) => {
   }
 };
 
-export const fetchSpaceDetail = () => async (dispatch) => {
-  try {
-    const spaceDetail = await getSpace(_id);
-    dispatch(loadSpaceDetail(spaceDetail));
-  } catch (error) {
-    dispatch(setError(error));
-  }
-};
+// export const fetchSpaceDetail = () => async (dispatch) => {
+//   try {
+//     const spaceDetail = await getSpace(_id);
+//     dispatch(loadSpaceDetail(spaceDetail));
+//   } catch (error) {
+//     dispatch(setError(error));
+//   }
+// };
