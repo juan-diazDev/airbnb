@@ -6,7 +6,6 @@ import Details from '../components/SpaceDetail/Details';
 import { loadSpaceDetail } from '../store/action/space';
 
 const SpaceDetail = () => {
-  // const [space, setSpace] = useState(null);
   const space = useSelector((state) => state.space.spaceDetail);
   const dispatch = useDispatch();
   const { _id } = useParams();
@@ -14,7 +13,6 @@ const SpaceDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await getSpace(_id);
-      // setSpace(result);
       dispatch(loadSpaceDetail(result));
     };
     fetchData();
