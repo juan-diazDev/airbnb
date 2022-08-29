@@ -66,7 +66,8 @@
     border-top: 1px solid rgb(235, 235, 235);
     transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
       -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
-      transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, visibility 0.2s ease 0s
+      transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, visibility 0.2s ease 0s;
+    width: 100vw;
   }
 
   .navbar__icons{
