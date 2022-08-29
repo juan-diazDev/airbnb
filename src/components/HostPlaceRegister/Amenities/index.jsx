@@ -1,11 +1,20 @@
+/* eslint-disable max-len */
 /* eslint-disable arrow-body-style */
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 import { sectionAmenities } from './sectionAmenities';
 import AmenitiesButton from './AmenitiesButton';
 
 const Amenities = () => {
+  const [amenitie, setAmenitie] = useState({
+    Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Entertainment: [],
+  });
+  const handleAmenitie = (e, section) => {
+    console.log(e.target.value, section);
+    setAmenitie({ ...amenitie, [section]: [...amenitie[section], e.target.value] });
+    console.log(amenitie);
+  };
   return (
     <div>
       <div className="form__header4">
@@ -43,7 +52,7 @@ const Amenities = () => {
                 <div className="add_included-options">
                   {section.buttons.map((button) => {
                     return (
-                      <AmenitiesButton button={button} />
+                      <AmenitiesButton onUpdate={(e, section2) => handleAmenitie(e, section2)} section={section.section} button={button} />
                     );
                   })}
                 </div>

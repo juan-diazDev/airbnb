@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const AmenitiesButton = ({ button }) => {
+const AmenitiesButton = ({ button, onUpdate, section }) => {
   const [checkBool, setCheckBool] = useState(false);
-  const handleSelect = () => {
+  const handleSelect = (e) => {
+    onUpdate(e, section);
     setCheckBool(!checkBool);
   };
-  console.log(checkBool);
+
   return (
     <button name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
       <div className="option__card-adition">
@@ -22,6 +23,8 @@ const AmenitiesButton = ({ button }) => {
 };
 
 AmenitiesButton.propTypes = {
+  onUpdate: PropTypes.func.isRequired,
+  section: PropTypes.string.isRequired,
   button: PropTypes.shape({
     amenitie: PropTypes.string,
     icon: PropTypes.string,

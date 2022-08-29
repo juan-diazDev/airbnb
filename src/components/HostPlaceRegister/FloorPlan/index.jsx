@@ -1,77 +1,37 @@
+/* eslint-disable max-len */
 /* disable-eslint */
 import { useState, React } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const FloorPlan = () => {
-  const [guest, setGuest] = useState(1);
-  const [beds, setBeds] = useState(1);
-  const [bedrooms, setBedrooms] = useState(1);
-  const [bathrooms, setBathrooms] = useState(1);
+  const navigate = useNavigate();
+  const [floorPlanState, setFloorPlanState] = useState({
+    guest: 1, beds: 1, bedrooms: 1, bathrooms: 1,
+  });
 
-  /*  const igniteState = {
-    guest: { guest },
-    beds: { beds },
-    bedrooms: { bedrooms},
-    bathrooms: [bathrooms],
-  }; */
-
-  const [FPlan, setFPlan] = useState();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-  const handleChange = (e) => {
-    setFPlan({ ...FPlan, [e.target.name]: JSON.stringify(e.target.value) });
-  };
-
-  const handleDecrementGuest = () => {
-    if (guest > 1) {
-      setGuest((prevCountGuest) => prevCountGuest - 1);
+  const handleDecrement = (e) => {
+    if (floorPlanState[e.target.name] > 0) {
+      setFloorPlanState({ ...floorPlanState, [e.target.name]: floorPlanState[e.target.name] - 1 });
     }
   };
-  const handleIncrementGuest = () => {
-    setGuest((prevCountGuest) => prevCountGuest + 1);
-  };
-
-  const handleDecrementBeds = () => {
-    if (beds > 1) {
-      setBeds((prevCount) => prevCount - 1);
-    }
-  };
-  const handleIncrementBeds = () => {
-    setBeds((prevCount) => prevCount + 1);
-  };
-
-  const handleDecrementBedrooms = () => {
-    if (bedrooms > 1) {
-      setBedrooms((prevCount) => prevCount - 1);
-    }
-  };
-  const handleIncrementBedrooms = () => {
-    setBedrooms((prevCount) => prevCount + 1);
-  };
-
-  const handleDecrementBathrooms = () => {
-    if (bathrooms > 1) {
-      setBathrooms((prevCount) => prevCount - 1);
-    }
-  };
-  const handleIncrementBathrooms = () => {
-    setBathrooms((prevCount) => prevCount + 1);
+  const handleIncrement = (e) => {
+    setFloorPlanState({ ...floorPlanState, [e.target.name]: floorPlanState[e.target.name] + 1 });
   };
 
   const handleNext = (e) => {
     e.preventDefault();
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, FPlan } });
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, floorPlanState } });
+    navigate('/Amenities');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-
-  console.log(guest);
-  console.log(FPlan);
 
   return (
     <div>
@@ -89,7 +49,7 @@ const FloorPlan = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
+          <button className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -102,33 +62,33 @@ const FloorPlan = () => {
           <div className="option__card2">
             <h2 className="option__card-title2">Guest</h2>
             <div className="option__card-features">
-              <button onClick={handleDecrementGuest} className="card_button-decrease" type="button">-</button>
-              <input name="guest" onChange={handleChange} value={guest} className="card_number-guest" />
-              <button onClick={handleIncrementGuest} className="card_button-increase" type="button">+</button>
+              <button name="guest" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
+              <input name="guest" value={floorPlanState.guest} className="card_number-guest" />
+              <button name="guest" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
           <div className="option__card2">
             <h2 className="option__card-title2">Beds</h2>
             <div className="option__card-features">
-              <button onClick={handleDecrementBeds} className="card_button-decrease" type="button">-</button>
-              <input name="beds" onChange={handleChange} value={beds} className="card_number-beds" />
-              <button onClick={handleIncrementBeds} className="card_button-increase" type="button">+</button>
+              <button name="beds" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
+              <input name="beds" value={floorPlanState.beds} className="card_number-beds" />
+              <button name="beds" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
           <div className="option__card2">
             <h2 className="option__card-title2">Bedrooms</h2>
             <div className="option__card-features">
-              <button onClick={handleDecrementBedrooms} className="card_button-decrease" type="button">-</button>
-              <input name="bedrooms" onChange={handleChange} value={bedrooms} className="card_number-bedrooms" />
-              <button onClick={handleIncrementBedrooms} className="card_button-increase" type="button">+</button>
+              <button name="bedrooms" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
+              <input name="bedrooms" value={floorPlanState.bedrooms} className="card_number-bedrooms" />
+              <button name="bedrooms" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
           <div className="option__card2">
             <h2 className="option__card-title2">Bathrooms</h2>
             <div className="option__card-features">
-              <button onClick={handleDecrementBathrooms} className="card_button-decrease" type="button">-</button>
-              <input name="bathrooms" onChange={handleChange} value={bathrooms} className="card_number-bathrooms" />
-              <button onClick={handleIncrementBathrooms} className="card_button-increase" type="button">+</button>
+              <button name="bathrooms" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
+              <input name="bathrooms" value={floorPlanState.bathrooms} className="card_number-bathrooms" />
+              <button name="bathrooms" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
         </form>
@@ -140,11 +100,9 @@ const FloorPlan = () => {
             Back
           </button>
         </Link>
-        <Link to="/Amenities">
-          <button className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="button">
+          Next
+        </button>
       </div>
     </div>
   );
