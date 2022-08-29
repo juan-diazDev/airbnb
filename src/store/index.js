@@ -4,7 +4,9 @@ import { composeWithDevTools } from '@redux-devtools/extension';
 import mainReducer from './reducer/index';
 
 const initialState = {
-  space: {},
+  space: {
+    spaceRegister: {},
+  },
 };
 
 const store = createStore(

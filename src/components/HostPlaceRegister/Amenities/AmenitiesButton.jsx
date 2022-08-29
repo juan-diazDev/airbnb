@@ -6,8 +6,9 @@ const AmenitiesButton = ({ button }) => {
   const handleSelect = () => {
     setCheckBool(!checkBool);
   };
+  console.log(checkBool);
   return (
-    <button onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
+    <button name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
       <div className="option__card-adition">
         <img
           className="adition-icon"

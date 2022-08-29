@@ -59,7 +59,7 @@ const Images = () => {
       </div>
       <div className="container__question3">
         <h1 className="question__title">
-          How many guest would you like to welcome?
+          Next, let's add some photos of your place
         </h1>
       </div>
       <div className="container__options-fixed3">

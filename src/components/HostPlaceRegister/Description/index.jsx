@@ -1,16 +1,22 @@
 import { React, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const Description = () => {
-  const [Descripcion, setDescripcion] = useState();
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
+  const [description, setDescripcion] = useState();
+
   const handleChange = (e) => {
     setDescripcion(e.target.value);
   };
 
-  const handleNext = () => {
-    window.localStorage.setItem('Description', JSON.stringify(Descripcion));
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGSITER', payload: { ...spaceRegister, description } });
   };
+
   return (
     <div>
       <div className="form__header">
@@ -27,14 +33,14 @@ const Description = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
+          <button onClick={handleNext} className="header__save" type="button">
             Save and exit
           </button>
         </div>
       </div>
       <div className="container__question3">
         <h1 className="question__title">
-          How many guest would you like to welcome?
+          Now, let’s describe your place
         </h1>
       </div>
       <div className="container__options-fixed3">
@@ -58,7 +64,7 @@ const Description = () => {
           </button>
         </Link>
         <Link to="/Price">
-          <button onClick={handleNext} className="button__nextstep" type="button">
+          <button className="button__nextstep" type="button">
             Next
           </button>
         </Link>

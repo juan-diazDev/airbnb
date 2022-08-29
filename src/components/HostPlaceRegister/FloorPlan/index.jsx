@@ -1,23 +1,35 @@
-/* eslint-disable max-len */
+/* disable-eslint */
 import { useState, React } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const FloorPlan = () => {
-  const [FPlan, setFPlan] = useState({});
   const [guest, setGuest] = useState(1);
   const [beds, setBeds] = useState(1);
   const [bedrooms, setBedrooms] = useState(1);
   const [bathrooms, setBathrooms] = useState(1);
+
+  /*  const igniteState = {
+    guest: { guest },
+    beds: { beds },
+    bedrooms: { bedrooms},
+    bathrooms: [bathrooms],
+  }; */
+
+  const [FPlan, setFPlan] = useState();
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
+
   const handleChange = (e) => {
-    setFPlan({ ...FPlan, [e.target.name]: e.target.value });
+    setFPlan({ ...FPlan, [e.target.name]: JSON.stringify(e.target.value) });
   };
+
   const handleDecrementGuest = () => {
     if (guest > 1) {
       setGuest((prevCountGuest) => prevCountGuest - 1);
     }
   };
-
   const handleIncrementGuest = () => {
     setGuest((prevCountGuest) => prevCountGuest + 1);
   };
@@ -27,7 +39,6 @@ const FloorPlan = () => {
       setBeds((prevCount) => prevCount - 1);
     }
   };
-
   const handleIncrementBeds = () => {
     setBeds((prevCount) => prevCount + 1);
   };
@@ -37,7 +48,6 @@ const FloorPlan = () => {
       setBedrooms((prevCount) => prevCount - 1);
     }
   };
-
   const handleIncrementBedrooms = () => {
     setBedrooms((prevCount) => prevCount + 1);
   };
@@ -47,15 +57,22 @@ const FloorPlan = () => {
       setBathrooms((prevCount) => prevCount - 1);
     }
   };
-
   const handleIncrementBathrooms = () => {
     setBathrooms((prevCount) => prevCount + 1);
   };
 
-  const handleNext = () => {
-    // TODO: Enviar al redux.
-    localStorage.setItem('essentialsNumber', JSON.stringify(FPlan));
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, FPlan } });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  console.log(guest);
+  console.log(FPlan);
+
   return (
     <div>
       <div className="form__header">
@@ -72,7 +89,7 @@ const FloorPlan = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
+          <button onClick={handleNext} className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -81,7 +98,7 @@ const FloorPlan = () => {
         <h1 className="question__title">How many guest would you like to welcome?</h1>
       </div>
       <div className="container__options-fixed3">
-        <div className="container__options-scroll3">
+        <form onSubmit={handleSubmit} className="container__options-scroll3">
           <div className="option__card2">
             <h2 className="option__card-title2">Guest</h2>
             <div className="option__card-features">
@@ -114,7 +131,7 @@ const FloorPlan = () => {
               <button onClick={handleIncrementBathrooms} className="card_button-increase" type="button">+</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
       <div className="container__button-step">
         <div className="progress3" />
@@ -124,7 +141,7 @@ const FloorPlan = () => {
           </button>
         </Link>
         <Link to="/Amenities">
-          <button onClick={handleNext} className="button__nextstep" type="button">
+          <button className="button__nextstep" type="button">
             Next
           </button>
         </Link>

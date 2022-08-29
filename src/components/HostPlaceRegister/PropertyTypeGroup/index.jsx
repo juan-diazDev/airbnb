@@ -1,20 +1,22 @@
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const PropertyTypeGroup = () => {
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
+  console.log(spaceRegister);
   const [propertyType, setPropertyType] = useState();
+
   const handleClick = (e) => {
-    setPropertyType(e.target.value);
-    console.log(propertyType);
-  // Almacenar el estado local use sta}te el valor de la propiedad actual
+    setPropertyType({ ...propertyType, [e.target.name]: e.target.value });
+  // Almacenar el estado local use state el valor de la propiedad actual
   };
 
-  const handleNext = () => {
-  // Cuando se coloque handleNext se va a almacenar en el localstorage
-  // el valor del estado del componente
-  // Tener cuidado de no sobreescribir localStorage
-    window.localStorage.setItem('type', JSON.stringify(propertyType));
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
   };
 
   return (
@@ -33,7 +35,7 @@ const PropertyTypeGroup = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
+          <button onClick={handleNext} className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -43,7 +45,7 @@ const PropertyTypeGroup = () => {
       </div>
       <div className="container__options-fixed">
         <div className="container__options-scroll">
-          <button className="option__card0" type="button" value="Apartment" onClick={handleClick}>
+          <button className="option__card0" type="button" name="type" value="APARTMENT" onClick={handleClick}>
             <h2 className="option__card-title0">Apartment</h2>
             <img
               className="option__card-image0"
@@ -51,7 +53,7 @@ const PropertyTypeGroup = () => {
               alt="Apartament"
             />
           </button>
-          <button className="option__card0" type="button" value="House" onClick={handleClick}>
+          <button className="option__card0" type="button" name="type" value="HOUSE" onClick={handleClick}>
             <h2 className="option__card-title0">House</h2>
             <img
               className="option__card-image0"
@@ -59,7 +61,7 @@ const PropertyTypeGroup = () => {
               alt="House"
             />
           </button>
-          <button className="option__card0" type="button" value="Bed and breakfast" onClick={handleClick}>
+          <button className="option__card0" type="button" name="type" value="BED_AND_BREAKFAST" onClick={handleClick}>
             <h2 className="option__card-title0">Bed and breakfasts</h2>
             <img
               className="option__card-image0"
@@ -67,7 +69,7 @@ const PropertyTypeGroup = () => {
               alt="BedAndBreakFast"
             />
           </button>
-          <button className="option__card0" type="button" value="Ranch" onClick={handleClick}>
+          <button className="option__card0" type="button" name="type" value="RANCH" onClick={handleClick}>
             <h2 className="option__card-title0">Ranch</h2>
             <img
               className="option__card-image0"
@@ -85,7 +87,7 @@ const PropertyTypeGroup = () => {
           </button>
         </Link>
         <Link to="/PrivacyType">
-          <button className="button__nextstep" onClick={handleNext} type="button">
+          <button className="button__nextstep" type="button">
             Next
           </button>
         </Link>

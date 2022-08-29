@@ -1,7 +1,7 @@
 /* eslint-disable */
 export const sectionAmenities = [
   {
-    section: "kitchen",
+    section: "Kitchen",
     buttons: [
       {
         amenitie: "Hoven",

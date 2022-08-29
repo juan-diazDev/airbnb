@@ -40,7 +40,6 @@ const Amenities = () => {
                 <div className="addition__question">
                   <h2 className="question__addtitle">{section.section}</h2>
                 </div>
-                {/* className="option__card3" */}
                 <div className="add_included-options">
                   {section.buttons.map((button) => {
                     return (

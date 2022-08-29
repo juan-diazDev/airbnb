@@ -1,17 +1,21 @@
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const Price = () => {
-  const [quantity, setQuantity] = useState(1);
-  const handleDecrement = () => {
-    if (quantity > 1) {
-      setQuantity((prevCount) => prevCount - 1);
-    }
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
+  const [price, setPrice] = useState({});
+  const handleChange = (e) => {
+    setPrice(e.target.value);
   };
-  const handleIncrement = () => {
-    setQuantity((prevCount) => prevCount + 1);
+
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, price } });
   };
+
   return (
     <div>
       <div className="form__header">
@@ -28,24 +32,21 @@ const Price = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
+          <button onClick={handleNext} className="header__save" type="button">
             Save and exit
           </button>
         </div>
       </div>
       <div className="container__question3">
         <h1 className="question__title">
-          How many guest would you like to welcome?
+          Now, for the fun part, set your price
         </h1>
       </div>
       <div className="container__options-fixed3">
         <div className="container__options-scroll3">
           <div className="option__offerprice">
-            <button onClick={handleDecrement} className="offerprice__low" type="button">-</button>
             <div className="offerprice__input">
-              <div className="offerprice" placeholder="$179043" type="text">{quantity}
-              </div>
-              <button onClick={handleIncrement} className="offerprice__rise" type="button">+</button>
+              <input name="price" onChange={handleChange} className="offerprice" placeholder="$179043" type="number" value={price} />
             </div>
             <div className="option__pernight">
               <h2 className="pernight__description">Per night</h2>

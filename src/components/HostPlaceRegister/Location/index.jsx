@@ -4,6 +4,7 @@
 import { useState, React } from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
 
 const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
@@ -11,17 +12,25 @@ const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 const Location = () => {
   const Marker = ({ text }) => <div>{text}</div>;
   const [adress, setAdress] = useState({});
-  /*  const [coordinates, setCoordinates] = useState({}); */
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
   const handleChange = (e) => {
     setAdress({ ...adress, [e.target.name]: e.target.value });
     console.log(adress);
   };
   const handleMapClick = (e) => {
-    localStorage.setItem('latitude', e.latLng.lat());
-    localStorage.setItem('longitude', e.latLng.lng());
+    const coordinates = {
+      latitude: e.latLng.lat(),
+      longitude: e.latLng.lng(),
+    };
+    console.log(coordinates);
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, coordinates } });
+    /*     localStorage.setItem('latitude', e.latLng.lat.lng());
+    localStorage.setItem('longitude', e.latLng.lng()); */
   };
-  const handleNext = () => {
-    localStorage.setItem('adress', JSON.stringify(adress));
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, adress } });
   };
 
   const handlerSubmit = async (e) => {
@@ -56,7 +65,7 @@ const Location = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
+          <button onClick={handleNext} className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -71,7 +80,7 @@ const Location = () => {
           <form onSubmit={handlerSubmit} className="container__formtable">
             <input name="street" className="form__text1" placeholder="Street" type="text" onChange={handleChange} />
             <input
-              name="city"
+              name="placeType"
               className="form__text"
               placeholder="Apt, suite,etc.(Optional)"
               type="text"
@@ -128,7 +137,7 @@ const Location = () => {
           </button>
         </Link>
         <Link to="/FloorPlan">
-          <button onClick={handleNext} className="button__nextstep" type="submit">
+          <button className="button__nextstep" type="submit">
             Next
           </button>
         </Link>
