@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const PropertyTypeGroup = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  console.log(spaceRegister);
   const [propertyType, setPropertyType] = useState();
 
   const handleClick = (e) => {
@@ -17,6 +17,7 @@ const PropertyTypeGroup = () => {
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
+    navigate('/PrivacyType');
   };
 
   return (
@@ -35,7 +36,7 @@ const PropertyTypeGroup = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
+          <button className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -86,11 +87,13 @@ const PropertyTypeGroup = () => {
             Back to Home
           </button>
         </Link>
-        <Link to="/PrivacyType">
-          <button className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button
+          onClick={handleNext}
+          className="button__nextstep"
+          type="button"
+        >
+          Next
+        </button>
       </div>
     </div>
   );

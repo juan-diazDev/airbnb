@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const PrivacyType = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
   const [Privacy, setPrivacy] = useState();
@@ -16,6 +17,7 @@ const PrivacyType = () => {
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, Privacy } });
+    navigate('/Location');
   };
 
   return (
@@ -34,7 +36,7 @@ const PrivacyType = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
+          <button className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -57,7 +59,7 @@ const PrivacyType = () => {
           </button>
         </Link>
         <Link to="/Location">
-          <button className="button__nextstep" type="button">
+          <button onClick={handleNext} className="button__nextstep" type="button">
             Next
           </button>
         </Link>

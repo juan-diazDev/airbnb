@@ -1,9 +1,10 @@
 import { React, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const Title = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
@@ -14,7 +15,7 @@ const Title = () => {
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, title } });
-    window.localStorage.setItem('Title', JSON.stringify(title));
+    navigate('/Description');
   };
 
   return (
@@ -33,7 +34,7 @@ const Title = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
+          <button className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -64,7 +65,7 @@ const Title = () => {
           </button>
         </Link>
         <Link to="/Description">
-          <button className="button__nextstep" type="button">
+          <button handleNext={handleNext} className="button__nextstep" type="button">
             Next
           </button>
         </Link>

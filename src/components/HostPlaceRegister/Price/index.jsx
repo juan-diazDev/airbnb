@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const Price = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
+
   const [price, setPrice] = useState({});
   const handleChange = (e) => {
     setPrice(e.target.value);
@@ -14,6 +16,7 @@ const Price = () => {
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, price } });
+    navigate('/Preview');
   };
 
   return (
@@ -32,7 +35,7 @@ const Price = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
+          <button className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -66,7 +69,7 @@ const Price = () => {
             </button>
           </Link>
           <Link to="/Preview">
-            <button className="button__nextstep" type="button">
+            <button onClick={handleNext} className="button__nextstep" type="button">
               Review your listing
             </button>
           </Link>

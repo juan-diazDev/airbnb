@@ -2,10 +2,12 @@
 /* eslint-disable no-console */
 /* eslint-disable */
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
 const Images = () => {
+  const navigate = useNavigate();
+
   const [file, setFile] = useState(null);
   const [img, setImg] = useState(null);
 
@@ -34,6 +36,10 @@ const Images = () => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const handleNext = () => {
+    navigate('/Title');
   };
 
   return (
@@ -93,7 +99,7 @@ const Images = () => {
           </button>
         </Link>
         <Link to="/Title">
-          <button className="button__nextstep" type="button">
+          <button onClick={handleNext} className="button__nextstep" type="button">
             Next
           </button>
         </Link>

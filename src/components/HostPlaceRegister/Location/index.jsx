@@ -3,7 +3,7 @@
 // eslint-disable-next-line import/no-duplicates
 import { useState, React } from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
 
@@ -11,26 +11,26 @@ const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const Location = () => {
   const Marker = ({ text }) => <div>{text}</div>;
-  const [adress, setAdress] = useState({});
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const [adress, setAdress] = useState({});
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
   const handleChange = (e) => {
     setAdress({ ...adress, [e.target.name]: e.target.value });
-    console.log(adress);
   };
   const handleMapClick = (e) => {
     const coordinates = {
       latitude: e.latLng.lat(),
       longitude: e.latLng.lng(),
     };
-    console.log(coordinates);
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, coordinates } });
-    /*     localStorage.setItem('latitude', e.latLng.lat.lng());
-    localStorage.setItem('longitude', e.latLng.lng()); */
   };
+
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, adress } });
+    navigate('/FloorPlan');
   };
 
   const handlerSubmit = async (e) => {
@@ -65,7 +65,7 @@ const Location = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
+          <button className="header__save" type="button">
             Save and exit
           </button>
         </div>
@@ -136,11 +136,9 @@ const Location = () => {
             Back
           </button>
         </Link>
-        <Link to="/FloorPlan">
-          <button className="button__nextstep" type="submit">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="submit">
+          Next
+        </button>
       </div>
     </div>
   );

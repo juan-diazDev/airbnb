@@ -1,12 +1,14 @@
 /* eslint-disable max-len */
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 import { sectionAmenities } from './sectionAmenities';
 import AmenitiesButton from './AmenitiesButton';
 
 const Amenities = () => {
+  const navigate = useNavigate();
+
   const [amenitie, setAmenitie] = useState({
     Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Entertainment: [],
   });
@@ -14,6 +16,10 @@ const Amenities = () => {
     console.log(e.target.value, section);
     setAmenitie({ ...amenitie, [section]: [...amenitie[section], e.target.value] });
     console.log(amenitie);
+  };
+
+  const handleNext = () => {
+    navigate('/Images');
   };
   return (
     <div>
@@ -69,7 +75,7 @@ const Amenities = () => {
           </button>
         </Link>
         <Link to="/Images">
-          <button className="button__nextstep" type="button">
+          <button onClick={handleNext} className="button__nextstep" type="button">
             Next
           </button>
         </Link>
