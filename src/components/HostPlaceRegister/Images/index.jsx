@@ -9,7 +9,6 @@ const Images = () => {
   const navigate = useNavigate();
 
   const [file, setFile] = useState(null);
-  const [img, setImg] = useState(null);
 
   const handleChangeFile = (evt) => {
     setFile(evt.target.files);
