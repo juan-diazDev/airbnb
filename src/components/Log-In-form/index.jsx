@@ -19,7 +19,6 @@ const Loginform = () => {
       const { token, profile } = await login(form);
       localStorage.setItem('token', token);
       localStorage.setItem('profile', JSON.stringify(profile));
-      console.log(form);
       if (token) {
         navigate('/');
       } else {

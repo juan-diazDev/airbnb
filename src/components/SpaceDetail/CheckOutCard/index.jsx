@@ -11,7 +11,7 @@ const CheckOutCard = ({ price, dates }) => (
         <p className="spaceDetail__sub-menu__dates">{dates} </p>
       </div>
       <div className="spaceDetail__sub-menu__button-container">
-        <Link to="/">
+        <Link to="/checkout">
           <button type="button" className="spaceDetail__sub-menu-button">
             Reserve
           </button>
@@ -80,11 +80,13 @@ const CheckOutCard = ({ price, dates }) => (
           </nav>
 
         </div>
-        <div className="spaceDetail__checkout-card__button-container">
-          <button type="button" className="spaceDetail__checkout-card__button">
-            Reserve
-          </button>
-        </div>
+        <Link to="/Payments">
+          <div className="spaceDetail__checkout-card__button-container">
+            <button type="button" className="spaceDetail__checkout-card__button">
+              Reserve
+            </button>
+          </div>
+        </Link>
       </form>
 
       {/* <hr />
@@ -118,7 +120,7 @@ CheckOutCard.defaultProps = {
 };
 
 CheckOutCard.propTypes = {
-  price: PropTypes.string,
+  price: PropTypes.number,
   dates: PropTypes.string,
 };
 export default CheckOutCard;
