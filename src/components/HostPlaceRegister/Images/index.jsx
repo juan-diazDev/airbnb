@@ -9,6 +9,7 @@ const Images = () => {
   const navigate = useNavigate();
 
   const [file, setFile] = useState(null);
+  const [img, setImg] = useState();
 
   const handleChangeFile = (evt) => {
     setFile(evt.target.files);
@@ -31,11 +32,12 @@ const Images = () => {
     try {
       const response = await fetch('http://localhost:8080/api/upload/files', payload);
       const data = await response.json();
-      console.log(data);
+      setImg(data);
     } catch (error) {
       console.log(error);
     }
   };
+  console.log(img);
 
   const handleNext = () => {
     navigate('/Title');
