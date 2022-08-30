@@ -3,10 +3,13 @@
 /* eslint-disable */
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector} from 'react-redux';
 import './styles.scss';
 
 const Images = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
   const [file, setFile] = useState(null);
   const [img, setImg] = useState();
@@ -37,9 +40,11 @@ const Images = () => {
       console.log(error);
     }
   };
+
   console.log(img);
 
   const handleNext = () => {
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, img } });
     navigate('/Title');
   };
 
