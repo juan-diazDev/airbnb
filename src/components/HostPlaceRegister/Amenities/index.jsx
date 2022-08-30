@@ -2,25 +2,29 @@
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
 import { sectionAmenities } from './sectionAmenities';
 import AmenitiesButton from './AmenitiesButton';
 
 const Amenities = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
   const [amenitie, setAmenitie] = useState({
     Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Entertainment: [],
   });
-  const handleAmenitie = (e, section) => {
-    console.log(e.target.value, section);
-    setAmenitie({ ...amenitie, [section]: [...amenitie[section], e.target.value] });
-    console.log(amenitie);
+  const handleAmenitie = (e, sectionName, icon) => {
+    setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], { [e.target.value]: icon }] });
   };
 
-  const handleNext = () => {
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, amenitie } });
     navigate('/Images');
   };
+
   return (
     <div>
       <div className="form__header4">
@@ -58,7 +62,7 @@ const Amenities = () => {
                 <div className="add_included-options">
                   {section.buttons.map((button) => {
                     return (
-                      <AmenitiesButton onUpdate={(e, section2) => handleAmenitie(e, section2)} section={section.section} button={button} />
+                      <AmenitiesButton onUpdate={(e, sectionName, icon) => handleAmenitie(e, sectionName, icon)} section={section.section} button={button} />
                     );
                   })}
                 </div>

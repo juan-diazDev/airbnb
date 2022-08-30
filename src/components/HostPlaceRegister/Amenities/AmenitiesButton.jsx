@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 const AmenitiesButton = ({ button, onUpdate, section }) => {
   const [checkBool, setCheckBool] = useState(false);
   const handleSelect = (e) => {
-    onUpdate(e, section);
+    onUpdate(e, section, button.icon);
+    console.log(button.icon);
     setCheckBool(!checkBool);
   };
 
