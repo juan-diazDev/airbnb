@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
@@ -7,10 +8,10 @@ const PropertyTypeGroup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [propertyType, setPropertyType] = useState();
+  const [propertyType, setPropertyType] = useState([]);
 
   const handleClick = (e) => {
-    setPropertyType({ ...propertyType, [e.target.name]: e.target.value });
+    setPropertyType([{ ...propertyType, [e.target.name]: e.target.value }, { ...propertyType, iconUrl: e.target.title }]);
   // Almacenar el estado local use state el valor de la propiedad actual
   };
 
@@ -19,6 +20,8 @@ const PropertyTypeGroup = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
     navigate('/PrivacyType');
   };
+
+  console.log(propertyType);
 
   return (
     <div>
@@ -46,7 +49,7 @@ const PropertyTypeGroup = () => {
       </div>
       <div className="container__options-fixed">
         <div className="container__options-scroll">
-          <button className="option__card0" type="button" name="type" value="APARTMENT" onClick={handleClick}>
+          <button className="option__card0" type="button" name="type" value="APARTMENT" title="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660015365/images/Amenities/PropertyTypeGroup/Apartament_p4bwb6.png" onClick={handleClick}>
             <h2 className="option__card-title0">Apartment</h2>
             <img
               className="option__card-image0"
