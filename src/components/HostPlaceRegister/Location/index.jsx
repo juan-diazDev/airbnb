@@ -51,7 +51,7 @@ const Location = () => {
 
   return (
     <div>
-      <div className="form__header">
+      <div className="form__header4">
         <div className="header__logo">
           <Link to="/">
             <img
@@ -61,7 +61,7 @@ const Location = () => {
             />
           </Link>
         </div>
-        <div className="header__help-container">
+        <div className="header__help-container4">
           <button className="header__help" type="button">
             Help
           </button>
@@ -107,6 +107,7 @@ const Location = () => {
               <option value="Ecuador" className="country">Ecuador</option>
               <option value="Chile" className="country">Chile</option>
             </select>
+            <p className="map__title">Point your location on map</p>
             <div className="container__map-fixed">
               <LoadScript
                 googleMapsApiKey={API_KEY}
