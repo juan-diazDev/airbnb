@@ -1,7 +1,7 @@
 import './styles.scss';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchUserDetail } from '../../store/action/user';
 import Header from '../Header';
 import AccountNavbar from '../AccountPage/AccountNavbar';
@@ -9,10 +9,20 @@ import AccountNavbar from '../AccountPage/AccountNavbar';
 const ProfilePage = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
+  const [editProfile, setEditProfile] = useState(false);
 
   useEffect(() => {
     dispatch(fetchUserDetail());
   }, []);
+
+  const handleClick = () => {
+    setEditProfile(true);
+  };
+  const handleClick2 = () => {
+    setEditProfile(false);
+  };
+
+  console.log(editProfile);
 
   return (
     <>
@@ -30,24 +40,43 @@ const ProfilePage = () => {
             </div>
             <div className="profile__userinfo">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user.createdAt.split('-')[0]}</span>
+              <span className="profile__joinedinfo">Joined in {user.createdAt}</span>
               <div className="profile__edit">
-                <button className="profile_editButton" type="button"> Edit profile </button>
+                <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
                 {/* <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic"> Update photo </a> */}
               </div>
             </div>
           </div>
           <section className="profile__Section-container">
             <h2 className="profile__aboutText">About</h2>
-            <span className="profile__aboutContent">Lover of travel, nature, music wine and culture.</span>
+            {
+              editProfile
+                ? <textarea id="about" name="about" rows="4" cols="20" />
+                : <span className="profile__aboutContent">{user.about}.</span>
+            }
             <div className="profile__sectionInfo">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660062280/images/Account/Casa_dnmdet.png" className="profile__icon" alt="starlogo" />
-              <span className="profile__aboutSubText">Lives in {user.location}</span>
+              {
+              editProfile
+                ? <input id="location" name="location" className="profile__editLocation" placeholder="Add your location" />
+                : <span className="profile__aboutSubText">Lives in {user.location}</span>
+              }
             </div>
             <div className="profile__sectionInfo">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660063891/images/Account/Dialogo_mgikls.png" className="profile__icon" alt="starlogo" />
-              <span className="profile__aboutSubText">Speaks English,Spanish</span>
+              <span className="profile__aboutSubText">{user.languajes}</span>
             </div>
+            {
+              editProfile
+                ? (
+                  <div className="profile__CancelorSave">
+                    <button type="button" className="profile__cancelEditInfo1" onClick={handleClick2}>Cancel</button>
+                    <button type="button" className="profile__cancelEditInfo2">Save</button>
+                  </div>
+                )
+                : null
+              }
+
           </section>
           <section className="profile__Section-container">
             <h2 className="profile__aboutText">{user.name} confirmed</h2>
@@ -91,7 +120,7 @@ const ProfilePage = () => {
           <div className="profile__rightContainer-bigSc">
             <div className="profile__userinfo-bigSc">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user.createdAt.split('-')[0]}</span>
+              <span className="profile__joinedinfo">Joined in {user.createdAt}</span>
               <button className="profile_editButton" type="button"> Edit profile </button>
             </div>
             <section className="profile__Section-container2-bigSc">
