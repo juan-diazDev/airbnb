@@ -1,23 +1,28 @@
 /* eslint-disable no-underscore-dangle */
-import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import CardSpace from '../CardSpace';
 import './style.scss';
+import { fetchSpaceList } from '../../store/action/space';
 
-const MainSection = ({ list }) => (
-  <div className="cards-conatiner">
-    <p>Plan a different kind of getaway to uncover the hiddens gems near to you!</p>
-    {
-      list.map((item) => (
-        <CardSpace key={item._id} space={item} />
-      ))
-    }
-  </div>
-);
+const MainSection = () => {
+  const spaces = useSelector((state) => state.space.spaceList);
+  const dispatch = useDispatch();
 
-MainSection.propTypes = {
-  list: PropTypes.arrayOf(
-    PropTypes.shape(),
-  ).isRequired,
+  useEffect(() => {
+    dispatch(fetchSpaceList());
+  }, []);
+
+  return (
+    <div className="cards-conatiner">
+      <p>Plan a different kind of getaway to uncover the hiddens gems near to you!</p>
+      {
+        spaces.map((space) => (
+          <CardSpace key={space._id} space={space} />
+        ))
+      }
+    </div>
+  );
 };
 
 export default MainSection;

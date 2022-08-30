@@ -1,4 +1,4 @@
-const BASE_URL = 'https://airbnbback23.herokuapp.com';
+const BASE_URL = 'http://localhost:3030';
 
 export async function getSpaces() {
   try {
