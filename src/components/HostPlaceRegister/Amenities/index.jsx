@@ -19,6 +19,8 @@ const Amenities = () => {
     setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], { [e.target.value]: icon }] });
   };
 
+  console.log('amenidad', amenitie);
+
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, amenitie } });

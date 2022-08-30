@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector} from 'react-redux';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const Images = () => {
@@ -39,6 +40,12 @@ const Images = () => {
     } catch (error) {
       console.log(error);
     }
+      swal({
+        title: "Upload success",
+        text: "Your images has been uploaded succesfully",
+        icon: "success",
+        button: "Accept",
+      });
   };
 
   console.log(img);
