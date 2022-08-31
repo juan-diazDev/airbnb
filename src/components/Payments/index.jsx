@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import './styles.scss';
 

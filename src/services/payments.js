@@ -1,10 +1,8 @@
-const BASE_URL = 'http://localhost:3030/api/payment';
+const BASE_URL = 'http://localhost:3030';
 
-async function createPayment() {
+async function createPayment(paymentMethod, amount) {
   try {
     const token = localStorage.getItem('token');
-    localStorage.setItem('profile', JSON.stringify);
-
     const options = {
       method: 'POST',
       headers: {
@@ -12,15 +10,18 @@ async function createPayment() {
         Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({
-        amount: 10_000,
+        paymentMethod,
+        amount,
       }),
     };
 
-    const response = await fetch(BASE_URL, options);
+    const response = await fetch(`${BASE_URL}/api/payment`, options);
     return response.json();
   } catch (error) {
     return new Error(error.message);
   }
 }
 
-module.exports = createPayment;
+module.exports = {
+  createPayment,
+};
