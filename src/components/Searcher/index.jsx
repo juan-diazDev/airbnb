@@ -1,15 +1,21 @@
 import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { loadSpaceQuery } from '../../store/action/space';
 import './style.scss';
 
 const Searcher = () => {
   const [query, setQuery] = useState('');
+  const dispatch = useDispatch();
+  const spaceQuery = useSelector((state) => state.space.spaceQuery);
 
   const handleChange = (e) => {
     setQuery(e.target.value);
+
+    dispatch(loadSpaceQuery({ ...spaceQuery, query }));
   };
   return (
     <div className="searcher searcher--queri-bgscreen">
-      <button className="searcher__input searcher__input--queri-bgscreen" type="button">
+      <button className="searcher__input searcher__input--queri-bgscreen" type="submit">
         <div className="text-conatiner">
           <div className="text1"><strong>Where to?</strong></div>
           <div className="text2">Anywhere | Anyweek</div>
@@ -25,7 +31,7 @@ const Searcher = () => {
               className={query === ''
                 ? 'searcher__input--false'
                 : 'searcher__input--true'}
-              type="text"
+              type="search"
               id="query"
               onChange={handleChange}
             />
