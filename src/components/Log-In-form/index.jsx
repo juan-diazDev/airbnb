@@ -78,7 +78,7 @@ const Loginform = () => {
               </button>
             </Link>
             <div className="Login__password">
-              <a href>Forgot your password?</a>
+              <Link to="/PasswordForgotten">Forgot your password?</Link>
             </div>
           </form>
         </div>

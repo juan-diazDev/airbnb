@@ -1,73 +1,148 @@
-import { Link } from 'react-router-dom';
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unstable-nested-components */
+// eslint-disable-next-line import/no-duplicates
+import { useState, React } from 'react';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
 
-const Location = () => (
-  <div>
-    <div className="form__header">
-      <div className="header__logo">
-        <Link to="/">
-          <img
-            className="logo__img"
-            src="img/LogoIcon/White.png"
-            alt="airbnbLogo"
-          />
+const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
+const Location = () => {
+  const Marker = ({ text }) => <div>{text}</div>;
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const [adress, setAdress] = useState({});
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
+  const handleChange = (e) => {
+    setAdress({ ...adress, [e.target.name]: e.target.value });
+  };
+  const handleMapClick = (e) => {
+    const coordinates = {
+      latitude: e.latLng.lat(),
+      longitude: e.latLng.lng(),
+    };
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, coordinates } });
+  };
+
+  const handleNext = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, adress } });
+    navigate('/FloorPlan');
+  };
+
+  const handlerSubmit = async (e) => {
+    e.preventDefault();
+  };
+
+  const containerStyle = {
+    width: '100%',
+    height: '200px',
+  };
+  const defaultProps = {
+    center: {
+      lat: 10.394297970724839,
+      lng: -75.48149972391892,
+    },
+    zoom: 15,
+  };
+
+  return (
+    <div>
+      <div className="form__header4">
+        <div className="header__logo">
+          <Link to="/">
+            <img
+              className="logo__img"
+              src="img/LogoIcon/White.png"
+              alt="airbnbLogo"
+            />
+          </Link>
+        </div>
+        <div className="header__help-container4">
+          <button className="header__help" type="button">
+            Help
+          </button>
+          <button className="header__save" type="button">
+            Save and exit
+          </button>
+        </div>
+      </div>
+      <div className="container__question2">
+        <h1 className="question__title">Confirm your adress</h1>
+      </div>
+      <div className="container__options-fixed2">
+
+        <div className="container__options-scroll2">
+
+          <form onSubmit={handlerSubmit} className="container__formtable">
+            <input name="street" className="form__text1" placeholder="Street" type="text" onChange={handleChange} />
+            <input
+              name="placeType"
+              className="form__text"
+              placeholder="Apt, suite,etc.(Optional)"
+              type="text"
+              onChange={handleChange}
+            />
+            <input name="city" className="form__text" placeholder="City" type="text" onChange={handleChange} />
+            <input
+              name="state"
+              className="form__text"
+              placeholder="State(Optional)"
+              type="text"
+              onChange={handleChange}
+            />
+            <input
+              name="zipCode"
+              className="form__text"
+              placeholder="Zip code(optional)"
+              type="text"
+              onChange={handleChange}
+            />
+            <select name="country" className="form__countries" onChange={handleChange}>
+              <option className="country">Country</option>
+              <option value="Colombia" className="Country">Colombia</option>
+              <option value="Ecuador" className="country">Ecuador</option>
+              <option value="Chile" className="country">Chile</option>
+            </select>
+            <p className="map__title">Point your location on map</p>
+            <div className="container__map-fixed">
+              <LoadScript
+                googleMapsApiKey={API_KEY}
+              >
+                <GoogleMap
+                  onClick={handleMapClick}
+                  className="container__map-fixed"
+                  mapContainerStyle={containerStyle}
+                  center={defaultProps.center}
+                  zoom={defaultProps.zoom}
+                >
+                  <Marker
+                    lat={10.394297970724839}
+                    lng={-75.48149972391892}
+                    text="QWERTYUIOPASDFGHJKLÑZXCVBNM,"
+                  />
+                </GoogleMap>
+              </LoadScript>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className="container__button-step">
+        <div className="progress2" />
+        <Link to="/PrivacyType">
+          <button className="button__backstep" type="button">
+            Back
+          </button>
         </Link>
-      </div>
-      <div className="header__help-container">
-        <button className="header__help" type="button">
-          Help
-        </button>
-        <button className="header__save" type="button">
-          Save and exit
-        </button>
-      </div>
-    </div>
-    <div className="container__question2">
-      <h1 className="question__title">Confirm your adress</h1>
-    </div>
-    <div className="container__options-fixed2">
-      <div className="container__options-scroll2">
-        <form className="container__formtable">
-          <input className="form__text1" placeholder="Street" type="text" />
-          <input
-            className="form__text"
-            placeholder="Apt, suite,etc.(Optional)"
-            type="text"
-          />
-          <input className="form__text" placeholder="City" type="text" />
-          <input
-            className="form__text"
-            placeholder="State(Optional)"
-            type="text"
-          />
-          <input
-            className="form__text"
-            placeholder="Zip code(optional)"
-            type="text"
-          />
-          <select className="form__countries">
-            <option className="country">Country</option>
-            <option className="country">Colombia</option>
-            <option className="country">Ecuador</option>
-            <option className="country">Chile</option>
-          </select>
-        </form>
-      </div>
-    </div>
-    <div className="container__button-step">
-      <div className="progress2" />
-      <Link to="/PrivacyType">
-        <button className="button__backstep" type="button">
-          Back
-        </button>
-      </Link>
-      <Link to="/FloorPlan">
-        <button className="button__nextstep" type="button">
+        <button onClick={handleNext} className="button__nextstep" type="submit">
           Next
         </button>
-      </Link>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Location;
