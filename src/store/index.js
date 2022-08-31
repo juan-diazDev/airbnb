@@ -8,6 +8,7 @@ const middlewares = [thunk];
 
 const initialState = {
   space: {
+    spaceRegister: {},
     spaceList: [],
     spaceDetail: null,
   },

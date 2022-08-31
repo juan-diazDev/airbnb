@@ -1,20 +1,24 @@
 @import '../../../sass_styles/_fonts.scss';
 
 .option__offerprice {
-  display: inline-flex;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: unset;
   height: unset;
-  color: rgb(34, 34, 34);
+  color: #222222;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Manrope", sans-serif;
+  gap: 20px;
+  font-family: nunito-regular;
   min-height: unset;
 }
 
 .offerprice__input {
+  width: 230px;
   display: flex;
   margin-top: 0px;
   height: -webkit-fill-available;
