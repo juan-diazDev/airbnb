@@ -1,8 +1,10 @@
 import './styles.scss';
+
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { fetchUserDetail } from '../../store/action/user';
+import { updateUser } from '../../services/users';
 import Header from '../Header';
 import AccountNavbar from '../AccountPage/AccountNavbar';
 
@@ -10,10 +12,13 @@ const ProfilePage = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
   const [editProfile, setEditProfile] = useState(false);
+  const [editUser, seteditUser] = useState({});
 
   useEffect(() => {
     dispatch(fetchUserDetail());
   }, []);
+
+  console.log(user);
 
   const handleClick = () => {
     setEditProfile(true);
@@ -22,7 +27,19 @@ const ProfilePage = () => {
     setEditProfile(false);
   };
 
-  console.log(editProfile);
+  const handleChange = (e) => {
+    seteditUser({ ...editUser, [e.target.name]: e.target.value });
+    console.log(editUser);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await updateUser(editUser);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -33,7 +50,7 @@ const ProfilePage = () => {
             <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659723860/images/BackArrow/Dark_Gray_obpkut.png" className="profile__backArrow" alt="backArrow" />
           </div>
         </Link>
-        <div className="profile__main-container">
+        <form action="" onSubmit={handleSubmit} className="profile__main-container">
           <div className="profile__personalInfo">
             <div className="profile__profilePic-container">
               <img src={user.avatar} className="profile__profilePic" alt="profilepic" />
@@ -43,7 +60,7 @@ const ProfilePage = () => {
               <span className="profile__joinedinfo">Joined in {user.createdAt}</span>
               <div className="profile__edit">
                 <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
-                {/* <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic"> Update photo </a> */}
+                <button className="profile_editButton" type="button"> Update Photo </button>
               </div>
             </div>
           </div>
@@ -51,27 +68,38 @@ const ProfilePage = () => {
             <h2 className="profile__aboutText">About</h2>
             {
               editProfile
-                ? <textarea id="about" name="about" rows="4" cols="20" />
+                ? <textarea id="about" name="about" rows="4" cols="20" onChange={handleChange} />
                 : <span className="profile__aboutContent">{user.about}.</span>
             }
             <div className="profile__sectionInfo">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660062280/images/Account/Casa_dnmdet.png" className="profile__icon" alt="starlogo" />
               {
               editProfile
-                ? <input id="location" name="location" className="profile__editLocation" placeholder="Add your location" />
+                ? <input id="location" name="location" className="profile__editLocation" placeholder="Add your location" onChange={handleChange} />
                 : <span className="profile__aboutSubText">Lives in {user.location}</span>
               }
             </div>
             <div className="profile__sectionInfo">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660063891/images/Account/Dialogo_mgikls.png" className="profile__icon" alt="starlogo" />
-              <span className="profile__aboutSubText">{user.languajes}</span>
+              {
+              editProfile
+                ? (
+                  <div className="profile__languajes">
+                    <select type="button" name="languajes" className="profile__languajesSelect" onChange={handleChange}>
+                      <option value="English">English</option>
+                      <option value="Spanish">Spanish</option>
+                    </select>
+                  </div>
+                )
+                : <span className="profile__aboutSubText">Speaks {user.languajes}</span>
+              }
             </div>
             {
               editProfile
                 ? (
                   <div className="profile__CancelorSave">
                     <button type="button" className="profile__cancelEditInfo1" onClick={handleClick2}>Cancel</button>
-                    <button type="button" className="profile__cancelEditInfo2">Save</button>
+                    <button type="submit" className="profile__cancelEditInfo2">Save</button>
                   </div>
                 )
                 : null
@@ -94,12 +122,12 @@ const ProfilePage = () => {
             </div>
           </section>
           <p className="profile__reviews">Reviews by you</p>
-        </div>
+        </form>
         <div className="profile__container-bigSc">
           <div className="profile__leftContainer-bigSc">
             <div className="profile__profilePic-container-bigSc">
               <img src={user.avatar} className="profile__profilePic-biSc" alt="profilepic" />
-              {/* <a href="https://www.airbnb.com/users/edit-photo" className="profile__editProfilePic-bigSc"> Update photo </a> */}
+              <button className="profile_editButton" type="button"> Update Photo </button>
             </div>
             <section className="profile__Section-container-bigSC">
               <h2 className="profile__aboutText">{user.name} confirmed</h2>
