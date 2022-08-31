@@ -4,9 +4,11 @@ import Description from './Description';
 import ImageCarousel from './ImageCarousel';
 import Titles from './Titles';
 import './style.scss';
+import Header from '../Header';
 
 const Details = ({ details }) => (
   <div className="spaceDetail__container">
+    <Header />
     {
       details ? (
         <>
@@ -16,7 +18,7 @@ const Details = ({ details }) => (
             city={details.adress.city}
             state={details.adress.state}
           />
-          <Description />
+          <Description details={details} />
           <CheckOutCard price={details.price} dates={details.dates} />
         </>
       ) : 'Loading...'
