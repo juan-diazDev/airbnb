@@ -56,7 +56,7 @@ const Price = () => {
             </div>
             <div className="option__advice">
               <h2 className="advice__description">
-                Places like yours usually range from $125,878 to $209,796.
+                Set your price according to your zone.
               </h2>
             </div>
           </div>

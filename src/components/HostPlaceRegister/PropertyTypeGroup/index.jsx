@@ -12,7 +12,6 @@ const PropertyTypeGroup = () => {
 
   const handleClick = (e) => {
     setPropertyType([{ ...propertyType, [e.target.name]: e.target.value }, { ...propertyType, iconUrl: e.target.title }]);
-  // Almacenar el estado local use state el valor de la propiedad actual
   };
 
   const handleNext = (e) => {

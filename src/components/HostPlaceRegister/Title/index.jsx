@@ -12,6 +12,7 @@ const Title = () => {
   const handleChange = (e) => {
     setTitle(e.target.value);
   };
+
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, title } });
@@ -64,11 +65,9 @@ const Title = () => {
             Back
           </button>
         </Link>
-        <Link to="/Description">
-          <button handleNext={handleNext} className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="button">
+          Next
+        </button>
       </div>
     </div>
   );

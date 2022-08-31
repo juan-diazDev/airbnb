@@ -15,7 +15,7 @@ const Description = () => {
 
   const handleNext = (e) => {
     e.preventDefault();
-    dispatch({ type: 'SET_SPACE_REGSITER', payload: { ...spaceRegister, description } });
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, description } });
     navigate('/Price');
   };
 
@@ -65,11 +65,9 @@ const Description = () => {
             Back
           </button>
         </Link>
-        <Link to="/Price">
-          <button onClick={handleNext} className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="button">
+          Next
+        </button>
       </div>
     </div>
   );

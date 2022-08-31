@@ -91,7 +91,7 @@ export const sectionAmenities = [
     ],
   },
   {
-    section: "Facilites",
+    section: "Facilities",
     buttons: [
       {
         amenitie: "Private pool",

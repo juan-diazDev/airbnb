@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 /* eslint-disable max-len */
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
@@ -13,13 +14,12 @@ const Amenities = () => {
 
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
   const [amenitie, setAmenitie] = useState({
-    Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Entertainment: [],
+    Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Facilities: [], Entertainment: [],
   });
   const handleAmenitie = (e, sectionName, icon) => {
+  /*   if (({ [sectionName]: [{ amenitie: e.target.value }] })) { */
     setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], [{ amenitie: e.target.value }, { iconUrl: icon }]] });
   };
-
-  console.log('amenidad', amenitie);
 
   const handleNext = (e) => {
     e.preventDefault();
