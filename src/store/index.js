@@ -10,6 +10,8 @@ const initialState = {
   space: {
     spaceList: [],
     spaceDetail: null,
+    spaceQuery: '',
+    filteredSpaces: [],
   },
   user: {
     userDetail: {},
