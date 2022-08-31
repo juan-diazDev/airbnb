@@ -1,5 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-const BASE_URL = 'http://localhost:3030';
+const BASE_URL = process.env.REACT_APP_DB_URL;
 
 export async function getUsers() {
   try {
