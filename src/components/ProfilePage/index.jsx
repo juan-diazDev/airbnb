@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import './styles.scss';
 
 import { Link } from 'react-router-dom';
@@ -18,7 +19,7 @@ const ProfilePage = () => {
     dispatch(fetchUserDetail());
   }, []);
 
-  console.log(user);
+  const id = user._id;
 
   const handleClick = () => {
     setEditProfile(true);
@@ -29,13 +30,12 @@ const ProfilePage = () => {
 
   const handleChange = (e) => {
     seteditUser({ ...editUser, [e.target.name]: e.target.value });
-    console.log(editUser);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await updateUser(editUser);
+      await updateUser({ id, ...editUser });
     } catch (error) {
       console.log(error);
     }

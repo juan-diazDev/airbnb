@@ -3,7 +3,7 @@
 //   const [file, setFile] = useState(null);
 //   const [avatar, setAvatar] = useState(null);
 
-//   const handleClick3 = () => {
+//   const handleClick = () => {
 //     setUploadImage(true);
 //   };
 
