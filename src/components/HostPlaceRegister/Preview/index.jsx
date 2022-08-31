@@ -13,7 +13,7 @@ const Preview = () =>{
     img: spaceRegister.img,
     price: spaceRegister.price,
     howMany: spaceRegister.floorPlanState.guest,
-    adress: {
+    address: {
       street: spaceRegister.adress.street,
       city: spaceRegister.adress.city,
       state:spaceRegister.adress.state,

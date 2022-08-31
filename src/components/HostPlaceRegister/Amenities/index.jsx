@@ -16,9 +16,11 @@ const Amenities = () => {
   const [amenitie, setAmenitie] = useState({
     Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Facilities: [], Entertainment: [],
   });
-  const handleAmenitie = (e, sectionName, icon) => {
-    setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], [{ amenitie: e.target.value }, { iconUrl: icon }]] });
+  const handleAmenitie = (e, sectionName) => {
+    setAmenitie({ ...amenitie, [sectionName]: [e.target.value] });
   };
+
+  console.log(amenitie);
 
   const handleNext = (e) => {
     e.preventDefault();
