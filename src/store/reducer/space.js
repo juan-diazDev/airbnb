@@ -23,5 +23,3 @@ function spaceReducer(state = {}, action = {}) {
   }
 }
 export default spaceReducer;
-
-
