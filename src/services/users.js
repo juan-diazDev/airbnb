@@ -1,4 +1,5 @@
-const BASE_URL = `${process.env.REACT_APP_LOCAL_URL}`;
+/* eslint-disable no-underscore-dangle */
+const BASE_URL = 'http://localhost:3030';
 
 export async function getUsers() {
   try {
@@ -35,6 +36,22 @@ export async function createUser(user) {
       body: JSON.stringify(user),
     };
     const response = await fetch(`${BASE_URL}/api/users/`, options);
+    return response.json();
+  } catch (error) {
+    return new Error(error);
+  }
+}
+
+export async function updateUser(user) {
+  try {
+    const options = {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(user),
+    };
+    const response = await fetch(`${BASE_URL}/api/users/${user.id}`, options);
     return response.json();
   } catch (error) {
     return new Error(error);

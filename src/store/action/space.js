@@ -15,12 +15,3 @@ export const fetchSpaceList = () => async (dispatch) => {
     dispatch(setError(error));
   }
 };
-
-// export const fetchSpaceDetail = () => async (dispatch) => {
-//   try {
-//     const spaceDetail = await getSpace(_id);
-//     dispatch(loadSpaceDetail(spaceDetail));
-//   } catch (error) {
-//     dispatch(setError(error));
-//   }
-// };

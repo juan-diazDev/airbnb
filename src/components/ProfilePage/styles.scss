@@ -82,6 +82,33 @@ margin-bottom: 16px;;
   height: 16px;
   width: 16px;
 }
+.profile__editLocation{
+  margin-left: 15px;
+}
+.profile__languajesSelect{
+  margin-left: 15px;
+  border: none;
+}
+.profile__CancelorSave{
+  margin-top: 15px;
+  display:flex;
+  justify-content: space-between;
+}
+.profile__cancelEditInfo1{
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #222222;
+}
+.profile__cancelEditInfo2{
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  padding:8px 18px;
+}
 .profile__sectionInfo{
   display:flex;
   margin-top: 24px;
