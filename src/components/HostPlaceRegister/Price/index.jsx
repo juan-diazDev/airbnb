@@ -19,8 +19,6 @@ const Price = () => {
     navigate('/Preview');
   };
 
-  console.log(spaceRegister);
-
   return (
     <div>
       <div className="form__header">

@@ -11,6 +11,8 @@ const FloorPlan = () => {
     guest: 1, beds: 1, bedrooms: 1, bathrooms: 1,
   });
 
+  console.log(floorPlanState);
+
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 

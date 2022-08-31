@@ -1,58 +1,47 @@
 /* eslint-disable */
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles.scss';
 
-const Preview = () =>
-/*   const StepFinal = (props) => {
-    const { registerForm } = useSelector(state => state.spaces)
-  } */
+const Preview = () =>{
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-/*   const handleSubmit = (e) => {
+  const spaceSubmit = {
+    title: spaceRegister.title,
+    img: spaceRegister.img,
+    price: spaceRegister.price,
+    howMany: spaceRegister.floorPlanState.guest,
+    adress: {
+      street: spaceRegister.adress.street,
+      city: spaceRegister.adress.city,
+      state:spaceRegister.adress.state,
+      country: spaceRegister.adress.country,
+      zipCode: spaceRegister.adress.zipCode,
+    },
+    type: spaceRegister.propertyType,
+    privacyType: spaceRegister.Privacy.privacyType,
+    amenities: {
+      beds: spaceRegister.floorPlanState.beds,
+      kitchen: spaceRegister.amenitie.Kitchen,
+      bathroom: spaceRegister.amenitie.Bathroom,
+      bedroomAndLaundry: spaceRegister.amenitie['Bedroom and loundry'],
+      facilities: spaceRegister.amenitie.Bathroom,
+      entertaiment: spaceRegister.amenitie.Entertainment,
+    },
+    description: spaceRegister.description,
+  };
+
+  console.log('arreglofinal', spaceSubmit);
+
+  const handleNext = (e) => {
     e.preventDefault();
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, spaceSubmit } });
+    navigate('/');
+  };
 
-    const data = {
-        title:,
-        img:,
-        dates:,
-        price: ,
-        howMany:,
-        adress: {
-          street:,
-          city:,
-          state:,
-          country:,
-          zipCode:,
-        },
-        host:,
-        type: {
-        privacyType:
-        amenities: {
-          beds:,
-          kitchen: [
-            {
-            },
-          ],
-          bathroom: [
-            {
-            },
-          ],
-          bedroomAndLaundry: [
-            {
-            },
-          ],
-          facilities: [
-            {
-            },
-          ],
-          entertaiment: [
-            {
-            },
-          ],
-        },
-        description:
-        ,
-  } */
-/*   return */ (
+  return (
     <div>
       <div className="form__header4">
         <div className="header__logo">
@@ -92,13 +81,12 @@ const Preview = () =>
             Back
           </button>
         </Link>
-        <Link to="/">
-          <button className="button__savelisting" type="button">
-            Save your listing
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__savelisting" type="button">
+          Save your listing
+        </button>
       </div>
     </div>
   );
+}
 
 export default Preview;

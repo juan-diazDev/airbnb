@@ -11,16 +11,16 @@ const PropertyTypeGroup = () => {
   const [propertyType, setPropertyType] = useState([]);
 
   const handleClick = (e) => {
-    setPropertyType([{ ...propertyType, [e.target.name]: e.target.value }, { ...propertyType, iconUrl: e.target.title }]);
+    setPropertyType([{ ...propertyType, typeName: e.target.value }, { ...propertyType, iconUrl: e.target.title }]);
   };
+
+  console.log(propertyType);
 
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
     navigate('/PrivacyType');
   };
-
-  console.log(spaceRegister);
 
   return (
     <div>

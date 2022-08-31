@@ -11,7 +11,6 @@ const PrivacyType = () => {
 
   const handleClick = (e) => {
     setPrivacy({ ...Privacy, [e.target.name]: e.target.value });
-    console.log(PrivacyType);
   };
 
   const handleNext = (e) => {
