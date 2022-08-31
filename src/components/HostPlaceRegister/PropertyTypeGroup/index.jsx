@@ -20,7 +20,7 @@ const PropertyTypeGroup = () => {
     navigate('/PrivacyType');
   };
 
-  console.log(propertyType);
+  console.log(spaceRegister);
 
   return (
     <div>

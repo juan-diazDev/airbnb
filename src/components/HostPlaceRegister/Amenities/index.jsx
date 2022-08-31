@@ -17,7 +17,6 @@ const Amenities = () => {
     Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Facilities: [], Entertainment: [],
   });
   const handleAmenitie = (e, sectionName, icon) => {
-  /*   if (({ [sectionName]: [{ amenitie: e.target.value }] })) { */
     setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], [{ amenitie: e.target.value }, { iconUrl: icon }]] });
   };
 
