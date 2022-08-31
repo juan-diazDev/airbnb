@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-boolean-cast */
 /* eslint-disable no-constant-condition */
 /* eslint-disable max-len */
 /* eslint-disable arrow-body-style */
@@ -17,10 +18,20 @@ const Amenities = () => {
     Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Facilities: [], Entertainment: [],
   });
   const handleAmenitie = (e, sectionName) => {
+    if (!!amenitie[sectionName].find((element) => element === e.target.value)) {
+      console.log('El elemento existe');
+      // TODO: Eliminar el elemento.
+      // Encontrar el index del elemento que quiero eliminar.
+      // Encontrar la longitud del array
+      // Utilizar el metodo splice con las variables encontradas para eliminar dicha posicion.
+      // Por ultimo guardar el nuevo array en el estado correctamente.
+    } else {
+      setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], e.target.value] });
+    }
+
+    console.log(!!amenitie[sectionName].find((element) => element === e.target.value), amenitie[sectionName], e.target.value);
     setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], e.target.value] });
   };
-
-  console.log(amenitie);
 
   const handleNext = (e) => {
     e.preventDefault();

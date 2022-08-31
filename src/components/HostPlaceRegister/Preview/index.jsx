@@ -1,12 +1,23 @@
 /* eslint-disable */
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import { createSpace } from '../../../services/spaces';
 import './styles.scss';
 
 const Preview = () =>{
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
+
+  const handlerSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await createSpace(spaceRegister);
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const spaceSubmit = {
     title: spaceRegister.title,
@@ -81,7 +92,7 @@ const Preview = () =>{
             Back
           </button>
         </Link>
-        <button onClick={handleNext} className="button__savelisting" type="button">
+        <button onClick={handleSubmit} className="button__savelisting" type="button">
           Save your listing
         </button>
       </div>

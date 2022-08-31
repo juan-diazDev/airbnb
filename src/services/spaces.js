@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'http://localhost:3030';
 
 export async function getSpaces() {
   try {
@@ -12,6 +12,22 @@ export async function getSpaces() {
 export async function getSpace(_id) {
   try {
     const response = await fetch(`${BASE_URL}/api/spaces/${_id}`);
+    return response.json();
+  } catch (error) {
+    return new Error(error);
+  }
+}
+
+export async function createSpace(space) {
+  try {
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(space),
+    };
+    const response = await fetch(`${BASE_URL}/api/spaces/`, options);
     return response.json();
   } catch (error) {
     return new Error(error);
