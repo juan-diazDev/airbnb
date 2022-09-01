@@ -274,14 +274,15 @@
     align-items: center;
     width: 100%;
     height: min-content;
-    margin-top: 190px;
+    margin-top: 125px;
+    position: relative;
     .carousel_back-arrow-container {
       display: none;
     }
     .carousel_all-pictures__button-container {
       position: absolute;
-      right: 14%;
-      top: 73%;
+      right: 13.5%;
+      top: 88%;
     }
     .carousel__main-image-container {
       width: 560px;
@@ -348,7 +349,7 @@
 // title
   .detial__title-container {
     position: absolute;
-    top: 100px;
+    top: 130px;
     margin-left: 13vw;
   }
 
