@@ -44,10 +44,12 @@ export async function createUser(user) {
 
 export async function updateUser(user) {
   try {
+    const token = localStorage.getItem('token');
     const options = {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
+        authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(user),
     };

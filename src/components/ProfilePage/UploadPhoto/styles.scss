@@ -8,8 +8,8 @@
   align-items: center;
 }
 .profile__uploadPhotoform{
-  width: 65%;
-  float: left;
+  width: 100%;
+  margin-right: 50px;
 }
 .uploadPhoto__nextbar{
   height: 16px;
@@ -18,7 +18,7 @@
 .profile__uploadPhotoContainer{
   padding: 0px 0px 20px 0px;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 50px;
   display: flex;
   width: 100hv;
   justify-content: center;

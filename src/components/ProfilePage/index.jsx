@@ -20,7 +20,6 @@ const ProfilePage = () => {
   }, []);
 
   const id = user._id;
-  const token = localStorage.getItem('token');
 
   const handleClick = () => {
     setEditProfile(true);
@@ -30,7 +29,7 @@ const ProfilePage = () => {
   };
 
   const handleChange = (e) => {
-    seteditUser({ ...editUser, [e.target.name]: e.target.value, token });
+    seteditUser({ ...editUser, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
