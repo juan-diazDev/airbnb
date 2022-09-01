@@ -9,21 +9,15 @@ const Preview = () =>{
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-  const handlerSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await createSpace(spaceRegister);
-      navigate('/');
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   const spaceSubmit = {
     title: spaceRegister.title,
     img: spaceRegister.img,
     price: spaceRegister.price,
     howMany: spaceRegister.floorPlanState.guest,
+    coordinates:{
+      latitude: spaceRegister.coordinates.latitude,
+      longitude: spaceRegister.coordinates.longitude,
+    },
     address: {
       street: spaceRegister.adress.street,
       city: spaceRegister.adress.city,
@@ -44,13 +38,17 @@ const Preview = () =>{
     description: spaceRegister.description,
   };
 
-  console.log('arreglofinal', spaceSubmit);
-
-  const handleNext = (e) => {
+  const handlerSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, spaceSubmit } });
-    navigate('/');
+    try {
+      await createSpace(spaceSubmit);
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
   };
+
+  console.log('arreglofinal', spaceSubmit);
 
   return (
     <div>
@@ -92,7 +90,7 @@ const Preview = () =>{
             Back
           </button>
         </Link>
-        <button onClick={handleSubmit} className="button__savelisting" type="button">
+        <button onClick={handlerSubmit} className="button__savelisting" type="button">
           Save your listing
         </button>
       </div>

@@ -104,8 +104,6 @@
   width: 150px;
   animation-duration: 600ms;
   animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-name: keyframe_14ic1xm;
   height: 120px;
 }
 
@@ -115,6 +113,7 @@
   box-sizing: border-box;
   border-radius: 8px;
   display: flex;
+  z-index: 2;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;

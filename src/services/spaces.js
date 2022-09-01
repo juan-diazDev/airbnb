@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3030';
+const BASE_URL = `${process.env.REACT_APP_LOCAL_URL}`;
 
 export async function getSpaces() {
   try {
@@ -18,14 +18,16 @@ export async function getSpace(_id) {
   }
 }
 
-export async function createSpace(space) {
+export async function createSpace(spaceRegister) {
+  const token = localStorage.getItem('token');
   try {
     const options = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(space),
+      body: JSON.stringify(spaceRegister),
     };
     const response = await fetch(`${BASE_URL}/api/spaces/`, options);
     return response.json();
