@@ -20,17 +20,18 @@ const Amenities = () => {
   const handleAmenitie = (e, sectionName) => {
     if (!!amenitie[sectionName].find((element) => element === e.target.value)) {
       console.log('El elemento existe');
-      // TODO: Eliminar el elemento.
       // Encontrar el index del elemento que quiero eliminar.
-      // Encontrar la longitud del array
+      const indexAmenitie = amenitie[sectionName].indexOf(e.target.value);
       // Utilizar el metodo splice con las variables encontradas para eliminar dicha posicion.
+      const amanitieRemoved = amenitie[sectionName].splice(indexAmenitie, 1);
+      console.log('Amenidad removida:', amanitieRemoved);
+      setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName]] });
+      console.log('Arreglo final a mandar:.', amenitie);
       // Por ultimo guardar el nuevo array en el estado correctamente.
     } else {
       setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], e.target.value] });
     }
-
-    console.log(!!amenitie[sectionName].find((element) => element === e.target.value), amenitie[sectionName], e.target.value);
-    setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], e.target.value] });
+    console.log(!!amenitie[sectionName].find((element) => element === e.target.value), amenitie[sectionName]);
   };
 
   const handleNext = (e) => {

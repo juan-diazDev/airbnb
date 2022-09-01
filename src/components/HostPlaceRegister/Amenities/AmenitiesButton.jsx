@@ -9,7 +9,7 @@ const AmenitiesButton = ({ button, onUpdate, section }) => {
   };
 
   return (
-    <button name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
+    <button key={Math.random()} name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
       <div className="option__card-adition">
         <img
           className="adition-icon"
