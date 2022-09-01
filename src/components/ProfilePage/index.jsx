@@ -20,6 +20,7 @@ const ProfilePage = () => {
   }, []);
 
   const id = user._id;
+  const token = localStorage.getItem('token');
 
   const handleClick = () => {
     setEditProfile(true);
@@ -29,7 +30,7 @@ const ProfilePage = () => {
   };
 
   const handleChange = (e) => {
-    seteditUser({ ...editUser, [e.target.name]: e.target.value });
+    seteditUser({ ...editUser, [e.target.name]: e.target.value, token });
   };
 
   const handleSubmit = async (e) => {
@@ -60,7 +61,9 @@ const ProfilePage = () => {
               <span className="profile__joinedinfo">Joined in {user.createdAt}</span>
               <div className="profile__edit">
                 <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
-                <button className="profile_editButton" type="button"> Update Photo </button>
+                <Link to="/Profile/Updatephoto">
+                  <button className="profile_editButton" type="button"> Update Photo </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -104,7 +107,6 @@ const ProfilePage = () => {
                 )
                 : null
               }
-
           </section>
           <section className="profile__Section-container">
             <h2 className="profile__aboutText">{user.name} confirmed</h2>
@@ -123,11 +125,13 @@ const ProfilePage = () => {
           </section>
           <p className="profile__reviews">Reviews by you</p>
         </form>
-        <div className="profile__container-bigSc">
+        <form className="profile__container-bigSc" onSubmit={handleSubmit}>
           <div className="profile__leftContainer-bigSc">
             <div className="profile__profilePic-container-bigSc">
               <img src={user.avatar} className="profile__profilePic-biSc" alt="profilepic" />
-              <button className="profile_editButton" type="button"> Update Photo </button>
+              <Link to="/Profile/Updatephoto">
+                <button className="profile_editButton" type="button"> Update Photo </button>
+              </Link>
             </div>
             <section className="profile__Section-container-bigSC">
               <h2 className="profile__aboutText">{user.name} confirmed</h2>
@@ -148,24 +152,53 @@ const ProfilePage = () => {
           <div className="profile__rightContainer-bigSc">
             <div className="profile__userinfo-bigSc">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user.createdAt}</span>
-              <button className="profile_editButton" type="button"> Edit profile </button>
+              <span className="profile__joinedinfo">Joined in {user.createdAt} </span>
+              <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
             </div>
             <section className="profile__Section-container2-bigSc">
               <h2 className="profile__aboutText">About</h2>
-              <span className="profile__aboutContent">Lover of travel, nature, music wine and culture.</span>
+              {
+              editProfile
+                ? <textarea id="about" name="about" rows="6" cols="60" onChange={handleChange} />
+                : <span className="profile__aboutContent">{user.about}.</span>
+              }
               <div className="profile__sectionInfo">
                 <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660062280/images/Account/Casa_dnmdet.png" className="profile__icon" alt="starlogo" />
-                <span className="profile__aboutSubText">Lives {user.location}</span>
+                {
+                editProfile
+                  ? <input id="location" name="location" className="profile__editLocation" placeholder="Add your location" onChange={handleChange} />
+                  : <span className="profile__aboutSubText">Lives in {user.location}</span>
+                }
               </div>
               <div className="profile__sectionInfo">
                 <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660063891/images/Account/Dialogo_mgikls.png" className="profile__icon" alt="starlogo" />
-                <span className="profile__aboutSubText">Speaks English,Spanish</span>
+                {
+              editProfile
+                ? (
+                  <div className="profile__languajes">
+                    <select type="button" name="languajes" className="profile__languajesSelect" onChange={handleChange}>
+                      <option value="English">English</option>
+                      <option value="Spanish">Spanish</option>
+                    </select>
+                  </div>
+                )
+                : <span className="profile__aboutSubText">Speaks {user.languajes}</span>
+              }
               </div>
+              {
+            editProfile
+              ? (
+                <div className="profile__CancelorSave">
+                  <button type="button" className="profile__cancelEditInfo1" onClick={handleClick2}>Cancel</button>
+                  <button type="submit" className="profile__cancelEditInfo2">Save</button>
+                </div>
+              )
+              : null
+            }
             </section>
             <p className="profile__reviews">Reviews by you</p>
           </div>
-        </div>
+        </form>
       </div>
       <AccountNavbar />
     </>

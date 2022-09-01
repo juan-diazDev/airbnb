@@ -1,0 +1,30 @@
+@import '../../../sass_styles/fonts';
+@import '../../../sass_styles/colors';
+
+.uploadPhoto__Navbar{
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.uploadPhoto__nextbar{
+  height: 16px;
+  width: 16px;
+}
+.profile__uploadPhotoContainer{
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  width: 100hv;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile__uploadPhotoDescription{
+  font-family: nunito-extra-bold;
+  font-size: 32px;
+  color: #484848;
+  margin-left: 40px;
+}
+.profile__uploadPhototitle{
+  background-color: #edefed;
+}
