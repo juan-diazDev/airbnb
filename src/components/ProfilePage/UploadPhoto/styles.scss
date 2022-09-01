@@ -7,17 +7,27 @@
   display: flex;
   align-items: center;
 }
+.profile__uploadPhotoform{
+  width: 65%;
+  float: left;
+}
 .uploadPhoto__nextbar{
   height: 16px;
   width: 16px;
 }
 .profile__uploadPhotoContainer{
+  padding: 0px 0px 20px 0px;
   margin-left: 40px;
   margin-right: 40px;
   display: flex;
   width: 100hv;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #edefed;
 }
 .profile__uploadPhotoDescription{
   font-family: nunito-extra-bold;
@@ -27,4 +37,32 @@
 }
 .profile__uploadPhototitle{
   background-color: #edefed;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
+.profile__img{
+}
+.profile__uploadPhotoimage-Container{
+  margin-top: 15px;
+  background-color: #bbb;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 225px;
+  width: 225px;
+  vertical-align: middle;
+}
+.profile__uploadPhoto-Button{
+  margin-top: 20px;
+  width: 75%;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  background: white;
+  color: #484848;
+  padding: 9px 27px;
+  font-size: 16px;
+}
+
+

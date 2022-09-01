@@ -37,22 +37,25 @@ const UpdatePhoto = () => (
   // };
   <>
     <Header />
-    <nav className="uploadPhoto__Navbar">
-      <Link to="/Profile" className="profile__uploadPhotoBack">Profile</Link>
-      <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="uploadPhoto__nextbar" alt="nextBar" />
-      <span>Profile photos</span>
-    </nav>
-    <h1 className="profile__uploadPhotoDescription">
-      <div>Profile Photos</div>
-    </h1>
-    <div className="profile__uploadPhotoContainer">
-      <div className="profile__uploadPhototitle">
-        Profile photo
+    <form className="profile__uploadPhotoform">
+      <nav className="uploadPhoto__Navbar">
+        <Link to="/Profile" className="profile__uploadPhotoBack">Profile</Link>
+        <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="uploadPhoto__nextbar" alt="nextBar" />
+        <span>Profile photos</span>
+      </nav>
+      <h1 className="profile__uploadPhotoDescription">
+        <div>Profile Photos</div>
+      </h1>
+      <div className="profile__uploadPhotoContainer">
+        <div className="profile__uploadPhototitle">
+          Profile photo
+        </div>
+        <div className="profile__uploadPhotoimage-Container">
+          <img src="" alt="profilePic" />
+        </div>
+        <button className="profile__uploadPhoto-Button" type="submit">Upload a file from your computer</button>
       </div>
-      <div className="profile__imageContainer">
-        <img src="" alt="profilePic" />
-      </div>
-    </div>
+    </form>
   </>
 );
 
