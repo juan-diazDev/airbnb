@@ -89,67 +89,42 @@
 .option__card3 {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(221, 221, 221);
-  box-sizing: border-box;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 68px;
   cursor: pointer;
   margin: 0px 6px 12px;
   padding-top: 12px;
   padding-bottom: 12px;
-  outline: none;
   width: 150px;
-  animation-duration: 600ms;
-  animation-iteration-count: 1;
   height: 120px;
 }
 
 .option__card3--focus {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(221, 221, 221);
-  box-sizing: border-box;
   border-radius: 8px;
   display: flex;
-  z-index: 2;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 68px;
   cursor: pointer;
-  margin: 0px 6px 12px;
   padding-top: 12px;
   padding-bottom: 12px;
-  outline: none;
   width: 150px;
-  animation-duration: 600ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-name: keyframe_14ic1xm;
   height: 120px;
-
   border: 1px solid transparent;
-  box-sizing: border-box;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  min-height: 68px;
-  cursor: pointer;
   margin: 0px 6px 12px;
   box-shadow: rgb(0 0 0) 0px 0px 0px 2px;
   background-color: rgb(247, 247, 247);
-  animation-duration: 600ms;
 
 }
 
 .adition-icon {
-  display: block;
+  display: fixed;
+  z-index: 1;
   height: 40px;
   width: 40px;
-  fill: currentcolor;
 }
 
 .option__card-title3 {

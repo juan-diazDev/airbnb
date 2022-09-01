@@ -9,15 +9,13 @@ const AmenitiesButton = ({ button, onUpdate, section }) => {
   };
 
   return (
-    <button key={Math.random()} name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
-      <div className="option__card-adition">
-        <img
-          className="adition-icon"
-          src={button.icon}
-          alt={button.alt}
-        />
-      </div>
-      <h2 className="option__card-title3">{button.amenitie}</h2>
+    <button name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
+      <img
+        className="adition-icon"
+        src={button.icon}
+        alt={button.alt}
+      />
+      {button.amenitie}
     </button>
   );
 };
