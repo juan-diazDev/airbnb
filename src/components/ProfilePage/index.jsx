@@ -40,6 +40,9 @@ const ProfilePage = () => {
       console.log(error);
     }
   };
+  const refreshPage = () => {
+    window.location.reload(true);
+  };
 
   return (
     <>
@@ -101,7 +104,7 @@ const ProfilePage = () => {
                 ? (
                   <div className="profile__CancelorSave">
                     <button type="button" className="profile__cancelEditInfo1" onClick={handleClick2}>Cancel</button>
-                    <button type="submit" className="profile__cancelEditInfo2">Save</button>
+                    <button type="submit" className="profile__cancelEditInfo2" onClick={refreshPage}>Save</button>
                   </div>
                 )
                 : null
@@ -189,7 +192,7 @@ const ProfilePage = () => {
               ? (
                 <div className="profile__CancelorSave">
                   <button type="button" className="profile__cancelEditInfo1" onClick={handleClick2}>Cancel</button>
-                  <button type="submit" className="profile__cancelEditInfo2">Save</button>
+                  <button type="submit" className="profile__cancelEditInfo2" onClick={refreshPage}>Save</button>
                 </div>
               )
               : null

@@ -41,7 +41,10 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.profile__img{
+.profile__photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .profile__uploadPhotoimage-Container{
   margin-top: 15px;
