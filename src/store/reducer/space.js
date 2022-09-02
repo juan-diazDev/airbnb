@@ -1,5 +1,6 @@
 import {
   LOAD_SPACE_LIST,
+  LOAD_SPACE_LIST_BYHOSTID,
   SET_SPACE_REGISTER,
   SET_SPACE_DETAIL,
   FILTER_SPACE,
@@ -11,6 +12,11 @@ function spaceReducer(state = {}, action = {}) {
       return {
         ...state,
         spaceList: action.payload,
+      };
+    case LOAD_SPACE_LIST_BYHOSTID:
+      return {
+        ...state,
+        spacesHostList: action.payload,
       };
     case SET_SPACE_REGISTER:
       return {

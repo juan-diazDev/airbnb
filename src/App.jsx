@@ -18,6 +18,7 @@ import Price from './components/HostPlaceRegister/Price';
 import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
+import HostSpacesAdmin from './pages/HostSpacesAdmin';
 
 const App = () => (
   <BrowserRouter>
@@ -41,6 +42,7 @@ const App = () => (
       <Route path="/verifyAccount/:token" element={<AccountVerfication />} />
       <Route path="/verifyAccount" element={<AccountVerfication />} />
       <Route path="/Payments" element={<CheckoutCard />} />
+      <Route path="/HostSpacesAdmin" element={<HostSpacesAdmin />} />
     </Routes>
   </BrowserRouter>
 );
