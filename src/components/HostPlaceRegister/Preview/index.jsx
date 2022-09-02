@@ -1,6 +1,7 @@
 /* eslint-disable */
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import { createSpace } from '../../../services/spaces';
 import './styles.scss';
 
 const Preview = () =>{
@@ -13,7 +14,11 @@ const Preview = () =>{
     img: spaceRegister.img,
     price: spaceRegister.price,
     howMany: spaceRegister.floorPlanState.guest,
-    adress: {
+    coordinates:{
+      latitude: spaceRegister.coordinates.latitude,
+      longitude: spaceRegister.coordinates.longitude,
+    },
+    address: {
       street: spaceRegister.adress.street,
       city: spaceRegister.adress.city,
       state:spaceRegister.adress.state,
@@ -33,13 +38,17 @@ const Preview = () =>{
     description: spaceRegister.description,
   };
 
-  console.log('arreglofinal', spaceSubmit);
-
-  const handleNext = (e) => {
+  const handlerSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, spaceSubmit } });
-    navigate('/');
+    try {
+      await createSpace(spaceSubmit);
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
   };
+
+  console.log('arreglofinal', spaceSubmit);
 
   return (
     <div>
@@ -81,7 +90,7 @@ const Preview = () =>{
             Back
           </button>
         </Link>
-        <button onClick={handleNext} className="button__savelisting" type="button">
+        <button onClick={handlerSubmit} className="button__savelisting" type="button">
           Save your listing
         </button>
       </div>

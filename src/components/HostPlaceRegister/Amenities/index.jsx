@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-boolean-cast */
 /* eslint-disable no-constant-condition */
 /* eslint-disable max-len */
 /* eslint-disable arrow-body-style */
@@ -16,8 +17,21 @@ const Amenities = () => {
   const [amenitie, setAmenitie] = useState({
     Kitchen: [], Bathroom: [], 'Bedroom and loundry': [], Facilities: [], Entertainment: [],
   });
-  const handleAmenitie = (e, sectionName, icon) => {
-    setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], [{ amenitie: e.target.value }, { iconUrl: icon }]] });
+  const handleAmenitie = (e, sectionName) => {
+    if (!!amenitie[sectionName].find((element) => element === e.target.value)) {
+      console.log('El elemento existe');
+      // Encontrar el index del elemento que quiero eliminar.
+      const indexAmenitie = amenitie[sectionName].indexOf(e.target.value);
+      // Utilizar el metodo splice con las variables encontradas para eliminar dicha posicion.
+      const amanitieRemoved = amenitie[sectionName].splice(indexAmenitie, 1);
+      console.log('Amenidad removida:', amanitieRemoved);
+      setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName]] });
+      console.log('Arreglo final a mandar:.', amenitie);
+      // Por ultimo guardar el nuevo array en el estado correctamente.
+    } else {
+      setAmenitie({ ...amenitie, [sectionName]: [...amenitie[sectionName], e.target.value] });
+    }
+    console.log(!!amenitie[sectionName].find((element) => element === e.target.value), amenitie[sectionName]);
   };
 
   const handleNext = (e) => {

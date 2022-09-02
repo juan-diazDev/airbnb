@@ -36,7 +36,13 @@ const Images = () => {
     try {
       const response = await fetch('http://localhost:8080/api/upload/files', payload);
       const data = await response.json();
-      setImg(data);
+      if (data.length) {
+        const urls = data.map( (img) => {
+          return img.url
+        })
+        setImg(urls);
+      }
+
     } catch (error) {
       console.log(error);
     }

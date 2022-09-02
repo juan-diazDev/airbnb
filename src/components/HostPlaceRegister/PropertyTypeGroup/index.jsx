@@ -8,10 +8,10 @@ const PropertyTypeGroup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [propertyType, setPropertyType] = useState([]);
+  const [propertyType, setPropertyType] = useState();
 
   const handleClick = (e) => {
-    setPropertyType([{ ...propertyType, typeName: e.target.value }, { ...propertyType, iconUrl: e.target.title }]);
+    setPropertyType(e.target.value);
   };
 
   console.log(propertyType);
