@@ -4,7 +4,7 @@ export const sectionAmenities = [
     section: "Kitchen",
     buttons: [
       {
-        amenitie: "Hoven",
+        amenitie: "Oven",
         icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/Hoven_mzvkor.png",
         alt: "Hoven",
       },
