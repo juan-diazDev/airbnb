@@ -2,7 +2,7 @@ import {
   LOAD_SPACE_LIST,
   SET_SPACE_REGISTER,
   SET_SPACE_DETAIL,
-  SPACE_QUERY,
+  FILTER_SPACE,
 } from '../constants/space';
 
 function spaceReducer(state = {}, action = {}) {
@@ -22,11 +22,13 @@ function spaceReducer(state = {}, action = {}) {
         ...state,
         spaceDetail: action.payload,
       };
-    case SPACE_QUERY:
+    case FILTER_SPACE: {
+      const query = action.payload.toLowerCase();
       return {
         ...state,
-        spaceQuery: action.payload,
+        query,
       };
+    }
     default:
       return state;
   }
