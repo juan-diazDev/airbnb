@@ -13,12 +13,12 @@ const Preview = () =>{
     img: spaceRegister.img,
     price: spaceRegister.price,
     howMany: spaceRegister.floorPlanState.guest,
-    adress: {
-      street: spaceRegister.adress.street,
-      city: spaceRegister.adress.city,
-      state:spaceRegister.adress.state,
-      country: spaceRegister.adress.country,
-      zipCode: spaceRegister.adress.zipCode,
+    address: {
+      street: spaceRegister.address.street,
+      city: spaceRegister.address.city,
+      state:spaceRegister.address.state,
+      country: spaceRegister.address.country,
+      zipCode: spaceRegister.address.zipCode,
     },
     type: spaceRegister.propertyType,
     privacyType: spaceRegister.Privacy.privacyType,

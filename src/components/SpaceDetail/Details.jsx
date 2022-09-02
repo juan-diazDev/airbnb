@@ -16,8 +16,8 @@ const Details = ({ details }) => (
           <ImageCarousel image={details.img} title={details.title} />
           <Titles
             title={details.title}
-            city={details.adress.city}
-            state={details.adress.state}
+            city={details.address.city}
+            state={details.address.state}
           />
           <Description details={details} />
           <CheckOutCard price={details.price} dates={details.dates} />

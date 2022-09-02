@@ -14,10 +14,10 @@ const Location = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const [adress, setAdress] = useState({});
+  const [address, setAddress] = useState({});
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
   const handleChange = (e) => {
-    setAdress({ ...adress, [e.target.name]: e.target.value });
+    setAddress({ ...address, [e.target.name]: e.target.value });
   };
   const handleMapClick = (e) => {
     const coordinates = {
@@ -29,7 +29,7 @@ const Location = () => {
 
   const handleNext = (e) => {
     e.preventDefault();
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, adress } });
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, address } });
     navigate('/FloorPlan');
   };
 
@@ -71,7 +71,7 @@ const Location = () => {
         </div>
       </div>
       <div className="container__question2">
-        <h1 className="question__title">Confirm your adress</h1>
+        <h1 className="question__title">Confirm your address</h1>
       </div>
       <div className="container__options-fixed2">
 
