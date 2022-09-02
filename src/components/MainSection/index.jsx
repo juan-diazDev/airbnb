@@ -6,7 +6,7 @@ import './style.scss';
 import { fetchSpaceList } from '../../store/action/space';
 
 const MainSection = () => {
-  const spaces = useSelector((state) => state.space.spaceList);
+  const { spaceList, query } = useSelector((state) => state.space);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,9 +17,15 @@ const MainSection = () => {
     <div className="cards-conatiner">
       <p>Plan a different kind of getaway to uncover the hiddens gems near to you!</p>
       {
-        spaces.map((space) => (
-          <CardSpace key={space._id} space={space} />
-        ))
+        !query
+          ? spaceList.map((space) => (
+            <CardSpace key={space._id} space={space} />
+          ))
+          : spaceList.filter((space) => space.address.country.toLowerCase().includes(query))
+            .map((space) => (
+              <CardSpace key={space._id} space={space} />
+            ))
+
       }
     </div>
   );
