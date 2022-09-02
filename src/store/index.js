@@ -11,7 +11,7 @@ const initialState = {
     spaceRegister: {},
     spaceList: [],
     spaceDetail: null,
-    spaceQuery: '',
+    query: '',
     filteredSpaces: [],
   },
   user: {
