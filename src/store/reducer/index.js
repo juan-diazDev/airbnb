@@ -8,7 +8,7 @@ const mainReducer = combineReducers({
   space: spaceReducer,
   user: userReducer,
   ui: uiReducer,
-  checlout: checkoutReducer,
+  checkout: checkoutReducer,
 });
 
 export default mainReducer;
