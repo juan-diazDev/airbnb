@@ -10,7 +10,7 @@ const initialState = {
   space: {
     spaceRegister: {},
     spaceList: [],
-    spaceHostList: [],
+    spacesHostList: [],
     spaceDetail: null,
     query: '',
     filteredSpaces: [],
