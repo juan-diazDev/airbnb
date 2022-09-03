@@ -1,8 +1,156 @@
-.background {
-  width: 600px;
-  height: 600px;
-  display: inline-block;
-  justify-content: center;
-  background-color: beige;
-  padding: 0px;
+@import '../../sass_styles/_colors.scss';
+@import '../../sass_styles/_fonts.scss';
+
+.payment__main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  .payment__left-container {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .payment__info-conatiner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: min-content;
+      border-top:0.5px solid rgba(0,0,0,0.08);
+      box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
+      padding: 40px 10px;
+      border-radius: 25px;
+      .payment__image-conatiner {
+        width: 80%;
+        height: min-content;
+        margin-bottom: 20px;
+        .payment__image__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+        }
+      }
+      .payment__adults-info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__children-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__pets-info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__checkIn-info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__checkOut-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__price-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .payment__payment-container {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    .payment__payment-form {
+      border: 2px solid red;
+      width: 25vw;
+    }
+  }
 }
