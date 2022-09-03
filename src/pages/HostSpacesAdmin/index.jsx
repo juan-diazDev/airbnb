@@ -5,7 +5,7 @@ import CardSpaceOffert from '../../components/HostSpaceCard/SpaceCard';
 import { fetchHostSpaceList } from '../../store/action/space';
 
 const HostSpacesAdmin = () => {
-  const hostSpaces = useSelector((state) => state.space.spaceHostList);
+  const hostSpaces = useSelector((state) => state.space.spacesHostList);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const HostSpacesAdmin = () => {
       </div>
       <div>
         {
-        hostSpaces.map((space) => (
+        hostSpaces?.map((space) => (
           <CardSpaceOffert key={space.id} space={space} />
         ))
       }

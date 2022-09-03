@@ -6,7 +6,7 @@ const CardSpaceOffert = ({ space }) => (
   <>
     <div className="Card_space">
       <h1>
-        Space Offert name
+        {space.title}
       </h1>
       <div className="space_img_container" />
       <img src={space.img[0]} alt={space.title} />
