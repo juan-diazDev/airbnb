@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
 const CheckOutCard = ({ price, dates, image }) => {
-  console.log('🚀 ~ file: index.jsx ~ line 8 ~ CheckOutCard ~ image', image);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [checkout, setCheckout] = useState({
@@ -15,6 +14,7 @@ const CheckOutCard = ({ price, dates, image }) => {
     children: 0,
     pets: 0,
     price,
+    image,
   });
 
   const handleDecrement = (e) => {
