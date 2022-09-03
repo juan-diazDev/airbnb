@@ -1,21 +1,39 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
 
 const CheckOutCard = ({ price, dates }) => {
-  console.log('🚀 ~ file: index.jsx ~ line 8 ~ CheckOutCard ~ price', price);
-  // const dispatch = useDispatch();
-  // const count = useSelector((state) => state);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [checkout, setCheckout] = useState({
+    adults: 0,
+    children: 0,
+    pets: 0,
+    price,
+  });
 
-  // const handleDecrement = () => {
-  //   dispatch(decrement);
-  // };
+  const handleDecrement = (e) => {
+    setCheckout({ ...checkout, [e.target.name]: [e.target.value] - 1 });
+  };
 
-  // const handleIncrement = () => {
-  //   dispatch(increment);
-  // };
+  const handleIncrement = (e) => {
+    setCheckout({ ...checkout, [e.target.name]: [e.target.value] + 1 });
+  };
+
+  const handleChange = () => {
+    console.log('hola mundo');
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    dispatch(checkout);
+
+    navigate('/Payments');
+  };
+
   return (
     <>
       <section className="spaceDetail__sub-menu-container">
@@ -24,7 +42,7 @@ const CheckOutCard = ({ price, dates }) => {
           <p className="spaceDetail__sub-menu__dates">{dates} </p>
         </div>
         <div className="spaceDetail__sub-menu__button-container">
-          <Link to="/checkout">
+          <Link to="/payment">
             <button type="button" className="spaceDetail__sub-menu-button">
               Reserve
             </button>
@@ -33,7 +51,7 @@ const CheckOutCard = ({ price, dates }) => {
       </section>
 
       <section className="spaceDetail__checkout-card-container">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="spaceDetail__checkout-card__price">
             <span className="span">$</span>{price} <span> night</span>
           </div>
@@ -60,9 +78,9 @@ const CheckOutCard = ({ price, dates }) => {
                   <div className="dropDown__option-conatainer">
                     <p>Adults</p>
                     <div className="dropDown__option-buttons">
-                      <button type="button">-</button>
-                      <p>1</p>
-                      <button type="button">+</button>
+                      <button name="adults" type="button" onClick={handleDecrement}>-</button>
+                      <input name="adults" value={checkout.adults} onChange={handleChange} />
+                      <button name="adults" type="button" onClick={handleIncrement}>+</button>
                     </div>
                   </div>
                 </li>
@@ -71,9 +89,9 @@ const CheckOutCard = ({ price, dates }) => {
                   <div className="dropDown__option-conatainer">
                     <p>Children</p>
                     <div className="dropDown__option-buttons">
-                      <button type="button">-</button>
-                      <p>1</p>
-                      <button type="button">+</button>
+                      <button name="children" type="button" onClick={handleDecrement}>-</button>
+                      <input name="children" value={checkout.children} onChange={handleChange} />
+                      <button name="children" type="button" onClick={handleIncrement}>+</button>
                     </div>
                   </div>
                 </li>
@@ -82,9 +100,9 @@ const CheckOutCard = ({ price, dates }) => {
                   <div className="dropDown__option-conatainer">
                     <p>Pets</p>
                     <div className="dropDown__option-buttons">
-                      <button type="button">-</button>
-                      <p>1</p>
-                      <button type="button">+</button>
+                      <button name="pets" type="button" onClick={handleDecrement}>-</button>
+                      <input name="pets" value={checkout.pets} onChange={handleChange} />
+                      <button name="pets" type="button" onClick={handleIncrement}>+</button>
                     </div>
                   </div>
                 </li>
@@ -93,36 +111,12 @@ const CheckOutCard = ({ price, dates }) => {
             </nav>
 
           </div>
-          <Link to="/Payments">
-            <div className="spaceDetail__checkout-card__button-container">
-              <button type="button" className="spaceDetail__checkout-card__button">
-                Reserve
-              </button>
-            </div>
-          </Link>
+          <div className="spaceDetail__checkout-card__button-container">
+            <button type="submit" className="spaceDetail__checkout-card__button">
+              Reserve
+            </button>
+          </div>
         </form>
-
-        {/* <hr />
-
-        <div className="checkout-card__payment__details-container">
-          <div className="checkout-card__payment__details">
-            <p>{price} x 6 nights</p>
-          </div>
-          <div className="checkout-card__payment__details-sum">
-            $42 usd
-          </div>
-        </div>
-
-        <hr />
-
-        <div className="checkout-card__payment__total-container">
-          <div className="checkout-card__payment__total-text">
-            Total:
-          </div>
-          <div className="checkout-card__payment__total">
-            $42 usd
-          </div>
-        </div> */}
       </section>
     </>
   );
