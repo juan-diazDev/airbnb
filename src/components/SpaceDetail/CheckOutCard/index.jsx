@@ -8,6 +8,8 @@ const CheckOutCard = ({ price, dates }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [checkout, setCheckout] = useState({
+    checkIn: null,
+    checkOut: null,
     adults: 0,
     children: 0,
     pets: 0,
@@ -15,15 +17,24 @@ const CheckOutCard = ({ price, dates }) => {
   });
 
   const handleDecrement = (e) => {
-    setCheckout({ ...checkout, [e.target.name]: [e.target.value] - 1 });
+    setCheckout({
+      ...checkout,
+      [e.target.name]: e.target.value - 1,
+    });
   };
 
   const handleIncrement = (e) => {
-    setCheckout({ ...checkout, [e.target.name]: [e.target.value] + 1 });
+    setCheckout({
+      ...checkout,
+      [e.target.name]: e.target.value + 1,
+    });
   };
 
-  const handleChange = () => {
-    console.log('hola mundo');
+  const handleChange = (e) => {
+    setCheckout({
+      ...checkout,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = (e) => {
@@ -59,13 +70,13 @@ const CheckOutCard = ({ price, dates }) => {
             <div className="spaceDetail__checkout-card__options__check-in">
               <label htmlFor="date">
                 check-in
-                <input type="date" required />
+                <input type="date" onChange={handleChange} name="checkIn" />
               </label>
             </div>
             <div className="spaceDetail__checkout-card__options__check-out">
               <label htmlFor="date">
                 check-out
-                <input type="date" required />
+                <input type="date" onChange={handleChange} name="checkOut" />
               </label>
             </div>
 
@@ -111,11 +122,13 @@ const CheckOutCard = ({ price, dates }) => {
             </nav>
 
           </div>
-          <div className="spaceDetail__checkout-card__button-container">
-            <button type="submit" className="spaceDetail__checkout-card__button">
-              Reserve
-            </button>
-          </div>
+          <Link to="/payments">
+            <div className="spaceDetail__checkout-card__button-container">
+              <button type="submit" className="spaceDetail__checkout-card__button">
+                Reserve
+              </button>
+            </div>
+          </Link>
         </form>
       </section>
     </>
