@@ -6,7 +6,12 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import loadCheckoutForm from '../../../store/action/checkout';
 
-const CheckOutCard = ({ price, dates, image }) => {
+const CheckOutCard = ({
+  price,
+  dates,
+  image,
+  title,
+}) => {
   const { _id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -19,6 +24,7 @@ const CheckOutCard = ({ price, dates, image }) => {
     price,
     image,
     _id,
+    title,
   });
 
   const handleDecrement = (e) => {
@@ -141,11 +147,13 @@ CheckOutCard.defaultProps = {
   price: null,
   dates: null,
   image: null,
+  title: null,
 };
 
 CheckOutCard.propTypes = {
   price: PropTypes.number,
   dates: PropTypes.string,
   image: PropTypes.arrayOf(PropTypes.string),
+  title: PropTypes.string,
 };
 export default CheckOutCard;

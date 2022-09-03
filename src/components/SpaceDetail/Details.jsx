@@ -20,7 +20,12 @@ const Details = ({ details }) => (
             state={details.address.state}
           />
           <Description details={details} />
-          <CheckOutCard price={details.price} dates={details.dates} image={details.img} />
+          <CheckOutCard
+            price={details.price}
+            dates={details.dates}
+            image={details.img}
+            title={details.title}
+          />
         </>
       ) : <Loader />
     }
