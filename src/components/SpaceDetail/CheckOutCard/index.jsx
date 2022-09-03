@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
-const CheckOutCard = ({ price, dates }) => {
+const CheckOutCard = ({ price, dates, image }) => {
+  console.log('🚀 ~ file: index.jsx ~ line 8 ~ CheckOutCard ~ image', image);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [checkout, setCheckout] = useState({
@@ -138,10 +139,12 @@ const CheckOutCard = ({ price, dates }) => {
 CheckOutCard.defaultProps = {
   price: null,
   dates: null,
+  image: null,
 };
 
 CheckOutCard.propTypes = {
   price: PropTypes.number,
   dates: PropTypes.string,
+  image: PropTypes.arrayOf(PropTypes.string),
 };
 export default CheckOutCard;
