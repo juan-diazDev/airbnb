@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
 const CheckOutCard = ({ price, dates, image }) => {
+  const { _id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [checkout, setCheckout] = useState({
@@ -15,6 +17,7 @@ const CheckOutCard = ({ price, dates, image }) => {
     pets: 0,
     price,
     image,
+    _id,
   });
 
   const handleDecrement = (e) => {
