@@ -1,0 +1,3 @@
+const LOAD_CHECKOUT_FORM = 'LOAD_CHECKOUT_FORM';
+
+export default LOAD_CHECKOUT_FORM;
