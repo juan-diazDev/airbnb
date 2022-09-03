@@ -4,6 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import loadCheckoutForm from '../../../store/action/checkout';
 
 const CheckOutCard = ({ price, dates, image }) => {
   const { _id } = useParams();
@@ -44,8 +45,7 @@ const CheckOutCard = ({ price, dates, image }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(checkout);
-
+    dispatch(loadCheckoutForm(checkout));
     navigate('/Payments');
   };
 
@@ -126,13 +126,11 @@ const CheckOutCard = ({ price, dates, image }) => {
             </nav>
 
           </div>
-          <Link to="/payments">
-            <div className="spaceDetail__checkout-card__button-container">
-              <button type="submit" className="spaceDetail__checkout-card__button">
-                Reserve
-              </button>
-            </div>
-          </Link>
+          <div className="spaceDetail__checkout-card__button-container">
+            <button type="submit" className="spaceDetail__checkout-card__button">
+              Reserve
+            </button>
+          </div>
         </form>
       </section>
     </>
