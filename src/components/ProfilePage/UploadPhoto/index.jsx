@@ -105,10 +105,12 @@ const UpdatePhoto = () => {
                 </>
               )
               : (
-                <div className="profile__uploadPhotoimage-Container">
-                  <img className="profile__photo" src={user.avatar} alt="" />
+                <>
+                  <div className="profile__uploadPhotoimage-Container">
+                    <img className="profile__photo" src={user.avatar} alt="" />
+                  </div>
                   <input type="file" name="avatar" className="profile__uploadPhoto-input" id="avatar" onChange={handleChange} accept=".jpg, .jpeg, .gif, .png" />
-                </div>
+                </>
               )
           }
         </div>
