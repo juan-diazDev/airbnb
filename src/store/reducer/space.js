@@ -4,6 +4,7 @@ import {
   SET_SPACE_REGISTER,
   SET_SPACE_DETAIL,
   FILTER_SPACE,
+  DELETE_HOST_SPACE,
 } from '../constants/space';
 
 function spaceReducer(state = {}, action = {}) {
@@ -33,6 +34,12 @@ function spaceReducer(state = {}, action = {}) {
       return {
         ...state,
         query,
+      };
+    }
+    case DELETE_HOST_SPACE: {
+      return {
+        ...state,
+        spaceIdToDelete: action.payload,
       };
     }
     default:

@@ -54,15 +54,17 @@ export async function createSpace(spaceRegister) {
   }
 }
 
-export async function deleteSpace(id) {
+export async function deleteSpace(_id) {
+  const token = localStorage.getItem('token');
   try {
     const options = {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
+        authorization: `Bearer ${token}`,
       },
     };
-    const response = await fetch(`${BASE_URL}/api/spaces/${id}`, options);
+    const response = await fetch(`${BASE_URL}/api/spaces/${_id}`, options);
     return response.json({ response, message: 'space deleted' });
   } catch (error) {
     return new Error(error);
