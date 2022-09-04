@@ -25,7 +25,6 @@ const UpdatePhoto = () => {
 
   const handleChange = (e) => {
     setFile(e.target.files[0]);
-    console.log(e.target.files[0].size);
 
     const isValidSize = e.target.files[0].size < 2 * 1024 * 1024;
     const isNameOfOneImageRegEx = /.(jpe?g|gif|png)$/i;
