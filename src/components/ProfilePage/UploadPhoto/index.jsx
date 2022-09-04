@@ -36,7 +36,6 @@ const UpdatePhoto = () => {
         title: 'Error!',
         text: 'Image exceeds the allowed size',
         icon: 'error',
-        button: 'Try again',
       });
     }
 
