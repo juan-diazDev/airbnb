@@ -19,6 +19,7 @@ import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
 import UpdatePhoto from './components/ProfilePage/UploadPhoto';
+import ChangePassword from './components/AccountPage/ChangePassword';
 
 const App = () => (
   <BrowserRouter>
@@ -43,6 +44,7 @@ const App = () => (
       <Route path="/verifyAccount" element={<AccountVerfication />} />
       <Route path="/Payments" element={<CheckoutCard />} />
       <Route path="/Profile/Updatephoto" element={<UpdatePhoto />} />
+      <Route path="/Account/ChangePassword" element={<ChangePassword />} />
     </Routes>
   </BrowserRouter>
 );

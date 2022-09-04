@@ -1,0 +1,39 @@
+.changePassword__modalContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.changePassword__currentCancel{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.changePassword__span{
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+.changePassword__input{
+  // width: 100%;
+  min-height: 46px;
+  border:solid;
+  border-color: #B0B0B0;
+  border-radius: 8px;
+  border-width: 1px;
+  position: relative;
+  align-items: center;
+  font-size: 1em;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.changePassword_button{
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  background-color: #008489;
+  border-radius: 8px;
+  border-color: transparent;
+  color: white;
+}
