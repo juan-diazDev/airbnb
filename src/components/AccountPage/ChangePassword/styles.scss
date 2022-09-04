@@ -1,8 +1,23 @@
+.changePassword__Background{
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .changePassword__modalContainer{
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 25px;
 }
 .changePassword__currentCancel{
   display: flex;
