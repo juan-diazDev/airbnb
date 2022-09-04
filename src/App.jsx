@@ -19,6 +19,7 @@ import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
 import HostSpacesAdmin from './pages/HostSpacesAdmin';
+import HostEditSpace from './components/HostSpaceCard/HostEditSpace';
 
 const App = () => (
   <BrowserRouter>
@@ -43,6 +44,7 @@ const App = () => (
       <Route path="/verifyAccount" element={<AccountVerfication />} />
       <Route path="/Payments" element={<CheckoutCard />} />
       <Route path="/HostSpacesAdmin" element={<HostSpacesAdmin />} />
+      <Route path="/HostEditSpace" element={<HostEditSpace />} />
     </Routes>
   </BrowserRouter>
 );

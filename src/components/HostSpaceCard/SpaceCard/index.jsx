@@ -1,11 +1,14 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { deleteSpace } from '../../../services/spaces';
 
 const CardSpaceOffert = ({ space }) => {
-  const navigate = useNavigate();
+  const handlerEdit = () => {
+    localStorage.setItem('_id', JSON.parse(space._id));
+  };
+
   const idSpace = space._id;
   console.log(idSpace);
   const handlerSubmit = async (e) => {
@@ -13,7 +16,6 @@ const CardSpaceOffert = ({ space }) => {
     try {
       await deleteSpace(idSpace);
       window.location.reload(false);
-      navigate('/HostSpacesAdmin');
     } catch (error) {
       console.log(error);
     }
@@ -28,7 +30,7 @@ const CardSpaceOffert = ({ space }) => {
         <img src={space.img[0]} alt={space.title} />
       </div>
       <div>
-        <Link to="https://www.google.com.co/">
+        <Link onClick={handlerEdit} to="/HostEditSpace">
           <button type="button">
             Edit
           </button>
