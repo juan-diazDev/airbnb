@@ -118,7 +118,7 @@ const ProfilePage = () => {
             </div>
             <div className="profile__sectionInfo">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660066918/images/Account/Checked_ynqmmi.png" className="profile__icon" alt="checklogo" />
-              <span className="profile__aboutSubText">Email adress</span>
+              <span className="profile__aboutSubText">Email address</span>
             </div>
             <div className="profile__sectionInfo">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660066918/images/Account/Checked_ynqmmi.png" className="profile__icon" alt="checklogo" />
@@ -143,7 +143,7 @@ const ProfilePage = () => {
               </div>
               <div className="profile__sectionInfo">
                 <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660066918/images/Account/Checked_ynqmmi.png" className="profile__icon" alt="checklogo" />
-                <span className="profile__aboutSubText">Email adress</span>
+                <span className="profile__aboutSubText">Email address</span>
               </div>
               <div className="profile__sectionInfo">
                 <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660066918/images/Account/Checked_ynqmmi.png" className="profile__icon" alt="checklogo" />

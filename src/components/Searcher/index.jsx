@@ -1,18 +1,19 @@
-import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { loadSpaceQuery } from '../../store/action/space';
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { findSpace } from '../../store/action/space';
 import './style.scss';
 
 const Searcher = () => {
   const [query, setQuery] = useState('');
   const dispatch = useDispatch();
-  const spaceQuery = useSelector((state) => state.space.spaceQuery);
 
   const handleChange = (e) => {
     setQuery(e.target.value);
-
-    dispatch(loadSpaceQuery({ ...spaceQuery, query }));
   };
+
+  useEffect(() => {
+    dispatch(findSpace(query));
+  }, [query]);
   return (
     <div className="searcher searcher--queri-bgscreen">
       <button className="searcher__input searcher__input--queri-bgscreen" type="submit">

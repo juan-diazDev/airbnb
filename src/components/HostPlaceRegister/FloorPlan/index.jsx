@@ -65,7 +65,7 @@ const FloorPlan = () => {
             <h2 className="option__card-title2">Guest</h2>
             <div className="option__card-features">
               <button name="guest" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
-              <input name="guest" value={floorPlanState.guest} className="card_number-guest" />
+              <input name="guest" value={floorPlanState.guest} onChange={handleSubmit} className="card_number-guest" />
               <button name="guest" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
@@ -73,7 +73,7 @@ const FloorPlan = () => {
             <h2 className="option__card-title2">Beds</h2>
             <div className="option__card-features">
               <button name="beds" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
-              <input name="beds" value={floorPlanState.beds} className="card_number-beds" />
+              <input name="beds" value={floorPlanState.beds} onChange={handleSubmit} className="card_number-beds" />
               <button name="beds" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
@@ -81,7 +81,7 @@ const FloorPlan = () => {
             <h2 className="option__card-title2">Bedrooms</h2>
             <div className="option__card-features">
               <button name="bedrooms" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
-              <input name="bedrooms" value={floorPlanState.bedrooms} className="card_number-bedrooms" />
+              <input name="bedrooms" value={floorPlanState.bedrooms} onChange={handleSubmit} className="card_number-bedrooms" />
               <button name="bedrooms" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
@@ -89,7 +89,7 @@ const FloorPlan = () => {
             <h2 className="option__card-title2">Bathrooms</h2>
             <div className="option__card-features">
               <button name="bathrooms" onClick={handleDecrement} className="card_button-decrease" type="button">-</button>
-              <input name="bathrooms" value={floorPlanState.bathrooms} className="card_number-bathrooms" />
+              <input name="bathrooms" value={floorPlanState.bathrooms} onChange={handleSubmit} className="card_number-bathrooms" />
               <button name="bathrooms" onClick={handleIncrement} className="card_button-increase" type="button">+</button>
             </div>
           </div>
