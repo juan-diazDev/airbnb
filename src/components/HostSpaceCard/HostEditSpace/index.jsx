@@ -39,6 +39,16 @@ const HostEditSpace = () => {
         </div>
       </div>
       <div>
+        <p>Images:</p>
+        <p>{ space.img?.map((img) => (<img src={img} alt="placeimg" />)) }</p>
+      </div>
+      <div>
+        <p>Title: {space?.title}</p>
+      </div>
+      <div>
+        <p>Description: {space?.description}</p>
+      </div>
+      <div>
         <p>Privacy type: {space?.privacyType}</p>
       </div>
       <div>
@@ -54,12 +64,6 @@ const HostEditSpace = () => {
         <p>Bathrooms: {space.amenities?.bathrooms}</p>
       </div>
       <div>
-        <p>Title: {space?.title}</p>
-      </div>
-      <div>
-        <p>Description: {space?.description}</p>
-      </div>
-      <div>
         <p>Price: $ {space?.price}</p>
       </div>
       <div>
@@ -72,7 +76,7 @@ const HostEditSpace = () => {
         <p>{ space.amenities.bedroomAndLaundry?.map((bedroomAndLaundry) => (<span>{bedroomAndLaundry}</span>)) }</p>
         <p>Facilities:</p>
         <p>{ space.amenities.facilities?.map((facilities) => (<span>{facilities}</span>)) }</p>
-        <p>Entertainment</p>
+        <p>Entertainment:</p>
         <p>{ space.amenities.entertainment?.map((entertainment) => (<span>{entertainment}</span>)) }</p>
       </div>
     </div>
