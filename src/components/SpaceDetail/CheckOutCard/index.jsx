@@ -30,14 +30,14 @@ const CheckOutCard = ({
   const handleDecrement = (e) => {
     setCheckout({
       ...checkout,
-      [e.target.name]: e.target.value - 1,
+      [e.target.name]: checkout[e.target.name] - 1,
     });
   };
 
   const handleIncrement = (e) => {
     setCheckout({
       ...checkout,
-      [e.target.name]: e.target.value + 1,
+      [e.target.name]: checkout[e.target.name] + 1,
     });
   };
 
