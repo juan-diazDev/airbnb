@@ -35,7 +35,7 @@ const Preview = () =>{
       bathroom: spaceRegister.amenitie.Bathroom,
       bedroomAndLaundry: spaceRegister.amenitie['Bedroom and loundry'],
       facilities: spaceRegister.amenitie.Bathroom,
-      entertaiment: spaceRegister.amenitie.Entertainment,
+      entertainment: spaceRegister.amenitie.Entertainment,
     },
     description: spaceRegister.description,
   };

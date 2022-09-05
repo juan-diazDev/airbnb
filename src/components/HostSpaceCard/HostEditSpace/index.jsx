@@ -38,20 +38,20 @@ const HostEditSpace = () => {
           <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659736178/images/Account/Pink-user_atwtje.png" alt="user logo" />
         </div>
       </div>
-      {/*  <div>
+      <div>
         <p>Privacy type: {space?.privacyType}</p>
       </div>
       <div>
         <p>Guests: {space?.howMany}</p>
       </div>
       <div>
-        <p>Beds: {space.amenities.beds}</p>
+        <p>Beds: {space.amenities?.beds}</p>
       </div>
       <div>
-        <p>Bedrooms: {space.amenities.bedrooms}</p>
+        <p>Bedrooms: {space.amenities?.bedrooms}</p>
       </div>
       <div>
-        <p>Bathrooms: {space.amenities.bathrooms}</p>
+        <p>Bathrooms: {space.amenities?.bathrooms}</p>
       </div>
       <div>
         <p>Title: {space?.title}</p>
@@ -74,7 +74,7 @@ const HostEditSpace = () => {
         <p>{ space.amenities.facilities?.map((facilities) => (<span>{facilities}</span>)) }</p>
         <p>Entertainment</p>
         <p>{ space.amenities.entertainment?.map((entertainment) => (<span>{entertainment}</span>)) }</p>
-      </div> */}
+      </div>
     </div>
   );
 };
