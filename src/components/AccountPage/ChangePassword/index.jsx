@@ -25,24 +25,22 @@ const ChangePassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { oldPassword, password, confirmPassword } = editPassword;
-    if (oldPassword && password && confirmPassword) {
-      if (password === confirmPassword) {
-        try {
-          await changePassword({ id, ...editPassword });
-        } catch (error) {
-          console.log(error);
-        }
-      } else {
-        swal({
-          title: 'Error!',
-          text: 'Passwords must match',
-          icon: 'error',
-        });
+    if (!oldPassword || !password || !confirmPassword) {
+      swal({
+        title: 'Error!',
+        text: 'All the fields must have information',
+        icon: 'error',
+      });
+    } else if (password === confirmPassword) {
+      try {
+        await changePassword({ id, ...editPassword });
+      } catch (error) {
+        console.log(error);
       }
     } else {
       swal({
         title: 'Error!',
-        text: 'All the fields must have information',
+        text: 'Passwords must match',
         icon: 'error',
       });
     }
@@ -61,7 +59,7 @@ const ChangePassword = () => {
         <input
           className="changePassword__input"
           type="password"
-          name="oldpassword"
+          name="oldPassword"
           onChange={handleChange}
         />
         <span className="changePassword__span"> New password </span>

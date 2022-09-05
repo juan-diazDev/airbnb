@@ -60,7 +60,7 @@ const ProfilePage = () => {
             </div>
             <div className="profile__userinfo">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user.createdAt}</span>
+              <span className="profile__joinedinfo">Joined in {user?.createdAt}</span>
               <div className="profile__edit">
                 <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
                 <Link to="/Profile/Updatephoto">
@@ -154,7 +154,7 @@ const ProfilePage = () => {
           <div className="profile__rightContainer-bigSc">
             <div className="profile__userinfo-bigSc">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user.createdAt} </span>
+              <span className="profile__joinedinfo">Joined in {user?.createdAt} </span>
               <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
             </div>
             <section className="profile__Section-container2-bigSc">
