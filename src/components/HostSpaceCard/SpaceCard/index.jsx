@@ -5,16 +5,16 @@ import PropTypes from 'prop-types';
 import { deleteSpace } from '../../../services/spaces';
 
 const CardSpaceOffert = ({ space }) => {
+  const ID = space._id;
   const handlerEdit = () => {
-    localStorage.setItem('_id', JSON.parse(space._id));
+    localStorage.setItem('_id', ID);
+    console.log('Id que necesitas tanto para eliminar como para localstorage:', ID);
   };
 
-  const idSpace = space._id;
-  console.log(idSpace);
   const handlerSubmit = async (e) => {
     e.preventDefault();
     try {
-      await deleteSpace(idSpace);
+      await deleteSpace(ID);
       window.location.reload(false);
     } catch (error) {
       console.log(error);

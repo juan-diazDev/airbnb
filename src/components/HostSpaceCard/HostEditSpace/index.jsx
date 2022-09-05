@@ -8,12 +8,12 @@ import { getSpace } from '../../../services/spaces';
 
 const HostEditSpace = () => {
   const dispatch = useDispatch();
-  const _id = localStorage.getItem('_id');
+  const id = localStorage.getItem('_id');
   const space = useSelector((state) => state.space.spaceDetail);
-  console.log('This is the id of the place', _id);
+  console.log('This is the id of the place', id);
   useEffect(() => {
     const fetchDatatoChange = async () => {
-      const result = await getSpace(_id);
+      const result = await getSpace(id);
       dispatch(loadSpaceDetail(result));
     };
     fetchDatatoChange();
