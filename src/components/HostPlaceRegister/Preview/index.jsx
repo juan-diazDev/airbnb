@@ -29,6 +29,8 @@ const Preview = () =>{
     privacyType: spaceRegister.Privacy.privacyType,
     amenities: {
       beds: spaceRegister.floorPlanState.beds,
+      bedrooms: spaceRegister.floorPlanState.bedrooms,
+      bathrooms: spaceRegister.floorPlanState.bathrooms,
       kitchen: spaceRegister.amenitie.Kitchen,
       bathroom: spaceRegister.amenitie.Bathroom,
       bedroomAndLaundry: spaceRegister.amenitie['Bedroom and loundry'],

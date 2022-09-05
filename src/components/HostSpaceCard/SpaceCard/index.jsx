@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { deleteSpace } from '../../../services/spaces';
 
 const CardSpaceOffert = ({ space }) => {
+  console.log(space);
   const ID = space._id;
   const handlerEdit = () => {
     localStorage.setItem('_id', ID);
@@ -27,7 +28,7 @@ const CardSpaceOffert = ({ space }) => {
           {space.title}
         </h1>
         <div className="space_img_container" />
-        <img src={space.img[0]} alt={space.title} />
+        <img src={space?.img[0]} alt={space?.title} />
       </div>
       <div>
         <Link onClick={handlerEdit} to="/HostEditSpace">

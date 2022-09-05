@@ -7,7 +7,7 @@ import { fetchHostSpaceList } from '../../store/action/space';
 const HostSpacesAdmin = () => {
   const hostSpaces = useSelector((state) => state.space.spacesHostList);
   const dispatch = useDispatch();
-
+  console.log('estos son los espacios a renderizar en map:', hostSpaces);
   useEffect(() => {
     dispatch(fetchHostSpaceList());
   }, []);
@@ -30,7 +30,7 @@ const HostSpacesAdmin = () => {
       <div>
         {
         hostSpaces?.map((space) => (
-          <CardSpaceOffert key={space.id} space={space} />
+          <CardSpaceOffert key={space?.id} space={space} />
         ))
       }
       </div>
