@@ -1,12 +1,13 @@
 /* eslint-disable no-underscore-dangle */
 import './styles.scss';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
+import swal from 'sweetalert';
 import { fetchUserDetail } from '../../../store/action/user';
 import { changePassword } from '../../../services/auth';
 
-const ChangePassword = ({ closeModal }) => {
+const ChangePassword = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
   const [editPassword, seteditPassword] = useState({});
@@ -17,22 +18,33 @@ const ChangePassword = ({ closeModal }) => {
 
   const id = user._id;
 
-  const handleClick = () => {
-    closeModal(false);
-  };
-
   const handleChange = (e) => {
     seteditPassword({ ...editPassword, [e.target.name]: e.target.value });
   };
 
-  console.log(editPassword);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await changePassword({ id, ...editPassword });
-    } catch (error) {
-      console.log(error);
+    const { oldPassword, password, confirmPassword } = editPassword;
+    if (oldPassword && password && confirmPassword) {
+      if (password === confirmPassword) {
+        try {
+          await changePassword({ id, ...editPassword });
+        } catch (error) {
+          console.log(error);
+        }
+      } else {
+        swal({
+          title: 'Error!',
+          text: 'Passwords must match',
+          icon: 'error',
+        });
+      }
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'All the fields must have information',
+        icon: 'error',
+      });
     }
   };
 
@@ -41,7 +53,9 @@ const ChangePassword = ({ closeModal }) => {
       <form action="" onSubmit={handleSubmit} className="changePassword__modalContainer">
         <div className="changePassword__currentCancel">
           <h3>Password</h3>
-          <button type="button" onClick={handleClick} className="changePassword__cancelButton"> Cancel </button>
+          <Link to="/Account">
+            <button type="button" className="changePassword__cancelButton"> Cancel </button>
+          </Link>
         </div>
         <span className="changePassword__span"> Current password </span>
         <input
@@ -68,14 +82,6 @@ const ChangePassword = ({ closeModal }) => {
       </form>
     </div>
   );
-};
-
-ChangePassword.defaultProps = {
-  closeModal: null,
-};
-
-ChangePassword.propTypes = {
-  closeModal: PropTypes.bool,
 };
 
 export default ChangePassword;

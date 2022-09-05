@@ -1,22 +1,16 @@
 // import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { fetchUserDetail } from '../../../store/action/user';
-import ChangePassword from '../ChangePassword';
 
 const AccountMain = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
-  const [openModal, setopenModal] = useState(false);
 
   useEffect(() => {
     dispatch(fetchUserDetail());
   }, []);
-
-  const handleClick = () => (
-    setopenModal(true)
-  );
 
   return (
     <div className="account__container">
@@ -66,20 +60,22 @@ const AccountMain = () => {
             Review payments, payouts, coupons, gift cards, and taxes
           </div>
         </div>
-        <button className="account__mainDivision-container" onClick={handleClick} type="button">
-          <div className="account__mainLogo-container">
-            <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716390/images/Account/Privacy_ldzsl1.png" className="account__mainLogo" alt="userlogo" />
-          </div>
-          <div className="account__mainText-container">
-            <div className="account__mainText">
-              Change your password
+        <Link to="/Account/ChangePassword">
+          <div className="account__mainDivision-container">
+            <div className="account__mainLogo-container">
+              <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716390/images/Account/Privacy_ldzsl1.png" className="account__mainLogo" alt="userlogo" />
             </div>
-            <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="account__nextbar" alt="nextBar" />
+            <div className="account__mainText-container">
+              <div className="account__mainText">
+                Change your password
+              </div>
+              <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="account__nextbar" alt="nextBar" />
+            </div>
+            <div className="account__mainText2">
+              Update your password and secure your account
+            </div>
           </div>
-          <div className="account__mainText2">
-            Update your password and secure your account
-          </div>
-        </button>
+        </Link>
         <div className="account__mainDouble-container">
           <h1 className="account__mainSupport">
             Support
@@ -105,7 +101,6 @@ const AccountMain = () => {
           <p className="account__deactivate2">Take care of that now</p>
         </div>
       </div>
-      {openModal && <ChangePassword closeModal={setopenModal} />}
     </div>
   );
 };
