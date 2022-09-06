@@ -12,14 +12,14 @@ import './styles.scss';
 const HostEditSpace = () => {
   const hostDatahead = useSelector((state) => state.user.userDetail);
   const space = useSelector((state) => state.space.spaceDetail);
-
+/*
   const [spaceUpdated, setSpaceUpdated] = useState({
     title: '', description: '', img: '', amenities: {}, price: 0, howMany: '', privacyType: ''
-  });
+  }); */
 
   const [editSpace, setEditSpace] = useState(false);
   const [editHostSpace, setEditHostSpace] = useState({});
-  const [imgToSend, setImgToSend] = useState([space.img]);
+/*   const [imgToSend, setImgToSend] = useState([space.img]); */
 
   const handleClick = () => {
     setEditSpace(true);
@@ -73,7 +73,7 @@ const HostEditSpace = () => {
       </div>
       <form action="">
         <button type="button" onClick={handleClick}>Edit space </button>
-        <div>
+         {/* <div>
           <p>Images:</p>
           <p>{ space.img?.map((img, index) => (<><img src={img} id={index} alt="placeimg" /><button type="button" onClick={handleDeletePhotos} value={index}>Delete image</button></>)) }</p>
         </div>
@@ -138,7 +138,7 @@ const HostEditSpace = () => {
             <button type="submit" className="profile__cancelEditInfo2">Save</button>
           </div>
         )
-          : null}
+          : null} */}
       </form>
     </div>
   );
