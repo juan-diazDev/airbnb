@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { deleteSpace } from '../../../services/spaces';
+import './styles.scss';
 
 const CardSpaceOffert = ({ space }) => {
   console.log(space);
@@ -22,25 +23,28 @@ const CardSpaceOffert = ({ space }) => {
     }
   };
   return (
-    <>
-      <div className="Card_space">
-        <h1>
+    <div className="single_card_container">
+      <div className="Admin_imgtitle_container">
+        <div className="cardAdmin_image-container">
+          <img className="cardAdmin_image" src={space?.img[0]} alt={space?.title} />
+        </div>
+        <h1 className="title_card">
           {space.title}
         </h1>
-        <div className="space_img_container" />
-        <img src={space?.img[0]} alt={space?.title} />
       </div>
       <div>
-        <Link onClick={handlerEdit} to="/HostEditSpace">
-          <button type="button">
-            Edit
+        <div className="buttonAdmin_container">
+          <Link onClick={handlerEdit} to="/HostEditSpace">
+            <button className="buttonAdmin_edit" type="button">
+              Edit
+            </button>
+          </Link>
+          <button className="buttonAdmin_delete" type="button" onClick={handlerSubmit}>
+            Delete
           </button>
-        </Link>
-        <button type="button" onClick={handlerSubmit}>
-          Delete
-        </button>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
