@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import './styles.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import swal from 'sweetalert';
@@ -11,6 +11,7 @@ const ChangePassword = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
   const [editPassword, seteditPassword] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(fetchUserDetail());
@@ -32,10 +33,40 @@ const ChangePassword = () => {
         icon: 'error',
       });
     } else if (password === confirmPassword) {
-      try {
-        await changePassword({ id, ...editPassword });
-      } catch (error) {
-        console.log(error);
+      if (password.length >= 8) {
+        try {
+          const response = await changePassword({ id, ...editPassword });
+          if (response.status) {
+            swal({
+              title: 'Successfuly changed!',
+              text: 'Your Password has been successfully changed',
+              icon: 'success',
+            });
+            localStorage.clear();
+            navigate('/Loginform');
+          } else {
+            swal({
+              title: 'Error!',
+              text: 'Current password not found',
+              icon: 'error',
+            });
+          }
+          if (response.message === 'New password not allowed') {
+            swal({
+              title: 'Error!',
+              text: 'New password not allowed',
+              icon: 'error',
+            });
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      } else {
+        swal({
+          title: 'Error!',
+          text: 'Passwords must contain at least 8 digits',
+          icon: 'error',
+        });
       }
     } else {
       swal({
@@ -69,6 +100,7 @@ const ChangePassword = () => {
           name="password"
           onChange={handleChange}
         />
+        <p className="changePassword__helptext">Your password must contain at least 8 digits.</p>
         <span className="changePassword__span"> Confirm password </span>
         <input
           className="changePassword__input"

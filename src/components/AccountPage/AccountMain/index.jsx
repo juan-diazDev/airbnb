@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchUserDetail } from '../../../store/action/user';
@@ -7,10 +7,16 @@ import { fetchUserDetail } from '../../../store/action/user';
 const AccountMain = () => {
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(fetchUserDetail());
   }, []);
+
+  const handleClick = () => {
+    localStorage.clear();
+    navigate('/');
+  };
 
   return (
     <div className="account__container">
@@ -95,7 +101,7 @@ const AccountMain = () => {
             </div>
           </div>
         </div>
-        <button className="account__logout" type="button">Log out</button>
+        <button className="account__logout" type="button" onClick={handleClick}>Log out</button>
         <div className="account__deactivate">
           <p className="account__deactivate1">Need to delete your account?</p>
           <p className="account__deactivate2">Take care of that now</p>
