@@ -12,6 +12,7 @@ const CheckOutCard = ({
   image,
   title,
 }) => {
+  const token = localStorage.getItem('token');
   const { _id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -52,7 +53,11 @@ const CheckOutCard = ({
     e.preventDefault();
 
     dispatch(loadCheckoutForm(checkout));
-    navigate('/Payments');
+    if (token) {
+      navigate('/Payments');
+    } else {
+      navigate('/Loginform');
+    }
   };
 
   return (
