@@ -1,22 +1,31 @@
 import { React, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const Description = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [description, setDescripcion] = useState();
+  const [description, setDescripcion] = useState('');
 
   const handleChange = (e) => {
     setDescripcion(e.target.value);
   };
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, description } });
-    navigate('/Price');
+    if (description !== '') {
+      navigate('/Price');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to add a descrption',
+        icon: 'error',
+        button: 'Add it!',
+      });
+    }
   };
 
   return (
