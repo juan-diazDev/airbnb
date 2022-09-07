@@ -1,9 +1,10 @@
 @import '../../../sass_styles/_fonts.scss';
+@import '../../../sass_styles/_colors.scss';
 
 .container__question1 {
   background-image: linear-gradient(to right,#3B07BB 0%, #92174D 60%,#E31C5F 100%);
   color: white;
-  font-family: "Manrope", sans-serif;
+  font-family: nunito-bold;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,15 +62,15 @@
 
 .option:hover{
   transition: 0.18s;
-  background-color: rgb(234, 234, 234);
+  color: $pink;
+
 }
 
 .option:focus {
-  border: solid;
-  color: black;
-  border-color: rgba(0, 0, 0, 0.768);
+  border: 1.5px solid $pink;
+  color: $pink;
   transition-duration: 0.15s;
-  font-family: nunito-regular;
+  font-family: nunito-bold;
 }
 
 .progress1{
@@ -88,21 +89,16 @@
   margin-left: 24px;
   border-radius: 10px;
   border: none;
-  background-color: #222222;
+  background-color: $dark-gray;
   cursor:pointer;
 }
 
 .button__backstep:hover{
   transition: 0.4s;
   background-color: white;
-  color: black;
+  color: $pink;
   border: solid 0.5px gray;
 }
-
-.button__backstep:active{
-  background-color: gray;
-}
-
 
 @media (min-width: 1200px) {
 

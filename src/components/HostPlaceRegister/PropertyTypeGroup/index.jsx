@@ -1,29 +1,36 @@
-/* eslint-disable max-len */
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const PropertyTypeGroup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [propertyType, setPropertyType] = useState();
+  const [propertyType, setPropertyType] = useState('');
 
   const handleClick = (e) => {
     setPropertyType(e.target.value);
   };
 
-  console.log(propertyType);
-
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
-    navigate('/PrivacyType');
+
+    if (propertyType !== '') {
+      navigate('/PrivacyType');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to choose one option',
+        icon: 'error',
+        button: 'Choose!',
+      });
+    }
   };
 
   return (
-    <div>
+    <>
       <div className="form__header">
         <div className="header__logo">
           <Link to="/">
@@ -97,7 +104,7 @@ const PropertyTypeGroup = () => {
           Next
         </button>
       </div>
-    </div>
+    </>
   );
 };
 export default PropertyTypeGroup;
