@@ -50,7 +50,7 @@ ImageCarousel.defaultProps = {
 };
 
 ImageCarousel.propTypes = {
-  image: PropTypes.string,
+  image: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
 };
 

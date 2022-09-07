@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
-import { sectionAmenities } from './sectionAmenities';
+import amenitiesObj from './sectionAmenities';
 import AmenitiesButton from './AmenitiesButton';
 
 const Amenities = () => {
@@ -68,7 +68,7 @@ const Amenities = () => {
       </div>
       <div className="container__options-fixed4">
         <div className="container__options-scroll4">
-          {sectionAmenities.map((section) => {
+          {amenitiesObj.map((section) => {
             return (
               <>
                 <div className="addition__question">

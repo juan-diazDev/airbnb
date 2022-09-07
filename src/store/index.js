@@ -22,6 +22,9 @@ const initialState = {
   ui: {
     error: null,
   },
+  checkout: {
+    checkoutForm: {},
+  },
 };
 
 const store = createStore(

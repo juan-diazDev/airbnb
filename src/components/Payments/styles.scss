@@ -1,8 +1,248 @@
-.background {
-  width: 600px;
-  height: 600px;
-  display: inline-block;
-  justify-content: center;
-  background-color: beige;
-  padding: 0px;
+@import '../../sass_styles/_colors.scss';
+@import '../../sass_styles/_fonts.scss';
+
+.payment__main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .payment__head {
+    border-bottom: 0.5px solid rgba(0,0,0,0.08);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .payment__head__logo__image-container {
+      width: 140px;
+      height: 50px;
+      img {
+        margin-left: 70px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .payment__left-container {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .payment__info-conatiner {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: min-content;
+      border-top:0.5px solid rgba(0,0,0,0.08);
+      box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 10%);
+      padding: 40px 10px;
+      border-radius: 25px;
+      .payment__image-conatiner {
+        width: 80%;
+        height: min-content;
+        margin-bottom: 20px;
+        .payment__image__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+          border: 0.5px solid rgba(0,0,0,0.08);
+        }
+      }
+      .payment__adults-info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__children-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__pets-info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__checkIn-info {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__checkOut-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+      .payment__price-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 10px;
+        p {
+          margin: 0px;
+          width: 49%;
+          font-family: nunito-bold;
+        }
+        div {
+          width: 49%;
+          font-family: nunito-light;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .payment__payment-container {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .payment__title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: nunito-bold;
+      font-size: 2rem;
+      color: $dark-gray
+    }
+    form {
+      .payment__payment-form {
+        border-radius: 15px 15px 0px 0px;
+        border: 0.5px solid rgba(0,0,0,0.463);
+        border-bottom: none;
+        width: 20.35vw;
+        padding: 18px 35px;
+      }
+      .payment__payment-form__item {
+        display: flex;
+        flex-direction: row;
+        width: 25vw;
+        .payment__payment-form__exp {
+          font-size: 1.5rem;
+          width: 50%;
+          padding: 18px 35px;
+          border: 0.5px solid rgba(0, 0, 0, 0.463);
+          border-right: none;
+          border-bottom-left-radius: 15px;
+        }
+        .payment__payment-form__cvc {
+          font-size: 50px;
+          width: 50%;
+          border: 0.5px solid rgba(0,0,0,0.463);
+          text-align: center;
+          border-bottom-right-radius: 15px;
+          padding: 18px 35px;
+        }
+      }
+      .payment__payment-form__country {
+        width: 100%;
+        height: 50px;
+        margin-top: 30px;
+        border: 0.5px solid rgba(0,0,0,0.463);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: nunito-regular;
+        margin-bottom: 30px;
+        .payment__payment-form__select__country {
+          width: 90%;
+          height: 90%;
+          border: none;
+        }
+      }
+      .payment__submit__button {
+        width: 25vw;
+        height: 40px;
+        border: none;
+        background-color: $pink;
+        color: $white;
+        font-family: nunito-bold;
+        border-radius: 15px;
+        letter-spacing: 1.3px;
+        &:hover {
+          opacity: .9;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
