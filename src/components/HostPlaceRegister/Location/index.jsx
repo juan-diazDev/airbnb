@@ -21,7 +21,7 @@ const Location = () => {
     } else {
       swal({
         title: 'Error!',
-        text: 'You have to choose one option',
+        text: 'Please enter your address',
         icon: 'error',
         button: 'Choose!',
       });
