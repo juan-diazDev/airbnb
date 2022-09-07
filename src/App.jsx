@@ -18,6 +18,8 @@ import Price from './components/HostPlaceRegister/Price';
 import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
+import UpdatePhoto from './components/ProfilePage/UploadPhoto';
+import ChangePassword from './components/AccountPage/ChangePassword';
 
 const App = () => (
   <Routes>
