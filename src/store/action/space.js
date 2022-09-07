@@ -13,6 +13,7 @@ export const loadHostSpaces = (spaceHostList) => ({ type: LOAD_SPACE_LIST_BYHOST
 export const loadSpaceDetail = (spaceDetail) => ({ type: SET_SPACE_DETAIL, payload: spaceDetail });
 export const findSpace = (spaceQuery) => ({ type: FILTER_SPACE, payload: spaceQuery });
 export const deleteHostSpace = (deleteSpace) => ({ type: DELETE_HOST_SPACE, payload: deleteSpace });
+export const SpaceRegistation = () => ({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
 
 export const fetchSpaceList = () => async (dispatch) => {
   try {
