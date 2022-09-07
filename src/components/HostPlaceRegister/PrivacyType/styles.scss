@@ -62,14 +62,15 @@
 
 .option:hover{
   transition: 0.18s;
-  background-color: rgb(234, 234, 234);
+  color: $pink;
+
 }
 
 .option:focus {
   border: 1.5px solid $pink;
   color: $pink;
   transition-duration: 0.15s;
-  font-family: nunito-regular;
+  font-family: nunito-bold;
 }
 
 .progress1{

@@ -146,13 +146,12 @@
 .option__card0:hover{
   transition: 0.18s;
   color: $pink;
-  font-family: nunito-extra-bold;
 }
 
 .option__card0:focus {
   border: 1.5px solid $pink;
   color: $pink;
-  font-family: nunito-extra-bold;
+  font-family: nunito-bold;
   transition-duration: 0.15s;
 }
 
