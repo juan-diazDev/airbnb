@@ -1,4 +1,5 @@
 @import '../../../sass_styles/_fonts.scss';
+@import '../../../sass_styles/_colors.scss';
 
 .form__header {
   display: flex;
@@ -39,14 +40,14 @@
 }
 
 .header__save{
-  color: white;
+  color: $white;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 14px;
   padding-right: 14px;
   border: none;
   border-radius: 40px;
-  background: rgba(255, 255, 255, 0.2);
+  background: none;
   font-family: nunito-light;
   font-size: 14px;
   cursor: pointer;
@@ -54,15 +55,10 @@
 
 .header__save:hover{
   transition: 0.2s;
-  color:white;
-  background-color: gray;
-  box-shadow: 0px 0px 1px gray;
+  color: $white;
+  background-color: $light-gray;
+  box-shadow: 0px 0px 1px $light-gray;
   font-family: nunito-regular;
-}
-
-.header__save:active{
-  background-color: white;
-  color:black;
 }
 
 .header__help {
@@ -73,7 +69,7 @@
   padding-right: 14px;
   border: none;
   border-radius: 40px;
-  background: rgba(255, 255, 255, 0.356);
+  background: none;
   font-family: nunito-light;
   font-size: 14px;
   cursor: pointer;
@@ -81,21 +77,15 @@
 
 .header__help:hover{
   transition: 0.2s;
-  color:white;
-  background-color: gray;
-  box-shadow: 0px 0px 1px gray;
+  color: $white;
+  background-color: $light-gray;
+  box-shadow: 0px 0px 1px $light-gray;
   font-family: nunito-regular;
 }
 
-.header__help:active{
-  background-color: white;
-  color:black;
-}
-
-
 .container__question {
   background-image: linear-gradient(to right,#3B07BB 0%, #92174D 60%,#E31C5F 100%);
-  color: white;
+  color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,7 +115,6 @@
   height: fit-content;
   overflow-y: scroll;
   border-radius: 10px;
-
 }
 
 .container__options-scroll {
@@ -156,14 +145,15 @@
 
 .option__card0:hover{
   transition: 0.18s;
-  background-color: rgb(234, 234, 234);
+  color: $pink;
+  font-family: nunito-extra-bold;
 }
 
 .option__card0:focus {
-  border: solid;
-  border-color: rgba(0, 0, 0, 0.768);
+  border: 1.5px solid $pink;
+  color: $pink;
+  font-family: nunito-extra-bold;
   transition-duration: 0.15s;
-  font-family: nunito-extra-light;
 }
 
 .option__card-title0 {
@@ -206,19 +196,15 @@
   margin-left: 24px;
   border-radius: 10px;
   border: none;
-  background-color: #222222;
+  background-color: $dark-gray;
   cursor:pointer;
 }
 
 .button__backhome:hover{
   transition: 0.4s;
   background-color: white;
-  color: black;
+  color: $pink;
   border: solid 0.5px gray;
-}
-
-.button__backhome:active{
-  background-color: gray;
 }
 
 .button__nextstep {
@@ -229,22 +215,16 @@
   margin-right: 24px;
   border-radius: 10px;
   border: none;
-  background-color: #222222;
+  background-color: $dark-gray;
   cursor: pointer;
 }
 
 .button__nextstep:hover{
   transition: 0.4s;
   background-color: white;
-  color: black;
+  color: $pink;
   border: solid 0.5px gray;
 }
-
-.button__nextstep:active{
-  background-color: gray;
-}
-
-
 
 @media (min-width: 1200px) {
 
