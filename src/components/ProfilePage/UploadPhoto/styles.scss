@@ -1,0 +1,100 @@
+@import '../../../sass_styles/fonts';
+@import '../../../sass_styles/colors';
+
+.uploadPhoto__Navbar{
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.profile__uploadPhotoform{
+  width: 100%;
+  margin-right: 50px;
+  padding-bottom: 100px;
+}
+.uploadPhoto__nextbar{
+  height: 16px;
+  width: 16px;
+}
+.profile__uploadPhotoContainer{
+  padding: 0px 0px 100px 0px;
+  margin-left: 40px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #edefed;
+}
+.profile__uploadPhoto-input{
+  color: transparent;
+}
+.profile__uploadPhoto-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.profile__uploadPhoto-input::before {
+  content: 'Upload a file from your computer';
+  font-family: nunito-extra-bold;
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  background: white;
+  color: #484848;
+  padding: 9px 27px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.profile__uploadPhoto-input:hover::before {
+  border-color: #484848;
+}
+.profile__uploadPhotoDescription{
+  font-family: nunito-extra-bold;
+  font-size: 32px;
+  color: #484848;
+  margin-left: 40px;
+}
+.profile__uploadPhototitle{
+  background-color: #edefed;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.profile__photo{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.profile__uploadPhotoimage-Container{
+  margin-top: 30px;
+  background-color: #bbb;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 250px;
+  width: 250px;
+  vertical-align: middle;
+}
+.profile__uploadPhoto-Button{
+  margin-top: 30px;
+  font-family: nunito-bold;
+  width: 300px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  background: white;
+  color: #484848;
+  padding: 9px 27px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.profile__uploadPhoto-Button:hover{
+  border-color: #484848;
+}

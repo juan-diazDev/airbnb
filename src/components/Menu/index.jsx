@@ -28,7 +28,7 @@ const Menu = () => {
                   <li><Link to="/" className="menu__item__link" onClick={handleClick}>Log out</Link></li>
                   <li><Link to="/PropertyTypeGroup" className="menu__item__link">Your reservation</Link></li>
                   <hr className="menu__line" />
-                  <li><Link to="/Account" className="menu__item__link">Contact</Link></li>
+                  <li className="menu__item__link">Contact</li>
                 </ul>
               )
               : (
@@ -37,7 +37,7 @@ const Menu = () => {
                   <li><Link to="/Loginform" className="menu__item__link">Log in</Link></li>
                   <li><Link to="/PropertyTypeGroup" className="menu__item__link">Host your home</Link></li>
                   <hr className="menu__line" />
-                  <li><Link to="/Account" className="menu__item__link">Contact</Link></li>
+                  <li className="menu__item__link">Contact</li>
                 </ul>
               )
           }
