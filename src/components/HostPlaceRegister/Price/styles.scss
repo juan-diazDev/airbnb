@@ -1,4 +1,5 @@
 @import '../../../sass_styles/_fonts.scss';
+@import '../../../sass_styles/_colors.scss';
 
 .option__offerprice {
   margin-top: 30px;
@@ -128,7 +129,7 @@
 }
 
 .progress8 {
-  border-top: 2px solid black;
+  border-top: 2px solid $pink;
   position: absolute;
   left: 0%;
   right: 10%;
