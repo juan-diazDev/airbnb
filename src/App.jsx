@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Loginform from './components/Log-In-form';
 import Signupform from './components/Sign-up-form';
@@ -20,29 +20,27 @@ import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
 
 const App = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Loginform" element={<Loginform />} />
-      <Route path="/Signupform" element={<Signupform />} />
-      <Route path="/SpaceDetail/:_id" element={<SpaceDetail />} />
-      <Route path="/Account" element={<Account />} />
-      <Route path="/Profile" element={<ProfilePage />} />
-      <Route path="/PropertyTypeGroup" element={<PropertyTypeGroup />} />
-      <Route path="/PrivacyType" element={<PrivacyType />} />
-      <Route path="/Location" element={<Location />} />
-      <Route path="/FloorPLan" element={<FloorPlan />} />
-      <Route path="/Amenities" element={<Amenities />} />
-      <Route path="/Images" element={<Images />} />
-      <Route path="/Title" element={<Title />} />
-      <Route path="/Description" element={<Description />} />
-      <Route path="/Price" element={<Price />} />
-      <Route path="/Preview" element={<Preview />} />
-      <Route path="/verifyAccount/:token" element={<AccountVerfication />} />
-      <Route path="/verifyAccount" element={<AccountVerfication />} />
-      <Route path="/Payments" element={<CheckoutCard />} />
-    </Routes>
-  </BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/Loginform" element={<Loginform />} />
+    <Route path="/Signupform" element={<Signupform />} />
+    <Route path="/SpaceDetail/:_id" element={<SpaceDetail />} />
+    <Route path="/Account" element={<Account />} />
+    <Route path="/Profile" element={<ProfilePage />} />
+    <Route path="/PropertyTypeGroup" element={<PropertyTypeGroup />} />
+    <Route path="/PrivacyType" element={<PrivacyType />} />
+    <Route path="/Location" element={<Location />} />
+    <Route path="/FloorPLan" element={<FloorPlan />} />
+    <Route path="/Amenities" element={<Amenities />} />
+    <Route path="/Images" element={<Images />} />
+    <Route path="/Title" element={<Title />} />
+    <Route path="/Description" element={<Description />} />
+    <Route path="/Price" element={<Price />} />
+    <Route path="/Preview" element={<Preview />} />
+    <Route path="/verifyAccount/:token" element={<AccountVerfication />} />
+    <Route path="/verifyAccount" element={<AccountVerfication />} />
+    <Route path="/Payments" element={<CheckoutCard />} />
+  </Routes>
 );
 
 export default App;
