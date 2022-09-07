@@ -61,7 +61,7 @@ const Description = () => {
             <textarea
               onChange={handleChange}
               className="offerdescription__text"
-              placeholder="This place is the best in the world."
+              placeholder="This is the best place in the world."
               rows="3"
             />
           </div>
