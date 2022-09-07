@@ -1,26 +1,35 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const PrivacyType = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [Privacy, setPrivacy] = useState();
+  const [privacy, setPrivacy] = useState('');
 
   const handleClick = (e) => {
-    setPrivacy({ ...Privacy, [e.target.name]: e.target.value });
+    setPrivacy(e.target.value);
   };
 
-  const handleNext = (e) => {
-    e.preventDefault();
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, Privacy } });
-    navigate('/Location');
+  const handleNext = () => {
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, privacy } });
+    if (privacy !== '') {
+      navigate('/Location');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to choose one option',
+        icon: 'error',
+        button: 'Choose!',
+      });
+    }
   };
 
   return (
-    <div>
+    <>
       <div className="form__header">
         <div className="header__logo">
           <Link to="/">
@@ -57,13 +66,11 @@ const PrivacyType = () => {
             Back
           </button>
         </Link>
-        <Link to="/Location">
-          <button onClick={handleNext} className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="button">
+          Next
+        </button>
       </div>
-    </div>
+    </>
   );
 };
 

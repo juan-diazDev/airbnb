@@ -1,16 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unstable-nested-components */
-// eslint-disable-next-line import/no-duplicates
-import { useState, React } from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
-
-const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+import swal from 'sweetalert';
 
 const Location = () => {
-  const Marker = ({ text }) => <div>{text}</div>;
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -19,38 +13,27 @@ const Location = () => {
   const handleChange = (e) => {
     setAddress({ ...address, [e.target.name]: e.target.value });
   };
-  const handleMapClick = (e) => {
-    const coordinates = {
-      latitude: e.latLng.lat(),
-      longitude: e.latLng.lng(),
-    };
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, coordinates } });
-  };
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, address } });
-    navigate('/FloorPlan');
+    if (address !== {}) {
+      navigate('/FloorPlan');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'Please enter your address',
+        icon: 'error',
+        button: 'Close',
+      });
+    }
   };
 
   const handlerSubmit = async (e) => {
     e.preventDefault();
   };
 
-  const containerStyle = {
-    width: '100%',
-    height: '200px',
-  };
-  const defaultProps = {
-    center: {
-      lat: 10.394297970724839,
-      lng: -75.48149972391892,
-    },
-    zoom: 15,
-  };
-
   return (
-    <div>
+    <>
       <div className="form__header4">
         <div className="header__logo">
           <Link to="/">
@@ -107,26 +90,6 @@ const Location = () => {
               <option value="Ecuador" className="country">Ecuador</option>
               <option value="Chile" className="country">Chile</option>
             </select>
-            <p className="map__title">Point your location on map</p>
-            <div className="container__map-fixed">
-              <LoadScript
-                googleMapsApiKey={API_KEY}
-              >
-                <GoogleMap
-                  onClick={handleMapClick}
-                  className="container__map-fixed"
-                  mapContainerStyle={containerStyle}
-                  center={defaultProps.center}
-                  zoom={defaultProps.zoom}
-                >
-                  <Marker
-                    lat={10.394297970724839}
-                    lng={-75.48149972391892}
-                    text="QWERTYUIOPASDFGHJKLÑZXCVBNM,"
-                  />
-                </GoogleMap>
-              </LoadScript>
-            </div>
           </form>
         </div>
       </div>
@@ -137,11 +100,11 @@ const Location = () => {
             Back
           </button>
         </Link>
-        <button onClick={handleNext} className="button__nextstep" type="submit">
+        <button onClick={handleNext} className="button__nextstep" type="button">
           Next
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -29,11 +29,13 @@ const Preview = () =>{
     privacyType: spaceRegister.Privacy.privacyType,
     amenities: {
       beds: spaceRegister.floorPlanState.beds,
+      bedrooms: spaceRegister.floorPlanState.bedrooms,
+      bathrooms: spaceRegister.floorPlanState.bathrooms,
       kitchen: spaceRegister.amenitie.Kitchen,
       bathroom: spaceRegister.amenitie.Bathroom,
       bedroomAndLaundry: spaceRegister.amenitie['Bedroom and loundry'],
       facilities: spaceRegister.amenitie.Bathroom,
-      entertaiment: spaceRegister.amenitie.Entertainment,
+      entertainment: spaceRegister.amenitie.Entertainment,
     },
     description: spaceRegister.description,
   };
@@ -42,7 +44,7 @@ const Preview = () =>{
     e.preventDefault();
     try {
       await createSpace(spaceSubmit);
-      navigate('/');
+      navigate('/HostSpacesAdmin');
     } catch (error) {
       console.log(error);
     }
