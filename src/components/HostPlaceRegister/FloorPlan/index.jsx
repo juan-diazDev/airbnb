@@ -1,6 +1,7 @@
 import { useState, React } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const FloorPlan = () => {
@@ -8,6 +9,13 @@ const FloorPlan = () => {
   const [floorPlanState, setFloorPlanState] = useState({
     guest: 0, beds: 0, bedrooms: 0, bathrooms: 0,
   });
+
+  const {
+    guest,
+    beds,
+    bedrooms,
+    bathrooms,
+  } = floorPlanState;
 
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
@@ -21,7 +29,21 @@ const FloorPlan = () => {
 
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, floorPlanState } });
-    navigate('/Amenities');
+    if (
+      guest === 0
+      || beds === 0
+      || bedrooms === 0
+      || bathrooms === 0
+    ) {
+      swal({
+        title: 'Error!',
+        text: 'You should offer at leats one of each',
+        icon: 'error',
+        button: 'Offer!',
+      });
+    } else {
+      navigate('/Amenities');
+    }
   };
 
   const handleSubmit = (e) => {

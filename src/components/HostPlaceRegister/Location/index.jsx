@@ -23,7 +23,7 @@ const Location = () => {
         title: 'Error!',
         text: 'Please enter your address',
         icon: 'error',
-        button: 'Choose!',
+        button: 'Close',
       });
     }
   };
