@@ -28,6 +28,7 @@ const Loginform = () => {
           icon: 'error',
           button: 'Try again',
         });
+        localStorage.clear();
       }
     } catch (error) {
       console.log(error);
