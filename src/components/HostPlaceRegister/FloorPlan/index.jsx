@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-/* disable-eslint */
 import { useState, React } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
@@ -8,25 +6,20 @@ import './styles.scss';
 const FloorPlan = () => {
   const navigate = useNavigate();
   const [floorPlanState, setFloorPlanState] = useState({
-    guest: 1, beds: 1, bedrooms: 1, bathrooms: 1,
+    guest: 0, beds: 0, bedrooms: 0, bathrooms: 0,
   });
-
-  console.log(floorPlanState);
 
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
   const handleDecrement = (e) => {
-    if (floorPlanState[e.target.name] > 0) {
-      setFloorPlanState({ ...floorPlanState, [e.target.name]: floorPlanState[e.target.name] - 1 });
-    }
+    setFloorPlanState({ ...floorPlanState, [e.target.name]: floorPlanState[e.target.name] - 1 });
   };
   const handleIncrement = (e) => {
     setFloorPlanState({ ...floorPlanState, [e.target.name]: floorPlanState[e.target.name] + 1 });
   };
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, floorPlanState } });
     navigate('/Amenities');
   };
@@ -36,7 +29,7 @@ const FloorPlan = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="form__header">
         <div className="header__logo">
           <Link to="/">
@@ -106,7 +99,7 @@ const FloorPlan = () => {
           Next
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

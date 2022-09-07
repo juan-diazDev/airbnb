@@ -29,7 +29,7 @@ const PrivacyType = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="form__header">
         <div className="header__logo">
           <Link to="/">
@@ -70,7 +70,7 @@ const PrivacyType = () => {
           Next
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
