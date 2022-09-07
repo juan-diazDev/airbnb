@@ -1,4 +1,5 @@
 @import '../../../sass_styles/_fonts.scss';
+@import '../../../sass_styles/_colors.scss';
 
 .container__options-scroll5 {
   display: flex;
@@ -43,14 +44,9 @@
 .button__nextstep:hover{
   transition: 0.4s;
   background-color: white;
-  color: black;
+  color: $pink;
   border: solid 0.5px gray;
 }
-
-.button__nextstep:active{
-  background-color: gray;
-}
-
 
 @media (min-width: 1200px) {
 
