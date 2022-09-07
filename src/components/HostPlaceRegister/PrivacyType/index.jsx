@@ -8,15 +8,15 @@ const PrivacyType = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [Privacy, setPrivacy] = useState('');
+  const [privacy, setPrivacy] = useState('');
 
   const handleClick = (e) => {
-    setPrivacy({ ...Privacy, [e.target.name]: e.target.value });
+    setPrivacy(e.target.value);
   };
 
   const handleNext = () => {
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, Privacy } });
-    if (Privacy !== '') {
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, privacy } });
+    if (privacy !== '') {
       navigate('/Location');
     } else {
       swal({
