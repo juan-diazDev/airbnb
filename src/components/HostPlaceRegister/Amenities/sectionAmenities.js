@@ -1,143 +1,116 @@
-/* eslint-disable */
-export const sectionAmenities = [
+const amenitiesObj = [
   {
-    section: "Kitchen",
-    buttons: [
-      {
-        amenitie: "Oven",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/Hoven_mzvkor.png",
-        alt: "Hoven",
+    kitchen: {
+      oven: {
+        title: 'Oven',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/Hoven_mzvkor.png',
       },
-      {
-        amenitie: "Refrigerator",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Refrigerator_lkbpqz.png",
-        alt: "Refrigerator",
+      refrigerator: {
+        title: 'Refrigerator',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Refrigerator_lkbpqz.png',
       },
-      {
-        amenitie: "Cooking Basics",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/CookingBasivs_wuxrxf.png",
-        alt: "Cooking basics",
+      cookingBasics: {
+        title: 'Cooking basics',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/CookingBasivs_wuxrxf.png',
       },
-      {
-        amenitie: "Dishes and silverware",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/DishesAndSilverware_nbcz9h.png",
-        alt: "Dishes and silverware",
+      dishesAndSilverware: {
+        title: 'Dishes and silverware',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/DishesAndSilverware_nbcz9h.png',
       },
-      {
-        amenitie: "Stove",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Stove_vmxdxx.png",
-        alt: "Stove",
+      stove: {
+        title: 'Stove',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Stove_vmxdxx.png',
       },
-      {
-        amenitie: "Rice maker",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/RiceMaker_dmg0tc.png",
-        alt: "Rice maker",
+      riceMaker: {
+        title: 'Rice maker',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/RiceMaker_dmg0tc.png',
       },
-      {
-        amenitie: "Dining table",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/DiningTable_po4j1x.png",
-        alt: "Dining table",
+      diningTable: {
+        title: 'Dining table',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/DiningTable_po4j1x.png',
       },
-      {
-        amenitie: "Outdoor dining area",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/OutdoorDiningArea_fj9dsz.png",
-        alt: "Outdoordiningarea",
+      outdoorDiningArea: {
+        title: 'Outdoor dining area',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/OutdoorDiningArea_fj9dsz.png',
       },
-    ],
+    },
   },
   {
-    section: "Bathroom",
-    buttons: [
-      {
-        amenitie: "Body Soap",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Soap_fg3fxk.png",
-        alt: "BodySoap",
+    bathroom: {
+      bodySoap: {
+        title: 'Body Soap',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Soap_fg3fxk.png',
       },
-      {
-        amenitie: "Shampoo",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Shampoo_vpramj.png",
-        alt: "Shampoo",
+      shampoo: {
+        title: 'Shampoo',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Shampoo_vpramj.png',
       },
-      {
-        amenitie: "Toilet paper",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/ToiletPaper_rxtzhr.png",
-        alt: "ToiletPaper",
+      toiletpaper: {
+        title: 'Toilet paper',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/ToiletPaper_rxtzhr.png',
       },
-    ],
+    },
   },
   {
-    section: "Bedroom and loundry",
-    buttons: [
-      {
-        amenitie: "Towels",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/Towel_zpnay6.png",
-        alt: "Towels",
+    bedroomAndLaudry: {
+      towels: {
+        title: 'Towels',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/Towel_zpnay6.png',
       },
-      {
-        amenitie: "Bed Sheets",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660008093/images/Amenities/BedSheet_jbef2i.png",
-        alt: "BedSheet",
+      bedSheets: {
+        title: 'Bed Sheets',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660008093/images/Amenities/BedSheet_jbef2i.png',
       },
-      {
-        amenitie: "Pillows",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Pillow_xugf4j.png",
-        alt: "Pillow",
+      pillows: {
+        title: 'Pillows',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Pillow_xugf4j.png',
       },
-      {
-        amenitie: "Blankets",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660008093/images/Amenities/Blanket_hkfld4.png",
-        alt: "Blankets",
+      blanket: {
+        title: 'Blankets',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660008093/images/Amenities/Blanket_hkfld4.png',
       },
-    ],
+    },
   },
   {
-    section: "Facilities",
-    buttons: [
-      {
-        amenitie: "Private pool",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/PrivatePool_svqtcc.png",
-        alt: "Private Pool",
+    facilities: {
+      privetePool: {
+        title: 'Private pool',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/PrivatePool_svqtcc.png',
       },
-      {
-        amenitie: "Private hot tub",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/PrivateHotTub_dgoilc.png",
-        alt: "Private hot tub",
+      privateHotTub: {
+        titile: 'Private hot tub',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/PrivateHotTub_dgoilc.png',
       },
-      {
-        amenitie: "Building staff",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660008437/images/Amenities/BuildingStaff_uvuuls.png",
-        alt: "Building staff",
+      houseStaff: {
+        title: 'House staff',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660008437/images/Amenities/BuildingStaff_uvuuls.png',
       },
-      {
-        amenitie: "BBQ grill",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/BBQGrill_kfs4yi.png",
-        alt: "BBQGrill",
+      BBQgrill: {
+        title: 'BBQ grill',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/BBQGrill_kfs4yi.png',
       },
-    ],
+    },
   },
   {
-    section: "Entertainment",
-    buttons: [
-      {
-        amenitie: "WiFi",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/WiFi_tpjfzo.png",
-        alt: "Wifi",
+    entertaiment: {
+      wifi: {
+        title: 'WiFi',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/WiFi_tpjfzo.png',
       },
-      {
-        amenitie: "TV",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/TV_mp0ov9.png",
-        alt: "TV",
+      tv: {
+        title: 'TV',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/TV_mp0ov9.png',
       },
-      {
-        amenitie: "Netflix",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Netflix_wvfgvx.png",
-        alt: "Netflix",
+      netflix: {
+        title: 'Netflix',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006634/images/Amenities/Netflix_wvfgvx.png',
       },
-      {
-        amenitie: "VideoGame Console",
-        icon: "https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/VideoGameConsole_anoidd.png",
-        alt: "VideoGame Console",
+      videoGameCosnsole: {
+        title: 'Video Game Console',
+        icon: 'https://res.cloudinary.com/equipo-maravilla/image/upload/v1660006635/images/Amenities/VideoGameConsole_anoidd.png',
       },
-    ],
+    },
   },
 ];
+
+export default amenitiesObj;
