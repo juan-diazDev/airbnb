@@ -9,13 +9,23 @@
   justify-content: space-between;
   width: unset;
   height: unset;
-  color: #222222;
+  color: $dark-gray;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   gap: 20px;
   font-family: nunito-regular;
   min-height: unset;
+}
+
+.option__advice {
+  .advice__description {
+    font-family: nunito-light;
+    span {
+      font-family: nunito-bold;
+      color: $pink;
+    }
+  }
 }
 
 .offerprice__input {
@@ -146,4 +156,13 @@
     width: 200px;
   }
 
+  .option__advice {
+    .advice__description {
+      font-family: nunito-light;
+      span {
+        font-family: nunito-bold;
+        color: $pink;
+      }
+    }
+  }
 }

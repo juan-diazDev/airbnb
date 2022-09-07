@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const Price = () => {
@@ -8,7 +9,7 @@ const Price = () => {
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-  const [price, setPrice] = useState({});
+  const [price, setPrice] = useState(0);
   const handleChange = (e) => {
     setPrice(e.target.value);
   };
@@ -16,7 +17,16 @@ const Price = () => {
   const handleNext = (e) => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, price } });
-    navigate('/Preview');
+    if (price !== 0) {
+      navigate('/Preview');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'Price has to be bigger than 0',
+        icon: 'error',
+        button: 'Close',
+      });
+    }
   };
 
   return (
@@ -49,15 +59,28 @@ const Price = () => {
         <div className="container__options-scroll3">
           <div className="option__offerprice">
             <div className="offerprice__input">
-              <input name="price" onChange={handleChange} className="offerprice" placeholder="$179043" type="number" value={price} />
+              <input
+                name="price"
+                onChange={handleChange}
+                className="offerprice"
+                type="number"
+                value={price}
+                min="1"
+                step="any"
+              />
             </div>
             <div className="option__pernight">
               <h2 className="pernight__description">Per night</h2>
             </div>
             <div className="option__advice">
-              <h2 className="advice__description">
-                Set your price according to your zone.
-              </h2>
+              <p className="advice__description">
+                <span>Warning!</span>
+                <br />
+                We want to remaind you that this price
+                you are giving is per night and not per person.
+                <br />
+                That means that you are charging for the complete hosting.
+              </p>
             </div>
           </div>
         </div>
@@ -68,11 +91,9 @@ const Price = () => {
               Back
             </button>
           </Link>
-          <Link to="/Preview">
-            <button onClick={handleNext} className="button__nextstep" type="button">
-              Review your listing
-            </button>
-          </Link>
+          <button onClick={handleNext} className="button__nextstep" type="button">
+            Review your listing
+          </button>
         </div>
       </div>
     </div>
