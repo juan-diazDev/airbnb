@@ -1,22 +1,31 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const PrivacyType = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [Privacy, setPrivacy] = useState();
+  const [Privacy, setPrivacy] = useState('');
 
   const handleClick = (e) => {
     setPrivacy({ ...Privacy, [e.target.name]: e.target.value });
   };
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, Privacy } });
-    navigate('/Location');
+    if (Privacy !== '') {
+      navigate('/Location');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to choose one option',
+        icon: 'error',
+        button: 'Choose!',
+      });
+    }
   };
 
   return (
@@ -57,11 +66,9 @@ const PrivacyType = () => {
             Back
           </button>
         </Link>
-        <Link to="/Location">
-          <button onClick={handleNext} className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="button">
+          Next
+        </button>
       </div>
     </div>
   );

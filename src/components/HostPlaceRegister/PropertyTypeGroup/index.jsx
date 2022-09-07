@@ -22,9 +22,9 @@ const PropertyTypeGroup = () => {
     } else {
       swal({
         title: 'Error!',
-        text: 'Your user or password  is invalid',
+        text: 'You have to choose one option',
         icon: 'error',
-        button: 'Try again',
+        button: 'Choose!',
       });
     }
   };
