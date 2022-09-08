@@ -1,12 +1,12 @@
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import { createSpace } from '../../../services/spaces';
 import './styles.scss';
 
 const Preview = () => {
   const navigate = useNavigate();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  console.log('🚀 ~ file: index.jsx ~ line 10 ~ Preview ~ spaceRegister', spaceRegister);
 
   const {
     price,
@@ -18,10 +18,17 @@ const Preview = () => {
   const handlerSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createSpace(spaceRegister);
-      navigate('/');
+      const newSpace = await createSpace(spaceRegister);
+      if (newSpace) {
+        navigate('/');
+      }
     } catch (error) {
-      console.log(error);
+      swal({
+        title: 'Error!',
+        text: error.message,
+        icon: 'error',
+        button: 'Close',
+      });
     }
   };
 
