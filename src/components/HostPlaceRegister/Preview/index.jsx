@@ -1,56 +1,30 @@
 /* eslint-disable */
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { createSpace } from '../../../services/spaces';
 import './styles.scss';
 
 const Preview = () =>{
   const navigate = useNavigate();
-  const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
+  console.log('🚀 ~ file: index.jsx ~ line 10 ~ Preview ~ spaceRegister', spaceRegister);
 
-  const spaceSubmit = {
-    title: spaceRegister.title,
-    img: spaceRegister.img,
-    price: spaceRegister.price,
-    howMany: spaceRegister.floorPlanState.guest,
-    coordinates:{
-      latitude: spaceRegister.coordinates.latitude,
-      longitude: spaceRegister.coordinates.longitude,
-    },
-    address: {
-      street: spaceRegister.address.street,
-      city: spaceRegister.address.city,
-      state:spaceRegister.address.state,
-      country: spaceRegister.address.country,
-      zipCode: spaceRegister.address.zipCode,
-    },
-    type: spaceRegister.propertyType,
-    privacyType: spaceRegister.Privacy.privacyType,
-    amenities: {
-      beds: spaceRegister.floorPlanState.beds,
-      bedrooms: spaceRegister.floorPlanState.bedrooms,
-      bathrooms: spaceRegister.floorPlanState.bathrooms,
-      kitchen: spaceRegister.amenitie.Kitchen,
-      bathroom: spaceRegister.amenitie.Bathroom,
-      bedroomAndLaundry: spaceRegister.amenitie['Bedroom and loundry'],
-      facilities: spaceRegister.amenitie.Bathroom,
-      entertainment: spaceRegister.amenitie.Entertainment,
-    },
-    description: spaceRegister.description,
-  };
+  const {
+    price,
+    description,
+    title,
+    img,
+  } = spaceRegister;
 
   const handlerSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createSpace(spaceSubmit);
+      await createSpace(spaceRegister);
       navigate('/HostSpacesAdmin');
     } catch (error) {
       console.log(error);
     }
   };
-
-  console.log('arreglofinal', spaceSubmit);
 
   return (
     <div>
@@ -81,7 +55,14 @@ const Preview = () =>{
       <div className="container__options-fixed4">
         <div className="container__options-scroll5">
           <div className="container__preview">
-            <p />
+            <div className="card__image-container">
+              <img className="card__image__image" src={img[0]} alt={title} />
+            </div>
+            <div className="info-container">
+              <div className="card__title"><b>{title}</b></div>
+              <p className="card__description">{description}</p>
+              <div className="card__price"> ${price} <span>night</span></div>
+            </div>
           </div>
         </div>
       </div>
