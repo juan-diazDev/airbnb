@@ -19,7 +19,7 @@ const Preview = () => {
     e.preventDefault();
     try {
       await createSpace(spaceRegister);
-      navigate('/HostSpacesAdmin');
+      navigate('/');
     } catch (error) {
       console.log(error);
     }
