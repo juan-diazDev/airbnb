@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -48,7 +47,7 @@ const CheckOutCard = ({
       [e.target.name]: e.target.value,
     });
   };
-  console.log(checkout);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
