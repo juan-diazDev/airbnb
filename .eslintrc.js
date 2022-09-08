@@ -19,6 +19,8 @@ module.exports = {
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    'no-underscore-dangle': ['error', { allow: ['_id'] }],
+    'no-console': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/function-component-definition': [
       'error',

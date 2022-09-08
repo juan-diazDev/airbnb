@@ -5,7 +5,7 @@ import { getHostSpaces } from '../../../services/spaces';
 import { loadSpaceDetail } from '../../../store/action/space';
 import { fetchUserDetail } from '../../../store/action/user';
 import Header from '../../Header';
-// import CardSpaceOffert from '../SpaceCard';
+import CardSpaceOffert from '../SpaceCard';
 import './styles.scss';
 
 const HostHome = () => {
@@ -13,8 +13,7 @@ const HostHome = () => {
   const dispatch = useDispatch();
 
   const { _id } = useSelector((state) => state?.user?.userDetail);
-  const space = useSelector((state) => state?.space?.spaceDetail);
-  console.log('Este son los spaces ->', space);
+  const spaces = useSelector((state) => state?.space?.spaceDetail);
 
   const logOut = () => {
     localStorage.clear();
@@ -25,8 +24,8 @@ const HostHome = () => {
     dispatch(fetchUserDetail());
     const fetchData = async () => {
       try {
-        const spaces = await getHostSpaces(_id);
-        dispatch(loadSpaceDetail(spaces));
+        const space = await getHostSpaces(_id);
+        dispatch(loadSpaceDetail(space));
       } catch (error) {
         console.log(error.message);
       }
@@ -44,7 +43,11 @@ const HostHome = () => {
         <button type="button"> log in</button>
       </Link>
       <button onClick={logOut} type="button"> log out</button>
-      {/* <CardSpaceOffert space={space} /> */}
+      {
+        spaces.map((space) => (
+          <CardSpaceOffert space={space} key={space._id} />
+        ))
+      }
     </div>
   );
 };
