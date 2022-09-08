@@ -28,7 +28,6 @@ export async function getHostSpaces(host) {
         authorization: `Bearer ${token}`,
       },
     };
-    console.log(host);
     const response = await fetch(`${BASE_URL}/api/spaces/byHostId/${host}`, options);
     return response.json();
   } catch (error) {
