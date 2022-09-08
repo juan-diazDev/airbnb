@@ -17,8 +17,8 @@ const CheckOutCard = ({
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [checkout, setCheckout] = useState({
-    checkIn: null,
-    checkOut: null,
+    arrive: null,
+    departure: null,
     adults: 0,
     children: 0,
     pets: 0,
@@ -48,7 +48,7 @@ const CheckOutCard = ({
       [e.target.name]: e.target.value,
     });
   };
-
+  console.log(checkout);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -85,13 +85,13 @@ const CheckOutCard = ({
             <div className="spaceDetail__checkout-card__options__check-in">
               <label htmlFor="date">
                 check-in
-                <input type="date" onChange={handleChange} name="checkIn" />
+                <input type="date" onChange={handleChange} name="arrive" />
               </label>
             </div>
             <div className="spaceDetail__checkout-card__options__check-out">
               <label htmlFor="date">
                 check-out
-                <input type="date" onChange={handleChange} name="checkOut" />
+                <input type="date" onChange={handleChange} name="departure" />
               </label>
             </div>
 

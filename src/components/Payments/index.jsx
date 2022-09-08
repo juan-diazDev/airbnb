@@ -8,14 +8,15 @@ import {
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import swal from 'sweetalert';
+import { createBooking } from '../../services/reservations';
 import './styles.scss';
 
 const Payments = () => {
   const { checkoutForm } = useSelector((state) => state.checkout);
   const {
     adults,
-    checkOut,
-    checkIn,
+    departure,
+    arrive,
     children,
     pets,
     price,
@@ -57,8 +58,9 @@ const Payments = () => {
     };
 
     const response = await fetch('http://localhost:3030/api/payment', options);
-    if (response) {
-      swal.fire(
+    if (response.status === 200) {
+      await createBooking({ ...checkoutForm, token });
+      swal(
         'Good job!',
         'You clicked the button!',
         'success',
@@ -104,11 +106,11 @@ const Payments = () => {
           </div>
           <div className="payment__checkIn-info">
             <p>checkIn</p>
-            <div>{checkIn}</div>
+            <div>{arrive}</div>
           </div>
           <div className="payment__checkOut-info">
             <p>checkOut</p>
-            <div>{checkOut}</div>
+            <div>{departure}</div>
           </div>
           <div className="payment__price-info">
             <p>price</p>
