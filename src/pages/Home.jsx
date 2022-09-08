@@ -8,7 +8,7 @@ const Home = () => {
   const result = localStorage.getItem('profile');
   const profile = JSON.parse(result);
 
-  const { role } = profile;
+  const role = profile?.role;
   return (
     <>
       {
