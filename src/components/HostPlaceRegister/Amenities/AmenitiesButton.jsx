@@ -1,33 +1,36 @@
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const AmenitiesButton = ({ button, onUpdate, section }) => {
-  const [checkBool, setCheckBool] = useState(false);
-  const handleSelect = (e) => {
-    onUpdate(e, section, button.icon);
-    setCheckBool(!checkBool);
-  };
-
+const AmenitiesButton = ({ data }) => {
+  const {
+    kitchen,
+    bathroom,
+    bedroomAndLaundry,
+    facilities,
+    entertaiment,
+  } = data;
+  console.log('🚀 ~ file: AmenitiesButton.jsx ~ line 13 ~ AmenitiesButton ~ entertaiment', entertaiment);
+  console.log('🚀 ~ file: AmenitiesButton.jsx ~ line 13 ~ AmenitiesButton ~ facilities', facilities);
+  console.log('🚀 ~ file: AmenitiesButton.jsx ~ line 13 ~ AmenitiesButton ~ bedroomAndLaudry', bedroomAndLaundry);
+  console.log('🚀 ~ file: AmenitiesButton.jsx ~ line 13 ~ AmenitiesButton ~ bathroom', bathroom);
+  console.log('🚀 ~ file: AmenitiesButton.jsx ~ line 13 ~ AmenitiesButton ~ kitchen', kitchen);
   return (
-    <button name={button.amenitie} value={button.amenitie} onClick={handleSelect} className={!checkBool ? 'option__card3' : 'option__card3--focus'} type="button">
-      <img
-        className="adition-icon"
-        src={button.icon}
-        alt={button.alt}
-      />
-      {button.amenitie}
-    </button>
+    // <main>
+    //   <section>
+    //     <h2>Kitchen</h2>
+    //     <article>
+    //       <p>{kitchen.oven.title}</p>
+    //       <div>
+    //         <img src={kitchen.oven.icon} alt={kitchen.oven.title} />
+    //       </div>
+    //     </article>
+    //   </section>
+    // </main>
+    <div>hola</div>
   );
 };
 
 AmenitiesButton.propTypes = {
-  onUpdate: PropTypes.func.isRequired,
-  section: PropTypes.string.isRequired,
-  button: PropTypes.shape({
-    amenitie: PropTypes.string,
-    icon: PropTypes.string,
-    alt: PropTypes.string,
-  }).isRequired,
+  data: PropTypes.shape().isRequired,
 };
 
 export default AmenitiesButton;
