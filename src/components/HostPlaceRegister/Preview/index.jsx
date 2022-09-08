@@ -1,10 +1,9 @@
-/* eslint-disable */
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { createSpace } from '../../../services/spaces';
 import './styles.scss';
 
-const Preview = () =>{
+const Preview = () => {
   const navigate = useNavigate();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
   console.log('🚀 ~ file: index.jsx ~ line 10 ~ Preview ~ spaceRegister', spaceRegister);
@@ -73,12 +72,12 @@ const Preview = () =>{
             Back
           </button>
         </Link>
-        <button onClick={handlerSubmit} className="button__savelisting" type="button">
+        <button onClick={handlerSubmit} className="button__savelisting" type="submit">
           Save your listing
         </button>
       </div>
     </div>
   );
-}
+};
 
 export default Preview;
