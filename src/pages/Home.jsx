@@ -2,7 +2,7 @@
 import Header from '../components/Header';
 import MainSection from '../components/MainSection';
 import Footer from '../components/Footer';
-import HostEditSpace from '../components/HostSpaceCard/HostEditSpace';
+import HostHome from '../components/HostSpaceCard/HostHome';
 
 const Home = () => {
   const result = localStorage.getItem('profile');
@@ -13,7 +13,7 @@ const Home = () => {
     <>
       {
         role === 'HOST'
-          ? <HostEditSpace />
+          ? <HostHome />
           : (
             <>
               <Header />
