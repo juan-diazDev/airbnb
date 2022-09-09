@@ -1,45 +1,25 @@
-/* eslint-disable arrow-body-style */
+import './styles.scss';
 import PropTypes from 'prop-types';
 
-const ReservationCard = ({
-  space,
-  arrive,
-  departure,
-  pets,
-  price,
-  adults,
-}) => {
-  return (
-    <main className="mainSection mainSection--queri-bgscreen">
-      <div className="card__image-container">
-        <div>
-          <img className="card__image__image" src={space.image} alt="" />
-        </div>
-      </div>
-      <div className="info-container">
-        <div className="card__title"><b>{space.title}</b></div>
-        <p className="card__description">{arrive} {departure} {pets} {price} {adults} </p>
-        <div className="card__price"> {price} <span>night</span></div>
-      </div>
-    </main>
-  );
-};
+const ReservationCard = ({ booking }) => (
+
+  <div className="booking__mainSection ">
+    <div className="booking__image-container">
+      <img className="booking__image__image" src={booking?.spaceId?.img[0]} alt="" />
+    </div>
+    <div className="booking__info-container">
+      <div className="booking__title"><b>{booking?.spaceId?.title}</b></div>
+      <p className="booking__description">{booking?.spaceId?.description}</p>
+      <p className="booking__details"> {booking?.adults} Adults</p>
+      <p className="booking__details"> {booking?.children} Children</p>
+      <p className="booking__details"> {booking?.pets} Pets</p>
+      <div className="booking__price"> {booking?.price} <span>Total</span></div>
+    </div>
+  </div>
+);
 
 ReservationCard.propTypes = {
-  space: PropTypes.shape().isRequired,
-  arrive: PropTypes.string,
-  departure: PropTypes.string,
-  pets: PropTypes.string,
-  price: PropTypes.string,
-  adults: PropTypes.string,
-};
-
-ReservationCard.defaultProps = {
-  arrive: null,
-  departure: null,
-  pets: null,
-  price: null,
-  adults: null,
+  booking: PropTypes.shape().isRequired,
 };
 
 export default ReservationCard;
