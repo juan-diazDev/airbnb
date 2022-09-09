@@ -6,6 +6,25 @@
   color: $dark-gray;
 }
 
+.card__delete__button {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 10;
+  border-radius: 50%;
+  border: 1px solid $dark-gray;
+  background-color: transparent;
+  color: $dark-gray;
+  padding: 7px 10px;
+  font-family: nunito-bold;
+  &:hover {
+    color: $pink;
+    border: 1px solid $pink;
+    font-family: nunito-bold;
+    cursor: pointer;
+  }
+}
+
 .host-home__main-containenr {
   width: 100%;
   display: flex;
@@ -48,6 +67,7 @@
     justify-content: center;
     align-items: center;
     div {
+      position: relative;
       margin-top: 15px;
       width: 90%;
       height: 100%;
@@ -62,6 +82,9 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         object-fit: cover;
+        &:hover {
+          opacity: .8;
+        }
       }
     }
   }
