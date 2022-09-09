@@ -13,10 +13,10 @@ const Home = () => {
   const role = profile?.role;
 
   useEffect(() => {
-    if (role) {
+    if (role === 'HOST') {
       navigate('/HostHome');
     }
-  }, [role]);
+  }, []);
   return (
     <>
       <Header />
