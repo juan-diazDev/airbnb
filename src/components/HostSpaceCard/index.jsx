@@ -5,6 +5,7 @@ import { loadSpaceDetail } from '../../store/action/space';
 import { fetchUserDetail } from '../../store/action/user';
 import Header from '../Header';
 import CardSpaceOffert from './SpaceCard';
+import Footer from '../Footer';
 import './styles.scss';
 
 const HostHome = () => {
@@ -29,14 +30,20 @@ const HostHome = () => {
   }, [_id]);
 
   return (
-    <div>
+    <>
       <Header />
-      {
-        spaces?.map((space) => (
-          <CardSpaceOffert space={space} key={space._id} />
-        ))
-      }
-    </div>
+      <div className="host-home__main-containenr">
+        <div className="card__title-container">
+          <h1>My Spaces</h1>
+        </div>
+        {
+          spaces?.map((space) => (
+            <CardSpaceOffert space={space} key={space._id} />
+          ))
+        }
+      </div>
+      <Footer />
+    </>
   );
 };
 export default HostHome;
