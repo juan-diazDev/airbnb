@@ -22,6 +22,7 @@ import HostSpacesAdmin from './pages/HostSpacesAdmin';
 import HostEditSpace from './components/HostSpaceCard/HostEditSpace';
 import UpdatePhoto from './components/ProfilePage/UploadPhoto';
 import ChangePassword from './components/AccountPage/ChangePassword';
+import GuestReservations from './components/GuestReservations/GuestReservations';
 
 const App = () => (
   <Routes>
@@ -48,6 +49,7 @@ const App = () => (
     <Route path="/HostEditSpace" element={<HostEditSpace />} />
     <Route path="/Profile/Updatephoto" element={<UpdatePhoto />} />
     <Route path="/Account/ChangePassword" element={<ChangePassword />} />
+    <Route path="/guest-booking" element={<GuestReservations />} />
   </Routes>
 );
 

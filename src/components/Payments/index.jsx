@@ -5,7 +5,7 @@ import {
   useElements,
   useStripe,
 } from '@stripe/react-stripe-js';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import swal from 'sweetalert';
 import { createBooking } from '../../services/reservations';
@@ -25,6 +25,7 @@ const Payments = () => {
   } = checkoutForm;
   const stripe = useStripe();
   const elements = useElements();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -65,6 +66,7 @@ const Payments = () => {
         'You clicked the button!',
         'success',
       );
+      navigate('/guest-booking');
     } else {
       swal.fire({
         icon: 'error',

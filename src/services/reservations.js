@@ -27,9 +27,17 @@ export async function getBooking() {
   }
 }
 
-export async function getSBooking(_id) {
+export async function getUsersBooking(userId) {
+  const token = localStorage.getItem('token');
   try {
-    const response = await fetch(`${BASE_URL}/api/spaces/${_id}`);
+    const options = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        authorization: `Bearer ${token}`,
+      },
+    };
+    const response = await fetch(`${BASE_URL}/api/reservation/byUserId/${userId}`, options);
     return response.json();
   } catch (error) {
     return new Error(error);
