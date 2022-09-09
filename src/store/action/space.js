@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 import { getHostSpaces, getSpaces } from '../../services/spaces';
 import {
-  LOAD_SPACE_LIST, SET_SPACE_DETAIL, FILTER_SPACE, LOAD_SPACE_LIST_BYHOSTID, DELETE_HOST_SPACE,
+  LOAD_SPACE_LIST, SET_SPACE_DETAIL, FILTER_SPACE, LOAD_SPACE_LIST_BYHOSTID, DELETE_HOST_SPACE, GET_DETAILS,
 } from '../constants/space';
 import setError from './ui';
 import { getUser } from '../../services/users';
@@ -11,6 +11,7 @@ import { getUser } from '../../services/users';
 export const loadSpaceList = (spaceList) => ({ type: LOAD_SPACE_LIST, payload: spaceList });
 export const loadHostSpaces = (spaceHostList) => ({ type: LOAD_SPACE_LIST_BYHOSTID, payload: spaceHostList });
 export const loadSpaceDetail = (spaceDetail) => ({ type: SET_SPACE_DETAIL, payload: spaceDetail });
+export const loadDetail = (details) => ({ type: GET_DETAILS, payload: details });
 export const findSpace = (spaceQuery) => ({ type: FILTER_SPACE, payload: spaceQuery });
 export const deleteHostSpace = (deleteSpace) => ({ type: DELETE_HOST_SPACE, payload: deleteSpace });
 
