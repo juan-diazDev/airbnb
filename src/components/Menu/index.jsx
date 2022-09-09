@@ -26,7 +26,7 @@ const Menu = () => {
                 <ul className="menu__item">
                   <li><Link to="/Account" className="menu__item__link" aria-disabled>Hello, {profile.name}</Link></li>
                   <li><Link to="/" className="menu__item__link" onClick={handleClick}>Log out</Link></li>
-                  <li><Link to="/PropertyTypeGroup" className="menu__item__link">Your reservation</Link></li>
+                  <li><Link to="/guest-booking" className="menu__item__link">Your reservation</Link></li>
                 </ul>
               )
               : (

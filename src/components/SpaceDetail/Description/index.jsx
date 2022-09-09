@@ -5,7 +5,7 @@ const Description = ({ details }) => (
     <section className="description__type__main__container">
       <div className="description__host__type-container">
         <div className="description__host__type__icon-container">
-          <img className="description__host__type__icon" src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660015542/images/Amenities/PropertyTypeGroup/Ranch_cqiayn.png" alt="Ranch" />
+          <img className="description__host__type__icon" src={details?.host?.avatar} alt="Ranch" />
         </div>
         <p className="description__host__type__text">{details?.type}</p>
       </div>
@@ -23,10 +23,10 @@ const Description = ({ details }) => (
     <section className="description__host__info-container">
       <div className="description__host__info__text-container">
         <h3 className="host__info__text__name">Place Hosted by {details?.host?.name}</h3>
-        <p className="host__info__text__amenities">5 guests · 3 bedrooms · {details?.amenities?.beds} beds · 3 bathroom</p>
+        <p className="host__info__text__amenities">{details?.howMany} guests · {details?.amenities?.bedrooms} bedrooms · {details?.amenities?.beds} beds ·{details?.amenities?.bathrooms} bathroom</p>
       </div>
       <div className="description__host__info__imgae-container">
-        <img className="description__host__info__image" src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716573/images/Account/profilepic_bo57dk.jpg" alt="hosts-profile" />
+        <img className="description__host__info__image" src={details?.host?.avatar} alt="hosts-profile" />
       </div>
     </section>
 
@@ -38,18 +38,9 @@ const Description = ({ details }) => (
     </section>
 
     <hr className="spaceDetail__line-separation" />
-
-    <section>
-      <div>
-        MAP
-      </div>
-    </section>
-
-    <hr className="spaceDetail__line-separation" />
-
     <section className="spaceDetail__amenities-container">
       <div className="spaceDetail__amenities__kitchen-container">
-        <h3>Kitchen</h3>
+        <h3 className="spaceDetail__amenities__kitchen">Kitchen</h3>
         <div className="spaceDetail__amenities__kitchen__icon-container">
           <div>
             <img src="" alt="" />
@@ -57,6 +48,7 @@ const Description = ({ details }) => (
         </div>
       </div>
     </section>
+    <hr className="spaceDetail__line-separation" />
   </div>
 );
 Description.propTypes = {
