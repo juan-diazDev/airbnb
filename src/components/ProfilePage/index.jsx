@@ -8,8 +8,14 @@ import { fetchUserDetail } from '../../store/action/user';
 import { updateUser } from '../../services/users';
 import Header from '../Header';
 import AccountNavbar from '../AccountPage/AccountNavbar';
+import HostHeader from '../HostSpaceCard/HostHeader';
 
 const ProfilePage = () => {
+  const result = localStorage.getItem('profile');
+  const profile = JSON.parse(result);
+
+  const role = profile?.role;
+
   const user = useSelector((state) => state.user.userDetail);
   const dispatch = useDispatch();
   const [editProfile, setEditProfile] = useState(false);
@@ -46,7 +52,11 @@ const ProfilePage = () => {
 
   return (
     <>
-      <Header />
+      {
+        role === 'HOST'
+          ? <HostHeader />
+          : <Header />
+      }
       <div className="profile__Container">
         <Link to="/Account">
           <div className="profile__backButton">

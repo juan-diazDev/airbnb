@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const Title = () => {
@@ -8,15 +9,23 @@ const Title = () => {
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-  const [title, setTitle] = useState();
+  const [title, setTitle] = useState('');
   const handleChange = (e) => {
     setTitle(e.target.value);
   };
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, title } });
-    navigate('/Description');
+    if (title !== '') {
+      navigate('/Description');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to give a title',
+        icon: 'error',
+        button: 'Close',
+      });
+    }
   };
 
   return (
@@ -35,9 +44,11 @@ const Title = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
-            Save and exit
-          </button>
+          <Link to="/">
+            <button className="header__save" type="button">
+              Exit
+            </button>
+          </Link>
         </div>
       </div>
       <div className="container__question3">
@@ -52,7 +63,7 @@ const Title = () => {
             <textarea
               onChange={handleChange}
               className="offertitle__text"
-              placeholder="cheerful 3 bedrooms house with pool"
+              placeholder="Cheerful 3 bedrooms house with pool"
               rows="3"
             />
           </div>

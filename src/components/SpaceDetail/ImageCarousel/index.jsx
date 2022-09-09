@@ -14,24 +14,24 @@ const ImageCarousel = ({ image, title }) => (
     </Link>
 
     <div className="carousel__main-image-container">
-      <img className="carousel__main-image" src={image} alt={title} />
+      <img className="carousel__main-image" src={image[0]} alt={title} />
     </div>
     <div className="carousel__section-container">
       <div className="carousel__center-full-container">
         <div className="carousel__center-image-container margin">
-          <img className="carousel__center-image-image" src={image} alt={title} />
+          <img className="carousel__center-image-image" src={image[0]} alt={title} />
         </div>
         <div className="carousel__center-image-container">
-          <img className="carousel__center-image-image" src={image} alt={title} />
+          <img className="carousel__center-image-image" src={image[0]} alt={title} />
         </div>
       </div>
 
       <div className="carousel__final-container">
         <div className="carousel__right-up-image-container">
-          <img className="carousel__right-up-image-image" src={image} alt={title} />
+          <img className="carousel__right-up-image-image" src={image[0]} alt={title} />
         </div>
         <div className="carousel__right-down-image-container">
-          <img className="carousel__right-down-image-image" src={image} alt={title} />
+          <img className="carousel__right-down-image-image" src={image[0]} alt={title} />
         </div>
       </div>
     </div>

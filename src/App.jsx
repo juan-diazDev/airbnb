@@ -19,7 +19,7 @@ import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
 import HostSpacesAdmin from './pages/HostSpacesAdmin';
-import HostEditSpace from './components/HostSpaceCard/HostEditSpace';
+import HostHome from './components/HostSpaceCard';
 import UpdatePhoto from './components/ProfilePage/UploadPhoto';
 import ChangePassword from './components/AccountPage/ChangePassword';
 import GuestReservations from './components/GuestReservations/GuestReservations';
@@ -46,7 +46,7 @@ const App = () => (
     <Route path="/verifyAccount" element={<AccountVerfication />} />
     <Route path="/Payments" element={<CheckoutCard />} />
     <Route path="/HostSpacesAdmin" element={<HostSpacesAdmin />} />
-    <Route path="/HostEditSpace" element={<HostEditSpace />} />
+    <Route path="/HostHome" element={<HostHome />} />
     <Route path="/Profile/Updatephoto" element={<UpdatePhoto />} />
     <Route path="/Account/ChangePassword" element={<ChangePassword />} />
     <Route path="/guest-booking" element={<GuestReservations />} />

@@ -1,22 +1,31 @@
 import { React, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import './styles.scss';
 
 const Description = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [description, setDescripcion] = useState();
+  const [description, setDescripcion] = useState('');
 
   const handleChange = (e) => {
     setDescripcion(e.target.value);
   };
 
-  const handleNext = (e) => {
-    e.preventDefault();
+  const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, description } });
-    navigate('/Price');
+    if (description !== '') {
+      navigate('/Price');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to add a descrption',
+        icon: 'error',
+        button: 'Add it!',
+      });
+    }
   };
 
   return (
@@ -35,9 +44,11 @@ const Description = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button onClick={handleNext} className="header__save" type="button">
-            Save and exit
-          </button>
+          <Link to="/">
+            <button className="header__save" type="button">
+              Exit
+            </button>
+          </Link>
         </div>
       </div>
       <div className="container__question3">
@@ -52,7 +63,7 @@ const Description = () => {
             <textarea
               onChange={handleChange}
               className="offerdescription__text"
-              placeholder="This place is the best in the world."
+              placeholder="This is the best place in the world."
               rows="3"
             />
           </div>
