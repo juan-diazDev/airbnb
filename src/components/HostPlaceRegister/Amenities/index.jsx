@@ -1,25 +1,16 @@
-import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import amenitiesObj from './sectionAmenities';
 import './styles.scss';
-import AmenitiesButton from './AmenitiesButton';
+import AmenitiesData from './AmenitiesData';
 
 const Amenities = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [amenitie, setAmenitie] = useState({
-    kitchen: {}, bathroom: {}, bedroomAndLoundry: {}, Facilities: {}, Entertainment: {},
-  });
-
-  const handleChange = () => {
-    setAmenitie();
-  };
+  const spaceRegister = useSelector((state) => state?.space?.spaceRegister);
 
   const handleNext = () => {
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, amenitie } });
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister /* , amenitie */ } });
     navigate('/Images');
   };
 
@@ -52,12 +43,7 @@ const Amenities = () => {
         </h1>
       </div>
       <div className="container__options-fixed4">
-        {
-          amenitiesObj.map((data) => (
-            <AmenitiesButton data={data} key={data.id} />
-          ))
-        }
-        <p onChange={handleChange}>Hola</p>
+        <AmenitiesData />
       </div>
       <div className="container__button-step">
         <div className="progress4" />

@@ -2,6 +2,7 @@ const amenitiesObj = [
   {
     kitchen: {
       id: 1,
+      title: 'Kitchen',
       oven: {
         id: 11,
         title: 'Oven',
@@ -47,6 +48,7 @@ const amenitiesObj = [
   {
     bathroom: {
       id: 2,
+      title: 'Bathroom',
       bodySoap: {
         id: 21,
         title: 'Body Soap',
@@ -67,6 +69,7 @@ const amenitiesObj = [
   {
     bedroomAndLaundry: {
       id: 3,
+      title: 'Bedroom and laundry',
       towels: {
         id: 31,
         title: 'Towels',
@@ -92,6 +95,7 @@ const amenitiesObj = [
   {
     facilities: {
       id: 4,
+      title: 'Facilities',
       privetePool: {
         id: 41,
         title: 'Private pool',
@@ -117,6 +121,7 @@ const amenitiesObj = [
   {
     entertaiment: {
       id: 5,
+      title: 'Entertaiment',
       wifi: {
         id: 51,
         title: 'WiFi',
