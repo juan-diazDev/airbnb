@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getHostSpaces } from '../../services/spaces';
 import { loadSpaceDetail } from '../../store/action/space';
 import { fetchUserDetail } from '../../store/action/user';
-import Header from '../Header';
 import CardSpaceOffert from './SpaceCard';
 import Footer from '../Footer';
 import './styles.scss';
+import HostHeader from './HostHeader';
 
 const HostHome = () => {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ const HostHome = () => {
 
   return (
     <>
-      <Header />
+      <HostHeader />
       <div className="host-home__main-containenr">
         <div className="card__title-container">
           <h1>My Spaces</h1>
