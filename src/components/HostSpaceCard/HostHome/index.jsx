@@ -30,8 +30,10 @@ const HostHome = () => {
         console.log(error.message);
       }
     };
-    fetchData();
-  }, []);
+    if (_id) {
+      fetchData();
+    }
+  }, [_id]);
 
   return (
     <div>
@@ -44,7 +46,7 @@ const HostHome = () => {
       </Link>
       <button onClick={logOut} type="button"> log out</button>
       {
-        spaces.map((space) => (
+        spaces?.map((space) => (
           <CardSpaceOffert space={space} key={space._id} />
         ))
       }
