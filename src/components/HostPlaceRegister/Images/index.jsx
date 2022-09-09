@@ -1,32 +1,24 @@
-/* eslint-disable no-constant-condition */
-/* eslint-disable no-console */
-/* eslint-disable */
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector} from 'react-redux';
-import swal from 'sweetalert';
+import { useDispatch, useSelector } from 'react-redux';
 import './styles.scss';
+import swal from 'sweetalert';
 
 const Images = () => {
+  const BASE_URL = process.env.REACT_APP_LOCAL_URL;
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-  const [file, setFile] = useState(null);
-  const [img, setImg] = useState();
+  const [img, setImg] = useState([]);
 
-  const handleChangeFile = (evt) => {
-    setFile(evt.target.files);
-    console.log(evt.target.files);
-  };
-
-  const handleClickUpload = async () => {
+  const handleChangeFile = async (evt) => {
+    const { files } = evt.target;
     const formData = new FormData();
 
-    for (let i= 0; i < file.length; i++){
-      formData.append('files', file[i])
+    for (let i = 0; i < files.length; i += 1) {
+      formData.append('files', files[i]);
     }
-
 
     const payload = {
       method: 'POST',
@@ -34,31 +26,29 @@ const Images = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/api/upload/files', payload);
+      const response = await fetch(`${BASE_URL}/api/upload/files`, payload);
       const data = await response.json();
       if (data.length) {
-        const urls = data.map( (img) => {
-          return img.url
-        })
+        const urls = data.map((image) => image.url);
         setImg(urls);
       }
-
     } catch (error) {
       console.log(error);
     }
-      swal({
-        title: "Upload success",
-        text: "Your images has been uploaded succesfully",
-        icon: "success",
-        button: "Accept",
-      });
   };
-
-  console.log(img);
 
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, img } });
-    navigate('/Title');
+    if (img.length > 1) {
+      navigate('/Title');
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'You have to upload at least one image',
+        icon: 'error',
+        button: 'Upload',
+      });
+    }
   };
 
   return (
@@ -77,14 +67,16 @@ const Images = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
-            Save and exit
-          </button>
+          <Link to="/">
+            <button className="header__save" type="button">
+              Exit
+            </button>
+          </Link>
         </div>
       </div>
       <div className="container__question3">
         <h1 className="question__title">
-          Next, let's add some photos of your place
+          Next, let`s add some photos of your place
         </h1>
       </div>
       <div className="container__options-fixed3">
@@ -97,16 +89,17 @@ const Images = () => {
                 alt="imgIconUpload"
               />
             </div>
-            <h2 className="upload__title">Drag your photos here<br/>or click to</h2>
+            <h2 className="upload__title">Drag your photos here<br />or click to</h2>
             <div className="select__button-container">
               <input type="file" name="file" id="file" onChange={handleChangeFile} multiple accept="image/*" />
-              <button className="select__button" type="button"> Select your images</button>
             </div>
-            <h3 className="upload__description">Add at least 5 photos</h3>
-            <div className='upload_files'>
-              { file ? <p>You have selected {file.length} images, click down below to upload!</p>: <p>You have not selected any files yet</p> }
+            <div className="upload_files">
+              {
+                img.length > 1
+                  ? <p className="p">Your images has been successfully uploaded!</p>
+                  : null
+              }
             </div>
-            <button className="upload__button" type="button" onClick={handleClickUpload}>Upload your images</button>
           </div>
         </div>
       </div>
@@ -117,11 +110,9 @@ const Images = () => {
             Back
           </button>
         </Link>
-        <Link to="/Title">
-          <button onClick={handleNext} className="button__nextstep" type="button">
-            Next
-          </button>
-        </Link>
+        <button onClick={handleNext} className="button__nextstep" type="button">
+          Next
+        </button>
       </div>
     </div>
   );

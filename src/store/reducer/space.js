@@ -5,6 +5,7 @@ import {
   SET_SPACE_DETAIL,
   FILTER_SPACE,
   DELETE_HOST_SPACE,
+  GET_DETAILS,
 } from '../constants/space';
 
 function spaceReducer(state = {}, action = {}) {
@@ -28,6 +29,11 @@ function spaceReducer(state = {}, action = {}) {
       return {
         ...state,
         spaceDetail: action.payload,
+      };
+    case GET_DETAILS:
+      return {
+        ...state,
+        details: action.payload,
       };
     case FILTER_SPACE: {
       const query = action.payload.toLowerCase();

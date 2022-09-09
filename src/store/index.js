@@ -13,6 +13,7 @@ const initialState = {
     spacesHostList: [],
     spaceIdToDelete: '',
     spaceDetail: null,
+    details: [],
     query: '',
     filteredSpaces: [],
   },

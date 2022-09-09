@@ -1,12 +1,54 @@
-@import '../../sass_styles/_fonts.scss';
 @import '../../sass_styles/_colors.scss';
+@import '../../sass_styles/_fonts.scss';
 
 .space-link {
   text-decoration: none;
   color: $dark-gray;
 }
 
-.mainSection {
+.card__delete__button {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 10;
+  border-radius: 50%;
+  border: 1px solid $dark-gray;
+  background-color: transparent;
+  color: $dark-gray;
+  padding: 7px 10px;
+  font-family: nunito-bold;
+  &:hover {
+    color: $pink;
+    border: 1px solid $pink;
+    font-family: nunito-bold;
+    cursor: pointer;
+  }
+}
+
+.host-home__main-containenr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-width: 100%;
+  margin-bottom: 35px;
+  .card__title-container {
+    width: 100%;
+    display: flex;
+    height: min-content;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    h1 {
+      font-family: nunito-extra-bold;
+      color: $dark-gray;
+      margin-left: 100px;
+    }
+  }
+}
+
+.host__mainSection {
   padding: 0px;
   margin-right: 0px;
   display: flex;
@@ -25,6 +67,7 @@
     justify-content: center;
     align-items: center;
     div {
+      position: relative;
       margin-top: 15px;
       width: 90%;
       height: 100%;
@@ -39,6 +82,9 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         object-fit: cover;
+        &:hover {
+          opacity: .8;
+        }
       }
     }
   }
@@ -79,15 +125,11 @@
 }
 
 @media (min-width: 760px) {
-  .mainSection {
+  .host__mainSection {
     width: 24%;
-    margin: 20px 5px;
+    margin: 00px 20px;
     .card__image-container {
       width: 100%;
-      &:hover {
-        cursor: pointer;
-        opacity: .8;
-      }
     }
     .info-container {
       width: 90%;

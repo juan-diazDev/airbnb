@@ -12,7 +12,7 @@ const CardSpace = ({ space }) => (
             <Link className="space-link" to={`/SpaceDetail/${space._id}`} key={space._id}>
               <div className="card__image-container">
                 <div>
-                  <img className="card__image__image" src={space.img} alt={space.title} />
+                  <img className="card__image__image" src={space.img[0]} alt={space.title} />
                 </div>
               </div>
             </Link>

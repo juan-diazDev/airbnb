@@ -1,4 +1,5 @@
 @import '../../../sass_styles/_fonts.scss';
+@import '../../../sass_styles/_colors.scss';
 
 .form__header4 {
   display: flex;
@@ -140,7 +141,7 @@
 
 
 .progress4 {
-  border-top: 2px solid black;
+  border-top: 2px solid $pink;
   position: absolute;
   left: 0%;
   right: 50%;
@@ -155,7 +156,7 @@
   margin-left: 24px;
   border-radius: 10px;
   border: none;
-  background-color: #222222;
+  background-color: $dark-gray;
 }
 
 @media (min-width: 1200px) {

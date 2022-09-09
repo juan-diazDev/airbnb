@@ -27,17 +27,12 @@ const Menu = () => {
                   <li><Link to="/Account" className="menu__item__link" aria-disabled>Hello, {profile.name}</Link></li>
                   <li><Link to="/" className="menu__item__link" onClick={handleClick}>Log out</Link></li>
                   <li><Link to="/PropertyTypeGroup" className="menu__item__link">Your reservation</Link></li>
-                  <hr className="menu__line" />
-                  <li className="menu__item__link">Contact</li>
                 </ul>
               )
               : (
                 <ul className="menu__item">
                   <li><Link to="/Signupform" className="menu__item__link">Sing up</Link></li>
                   <li><Link to="/Loginform" className="menu__item__link">Log in</Link></li>
-                  <li><Link to="/PropertyTypeGroup" className="menu__item__link">Host your home</Link></li>
-                  <hr className="menu__line" />
-                  <li className="menu__item__link">Contact</li>
                 </ul>
               )
           }

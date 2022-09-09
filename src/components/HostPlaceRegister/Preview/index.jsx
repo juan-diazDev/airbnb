@@ -1,56 +1,36 @@
-/* eslint-disable */
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 import { createSpace } from '../../../services/spaces';
 import './styles.scss';
 
-const Preview = () =>{
+const Preview = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
 
-  const spaceSubmit = {
-    title: spaceRegister.title,
-    img: spaceRegister.img,
-    price: spaceRegister.price,
-    howMany: spaceRegister.floorPlanState.guest,
-    coordinates:{
-      latitude: spaceRegister.coordinates.latitude,
-      longitude: spaceRegister.coordinates.longitude,
-    },
-    address: {
-      street: spaceRegister.address.street,
-      city: spaceRegister.address.city,
-      state:spaceRegister.address.state,
-      country: spaceRegister.address.country,
-      zipCode: spaceRegister.address.zipCode,
-    },
-    type: spaceRegister.propertyType,
-    privacyType: spaceRegister.Privacy.privacyType,
-    amenities: {
-      beds: spaceRegister.floorPlanState.beds,
-      bedrooms: spaceRegister.floorPlanState.bedrooms,
-      bathrooms: spaceRegister.floorPlanState.bathrooms,
-      kitchen: spaceRegister.amenitie.Kitchen,
-      bathroom: spaceRegister.amenitie.Bathroom,
-      bedroomAndLaundry: spaceRegister.amenitie['Bedroom and loundry'],
-      facilities: spaceRegister.amenitie.Bathroom,
-      entertainment: spaceRegister.amenitie.Entertainment,
-    },
-    description: spaceRegister.description,
-  };
+  const {
+    price,
+    description,
+    title,
+    img,
+  } = spaceRegister;
 
   const handlerSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createSpace(spaceSubmit);
-      navigate('/HostSpacesAdmin');
+      const newSpace = await createSpace(spaceRegister);
+      if (newSpace) {
+        navigate('/');
+      }
     } catch (error) {
-      console.log(error);
+      swal({
+        title: 'Error!',
+        text: error.message,
+        icon: 'error',
+        button: 'Close',
+      });
     }
   };
-
-  console.log('arreglofinal', spaceSubmit);
 
   return (
     <div>
@@ -68,9 +48,11 @@ const Preview = () =>{
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
-            Save and exit
-          </button>
+          <Link to="/">
+            <button className="header__save" type="button">
+              Exit
+            </button>
+          </Link>
         </div>
       </div>
       <div className="container__question4">
@@ -81,7 +63,14 @@ const Preview = () =>{
       <div className="container__options-fixed4">
         <div className="container__options-scroll5">
           <div className="container__preview">
-            <p />
+            <div className="card__image-container">
+              <img className="card__image__image" src={img[0]} alt={title} />
+            </div>
+            <div className="info-container">
+              <div className="card__title"><b>{title}</b></div>
+              <p className="card__description">{description}</p>
+              <div className="card__price"> ${price} <span>night</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -92,12 +81,12 @@ const Preview = () =>{
             Back
           </button>
         </Link>
-        <button onClick={handlerSubmit} className="button__savelisting" type="button">
+        <button onClick={handlerSubmit} className="button__savelisting" type="submit">
           Save your listing
         </button>
       </div>
     </div>
   );
-}
+};
 
 export default Preview;
