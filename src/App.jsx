@@ -19,7 +19,7 @@ import Preview from './components/HostPlaceRegister/Preview';
 import AccountVerfication from './pages/VerifyAccount/index';
 import CheckoutCard from './pages/CheckoutCard';
 import HostSpacesAdmin from './pages/HostSpacesAdmin';
-import HostHome from './components/HostSpaceCard/HostHome';
+import HostHome from './components/HostSpaceCard';
 import UpdatePhoto from './components/ProfilePage/UploadPhoto';
 import ChangePassword from './components/AccountPage/ChangePassword';
 
