@@ -48,9 +48,11 @@ const Preview = () => {
           <button className="header__help" type="button">
             Help
           </button>
-          <button className="header__save" type="button">
-            Save and exit
-          </button>
+          <Link to="/">
+            <button className="header__save" type="button">
+              Exit
+            </button>
+          </Link>
         </div>
       </div>
       <div className="container__question4">
