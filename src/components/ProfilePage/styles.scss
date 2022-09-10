@@ -48,6 +48,7 @@
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    object-fit: cover
   }
   .profile__edit{
     display: flex;
@@ -191,6 +192,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
   }
   .profile__editProfilePic-bigSc{
     color: black;

@@ -73,7 +73,7 @@ const ProfilePage = () => {
               <span className="profile__joinedinfo">Joined in {user?.createdAt}</span>
               <div className="profile__edit">
                 <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
-                <Link to="/Profile/Updatephoto">
+                <Link to="/profile/updatephoto">
                   <button className="profile_editButton" type="button"> Update Photo </button>
                 </Link>
               </div>
@@ -141,7 +141,7 @@ const ProfilePage = () => {
           <div className="profile__leftContainer-bigSc">
             <div className="profile__profilePic-container-bigSc">
               <img src={user.avatar} className="profile__profilePic-biSc" alt="profilepic" />
-              <Link to="/Profile/Updatephoto">
+              <Link to="/profile/updatephoto">
                 <button className="profile_editButton" type="button"> Update Photo </button>
               </Link>
             </div>

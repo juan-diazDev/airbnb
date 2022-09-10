@@ -42,7 +42,7 @@ const FloorPlan = () => {
         button: 'Offer!',
       });
     } else {
-      navigate('/Amenities');
+      navigate('/amenities');
     }
   };
 
@@ -114,7 +114,7 @@ const FloorPlan = () => {
       </div>
       <div className="container__button-step">
         <div className="progress3" />
-        <Link to="/Location">
+        <Link to="/location">
           <button className="button__backstep" type="button">
             Back
           </button>

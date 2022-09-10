@@ -5,7 +5,7 @@ const Description = ({ details }) => (
     <section className="description__type__main__container">
       <div className="description__host__type-container">
         <div className="description__host__type__icon-container">
-          <img className="description__host__type__icon" src={details?.host?.avatar} alt="Ranch" />
+          <img className="description__host__type__icon" src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660015567/images/Amenities/PropertyTypeGroup/House_xrdon4.png" alt="Ranch" />
         </div>
         <p className="description__host__type__text">{details?.type}</p>
       </div>

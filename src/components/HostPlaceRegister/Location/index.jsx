@@ -17,7 +17,7 @@ const Location = () => {
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, address } });
     if (address !== {}) {
-      navigate('/FloorPlan');
+      navigate('/floor-plan');
     } else {
       swal({
         title: 'Error!',
@@ -97,7 +97,7 @@ const Location = () => {
       </div>
       <div className="container__button-step">
         <div className="progress2" />
-        <Link to="/PrivacyType">
+        <Link to="/privacy-type">
           <button className="button__backstep" type="button">
             Back
           </button>

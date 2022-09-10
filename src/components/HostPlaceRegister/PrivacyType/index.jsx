@@ -17,7 +17,7 @@ const PrivacyType = () => {
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, privacy } });
     if (privacy !== '') {
-      navigate('/Location');
+      navigate('/location');
     } else {
       swal({
         title: 'Error!',
@@ -63,7 +63,7 @@ const PrivacyType = () => {
       </div>
       <div className="container__button-step">
         <div className="progress1" />
-        <Link to="/PropertyTypeGroup">
+        <Link to="/property-type-group">
           <button className="button__backstep" type="button">
             Back
           </button>

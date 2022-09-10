@@ -20,7 +20,7 @@ const Footer = () => {
           profile
             ? <AccountNavbar />
             : (
-              <Link to="/Loginform">
+              <Link to="/login-form">
                 <button type="button" className="footer__call-to-action">
                   <strong>Log-in</strong>
                 </button>
@@ -45,17 +45,17 @@ const Footer = () => {
                   <Link to="/" onClick={handleClick}>Log-out</Link>
                 </div>
                 <div>
-                  <Link to="/Account">Profile</Link>
+                  <Link to="/account">Profile</Link>
                 </div>
               </div>
             )
             : (
               <div className="footer__right-container">
                 <div>
-                  <Link to="/Loginform">Log-in</Link>
+                  <Link to="/login-form">Log-in</Link>
                 </div>
                 <div>
-                  <Link to="/Signupform">Sing-up</Link>
+                  <Link to="/signup-form">Sing-up</Link>
                 </div>
               </div>
             )

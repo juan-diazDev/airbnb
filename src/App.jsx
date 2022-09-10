@@ -27,28 +27,28 @@ import GuestReservations from './components/GuestReservations/GuestReservations'
 const App = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/Loginform" element={<Loginform />} />
-    <Route path="/Signupform" element={<Signupform />} />
-    <Route path="/SpaceDetail/:_id" element={<SpaceDetail />} />
-    <Route path="/Account" element={<Account />} />
-    <Route path="/Profile" element={<ProfilePage />} />
-    <Route path="/PropertyTypeGroup" element={<PropertyTypeGroup />} />
-    <Route path="/PrivacyType" element={<PrivacyType />} />
-    <Route path="/Location" element={<Location />} />
-    <Route path="/FloorPLan" element={<FloorPlan />} />
-    <Route path="/Amenities" element={<Amenities />} />
-    <Route path="/Images" element={<Images />} />
-    <Route path="/Title" element={<Title />} />
-    <Route path="/Description" element={<Description />} />
-    <Route path="/Price" element={<Price />} />
-    <Route path="/Preview" element={<Preview />} />
-    <Route path="/verifyAccount/:token" element={<AccountVerfication />} />
-    <Route path="/verifyAccount" element={<AccountVerfication />} />
-    <Route path="/Payments" element={<CheckoutCard />} />
-    <Route path="/HostSpacesAdmin" element={<HostSpacesAdmin />} />
-    <Route path="/HostHome" element={<HostHome />} />
-    <Route path="/Profile/Updatephoto" element={<UpdatePhoto />} />
-    <Route path="/Account/ChangePassword" element={<ChangePassword />} />
+    <Route path="/login-form" element={<Loginform />} />
+    <Route path="/signup-form" element={<Signupform />} />
+    <Route path="/space-detail/:_id" element={<SpaceDetail />} />
+    <Route path="/account" element={<Account />} />
+    <Route path="/profile" element={<ProfilePage />} />
+    <Route path="/property-type-group" element={<PropertyTypeGroup />} />
+    <Route path="/privacy-type" element={<PrivacyType />} />
+    <Route path="/location" element={<Location />} />
+    <Route path="/floor-plan" element={<FloorPlan />} />
+    <Route path="/amenities" element={<Amenities />} />
+    <Route path="/images" element={<Images />} />
+    <Route path="/title" element={<Title />} />
+    <Route path="/description" element={<Description />} />
+    <Route path="/price" element={<Price />} />
+    <Route path="/preview" element={<Preview />} />
+    <Route path="/verify-account/:token" element={<AccountVerfication />} />
+    <Route path="/verify-account" element={<AccountVerfication />} />
+    <Route path="/payments" element={<CheckoutCard />} />
+    <Route path="/host-spaces-admin" element={<HostSpacesAdmin />} />
+    <Route path="/host-home" element={<HostHome />} />
+    <Route path="/profile/updatephoto" element={<UpdatePhoto />} />
+    <Route path="/account/change-password" element={<ChangePassword />} />
     <Route path="/guest-booking" element={<GuestReservations />} />
   </Routes>
 );

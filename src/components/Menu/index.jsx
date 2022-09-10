@@ -31,8 +31,8 @@ const Menu = () => {
               )
               : (
                 <ul className="menu__item">
-                  <li><Link to="/Signupform" className="menu__item__link">Sing up</Link></li>
-                  <li><Link to="/Loginform" className="menu__item__link">Log in</Link></li>
+                  <li><Link to="/signup-form" className="menu__item__link">Sing up</Link></li>
+                  <li><Link to="/login-form" className="menu__item__link">Log in</Link></li>
                 </ul>
               )
           }

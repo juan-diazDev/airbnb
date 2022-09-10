@@ -17,7 +17,7 @@ const Description = () => {
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, description } });
     if (description !== '') {
-      navigate('/Price');
+      navigate('/price');
     } else {
       swal({
         title: 'Error!',
@@ -71,7 +71,7 @@ const Description = () => {
       </div>
       <div className="container__button-step">
         <div className="progress7" />
-        <Link to="/Title">
+        <Link to="/title">
           <button className="button__backstep" type="button">
             Back
           </button>

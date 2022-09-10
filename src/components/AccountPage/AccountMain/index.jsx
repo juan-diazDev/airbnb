@@ -24,7 +24,7 @@ const AccountMain = () => {
         <h1 className="account-acctext--bigsc"> Account </h1>
         <span className="account-top-name--bigsc">{user.name} {user.lastName},</span>
         <span className="account-top-email--bigsc"> {user.email}. </span>
-        <Link to="/Profile" className="account__showprofile"> Go to profile </Link>
+        <Link to="/profile" className="account__showprofile"> Go to profile </Link>
       </div>
       <div className="account__top-container">
         <div className="account__profilePic-container">
@@ -34,7 +34,7 @@ const AccountMain = () => {
           <h1 className="account__name"> {user.name} </h1>
         </div>
         <div className="account__showprofilecontainer">
-          <Link to="/Profile" className="account__showprofile"> Show Profile </Link>
+          <Link to="/profile" className="account__showprofile"> Show Profile </Link>
         </div>
       </div>
       <div className="account__main-container">
@@ -42,7 +42,7 @@ const AccountMain = () => {
           <div className="account__mainLogo-container">
             <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716563/images/Account/Userlogo_pyxlip.png" className="account__mainLogo" alt="userlogo" />
           </div>
-          <Link to="/Profile">
+          <Link to="/profile">
             <div className="account__mainText-container">
               <div className="account__mainText">
                 Personal info
@@ -68,7 +68,7 @@ const AccountMain = () => {
             Review payments, payouts, coupons, gift cards, and taxes
           </div>
         </div>
-        <Link to="/Account/ChangePassword">
+        <Link to="/account/change-password">
           <div className="account__mainDivision-container">
             <div className="account__mainLogo-container">
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716390/images/Account/Privacy_ldzsl1.png" className="account__mainLogo" alt="userlogo" />

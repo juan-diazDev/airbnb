@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     if (role === 'HOST') {
-      navigate('/HostHome');
+      navigate('/host-home');
     }
   }, []);
   return (

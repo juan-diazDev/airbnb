@@ -73,7 +73,7 @@ const Loginform = () => {
             <div className="Login__divisor">
               <p>or</p>
             </div>
-            <Link to="/Signupform">
+            <Link to="/signup-form">
               <button className="Login__btn__Signin" type="button">
                 <b>Sign up</b>
               </button>
