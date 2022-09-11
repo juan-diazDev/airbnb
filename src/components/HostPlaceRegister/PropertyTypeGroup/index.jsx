@@ -36,7 +36,7 @@ const PropertyTypeGroup = () => {
           <Link to="/">
             <img
               className="logo__img"
-              src="img/LogoIcon/White.png"
+              src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662837/images/LogoIcon/White_r831ni.png"
               alt="airbnbLogo"
             />
           </Link>
