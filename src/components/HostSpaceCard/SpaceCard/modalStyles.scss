@@ -1,0 +1,66 @@
+@import '../../../sass_styles/_colors.scss';
+@import '../../../sass_styles/_fonts.scss';
+
+.modal__button {
+  background-color: $pink;
+  border: none;
+  margin-top: 25px;
+  color: $white;
+  width: 40%;
+  height: 20%;
+  border-radius: 15px;
+  &:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+}
+
+.modal__close__button {
+  font-family: nunito-extra-bold;
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: $pink;
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 1px $light-gray;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal__warning {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    color: $dark-gray;
+    width: 25%;
+    height: 25%;
+    border: 0.5px solid rgba(0,0,0,0.08);
+    box-shadow: 0px -2px 7px 0px rgb(0 0 0 / 10%);
+    border-radius: 25px;
+    background-color: $white;
+    padding: 30px 50px;
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+}
