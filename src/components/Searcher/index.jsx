@@ -19,7 +19,7 @@ const Searcher = () => {
       <button className="searcher__input searcher__input--queri-bgscreen" type="submit">
         <div className="text-conatiner">
           <div className="text1"><strong>Where to?</strong></div>
-          <div className="text2">Anywhere | Anyweek</div>
+          <div className="text2">Choose your favorite conutry</div>
         </div>
         <img
           className="searcher__icon searcher__icon--queri-bgscreen"
