@@ -1,3 +1,6 @@
+@import '../../sass_styles/fonts';
+@import '../../sass_styles/colors';
+
 @media only screen and (max-width: 743px){
   .profile__Container{
     display: block;
@@ -76,7 +79,10 @@
     margin-bottom: 16px;;
   }
 }
-
+.profile__edit-aboutText{
+  border: solid 1px lightgray;
+  border-radius: 3px;
+}
 .profile__icon{
   display: block;
   height: 16px;
@@ -84,10 +90,16 @@
 }
 .profile__editLocation{
   margin-left: 15px;
+  border: solid 1px lightgray;
+  border-radius: 3px;
+  padding: 2px;
 }
 .profile__languajesSelect{
   margin-left: 15px;
-  border: none;
+  border: solid 1px lightgray;
+  padding: 2px;
+  border-radius: 3px;
+  color: #717171;
 }
 .profile__CancelorSave{
   margin-top: 15px;

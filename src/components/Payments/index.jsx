@@ -124,10 +124,12 @@ const Payments = () => {
       <section className="payment__payment-container">
         <h1 className="payment__title">Payment Method</h1>
         <form onSubmit={handleSubmit}>
-          <CardNumberElement className="payment__payment-form" />
-          <div className="payment__payment-form__item">
-            <CardExpiryElement className="payment__payment-form__exp" />
-            <CardCvcElement className="payment__payment-form__cvc" />
+          <div className="payment__inputscontainer">
+            <CardNumberElement className="payment__payment-form" />
+            <div className="payment__payment-form__item">
+              <CardExpiryElement className="payment__payment-form__exp" />
+              <CardCvcElement className="payment__payment-form__cvc" />
+            </div>
           </div>
           <div className="payment__payment-form__country">
             <select name="country" id="country" className="payment__payment-form__select__country">

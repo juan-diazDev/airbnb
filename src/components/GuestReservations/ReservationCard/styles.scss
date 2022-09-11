@@ -66,13 +66,20 @@
   text-overflow: ellipsis;
   overflow-y: hidden;
 }
+.booking__details1{
+  padding-left: 20px;
+  color: $dark_gray;
+  font-family: nunito-extra-bold;
+}
 .booking__details{
   padding-left: 20px;
+  color: $dark_gray
 }
 .booking__price{
   font-family: nunito-extra-bold;
   margin: 10px 0px 21px 18px;
   padding-left: 5px;
+  padding-top: 10px;
   span {
     font-family: nunito-extra-light;
     font-size: .9rem;

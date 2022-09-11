@@ -30,7 +30,6 @@ const GuestReservations = () => {
   return (
     <>
       <Header />
-
       <h2 className="booking__h2">Trips</h2>
       <h3 className="booking__h2">Reservations</h3>
       <main className="booking__homePage">
@@ -38,7 +37,7 @@ const GuestReservations = () => {
           bookingClone.map((booking) => (
             <ReservationCard booking={booking} key={booking._id} />
           ))
-        };
+        }
       </main>
     </>
   );

@@ -184,20 +184,25 @@
       color: $dark-gray
     }
     form {
+      .payment__inputscontainer{
+        display: inline-block;
+        width: 100%;
+      }
       .payment__payment-form {
         border-radius: 15px 15px 0px 0px;
         border: 0.5px solid rgba(0,0,0,0.463);
         border-bottom: none;
-        width: 20.35vw;
+        width: 100%;
         padding: 18px 35px;
+        box-sizing: border-box
       }
       .payment__payment-form__item {
         display: flex;
         flex-direction: row;
-        width: 25vw;
+        width: 100%;
         .payment__payment-form__exp {
           font-size: 1.5rem;
-          width: 50%;
+          width: 100%;
           padding: 18px 35px;
           border: 0.5px solid rgba(0, 0, 0, 0.463);
           border-right: none;
@@ -205,7 +210,7 @@
         }
         .payment__payment-form__cvc {
           font-size: 50px;
-          width: 50%;
+          width: 100%;
           border: 0.5px solid rgba(0,0,0,0.463);
           text-align: center;
           border-bottom-right-radius: 15px;
