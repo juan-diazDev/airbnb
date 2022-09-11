@@ -17,7 +17,7 @@ const HostHeader = () => {
         </Link>
       </section>
       <nav className="hostHeader__menu-container">
-        <Link to="/profile" className="host__space-link">
+        <Link to="/account" className="host__space-link">
           <article className="hostHeader__menu__item">
             Profile
           </article>
