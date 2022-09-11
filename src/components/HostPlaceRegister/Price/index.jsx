@@ -73,6 +73,7 @@ const Price = () => {
             </div>
             <div className="option__pernight">
               <h2 className="pernight__description">Per night</h2>
+              <p className="currency">$ - USD</p>
             </div>
             <div className="option__advice">
               <p className="advice__description">
