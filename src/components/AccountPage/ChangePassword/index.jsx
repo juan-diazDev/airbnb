@@ -42,7 +42,7 @@ const ChangePassword = () => {
               icon: 'success',
             });
             localStorage.clear();
-            navigate('/Loginform');
+            navigate('/login-form');
           } else {
             swal({
               title: 'Error!',
@@ -81,7 +81,7 @@ const ChangePassword = () => {
       <form action="" onSubmit={handleSubmit} className="changePassword__modalContainer">
         <div className="changePassword__currentCancel">
           <h3>Password</h3>
-          <Link to="/Account">
+          <Link to="/account">
             <button type="button" className="changePassword__cancelButton"> Cancel </button>
           </Link>
         </div>

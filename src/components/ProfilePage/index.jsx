@@ -49,6 +49,9 @@ const ProfilePage = () => {
   const refreshPage = () => {
     window.location.reload(true);
   };
+  const joined = new Date(user?.createdAt);
+  const joinedDate = joined.toLocaleDateString();
+  console.log(joinedDate);
 
   return (
     <>
@@ -73,7 +76,7 @@ const ProfilePage = () => {
               <span className="profile__joinedinfo">Joined in {user?.createdAt}</span>
               <div className="profile__edit">
                 <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
-                <Link to="/Profile/Updatephoto">
+                <Link to="/profile/updatephoto">
                   <button className="profile_editButton" type="button"> Update Photo </button>
                 </Link>
               </div>
@@ -141,7 +144,7 @@ const ProfilePage = () => {
           <div className="profile__leftContainer-bigSc">
             <div className="profile__profilePic-container-bigSc">
               <img src={user.avatar} className="profile__profilePic-biSc" alt="profilepic" />
-              <Link to="/Profile/Updatephoto">
+              <Link to="/profile/updatephoto">
                 <button className="profile_editButton" type="button"> Update Photo </button>
               </Link>
             </div>
@@ -171,7 +174,7 @@ const ProfilePage = () => {
               <h2 className="profile__aboutText">About</h2>
               {
               editProfile
-                ? <textarea id="about" name="about" rows="6" cols="60" onChange={handleChange} />
+                ? <textarea className="profile__edit-aboutText" id="about" name="about" rows="6" cols="60" onChange={handleChange} />
                 : <span className="profile__aboutContent">{user.about}.</span>
               }
               <div className="profile__sectionInfo">
@@ -188,7 +191,8 @@ const ProfilePage = () => {
               editProfile
                 ? (
                   <div className="profile__languajes">
-                    <select type="button" name="languajes" className="profile__languajesSelect" onChange={handleChange}>
+                    <select type="button" name="languajes" className="profile__languajesSelect" defaultValue="" onChange={handleChange}>
+                      <option value="" disabled> choose your languaje </option>
                       <option value="English">English</option>
                       <option value="Spanish">Spanish</option>
                     </select>

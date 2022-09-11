@@ -74,7 +74,7 @@ const UpdatePhoto = () => {
     } catch (error) {
       console.log(error);
     }
-    navigate('/Profile');
+    navigate('/profile');
   };
 
   return (
@@ -82,7 +82,7 @@ const UpdatePhoto = () => {
       <Header />
       <form className="profile__uploadPhotoform">
         <nav className="uploadPhoto__Navbar">
-          <Link to="/Profile" className="profile__uploadPhotoBack">Profile</Link>
+          <Link to="/profile" className="profile__uploadPhotoBack">Profile</Link>
           <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="uploadPhoto__nextbar" alt="nextBar" />
           <span>Profile photos</span>
         </nav>

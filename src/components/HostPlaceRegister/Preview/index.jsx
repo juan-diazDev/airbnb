@@ -76,7 +76,7 @@ const Preview = () => {
       </div>
       <div className="container__button-step">
         <div className="progress9" />
-        <Link to="/Price">
+        <Link to="/price">
           <button className="button__backstep" type="button">
             Back
           </button>

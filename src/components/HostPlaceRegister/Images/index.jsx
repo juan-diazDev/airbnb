@@ -40,7 +40,7 @@ const Images = () => {
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, img } });
     if (img.length > 1) {
-      navigate('/Title');
+      navigate('/title');
     } else {
       swal({
         title: 'Error!',
@@ -105,7 +105,7 @@ const Images = () => {
       </div>
       <div className="container__button-step">
         <div className="progress5" />
-        <Link to="/Amenities">
+        <Link to="/amenities">
           <button className="button__backstep" type="button">
             Back
           </button>

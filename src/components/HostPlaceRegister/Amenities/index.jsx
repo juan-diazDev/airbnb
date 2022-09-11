@@ -11,7 +11,7 @@ const Amenities = () => {
 
   const handleNext = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister /* , amenitie */ } });
-    navigate('/Images');
+    navigate('/images');
   };
 
   return (
@@ -47,7 +47,7 @@ const Amenities = () => {
       </div>
       <div className="container__button-step">
         <div className="progress4" />
-        <Link to="/FloorPlan">
+        <Link to="/floor-plan">
           <button className="button__backstep" type="button">
             Back
           </button>

@@ -26,13 +26,13 @@ const Menu = () => {
                 <ul className="menu__item">
                   <li><Link to="/Account" className="menu__item__link" aria-disabled>Hello, {profile.name}</Link></li>
                   <li><Link to="/" className="menu__item__link" onClick={handleClick}>Log out</Link></li>
-                  <li><Link to="/guest-booking" className="menu__item__link">Your reservation</Link></li>
+                  <li><Link to="/guest-booking" className="menu__item__link">Your reservations</Link></li>
                 </ul>
               )
               : (
                 <ul className="menu__item">
-                  <li><Link to="/Signupform" className="menu__item__link">Sing up</Link></li>
-                  <li><Link to="/Loginform" className="menu__item__link">Log in</Link></li>
+                  <li><Link to="/signup-form" className="menu__item__link">Sing up</Link></li>
+                  <li><Link to="/login-form" className="menu__item__link">Log in</Link></li>
                 </ul>
               )
           }

@@ -53,9 +53,9 @@ const CheckOutCard = ({
 
     dispatch(loadCheckoutForm(checkout));
     if (token) {
-      navigate('/Payments');
+      navigate('/payments');
     } else {
-      navigate('/Loginform');
+      navigate('/login-form');
     }
   };
 

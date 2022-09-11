@@ -10,10 +10,11 @@ const ReservationCard = ({ booking }) => (
     <div className="booking__info-container">
       <div className="booking__title"><b>{booking?.spaceId?.title}</b></div>
       <p className="booking__description">{booking?.spaceId?.description}</p>
-      <p className="booking__details"> {booking?.adults} Adults</p>
-      <p className="booking__details"> {booking?.children} Children</p>
-      <p className="booking__details"> {booking?.pets} Pets</p>
-      <div className="booking__price"> {booking?.price} <span>Total</span></div>
+      <p className="booking__details1">You choose</p>
+      <span className="booking__details"> {booking?.adults} Adults</span>
+      <span className="booking__details"> {booking?.children} Children</span>
+      <span className="booking__details"> {booking?.pets} Pets</span>
+      <div className="booking__price">$USD {booking?.price} <span>Total</span></div>
     </div>
   </div>
 );

@@ -14,7 +14,7 @@ const Signupform = () => {
     e.preventDefault();
     try {
       await signup(signupform);
-      navigate('/verifyAccount');
+      navigate('/verify-account');
     } catch (error) {
       console.log(error);
     }

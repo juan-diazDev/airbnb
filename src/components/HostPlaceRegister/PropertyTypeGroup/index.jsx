@@ -18,7 +18,7 @@ const PropertyTypeGroup = () => {
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
 
     if (propertyType !== '') {
-      navigate('/PrivacyType');
+      navigate('/privacy-type');
     } else {
       swal({
         title: 'Error!',

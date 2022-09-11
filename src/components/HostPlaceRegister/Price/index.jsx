@@ -18,7 +18,7 @@ const Price = () => {
     e.preventDefault();
     dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, price } });
     if (price !== 0) {
-      navigate('/Preview');
+      navigate('/preview');
     } else {
       swal({
         title: 'Error!',
@@ -88,7 +88,7 @@ const Price = () => {
         </div>
         <div className="container__button-step">
           <div className="progress8" />
-          <Link to="/Description">
+          <Link to="/description">
             <button className="button__backstep" type="button">
               Back
             </button>

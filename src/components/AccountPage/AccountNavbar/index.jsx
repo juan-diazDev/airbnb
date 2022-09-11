@@ -15,9 +15,9 @@ const AccountNavbar = () => (
       </Link>
     </div>
     <div className="navbar__icons">
-      <Link to="/Profile">
+      <Link to="/profile">
         <button className="navbar__buttons" type="button">
-          <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659736178/images/Account/Pink-user_atwtje.png" className="navbar__profileIcon" alt="profilehicon" />
+          <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659736178/images/Account/Pink-user_atwtje.png" className="navbar__profileIcon" alt="profileicon" />
         </button>
       </Link>
     </div>
