@@ -49,9 +49,11 @@ const ProfilePage = () => {
   const refreshPage = () => {
     window.location.reload(true);
   };
+
   const joined = new Date(user?.createdAt);
   const joinedDate = joined.toLocaleDateString();
-  console.log(joinedDate);
+  const newDate = joinedDate.split('/')[2];
+  console.log(newDate);
 
   return (
     <>
@@ -73,7 +75,7 @@ const ProfilePage = () => {
             </div>
             <div className="profile__userinfo">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user?.createdAt}</span>
+              <span className="profile__joinedinfo">Joined in {newDate}</span>
               <div className="profile__edit">
                 <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
                 <Link to="/profile/updatephoto">
@@ -167,7 +169,7 @@ const ProfilePage = () => {
           <div className="profile__rightContainer-bigSc">
             <div className="profile__userinfo-bigSc">
               <h2>Hi, I’m {user.name}</h2>
-              <span className="profile__joinedinfo">Joined in {user?.createdAt} </span>
+              <span className="profile__joinedinfo">Joined in {newDate} </span>
               <button className="profile_editButton" type="button" onClick={handleClick}> Edit profile </button>
             </div>
             <section className="profile__Section-container2-bigSc">
