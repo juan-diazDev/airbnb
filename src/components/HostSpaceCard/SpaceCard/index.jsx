@@ -43,7 +43,7 @@ const CardSpaceOffert = ({ space }) => {
       <Modal open={isOpen}>
         <button type="button" className="modal__close__button" onClick={close}><strong>X</strong></button>
         <h2>Are u sure?</h2>
-        <p>Do you really want to delete this</p>
+        <p>Do you really want to delete this space?</p>
         <button className="modal__button" type="button" onClick={handleDelete}>Delete</button>
       </Modal>
     </>

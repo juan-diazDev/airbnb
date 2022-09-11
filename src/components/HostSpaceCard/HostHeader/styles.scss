@@ -1,6 +1,11 @@
 @import '../../../sass_styles/_colors.scss';
 @import '../../../sass_styles/_fonts.scss';
 
+.host__space-link {
+  text-decoration: none;
+  color: $dark-gray;
+}
+
 .hostHeader__main-container {
   color: $dark-gray;
   width: 100%;

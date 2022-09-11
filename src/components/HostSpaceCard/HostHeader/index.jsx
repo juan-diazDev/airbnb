@@ -12,17 +12,17 @@ const HostHeader = () => {
   return (
     <main className="hostHeader__main-container">
       <section className="hostHeader__image-container">
-        <Link to="/host-home">
+        <Link to="/host-home" className="host__space-link">
           <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662807/images/Logo/Pink_lmr4oj.png" alt="logo" />
         </Link>
       </section>
       <nav className="hostHeader__menu-container">
-        <Link to="/profile">
+        <Link to="/profile" className="host__space-link">
           <article className="hostHeader__menu__item">
             Profile
           </article>
         </Link>
-        <Link to="/property-type-group">
+        <Link to="/property-type-group" className="host__space-link">
           <article className="hostHeader__menu__item">
             Create
           </article>
