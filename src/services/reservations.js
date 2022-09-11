@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_LOCAL_URL;
+const BASE_URL = process.env.REACT_APP_DB_URL;
 
 export async function createBooking(bookSpace) {
   const token = localStorage.getItem('token');
