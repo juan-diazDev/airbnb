@@ -53,7 +53,6 @@ const ProfilePage = () => {
   const joined = new Date(user?.createdAt);
   const joinedDate = joined.toLocaleDateString();
   const newDate = joinedDate.split('/')[2];
-  console.log(newDate);
 
   return (
     <>
