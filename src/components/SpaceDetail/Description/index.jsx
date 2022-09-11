@@ -23,7 +23,7 @@ const Description = ({ details }) => (
     <section className="description__host__info-container">
       <div className="description__host__info__text-container">
         <h3 className="host__info__text__name">Place Hosted by {details?.host?.name}</h3>
-        <p className="host__info__text__amenities">{details?.howMany} guests · {details?.amenities?.bedrooms} bedrooms · {details?.amenities?.beds} beds ·{details?.amenities?.bathrooms} bathroom</p>
+        <p className="host__info__text__amenities">{details?.floorPlan?.guest} guests · {details?.floorPlan.bedrooms} bedrooms · {details?.floorPlan?.beds} beds ·{details?.floorPlan?.bathrooms} bathroom</p>
       </div>
       <div className="description__host__info__imgae-container">
         <img className="description__host__info__image" src={details?.host?.avatar} alt="hosts-profile" />
