@@ -26,6 +26,7 @@ const Payments = () => {
   const stripe = useStripe();
   const elements = useElements();
   const navigate = useNavigate();
+  console.log(checkoutForm);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
