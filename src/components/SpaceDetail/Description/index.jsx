@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Amenities from '../Amenities';
 
 const Description = ({ details }) => (
   <div className="spaceDetail__bg-screen-container">
@@ -38,17 +39,7 @@ const Description = ({ details }) => (
     </section>
 
     <hr className="spaceDetail__line-separation" />
-    <section className="spaceDetail__amenities-container">
-      <div className="spaceDetail__amenities__kitchen-container">
-        <h3 className="spaceDetail__amenities__kitchen">Kitchen</h3>
-        <div className="spaceDetail__amenities__kitchen__icon-container">
-          <div>
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr className="spaceDetail__line-separation" />
+    <Amenities />
   </div>
 );
 Description.propTypes = {
