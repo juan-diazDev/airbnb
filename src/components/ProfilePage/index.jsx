@@ -49,6 +49,9 @@ const ProfilePage = () => {
   const refreshPage = () => {
     window.location.reload(true);
   };
+  const joined = new Date(user?.createdAt);
+  const joinedDate = joined.toLocaleDateString();
+  console.log(joinedDate);
 
   const joined = new Date(user?.createdAt);
   const joinedDate = joined.toLocaleDateString();
