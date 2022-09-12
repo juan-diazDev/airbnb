@@ -5,7 +5,7 @@ import './styles.scss';
 import swal from 'sweetalert';
 
 const Images = () => {
-  const BASE_URL = process.env.REACT_APP_LOCAL_URL;
+  const BASE_URL = process.env.REACT_APP_DB_URL;
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
