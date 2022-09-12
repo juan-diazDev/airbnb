@@ -38,22 +38,22 @@ const AccountMain = () => {
         </div>
       </div>
       <div className="account__main-container">
-        <div className="account__mainDivision-container">
-          <div className="account__mainLogo-container">
-            <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716563/images/Account/Userlogo_pyxlip.png" className="account__mainLogo" alt="userlogo" />
-          </div>
-          <Link to="/profile">
+        <Link to="/profile">
+          <div className="account__mainDivision-container">
+            <div className="account__mainLogo-container">
+              <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716563/images/Account/Userlogo_pyxlip.png" className="account__mainLogo" alt="userlogo" />
+            </div>
             <div className="account__mainText-container">
               <div className="account__mainText">
                 Personal info
               </div>
               <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1660060560/images/Next%20Arrow/Next_mguuj8.png" className="account__nextbar" alt="nextBar" />
             </div>
-          </Link>
-          <div className="account__mainText2">
-            Provide personal details and how we can reach you
+            <div className="account__mainText2">
+              Provide personal details and how we can reach you
+            </div>
           </div>
-        </div>
+        </Link>
         <div className="account__mainDivision-container">
           <div className="account__mainLogo-container">
             <img src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659716390/images/Account/Credit-card_tnxeqz.png" className="account__mainLogo" alt="userlogo" />

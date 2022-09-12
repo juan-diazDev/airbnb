@@ -193,7 +193,7 @@ const ProfilePage = () => {
                 ? (
                   <div className="profile__languajes">
                     <select type="button" name="languajes" className="profile__languajesSelect" defaultValue="" onChange={handleChange}>
-                      <option value="" disabled> choose your languaje </option>
+                      <option value="" disabled> choose your language </option>
                       <option value="English">English</option>
                       <option value="Spanish">Spanish</option>
                     </select>
