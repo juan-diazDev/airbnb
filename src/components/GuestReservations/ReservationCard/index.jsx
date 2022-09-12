@@ -6,6 +6,9 @@ const ReservationCard = ({ booking }) => {
   const arriveDate2 = arriveDate.toLocaleDateString();
   const departureDate = new Date(booking?.departure);
   const departureDate2 = departureDate.toLocaleDateString();
+  const nights = ((departureDate - arriveDate) / (1000 * 60 * 60 * 24));
+  const price = booking?.spaceId?.price;
+  const totalPrice = (nights * price);
 
   return (
     <div className="booking__mainSection ">
@@ -22,7 +25,7 @@ const ReservationCard = ({ booking }) => {
         <p className="booking__details1">Your dates:</p>
         <p className="booking__details">Arrive date: {arriveDate2}</p>
         <p className="booking__details">Departure date: {departureDate2}</p>
-        <p className="booking__price">$USD {booking?.price} <span>Total</span></p>
+        <p className="booking__price">$USD {totalPrice} <span>Total</span></p>
       </div>
     </div>
   );
