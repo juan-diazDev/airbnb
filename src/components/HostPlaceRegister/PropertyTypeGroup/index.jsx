@@ -8,16 +8,16 @@ const PropertyTypeGroup = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [propertyType, setPropertyType] = useState('');
+  const [type, setPropertyType] = useState('');
 
   const handleClick = (e) => {
     setPropertyType(e.target.value);
   };
 
   const handleNext = () => {
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, propertyType } });
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, type } });
 
-    if (propertyType !== '') {
+    if (type !== '') {
       navigate('/privacy-type');
     } else {
       swal({

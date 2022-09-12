@@ -5,6 +5,7 @@ import ImageCarousel from './ImageCarousel';
 import Titles from './Titles';
 import Header from '../Header';
 import Loader from '../Loader';
+import Footer from '../Footer';
 import './style.scss';
 
 const Details = ({ details }) => (
@@ -29,6 +30,7 @@ const Details = ({ details }) => (
         </>
       ) : <Loader />
     }
+    <Footer />
   </div>
 );
 
