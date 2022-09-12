@@ -9,7 +9,7 @@ import { updateUser } from '../../../services/users';
 import Header from '../../Header';
 import AccountNavbar from '../../AccountPage/AccountNavbar/index';
 
-const BASE_URL = process.env.REACT_APP_LOCAL_URL;
+const BASE_URL = process.env.REACT_APP_DB_URL;
 
 const UpdatePhoto = () => {
   const user = useSelector((state) => state.user.userDetail);

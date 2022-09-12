@@ -5,7 +5,7 @@ import './styles.scss';
 import swal from 'sweetalert';
 
 const Images = () => {
-  const BASE_URL = process.env.REACT_APP_LOCAL_URL;
+  const BASE_URL = process.env.REACT_APP_DB_URL;
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
@@ -58,7 +58,7 @@ const Images = () => {
           <Link to="/">
             <img
               className="logo__img"
-              src="img/LogoIcon/White.png"
+              src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662837/images/LogoIcon/White_r831ni.png"
               alt="airbnbLogo"
             />
           </Link>

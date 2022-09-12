@@ -36,7 +36,7 @@ const Price = () => {
           <Link to="/">
             <img
               className="logo__img"
-              src="img/LogoIcon/White.png"
+              src="https://res.cloudinary.com/equipo-maravilla/image/upload/v1659662837/images/LogoIcon/White_r831ni.png"
               alt="airbnbLogo"
             />
           </Link>
@@ -73,6 +73,7 @@ const Price = () => {
             </div>
             <div className="option__pernight">
               <h2 className="pernight__description">Per night</h2>
+              <p className="currency">$ - USD</p>
             </div>
             <div className="option__advice">
               <p className="advice__description">

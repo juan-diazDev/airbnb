@@ -128,6 +128,7 @@
 .pernight__description {
   text-align: center;
   font-family: nunito-bold;
+  margin-bottom: 0px;
 }
 
 .advice__description {
@@ -144,6 +145,13 @@
   left: 0%;
   right: 10%;
   top: 0%;
+}
+
+.currency {
+  margin: 0;
+  text-align: center;
+  font-size: .9rem;
+  font-family: nunito-light;
 }
 
 @media (min-width: 1200px) {
