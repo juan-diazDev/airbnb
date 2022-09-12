@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import Amenities from '../Amenities';
+import amenities from '../../HostPlaceRegister/Amenities/sectionAmenities';
+import Loader from '../../Loader';
 
 const Description = ({ details }) => (
   <div className="spaceDetail__bg-screen-container">
@@ -39,7 +41,11 @@ const Description = ({ details }) => (
     </section>
 
     <hr className="spaceDetail__line-separation" />
-    <Amenities />
+    {
+      amenities
+        ? <Amenities />
+        : <Loader />
+    }
   </div>
 );
 Description.propTypes = {
