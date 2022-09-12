@@ -97,7 +97,7 @@ const Payments = () => {
         <div className="payment__info-conatiner">
           <h1>{title}</h1>
           <div className="payment__image-conatiner">
-            <img className="payment__image__image" src={image} alt="space" />
+            <img className="payment__image__image" src={image[0]} alt="space" />
           </div>
           <div className="payment__adults-info">
             <p>Adult</p>
