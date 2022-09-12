@@ -8,15 +8,15 @@ const PrivacyType = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const spaceRegister = useSelector((state) => state.space.spaceRegister);
-  const [privacy, setPrivacy] = useState('');
+  const [privacyType, setPrivacyType] = useState('');
 
   const handleClick = (e) => {
-    setPrivacy(e.target.value);
+    setPrivacyType(e.target.value);
   };
 
   const handleNext = () => {
-    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, privacy } });
-    if (privacy !== '') {
+    dispatch({ type: 'SET_SPACE_REGISTER', payload: { ...spaceRegister, privacyType } });
+    if (privacyType !== '') {
       navigate('/location');
     } else {
       swal({
@@ -56,9 +56,9 @@ const PrivacyType = () => {
       </div>
       <div className="container__options-fixed1">
         <div className="container__options-scroll1">
-          <button name="privacyType" className="option" type="button" onClick={handleClick} value="ENTIRE_PLACE">An entire place.</button>
-          <button name="privacyType" className="option" type="button" onClick={handleClick} value="PRIVATE_ROOM">A private room.</button>
-          <button name="privacyType" className="option" type="button" onClick={handleClick} value="SHARED_ROOM">A shared room.</button>
+          <button name="privacyTypeType" className="option" type="button" onClick={handleClick} value="ENTIRE_PLACE">An entire place.</button>
+          <button name="privacyTypeType" className="option" type="button" onClick={handleClick} value="PRIVATE_ROOM">A private room.</button>
+          <button name="privacyTypeType" className="option" type="button" onClick={handleClick} value="SHARED_ROOM">A shared room.</button>
         </div>
       </div>
       <div className="container__button-step">
