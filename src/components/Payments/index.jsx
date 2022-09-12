@@ -76,6 +76,11 @@ const Payments = () => {
     }
   };
 
+  const arriveDate = new Date(arrive);
+  const departureDate = new Date(departure);
+  const nights = ((departureDate - arriveDate) / (1000 * 60 * 60 * 24));
+  const totalPrice = (nights * price);
+
   return (
     <main className="payment__main-container">
       <header className="payment__head">
@@ -92,7 +97,7 @@ const Payments = () => {
         <div className="payment__info-conatiner">
           <h1>{title}</h1>
           <div className="payment__image-conatiner">
-            <img className="payment__image__image" src={image} alt="space" />
+            <img className="payment__image__image" src={image[0]} alt="space" />
           </div>
           <div className="payment__adults-info">
             <p>Adult</p>
@@ -116,7 +121,7 @@ const Payments = () => {
           </div>
           <div className="payment__price-info">
             <p>price</p>
-            <div><b>$</b> {price}</div>
+            <div><b>$</b> {totalPrice}</div>
           </div>
         </div>
       </section>
